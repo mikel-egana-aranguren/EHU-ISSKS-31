@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>ISSKS web orrialde baten adibidea</title>
+
+    <script type="text/javascript" >
+
+        function datuakegiaztatu() {
+            var age = document.formularioa.adina.value;
+                if (age < 18) {
+                    window.alert ("Adingabea zara!"); 
+                }
+                else{
+                    document.formularioa.submit();
+                }
+        }
+
+    </script>
+</head>
+<body>
+    <form name="formularioa">
+        Adina sartu (18 urte baino gehiago)<input type="text" name="adina"><br>
+        Eremu1<input type="text" name="adina1"><br>
+        Eremu2<input type="text" name="adina2"><br>
+        Eremu3<input type="text" name="adin"><br>
+        Eremu4<input type="text" name="adin"><br>
+        Eremu5<input type="text" name="adin"><br>
+        Eremu6<input type="text" name="adina6"><br>
+
+
+        <input type="button" value="Button bidaltzeko" onclick="datuakegiaztatu()">
+
+        <input type="submit" value="Submit bidaltzeko">
+    </form>
+</body>
+</html>
