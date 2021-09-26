@@ -38,90 +38,90 @@
     </section>
 
     <section class="slide">
-        <h2>Indice</h2>
+        <h2>Aurkibidea</h2>
         <ul>
-            <li>Introducción</li>
+            <li>Sarrera</li>
             <li>Esteganografía</li>
-            <li>Métodos de encriptación
+            <li>Enkriptazio metodoak
                 <ul>
-                    <li>Ataques por fuerza bruta</li>
-                    <li>Algoritmos de resumen</li>
-                    <li>Contraseñas en Sistemas Operativos</li>
+                    <li>Indarrezko erasoak</li>
+                    <li>Laburpen algoritmoak</li>
+                    <li>Pasahitzak sistema eragiletan</li>
                 </ul>
             </li>
-            <li>Encriptación asimétrica</li>
+            <li>Enkriptazio asimetrikoa</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Introducción</h2>
-        <p>Criptografía: cifrar la información</p>
-        <p>Mecanismo de seguridad muy antiguo</p>
-        <p>Asegura
+        <h2>Sarrera</h2>
+        <p>Kriptografia: inofrmazioa zifratu</p>
+        <p>Segurtasun mekanismo oso zaharra (Aintzinekoa)</p>
+        <p>Bermatzen du
             <ul>
-                <li>Confidencialidad (Zifraketa)</li>
-                <li>Integridad (Algoritmos resumen)</li>
-                <li>Autenticidad (Certificados digitales)</li>
+                <li>Konfidentzialtasuna (Zifraketa)</li>
+                <li>Osotasuna (Laburpen algoritmoak)</li>
+                <li>Kautotzea (Ziurtagarri digitala)</li>
             </ul>
         </p>
     </section>
 
     <section class="slide">
-        <h2>Introducción</h2>
-        <p>Esteganografía: <b>ocultar</b> la información</p>
-        <p>Criptografía: <b>cifrar</b> la información</p>
+        <h2>Sarrera</h2>
+        <p>Esteganografía: informazioa <b>ezkutatu</b> </p>
+        <p>Kriptografia: informazioa <b>zifratu</b> </p>
     </section>
 
     <section class="slide">
-        <h2>Introducción</h2>
-        <p>Historia de la Criptografía:
+        <h2>Sarrera</h2>
+        <p>Kriptografiaren historia:
             <ul>
-                <li>Hasta 1948, criptografía pre científica</li>
-                <li>En 1948, Claude Shannon sienta las bases de la Teoría de la Información y de la criptografía moderna</li>
-                <li>En 1976 Diffie & Hellman introducen el concepto de criptografía de clave pública</li>
+                <li>1948 arte, Kriptografia aurre-zientifikoa</li>
+                <li>1948-an, Claude Shannon-ek Informazioaren Teoriaren eta Kriptografia modernoaren oinarrik ezartzen ditu</li>
+                <li>1976-an Diffie & Hellman-ek gako publikoko Kriptografia kontzeptua plazaratzen dute</li>
             </ul>
         </p>
     </section>
 
     <section class="slide">
-        <h2>Introducción</h2>
-        <p>Criptoanálisis: técnicas para descifrar mensajes encriptados
+        <h2>Sarrera</h2>
+        <p>Kriptoanalisia: mezu zifratuak deszifratzeko teknikak
             <ul>
-                <li>Sin conocer la clave</li>
-                <li>Obteniendo la clave a partir de uno o varios mensajes encriptados</li>
-                <li>El algoritmo es público - <a href="https://es.wikipedia.org/wiki/Principios_de_Kerckhoffs">Principio de Kerckhoffs (1883)</a></li>
+                <li>Gakoa ezagutu gabe</li>
+                <li>Gakoa mezu zifratu(eta)tik lortuz</li>
+                <li>Algoritmoa publikoa da - <a href="https://es.wikipedia.org/wiki/Principios_de_Kerckhoffs">Kerckhoffs-en printzipoa (1883)</a></li>
             </ul>
         </p>
-        <p>Criptología: Criptografía + Criptoanálisis</p>
+        <p>Criptologia: Kriptografia + Kriptoanalisia</p>
     </section>
 
     <section class="slide">
-        <h2>Introducción</h2>
-        <p>Criptosistema: D<sub>K</sub> ( E<sub>K</sub> ( M ) ) = M
+        <h2>Sarrera</h2>
+        <p>Kriptosistema: D<sub>K</sub> ( E<sub>K</sub> ( M ) ) = M
             <ul>
-                <li>M: Conjunto de todos los mensajes sin cifrar</li>
-                <li>C: Conjunto de todos los mensajes encriptados (criptogramas)</li>
-                <li>K: Conjunto de claves posibles</li>
-                <li>E: algoritmo de encriptación</li>
-                <li>D: algoritmo de desencriptación</li>
+                <li>M: zifratu gabeko mezuak</li>
+                <li>C: zifratutako mezuak (kriptogramak)</li>
+                <li>K: gako posibleak</li>
+                <li>E: enkriptazio algoritmoa</li>
+                <li>D: desenkriptazio algoritmoa</li>
             </ul>
         </p>
     </section>
 
     <section class="slide">
-        <h2>Introducción</h2>
-        <p>Criptosistemas
+        <h2>Sarrera</h2>
+        <p>Kriptosistemak
             <ul>
-                <li>Simétricos o de clave privada
+                <li>Simetrikoak edo gako pribatukoak
                     <ul>
-                        <li>Una clave para encriptar y desencriptar</li>
-                        <li>Zifraketa en bloque o Zifraketa en flujo</li>
+                        <li>Gako bakarra enkriptatu eta desenkriptatzeko</li>
+                        <li>Zifratua blokeetan edo fluxu moduan</li>
                     </ul>
                 </li>
-                <li>Asimétricos o de clave pública
+                <li>Asimetrikoak edo gako publikokoak
                     <ul>
-                        <li>Una clave para encriptar y otra para desencriptar</li>
-                        <li>Lo que una encripta, la otra lo desencripta</li>
+                        <li>Gako batek enkriptatu eta beste batek desenkriptatu</li>
+                        <li>Gako bikoteak: batek enkriptatzen duena, besteak enkriptatzen du</li>
                     </ul>
                 </li>
             </ul>
@@ -130,7 +130,7 @@
 
     <section class="slide">
         <h2>Criptosistemas de clave privada</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/clave_privada.png" alt="criptosistema clave privada" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/clave_privada.png" alt="criptosistema clave privada" width="60%"></p>
         
     </section>
 
@@ -155,7 +155,7 @@
         <h2>Esteganografía</h2>
         <p>Consiste en ocultar información de forma que no sea “visible” para quien no sepa la clave</p>
         <p>Sin saber la clave, puede parecer que no hay información oculta</p>
-        <p>Es la técnica precursora de la criptografía</p>   
+        <p>Es la técnica precursora de la Kriptografia</p>   
     </section>
 
     <section class="slide">
@@ -175,20 +175,20 @@
         <h2>Esteganografía</h2>
         <p>Usando una plantilla</p>
         <p>La clave es la forma de extraer la información</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/esteganografia.png" alt="Esteganografía" width="40%"></p>   
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/esteganografia.png" alt="Esteganografía" width="40%"></p>   
     </section>
 
     <section class="slide">
         <h2>Esteganografía</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/esteganografia-2.png" alt="Esteganografía" width="40%"></p>   
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/esteganografia-2.png" alt="Esteganografía" width="40%"></p>   
     </section>
 
     <section class="slide">
         <h2>Esteganografía</h2>
         <p>Seleccionando unos caracteres determinados</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/esteganografia-asirios.png" alt="Esteganografía" width="40%"></p>   
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/esteganografia-asirios.png" alt="Esteganografía" width="40%"></p>   
         <p>Clave: primera letra de cada palabra no monosílaba </p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/esteganografia-asirios-2.png" alt="Esteganografía" width="40%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/esteganografia-asirios-2.png" alt="Esteganografía" width="40%"></p>
     </section>
 
     <section class="slide">
@@ -201,7 +201,7 @@
     <section class="slide">
         <h2>Esteganografía</h2>
         <p>Por ejemplo, para ocultar texto, insertamos el código ASCII del carácter deseado</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/LSB.png" alt="Esteganografía" width="40%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/LSB.png" alt="Esteganografía" width="40%"></p>
     </section>
 
     <section class="slide">
@@ -217,7 +217,7 @@
 
     <section class="slide">
         <h2>Método de encriptación</h2>
-        <p>Técnicas básicas en criptografía clásica
+        <p>Técnicas básicas en Kriptografia clásica
             <ul>
                 <li>Transposición (los caracteres originales simplemente cambian de posición)</li>
                 <li>Sustitución (los caracteres originales se sustituyen por otros)</li>
@@ -233,8 +233,8 @@
 
     <section class="slide">
         <h2>Método de Escitalo de Esparta</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/escitalo-1.png" alt="Escitalo" width="60%"></p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/escitalo-2.png" alt="Escitalo" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/escitalo-1.png" alt="Escitalo" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/escitalo-2.png" alt="Escitalo" width="60%"></p>
     </section>
 
     <section class="slide">
@@ -253,7 +253,7 @@
 
     <section class="slide">
         <h2>Método de Escitalo 2.0</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/escitalo-3.png" alt="Escitalo" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/escitalo-3.png" alt="Escitalo" width="60%"></p>
     </section>
 
     <section class="slide">
@@ -269,31 +269,31 @@
 
     <section class="slide">
         <h2>Método de Atbash (Espejo)</h2>
-        <p>Zifraketa monoalfabético</p>
+        <p>Cifrado monoalfabético</p>
         <p>Técnica proveniente del alfabeto hebreo</p>
         <p>Consiste en sustituir cada carácter por su "contrario"</p>
     </section>
 
     <section class="slide">
         <h2>Método de Atbash (Espejo)</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/atbash.png" alt="Cesar" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/atbash.png" alt="Cesar" width="60%"></p>
     </section>
 
     <section class="slide">
         <h2>Método César</h2>
-        <p>Zifraketa monoalfabético</p>
+        <p>Cifrado monoalfabético</p>
         <p>Empleado por Julio César</p>
         <p>Consiste en sumar 3 a la posición de cada letra en el alfabeto</p>
     </section>
 
     <section class="slide">
         <h2>Método César</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/cesar.png" alt="Cesar" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/cesar.png" alt="Cesar" width="60%"></p>
     </section>
 
     <section class="slide">
         <h2>Método Afín</h2>
-        <p>Zifraketa monoalfabético</p>
+        <p>Cifrado monoalfabético</p>
         <p>Generalización método César</p>
         <p>E(<sub>a;b</sub>)(M) = (aM + b) mod N</p>
         <p>N es el número de caracteres del alfabeto</p>
@@ -302,16 +302,16 @@
 
     <section class="slide">
         <h2>Método Diccionario</h2>
-        <p>Zifraketa monoalfabético</p>
+        <p>Cifrado monoalfabético</p>
         <p>Generar la tabla de correspondencias de manera "manual"</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/diccionario.png" alt="Diccionario" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/diccionario.png" alt="Diccionario" width="60%"></p>
     </section>
 
     <section class="slide">
         <h2>Método Polybius</h2>
-        <p>Zifraketa monoalfabético</p>
+        <p>Cifrado monoalfabético</p>
         <p>Pueden ser caracteres o dígitos</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/polybius.png" alt="Polybius" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/polybius.png" alt="Polybius" width="60%"></p>
     </section>
 
     <section class="slide">
@@ -326,18 +326,71 @@
     <section class="slide">
         <h2>Métodos de Sustitución monoalfabéticos</h2>
         <p>Se va "probando" y deduciendo</p>
-        <p>Cuanto más largo es el texto Zifraketa, mejor</p>
+        <p>Cuanto más largo es el texto cifrado, mejor</p>
         <p>Hay que saber el idioma del texto original</p>
     </section>
 
     <section class="slide">
         <h2>Métodos de Sustitución monoalfabéticos</h2>
         <p>Porcentaje de aparición de caracteres en castellano</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/Fecuencias.png" alt="Frecuencias" width="20%"></p>
-        <p>Ejemplo de <a href="http://www.epsilones.com/paginas/laboratorio/laboratorio-014-desZifraketaifrecuencias.html">desZifraketa por análisis de frecuencias</a></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/Fecuencias.png" alt="Frecuencias" width="20%"></p>
+        <p>Ejemplo de <a href="http://www.epsilones.com/paginas/laboratorio/laboratorio-014-descifradoifrecuencias.html">descifrado por análisis de frecuencias</a></p>
     </section>
 
-    
+    <section class="slide">
+        <h2>Métodos de Sustitución monoalfabéticos</h2>
+        <p>Técnicas para dificultar el criptoanálisis
+            <ul>
+                <li>Eliminar los espacios en blanco</li>
+                <li>Alterar el texto original manteniendo su significado (Ej. SMS, WhatsApp, ...)</li>
+                <li>Usar pictogramas con significado (Libro de codigos)</li>
+                <li>Evitar la correspondencia 1-1 usando el mismo carácter en más de una ocasión (Sistemas polialfabeticos)</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>El disco de Alberti</h2>
+        <p>Primer sistema polialfabetico</p>
+        <p>Dos discos concentricos, el interior movil</p>
+        <p>Durante el cifrado, se va moviendo, por lo que en el cifrado se usan X alfabetos (correspondencias) distintas</p>
+        <p>La clave es la posición inicial, cada cuántos caracteres se gira el disco, cuánto se gira y en qué dirección</p>
+    </section>
+
+    <section class="slide">
+        <h2>El disco de Alberti</h2>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/GaQVO039M8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </section>
+
+    <section class="slide">
+        <h2>La maquina enigma</h2>
+        <p>Es probablemente el elemento criptográfico más conocido de la historia</p>
+        <p>Originalmente diseñada para uso civil</p>
+        <p>Modificada para uso militar y usada por los nazis</p>
+    </section>
+
+    <section class="slide">
+        <h2>La maquina enigma</h2>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/G2_Q9FoD-oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </section>
+
+    <section class="slide">
+        <h2>La maquina enigma</h2>
+        <p>El matemático polaco Marian Rejewski estableció las bases para desencriptar Enigma
+            <ul>
+                <li>Crearon máquinas electromecánicas llamadas "bombas"</li>
+                <li>Los nazis añadieron 2 nuevos rotores y las "bombas" polacas no daban abasto con el nuevo número de posibilidades</li>
+            </ul>
+        </p>
+
+    </section>
+
+    <section class="slide">
+        <h2>La maquina enigma</h2>
+
+        <p>El equipo de <a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing</a> partió de esta información para crear su propia "bomba" más eficiente y resistente a cambios de configuración</p>
+            <p><iframe width="400" height="250" src="https://www.youtube.com/embed/V4V2bpZlqx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </section>
 
 
 
