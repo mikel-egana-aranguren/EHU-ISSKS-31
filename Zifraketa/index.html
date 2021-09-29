@@ -807,9 +807,8 @@ Deszifratu - Zifratu):
             <h2>Klabe publikoko kriptografia</h2>
             <p>Arazo gehiago:
                 <ul>
-                    <li>¿Cómo sabe Iker si el mensaje es realmente de Miren?</li>
-                    <li>Cuando Iker conteste ¿Cómo sabe Miren que el mensaje
-                        es realmente de Iker?</li>
+                    <li>Nola daki Ikerrek mezua benetan Mirenena dela?</li>
+                    <li>Ikerrek erantzuten duenean, nola daki Mirenek benetan mezua Ikerrena dela?</li>
                 </ul>
             </p>
         </section>
@@ -817,27 +816,24 @@ Deszifratu - Zifratu):
         <section class="slide">
             <h2>Klabe publikoko kriptografia</h2>
             <ul>
-                <li>Si Iker lo cifra con su clave privada lo puede descifrar
-                    cualquiera (I<sub>pu</sub> la conoce todo el mundo)</li>
-                <li>Solución:
+                <li>Ikerrek zifratzen badu bere gako pribatuarekin edonork deszifratu ahal du (Mundu osoak ezagutzen du I<sub>pu</sub>)</li>
+                <li>Soluzioa:
                     <ul>
-                        <li>Iker cifra el mensaje con su clave privada: C1 = e ( m, I<sub>pri</sub> )</li>
-                        <li>Luego lo vuelve a cifrar con la clave pública de Miren: C2 = e ( C1 , M <sub>pública</sub> ) </li>
+                        <li>Ikerrek bere gako pribatuarekin zifratzen du mezua: C1 = e ( m, I<sub>pri</sub> )</li>
+                        <li>Gero Mirenen gako publikoarekin berriro zifratzen du: C2 = e ( C1 , M<sub>pu</sub> ) </li>
                         
                     </ul>
                 </li>
             </ul>
-            
-
         </section>
 
         <section class="slide">
             <h2>Klabe publikoko kriptografia</h2>
             <ul>
-                <li>Sólo Miren puede desencriptarlo con su clave privada:
+                <li>Mirenek bakarrik deszifratu ahal du bere gako pribatuarekin:
                     <ul>
-                        <li>Confidencialidad: Sólo Miren puede descifrar el mensaje: C1 = d ( C2 , M<sub>privada</sub> )</li>
-                        <li>Autenticidad y No Repudio: Sólo Iker ha podido enviar el mensaje: m = d ( C1, I<sub>pu</sub> )</li>
+                        <li>Konfidentzialtasuna: Mirenek soilik deszifratu ahal du mezua: C1 = d ( C2 , M<sub>pri</sub> )</li>
+                        <li>Kautotzea eta Zapuztezintasuna: Ikerrek soilik bidali ahal izan du mezua: m = d ( C1, I<sub>pu</sub> )</li>
                     </ul>
                 </li>
             </ul>
@@ -846,15 +842,12 @@ Deszifratu - Zifratu):
 
         <section class="slide">
             <h2>Klabe publikoko kriptografia</h2>
-            <p>¿Qué ocurre si se interpone alguien en las
-                comunicaciones?</p>
-            <p>Ataque Man in the middle:
+            <p>Zer gertatzen da baten bat komunikazio erdigunean jartzen bada</p>
+            <p>Man in the middle erasoa:
                 <ul>
-                    <li>Un intermediario recibe todos los mensajes sin que las
-                        otras partes se enteren
+                    <li>Bitartekari batek mezu guztiak jasotzen ditu partaideak jakin barik
                     </li>
-                    <li>Se necesita interceptar todas las comunicaciones entre
-                        las dos partes</li>
+                    <li>Partaideen komunikazio guztietan eskua sartu behar da</li>
                 </ul>
             </p>
 
@@ -868,22 +861,16 @@ Deszifratu - Zifratu):
 
         <section class="slide">
             <h2>Klabe publikoko kriptografia</h2>
-            <p>Cuando Iker y Miren quieren comenzar a comunicarse
-                de manera secreta, se intercambian las respectivas
-                claves públicas</p>
-            <p>Andoni las intercepta y las intercambia por la suya</p>
+            <p>Ikerrek eta Mirenek komunikatzen hasi nahi dutenean, klabe publikoak trukatzen dituzte</p>
+            <p>Andonik hartzen ditu eta bere klabearekin aldatzen ditu</p>
             <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/AndoniIkerMirenManInTheMiddle.png" alt="criptosistema clave privada" width="40%"></p>
         </section>
 
         <section class="slide">
             <h2>Klabe publikoko kriptografia</h2>
-            <p>Iker y Miren cifran sus mensajes con la que CREEN la
-                clave pública del otro y con su clave privada</p>
-            <p>Andoni intercepta los mensajes, los lee, modifica y
-                los encripta con su clave privada</p>
-                
+            <p>Ikerrek eta Mirenek mezuak zifratzen dituzte ustezko bestearen klabe publikoarekin eta beraien klabe pribatuarekin</p>
+            <p>Andonik mezuak jasotzen ditu, irakurtzen ditu, aldatzen ditu, eta bere klabe pribatuarekin zifratzen ditu</p>   
         </section>
-
 
         <section class="slide">
             <h2>Klabe publikoko kriptografia</h2>
@@ -893,15 +880,12 @@ Deszifratu - Zifratu):
 
         <section class="slide">
             <h2>Klabe publikoko kriptografia</h2>
-            <p>Iker y Miren creen que están comunicándose de
-                manera segura</p>
-            <p>Andoni está enterándose de todo y modificándolo a su
-                antojo</p>    
-            <p>Formas de evitarlo:
+            <p>Ikerrek eta Mirenek modu seguruan komunikatzen ari direla uste dute</p>
+            <p>Andonik dena irakurtzen du eta nahi beste aldatzen</p>    
+            <p>Ekiditeko:
                 <ul>
-                    <li>Paso de claves en canales "seguros"</li>
-                    <li>Uso de una autoridad que certifique que una clave
-                        pública pertenece a quien dice: Autoridad de Certificación (AC)</li>
+                    <li>Klabeak kanal seguruen bidez elkarbanatu</li>
+                    <li>Autoritate (erakunde) batek klabe publiko bat norbaiti dagokiola zertifikatzea: Zertifikazio Autoritatea</li>
                 </ul>
             </p>
 
@@ -914,135 +898,127 @@ Deszifratu - Zifratu):
         </section>
 
         <section class="slide">
-            <h2>Cifrado híbrido</h2>
-            <p>Los sistemas de clave secreta son mucho más rápidos
-                que los de clave pública</p>
-            <p>Muchas veces se usa una combinación: El sistema de
-                    clave pública se usa para compartir una clave secreta
-                    S que sólo se usa una vez</p>
-            <p>El sistema de clave secreta usa S para cifrar el
-                mensaje</p>
+            <h2>Zifratu hibridoa</h2>
+            <p>Gako pribatuko sistemak gako publikokoak baino askoz azkarragoak dira</p>
+            <p>Askotan konbinazio bat erabiltzen da: gako publikoko sistema S gako sekretu bat elkarbanatzeko erabiltzen da, behin soilik erabiliko dena</p>
+            <p>Gako pribatuko sistemak S erabiltzen du mezua zifratzeko</p>
 
         </section>
 
         <section class="slide">
-            <h2>Cifrado híbrido</h2>
-            <p>Miren genera una clave secreta S y cifra su mensaje
-                usándola: cm = e1 (m,S)</p>
-            <p>Miren cifra S usando la clave pública de Iker
+            <h2>Zifratu hibridoa</h2>
+            <p>Mirenek S gako sekretua sortzen du, eta bere mezua zifratzeko erabiltzen du: cm = e1 (m,S)</p>
+            <p>Mirenek S zifratzen du Ikerren gako publikoarekin:
                 cs = e2 ( S , I<sub>pu</sub> )</p>
-            <p>Miren manda [ cm, cs ] a Iker</p>
+            <p>Mirenek [ cm, cs ] bidaltzen dio Ikerreri</p>
 
         </section>
 
         <section class="slide">
-            <h2>Cifrado híbrido</h2>
+            <h2>Zifratu hibridoa</h2>
             <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/CifradoHibrido.png" alt="criptosistema clave privada" width="40%"></p>
 
         </section>
 
         <section class="slide">
-            <h2>Cifrado híbrido</h2>
-            <p>Iker recibe [ cm , cs ]</p>
-            <p>Iker descifra S usando su clave privada I<sub>pri</sub>: d2 ( cs , I<sub>pri</sub> ) = S</p>
-            <p>Iker descifra m usando S: d1 ( cm , S ) = m</p>
+            <h2>Zifratu hibridoa</h2>
+            <p>Ikerrek [ cm , cs ] jasotzen du</p>
+            <p>Ikerrek S deszifratzen bere gako pribatua erabiliz, I<sub>pri</sub>: d2 ( cs , I<sub>pri</sub> ) = S</p>
+            <p>Ikerrek S erabiliz m deszifratzen du: d1 ( cm , S ) = m</p>
         </section>
 
         <section class="slide">
-            <h2>Cifrado híbrido</h2>
+            <h2>Zifratu hibridoa</h2>
             <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/CifradoHibridoRecibir.png" alt="criptosistema clave privada" width="40%"></p>
         </section>
 
         <section class="slide">
-            <h2>Firma digital</h2>
-            <p>Miren le manda un mensaje a Iker usando un sistema
-                de clave pública</p>
-            <p>Nadie puede leer el mensaje de Miren a Iker pero
-                cualquiera podría haberlo mandado</p>
-            <p>¿Cómo sabe Iker que se lo ha mandado Miren o que
-                nadie lo ha modificado?</p>
-            <p>Solución: Miren firma sus mensajes</p>
+            <h2>Sinadura digitala</h2>
+            <p>Mirenek Ikerreri mezua bidaltzen dio, gako publikoko sistema erabiliz</p>
+            <p>Edonrok ezin du irakurri Mirenen Ikerrentzako mezua, baina edozeinek bidali ahal du</p>
+            <p>Nola daki Ikerrek Mirenek bidali diola edo inork ez duela mezua aldatu?</p>
+            <p>Soluzioa: Mirenek mezua sinatzen du</p>
         </section>
 
         <section class="slide">
-            <h2>Firma digital</h2>
-            <p>Sólo el usuario legítimo puede firmar su documento</p>
-            <p>Nadie podrá falsificar una firma</p>
-            <p>Cualquiera puede verificar una firma digital</p>
+            <h2>Sinadura digitala</h2>
+            <p>Erabiltzaile zilegiak soilik sinatu ahal du bere dokumentua
+</p>
+            <p>Inork ezin du sinadura faltsutu</p>
+            <p>Edozein balioztatu ahal du sinadura digitala</p>
         </section>
 
         <section class="slide">
-            <h2>Firma digital</h2>
-            <p>No se puede reutilizar una firma</p>
-            <p>No se puede modificar una firma</p>
-            <p>No se puede negar haber firmado un documento</p>
-            <p>No se puede alterar un documento después de haberlo
-                firmado</p>
-            <p>Logramos Autenticidad, Integridad y No repudio</p>
+            <h2>Sinadura digitala</h2>
+            <p>Ezin da sinadura bat berrerabili</p>
+            <p>Ezin da sinadura bat aldatu</p>
+            <p>Ezin da dokumentu bat sinatu izana ukatu</p>
+            <p>Ezin da dokumentu bat aldatu sinatu ostean</p>
+            <p>Kautotzea, Osotasuna eta Zapuztezintasuna</p>
         </section>
 
         <section class="slide">
-            <h2>Firma digital</h2>
-            <p>Miren obtiene un resumen criptográfico del mensaje: RC = hash (m)</p>
-            <p>Miren cifra el resumen criptográfico con su clave: Firma = e ( RC, M<sub>privada</sub> )</p>
-            <p>Miren envía el mensaje (cifrado o sin cifrar) y su Firma</p>
+            <h2>Sinadura digitala</h2>
+            <p>Mirenek mezuaren laburpen kriptografikoa lortzen du: RC = hash (m)</p>
+            <p>Mireneke bere klabearekin zifratzen du laburpen kriptografikoa: Sinadura = e ( RC, M<sub>pri</sub> )</p>
+            <p>Mirenek bere mezua (Zifratua edo zifratu gabe) eta bere sinadura bidaltzen ditu</p>
         </section>
 
         <section class="slide">
-            <h2>Firma digital</h2>
+            <h2>Sinadura digitala</h2>
             <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FirmaMiren.png" alt="criptosistema clave privada" width="40%"></p>
         </section>
 
         <section class="slide">
-            <h2>Firma digital</h2>
-            <p>Iker desencripta la Firma usando la clave pública de Miren: RC = ( Firma, M<sub>pública</sub>)</p>
-            <p>Iker obtiene el resumen criptográfico del mensaje: RC’ = hash (m)</p>
-            <p>Iker compara RC’ con RC para asegurarse que no ha sido modificado</p>
+            <h2>Sinadura digitala</h2>
+            <p>Ikerrek sinadura deszifratzen du Mirenen gako publikoa erabiliz: RC = ( Sinadura, M<sub>pu</sub>)</p>
+            <p>Ikerrek mezuaren laburpen kriptografikoa lortzen du: RC’ = hash (m)</p>
+            <p>Ikerrek RC’ eta RC alderatzen ditu ezer aldatu ez dela baieztatzeko</p>
             <p></p>
         </section>
 
         <section class="slide">
-            <h2>Firma digital</h2>
+            <h2>Sinadura digitala</h2>
             <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FirmaIker.png" alt="criptosistema clave privada" width="40%"></p>
         </section>
 
         <section class="slide">
-            <h2>Firma digital</h2>
-            <p>Si además de firmarlo, Miren encripta su mensaje sólo Iker podrá leerlo: Se logra Confidencialidad, Autenticidad,
-                Integridad y No Repudio</p>
-            <p>Puede hacerlo usando:
+            <h2>Sinadura digitala</h2>
+            <p>sinatzeaz gain, Mirenek mezua zifratzen badu, Ikerrek bakarrik irakurriko du:  Konfidentzialtasuna, Osotasuna, Kautotzea, Zapuztezintasuna</p>
+            <p>Hurrengoak erabiltzea dauka:
                 <ul>
-                    <li>Un sistema de criptografía asimétrica</li>
-                    <li>Un sistema de criptografía híbrido</li>
+                    <li>Kriptografia asimetrikoa</li>
+                    <li>Kriptografia hibridoa</li>
                 </ul>
             </p>
         </section>
 
         <section class="slide">
-            <h2>Firma digital</h2>
-            <p>Un sistema de criptografía asimétrica. Enviaría a Iker:
+            <h2>Sinadura digitala</h2>
+            <p>Kriptografia asimetrikoa. Ikerreri bidali:
                 <ul>
-                    <li>Criptograma del mensaje cifrado con M<sub>privada</sub> y con I<sub>pu</sub></li>
-                    <li>Su Firma digital (el resumen criptográfico cifrado con
-                        M<sub>privada</sub> )</li>
+                    <li>Mezu zifratuaren kriptograma (M<sub>pri</sub> eta I<sub>pu</sub>-rekin zifratua)
+                    <li>Bere Sinadura digitala (Laburpen kriptografikoa,
+                        M<sub>pri</sub>-rekin zifratua)</li>
                 </ul>
             </p>
 
         </section>
 
         <section class="slide">
-            <h2>Firma digital</h2>
-        <p>Un sistema de criptografía híbrido. Enviaría a Iker:
+            <h2>Sinadura digitala</h2>
+        <p>Kriptografia hibridoa. Ikerreri bidali:
             <ul>
-                <li>Criptograma del mensaje cifrado con la clave de sesión</li>
-                <li>Criptograma con la clave de sesión cifrada con I<sub>pu</sub></li>
-                <li>Su Firma digital (el resumen criptográfico cifrado con M<sub>privada</sub>)</li>
+                <li>Saio gakoarekin zifratutako mezuaren kriptograma</li>
+                <li>Saio gako zifratuaren kriptograma, I<sub>pu</sub>-rekin zifratua</li>
+                <li>Bere Sinadura digitala (Laburpen kriptografikoa,
+                    M<sub>pri</sub>-rekin zifratua)</li>
             </ul>
         </p>
     </section>
 
         <section class="slide">
-            <h2>Algoritmos de clave pública</h2>
+            <h2>Gako publikoko algoritmoak</h2>
             <p>Diffie-Hellman - 1976</p>
             <p>RSA - 1977</p>
             <p>ElGamal - 1984</p>
@@ -1051,18 +1027,18 @@ Deszifratu - Zifratu):
         </section>
 
         <section class="slide">
-            <h2>Algoritmos de clave pública</h2>
+            <h2>Gako publikoko algoritmoak</h2>
             <p><iframe width="560" height="315" src="https://www.youtube.com/embed/yDXiDOJgxmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
         </section>
 
         <section class="slide">
-            <h2>Algoritmos de clave pública</h2>
+            <h2>Gako publikoko algoritmoak</h2>
             <p><iframe width="560" height="315" src="https://www.youtube.com/embed/M7kEpw1tn50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
         </section>
 
         <section class="slide">
-            <h2>Algoritmos de clave pública</h2>
-            <p>DNI electrónico (DNIe 3.0):
+            <h2>Gako publikoko algoritmoak</h2>
+            <p>DNI electronikoa (DNIe 3.0):
                 <ul>
                     <li>RSA</li>
                     <li>SHA-1 / SHA-256</li>
@@ -1072,7 +1048,7 @@ Deszifratu - Zifratu):
         </section>
 
         <section class="slide">
-            <h2>Algoritmos de clave pública</h2>
+            <h2>Gako publikoko algoritmoak</h2>
         <p>PGP:
             <ul>
                 <li>RSA / DSA</li>
@@ -1082,7 +1058,7 @@ Deszifratu - Zifratu):
         </section>
 
         <section class="slide">
-            <h2>Algoritmos de clave pública</h2>
+            <h2>Gako publikoko algoritmoak</h2>
             <p>SSH:
                 <ul>
                     <li>RSA / DSA</li>
@@ -1098,23 +1074,21 @@ Deszifratu - Zifratu):
         </section>
 
         <section class="slide">
-            <h2>Confianza de firmas</h2>
-            <p>Aunque utilicemos firmas digitales:
+            <h2>Sinaduren konfidantza</h2>
+            <p>Sinadura digitalak erabilita ere:
                 <ul>
-                    <li>¿Cómo sabemos que la firma es de quien dice ser?</li>
-                    <li>¿Cómo nos asegura una autoridad de certificación que
-                        una firma es de quien dice ser?</li>
-                    <li>¿No podemos fiarnos de una firma que no esté avalada
-                        por una autoridad de certificación?</li>
+                    <li>Nola dakigu sinadura bat esaten duenarena dela?</li>
+                    <li>Nola bermatzen du Zertifikazio Autoritate batek hori horrela dela?</li>
+                    <li>Ezin gara fidatu Zertifikazio Autoritate batek bermatu duen sinadura batetaz?</li>
                 </ul>
             </p>
         </section>
 
         <section class="slide">
-            <h2>Confianza de firmas</h2>
+            <h2>Sinaduren konfidantza</h2>
 
                 <ul>
-                    <li>Se usa en PGP, GnuPG y similares</li>
+                    <li>PGP, GnuPG eta horrelakoak erabiltzen dira</li>
                     <li>Un usuario certifica (firmando con su clave privada)
                         que la clave pública de otro usuario es de confianza</li>
                     <li>La confianza se propaga según la confianza que
@@ -1171,7 +1145,7 @@ Deszifratu - Zifratu):
             <p>Una autoridad de certificación (AC) certifica la validez
                 de una firma
                 <ul>
-                    <li>Prestadores de Servicios de Certificación (PSC): Ley de Firma Electrónica (Ley 59/2003, LFE), Ley de Acceso Electrónico de los Ciudadanos a los Servicios Públicos (Ley 11/2007, LAESCP)</li>
+                    <li>Prestadores de Servicios de Certificación (PSC): Ley de Sinadura Electrónica (Ley 59/2003, LFE), Ley de Acceso Electrónico de los Ciudadanos a los Servicios Públicos (Ley 11/2007, LAESCP)</li>
                     <li>Los PSCs deben proporcionar un método de consulta de
                         la vigencia de sus certificados: Sólo las Administraciones Públicas tienen la obligación de
                         que sea gratuito</li>
