@@ -400,7 +400,7 @@
             <ul>
                 <li>Metodo estatistikoak</li>
                 <li>Gakoen tamaina txikitzeko patroiak, zati ezberdinen ordena, etab. bilatzen dira</li>
-                <li>sistema monoalfabetikotan baino textu zifratu gehiago behar da</li>
+                <li>Sistema monoalfabetikotan baino textu zifratu gehiago behar da</li>
             </ul>
         </p>
     </section>
@@ -410,7 +410,7 @@
 
         <p>Mezu osoa zifratu ordez, bit bakoitza zifratzen dute, banan-bana
             </p>
-        <p>Denbora errealeko komunikaziotan erabilia (Ezin da itxaron mezu osoa izan arte zifratxeko eta bidaltzeko)</p>
+        <p>Denbora errealeko komunikaziotan erabilia (Ezin da itxaron mezu osoa izan arte zifratzeko eta bidaltzeko)</p>
 
     </section>
 
@@ -430,8 +430,7 @@
 
     <section class="slide">
         <h2>Vernam metodoa</h2>
-        <p>XOR eragiketa textua eta luzera berdineko gakoa aleatorio baten artean egiten du</p>
-            <p>Ekoizlea benetan aleatorioa da</p>
+        <p>XOR eragiketa textua eta luzera berdineko gakoa aleatorio baten artean egiten du (Ekoizlea benetan aleatorioa da)</p>
         <p>Gakoa (gako-fluxua) "erabilpen bakarreko libreta" da:
             <ul>
                 <li>Behin bakarrik erabili ahal da</li>
@@ -467,7 +466,7 @@
         <p>Jatorrizko mezua tamaina berdinetko blokeetan zatitu: 
             <ul>
                 <li>Blokeen tamaina oso txikia bada, fluxu zifraketa da</li>
-                <li>Mezuaren tamaina ez bada blokeen multiploa, badaude algoritmoak gainerako betetzeko</li>    
+                <li>Mezuaren tamaina ez bada blokeen multiploa, badaude algoritmoak gainerakoa betetzeko</li>    
             </ul>
         </p>
 
@@ -534,7 +533,7 @@ Deszifratu - Zifratu):
                     <li>Erabilera oso hedatua</li>
                     <li>128 bit-eko blokeak</li>
                     <li>128, 192, 256 biteko gakoak</li>
-                    <li>8 itzuli, itzuli, 14 itzuli</li>
+                    <li>8 itzuli, 12 itzuli, 14 itzuli</li>
                 </ul>
             </p>
 
@@ -595,7 +594,7 @@ Deszifratu - Zifratu):
         <section class="slide">
             <h2>Laburpen algoritmoak</h2>
             <p>Dispertsio funtzioak (one-way hash)</p>
-            <p>Tamaina finkoko kriptograma sortzen dute, jatorrizko eduki osoa ordezkatzen duena (edukia apura bat aldatzen bada ere, laburpena guztiz aldatzen da)</p>
+            <p>Tamaina finkoko kriptograma sortzen dute, jatorrizko eduki osoa ordezkatzen duena (edukia apur bat aldatzen bada ere, laburpena guztiz aldatzen da)</p>
             <p>Ez dauka alderantzizko funtziorik</p>
             <p>Ezin da deszifratu</p>
         </section>
@@ -606,7 +605,7 @@ Deszifratu - Zifratu):
                 <ul>
                     <li>Informazioaren Osotasuna ziurtatu</li>
                     <li>Gakoak gorde</li>
-                    <li>Sinadura digital inplementatu</li>
+                    <li>Sinadura digitala inplementatu</li>
                 </ul>
             </p>
         </section>
@@ -658,7 +657,7 @@ Deszifratu - Zifratu):
             <h2>Laburpen algoritmoak</h2>
             <p>Gatza erabiltzearen abantailak
                 <ul>
-                    <li>Gakoa berbeerak kodifikazio ezberdina du aldi bakoitzean</li>
+                    <li>Gakoa berberak kodifikazio ezberdina du aldi bakoitzean</li>
                     <li>Indarrezko erasoak zailago egiten ditu</li>
                 </ul>
             </p>
@@ -720,7 +719,7 @@ Deszifratu - Zifratu):
                 <ul>
                     <li>A: zenbat egun pasa diren gakoa aldatu gabe (1970/01/01-tik)</li>
                     <li>B: zenbat egun gakoa aldatu ahal izateko</li>
-                    <li>C: zenat egun egon ahal den gakoa aldatu gabe</li>
+                    <li>C: zenbat egun egon ahal den gakoa aldatu gabe</li>
                 </ul> 
             </p>
 
@@ -730,7 +729,7 @@ Deszifratu - Zifratu):
             <h2>Pasahitzak sistema eragileetan</h2>
             <p>Linux:
                 <ul>
-                <li>D: zenbat egun aurretik abisatu behar zaio erbiltzaileari pasahitza aldatzeko</li>
+                <li>D: zenbat egun aurretik abisatu behar zaio erabiltzaileari pasahitza aldatzeko</li>
                 <li>E: zenbat egun pasahitza iraungitzetik kontua desaktibatu arte</li>
                 <li>F: zenbat egun kontua desaktibatu arte (1970/01/01-tik)</li>
                 </ul>
@@ -790,6 +789,16 @@ Deszifratu - Zifratu):
                     <li>Gako publikotik gako pribatua ondorioztatzea ia ezinezkoa izan beharko litzateke
 </li>
                     <li>(Des)zifraketa sistema simetrikotan baino geldoagoa da</li>
+
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Klabe publikoko kriptografia</h2>
+            <p>Arazoak:
+                <ul>
+
                     <li>Mirenek segurtasun osoz jakin behar du Ikerren gako publikoa erabiltzen dagoela</li>
                     <li>Gako publikoak lortzea erraza izan behar du</li>
                 </ul>
@@ -923,7 +932,7 @@ Deszifratu - Zifratu):
         <section class="slide">
             <h2>Zifratu hibridoa</h2>
             <p>Ikerrek [ cm , cs ] jasotzen du</p>
-            <p>Ikerrek S deszifratzen bere gako pribatua erabiliz, I<sub>pri</sub>: d2 ( cs , I<sub>pri</sub> ) = S</p>
+            <p>Ikerrek S deszifratzen du bere gako pribatua erabiliz, I<sub>pri</sub>: d2 ( cs , I<sub>pri</sub> ) = S</p>
             <p>Ikerrek S erabiliz m deszifratzen du: d1 ( cm , S ) = m</p>
         </section>
 
@@ -935,7 +944,7 @@ Deszifratu - Zifratu):
         <section class="slide">
             <h2>Sinadura digitala</h2>
             <p>Mirenek Ikerreri mezua bidaltzen dio, gako publikoko sistema erabiliz</p>
-            <p>Edonrok ezin du irakurri Mirenen Ikerrentzako mezua, baina edozeinek bidali ahal du</p>
+            <p>Edonork ezin du irakurri Mirenen Ikerrentzako mezua, baina edozeinek bidali ahal du</p>
             <p>Nola daki Ikerrek Mirenek bidali diola edo inork ez duela mezua aldatu?</p>
             <p>Soluzioa: Mirenek mezua sinatzen du</p>
         </section>
@@ -945,7 +954,7 @@ Deszifratu - Zifratu):
             <p>Erabiltzaile zilegiak soilik sinatu ahal du bere dokumentua
 </p>
             <p>Inork ezin du sinadura faltsutu</p>
-            <p>Edozein balioztatu ahal du sinadura digitala</p>
+            <p>Edozeinek balioztatu ahal du sinadura digitala</p>
         </section>
 
         <section class="slide">
@@ -960,7 +969,7 @@ Deszifratu - Zifratu):
         <section class="slide">
             <h2>Sinadura digitala</h2>
             <p>Mirenek mezuaren laburpen kriptografikoa lortzen du: RC = hash (m)</p>
-            <p>Mireneke bere klabearekin zifratzen du laburpen kriptografikoa: Sinadura = e ( RC, M<sub>pri</sub> )</p>
+            <p>Mirenek bere klabearekin zifratzen du laburpen kriptografikoa: Sinadura = e ( RC, M<sub>pri</sub> )</p>
             <p>Mirenek bere mezua (Zifratua edo zifratu gabe) eta bere sinadura bidaltzen ditu</p>
         </section>
 
@@ -984,7 +993,7 @@ Deszifratu - Zifratu):
 
         <section class="slide">
             <h2>Sinadura digitala</h2>
-            <p>sinatzeaz gain, Mirenek mezua zifratzen badu, Ikerrek bakarrik irakurriko du:  Konfidentzialtasuna, Osotasuna, Kautotzea, Zapuztezintasuna</p>
+            <p>Sinatzeaz gain, Mirenek mezua zifratzen badu, Ikerrek bakarrik irakurriko du:  Konfidentzialtasuna, Osotasuna, Kautotzea, Zapuztezintasuna</p>
             <p>Hurrengoak erabiltzea dauka:
                 <ul>
                     <li>Kriptografia asimetrikoa</li>
@@ -998,7 +1007,7 @@ Deszifratu - Zifratu):
             <p>Kriptografia asimetrikoa. Ikerreri bidali:
                 <ul>
                     <li>Mezu zifratuaren kriptograma (M<sub>pri</sub> eta I<sub>pu</sub>-rekin zifratua)
-                    <li>Bere Sinadura digitala (Laburpen kriptografikoa,
+                    <li>Bere sinadura digitala (Laburpen kriptografikoa,
                         M<sub>pri</sub>-rekin zifratua)</li>
                 </ul>
             </p>
@@ -1023,7 +1032,7 @@ Deszifratu - Zifratu):
             <p>RSA - 1977</p>
             <p>ElGamal - 1984</p>
             <p>DSA - 1991</p>
-            <p>Curvas elípticas - 1985</p>
+            <p>Kurba eliptikoak - 1985</p>
         </section>
 
         <section class="slide">
@@ -1089,167 +1098,154 @@ Deszifratu - Zifratu):
 
                 <ul>
                     <li>PGP, GnuPG eta horrelakoak erabiltzen dira</li>
-                    <li>Un usuario certifica (firmando con su clave privada)
-                        que la clave pública de otro usuario es de confianza</li>
-                    <li>La confianza se propaga según la confianza que
-                        demos a los usuarios que firmen las claves</li>
+                    <li>Erabiltzaile batek bermatzen du, bere gako pribatuarekin sinatuz, beste erabiltzaile baten gako publikoa fidagarria dela
+</li>
+                    <li>Konfidantza hedatzen doa, gakoak sinatzen dituzten erabiltzaileei ematen diegun konfidantzaren arabera</li>
                 </ul>
             
         </section>
 
         <section class="slide">
-            <h2>Niveles de confianza</h2>
+            <h2>Konfidantza mailak</h2>
 
                 <ul>
-                    <li>Desconocido: no nos fiamos de nada que firme ese
-                        usuario (por desconocimiento)</li>
-                    <li>Ninguno: no nos fiamos de nada que firme ese usuario
-                        (porque sabemos que lo hace mal)</li>
-                    <li>Marginal: nos fiamos de las claves firmadas por dos
-                        usuarios con confianza marginal</li>
-                    <li>Absoluto: nos fiamos de todo lo firmado por ese usuario</li>
+                    <li>Ezezaguna: erabiltzaile horrek sinatzen duenaz ez gara fidatzen (ezezaguna delako)
+</li>
+                    <li>Eza: erabiltzaile horrek sinatzen duenaz ez gara fidatzen
+                        (Badakigulako txarto egiten duela)</li>
+                    <li>Marginala: konfidantza marginala duten bi erabiltzailek sinatutako klabeengan konfidantza dugu</li>
+                    <li>Osoa: Erabiltzaile horrek sinatzen duen guztiaz fidatzen gara</li>
                 </ul>
             
         </section>
 
         <section class="slide">
-            <h2>Certificados digitales</h2>
+            <h2>Ziurtagiri digitalak</h2>
                 <ul>
-                    <li>Un certificado digital consiste en que una entidad “de
-                        confianza” firme mediante su clave privada, la clave
-                        pública de un usuario</li>
-                    <li>Sirve para certificar que el usuario es quien dice ser</li>
-                    <li>Depende de la confianza en la entidad que lo certifica</li>
+                    <li>Ziurtagiri digitala: konfidantzazko erakunde batek erabiltzaile baten gako publikoa sinatzea, bere gako pribatuarekin</li>
+                    <li>Erabiltzailea berak esaten duena dela bermatzeko balio du</li>
+                    <li>Bermea ematen duen erakundearenganako konfidantzaren arabera</li>
                 </ul>
         </section>
 
         <section class="slide">
-            <h2>Certificados digitales</h2>
+            <h2>Ziurtagiri digitalak</h2>
                 <ul>
-                    <li>Siguen el estándar X.509</li>
-                    <li>Validez != Confianza
+                    <li>X.509 estandarra</li>
+                    <li>Baliozkotasuna != konfidantza
                         <ul>
-                            <li>Validez: cumple los requisitos de una firma (caducidad,
-                                etc.)</li>
-                            <li>Confianza: nos podemos fiar de esa firma</li>
+                            <li>Baliozkotasuna: sinadura baten eskakizunak betetzen ditu (iraungipena,
+                                etab.)</li>
+                            <li>Konfidantza: sinadura horretaz fida gaitezke</li>
                         </ul>
                     </li>
-                    <li>Una firma puede ser válida, pero no de confianza</li>
-                    <li>Una firma de confianza que no sea válida no tiene
-                        sentido</li>
+                    <li>Sinadura batek baliozkotasuna eduki dezake, baina ez konfidantza</li>
+                    <li>Konfidantza duen baliogabeko sinadura batek ez dauka zentzurik</li>
                 </ul>
         </section>
 
         <section class="slide">
-            <h2>Certificados digitales</h2>
-            <p>Una autoridad de certificación (AC) certifica la validez
-                de una firma
+            <h2>Ziurtagiri digitalak</h2>
+            <p>Zertifikazio Autoritate batek sinadura baten baliozkotasuna bermatzen du
                 <ul>
-                    <li>Prestadores de Servicios de Certificación (PSC): Ley de Sinadura Electrónica (Ley 59/2003, LFE), Ley de Acceso Electrónico de los Ciudadanos a los Servicios Públicos (Ley 11/2007, LAESCP)</li>
-                    <li>Los PSCs deben proporcionar un método de consulta de
-                        la vigencia de sus certificados: Sólo las Administraciones Públicas tienen la obligación de
-                        que sea gratuito</li>
+                    <li>Ziurtapen-zerbitzuen emaileak (PSC): Ley de Firma Electrónica (Ley 59/2003, LFE), Ley de Acceso Electrónico de los Ciudadanos a los Servicios Públicos (Ley 11/2007, LAESCP)</li>
+                    <li>PSC-ak beraien ziurtagirien indarraldia kontsultatzeko metodo bat eman behar dute: erakunde publikoen kasuan musutruk izan behar du
+ </li>
                 </ul>
             </p>
         </section>
 
         <section class="slide">
-            <h2>Certificados digitales</h2>
-            <p>Jerarquía de certificación (RFC 1422)
+            <h2>Ziurtagiri digitalak</h2>
+            <p>Zertifikazio Hierarkia (RFC 1422)
             </p>
             <p>Internet Policy Registration Authority (IPRA) >> Policy Certification Authorities (PCA) >> Certification Authorities (CA): Verisign, Thawte, GeoTrust, RapidSSL, DigiCertSSL</p>
         </section>
 
         <section class="slide">
-            <h2>Un AC debe</h2>
+            <h2>CA (Zertifikazio Autoritate) batek</h2>
             
                 <ul>
-                    <li>Mantener una base de datos de nombres distinguidos
-                        (ND) y de ACs subordinadas</li>
-                    <li>Permitir la revocación de certificados:
+                    <li>Distinguised Name eta CA subordinatuak gordetzen dituen DB-a
+</li>
+                    <li>Ziurtagirien baliogabetzea:
                         <ul>
-                            <li>Clave privada del usuario comprometida</li>
-                            <li>AC ha emitido un certificado a quien no debía</li>
-                            <li>El usuario cambia de AC</li>
-                            <li>Violación de la seguridad de la AC</li>
+                            <li>Erabiltzailearen klabe pribatua konprometitua
+                                
+                                </li>
+                            <li>CA ziurtagiri bat okerreko norbaiteri eman dio</li>
+                            <li>Erabiltzaileak CA-z aldatzen du</li>
+                            <li>CA-aren segurtasuna apurtua</li>
                         </ul>
                     </li>
                     <li>CRL, Certification
-                        Revocation List: ejemplo <a href="https://www.geotrust.com/resources/repository/crls/">GeoTrust</a></li>
+                        Revocation List: adibidez <a href="https://www.geotrust.com/resources/repository/crls/">GeoTrust</a></li>
                 </ul>
             
         </section>
 
         <section class="slide">
-            <h2>Un AC debe</h2>
+            <h2>CA (Zertifikazio Autoritate) batek</h2>
             
                 <ul>
-                    <li>El protocolo OCSP (Online Certificate Status Protocol RFC 2560) permite validar el estado de un
-certificado digital de manera online</li>
-                    <li>Es más eficiente que la verificación mediante Listas de Revocación de Certificados (CRL)</li>
-                    <li>Ventaja: su actualización constante</li>
-                    <li>Desventaja: necesidad de conexión para la comprobación</li>
+                    <li>OCSP (Online Certificate Status Protocol RFC 2560) protokoloak ziurtagiri baten egoera online balioztatzea bermatzen du
+</li>
+                    <li>CRL-ak baino eraginkorragoa da</li>
+                    <li>Abantaila: beti eguneratua</li>
+                    <li>Desabantaila: konprobatzeko konektatu behar</li>
                 </ul>
             
         </section>
 
         <section class="slide">
-            <h2>Certificados digitales</h2>
-            <p>Cada AC que proporciona el servicio, mantiene un
-                servidor OCSP
+            <h2>Ziurtagiri digitalak</h2>
+            <p>Zerbitzua ematen duen CA bakoitzak OCSP zerbitzari bat mantentzen du
             </p>
-            <p>Este servicio responde a las aplicaciones cliente que
-                remitan una petición estandarizada y sepan
-                interpretar la respuesta</p>
+            <p>Eskakizun egokia egiten duten bezeroei erantzuten die</p>
         </section>
 
         <section class="slide">
-            <h2>Certificados digitales</h2>
-            <p>Tipos de certificados de clave pública:
+            <h2>Ziurtagiri digitalak</h2>
+            <p>Gako publikoko ziurtagiri motak:
                 <ul>
-                    <li>Certificado de autoridad</li>
-                    <li>Certificado de servidor</li>
-                    <li>Certificado personal</li>
-                    <li>Certificado de productor de software</li>
+                    <li>Autoritate ziurtagiriak</li>
+                    <li>Zerbitzari ziurtagiriak</li>
+                    <li>Ziurtagiri pertsonalak</li>
+                    <li>Software ziurtagiriak</li>
                 </ul>
             </p>
         </section>
 
         <section class="slide">
-            <h2>Certificados digitales</h2>
-            <p>Componentes de un certificado:
+            <h2>Ziurtagiri digitalak</h2>
+            <p>Ziurtagiri baten osagarriak:
                 <ul>
-                    <li>Versión</li>
-                    <li>Número de serie</li>
-                    <li>Identificador del algoritmo de firmado</li>
-                    <li>Nombre del emisor</li>
-                    <li>Periodo de validez</li>
-                    <li>Nombre del sujeto</li>
+                    <li>Bertsioa</li>
+                    <li>Serie zenbakia</li>
+                    <li>Sinadura algoritmoaren identifikatzailea</li>
+                    <li>Iraungipena</li>
+                    <li>...</li>
+
                 </ul>
             </p>
         </section>
 
         <section class="slide">
-            <h2>Certificados digitales</h2>
-            <p>Con un certificado digital conseguimos:
+            <h2>Ziurtagiri digitalak</h2>
+
                 <ul>
-                    <li>Confidencialidad al poder encriptar la información</li>
-                    <li>Integridad al poder realizar hash de la información y
-                        poder firmarla</li>
-                    <li>Autenticidad al venir firmada la información</li>
-                    <li>No repudio al firmar la información</li>
+                    <li>Konfidentzialtasuna informazioa enkriptatuz</li>
+                    <li>Informazioaren osotasuna hash eta sinadura bidez</li>
+                    <li>Kautotzea informazioa sinatua datorrelako</li>
+                    <li>Zapuztezintasuna informazioa sinatzean</li>
                 </ul>
-            </p>
+            
         </section>
         
-        
-       
         <section class="slide">
-            <h2>Criptografia cuantica</h2>
+            <h2>Kriptografia kuantikoa</h2>
             <p><iframe width="560" height="315" src="https://www.youtube.com/embed/uiiaAJ3c6dM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
         </section>
-
-
 
     <!-- FOOTER -->
 
