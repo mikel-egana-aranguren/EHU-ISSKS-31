@@ -1,1 +1,2 @@
 Zifraketa
+Idazkera
