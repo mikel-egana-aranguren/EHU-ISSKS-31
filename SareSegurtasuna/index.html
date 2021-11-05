@@ -42,9 +42,7 @@
             <li>Definizioak</li>
             <li>Arriskuak eta babesak</li>
             <li>Adibideak</li>
-            <li>Wi-Fi sareak</li>
             <li>Eraso ohikoenak</li>
-
         </ul>
     </section>
 
@@ -395,6 +393,82 @@ NBA (Network Behaviour Analysis): sareko trafikoaren portaera aztertzen du<br>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/FihkG72z7MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </section>
+
+    <section class="slide">
+        <h2>Arkitektura seguruaren adibidea</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/EjemploArquitecturaSeguridad.png" alt="Ejemplo Arquitectura Seguridad" width="70%"></p>
+
+
+    </section>
+
+    <section class="slide">
+        <h2>Arkitektura seguruaren adibidea</h2>
+        Suebakia instalatzea:
+        <ul>
+            <li>DMZ eta barneko sarea</li>
+            <li>Politika murriztailea</li>
+        </ul>
+        Antispam eta antibirusak instalatzea<br>
+        NIDS-ak instalatzea hiru interfazetan<br>
+    </section>
+
+    <section class="slide">
+        <h2>Arkitektura seguruaren adibidea</h2>
+        Segmentazioa:
+        <ul>
+            <li>Publikoa: Web, antispam/antibirus pasabideak</li>
+            <li>Pribatua: DB, posta zerbitzaria</li>
+        </ul>
+        Urruneko bezeroek VPN erabiltzen dute<br>
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Sniffing: Sarean zehar doan informazioa intertzeptatzea <br><br>
+        Man in the middle: 
+        Informazioa intertzeptatzeaz gain, nahierara txertatu eta alda daiteke
+         
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Hijacking: 
+        Sisteman baimendutako erabiltzaile bati konexioak lapurtzea
+         <br><br>
+        <ul>
+            <li>IP Hijacking</li>
+            <li>Session hijacking</li>
+            <li>DNS Hijacking</li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Spoofing (Ordezpen) <br><br>
+        <ul>
+            <li>IP Spoofing</li>
+            <li>MAC Spoofing</li>
+            <li>DNS Spoofing</li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        "Denegación de Servicio (DoS)": 
+        Hardwarea edo softwarea "saturatzen" da erantzuteari utzi arte
+         <br><br>
+        "Ataque Distribuido de Denegación de Servicio (DDoS)":
+        <ul>
+            <li>
+                Hainbat makinatatik egiten da.
+                </li>
+            <li>Batek master lanak egiten ditu eta besteak koordinatzen ditu</li>
+        </ul>
+        <a href="https://therecord.media/gitlab-servers-are-being-exploited-in-ddos-attacks-in-excess-of-1-tbps/">GitLab servers are being exploited in DDoS attacks in excess of 1 Tbps</a>
+    </section>
+
 
     
 
