@@ -36,27 +36,274 @@
         <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
     </section>
 
+
     <section class="slide">
-        <h2>Principales vulnerabilidades en Sistemas Web</h2>
-        Las aplicaciones deben ser seguras <br><br>
-        La <a href="https://owasp.org/">Open Web Application Security Project (OWASP)</a> analiza las vulnerabilidades más comunes<br><br>
-        Informe periódico: OWASP Top Ten (<del>2017</del>, <a href="https://owasp.org/www-project-top-ten/">2021</a>)
+        <h2>Ahultasun nagusiak web sistemetan</h2>
+        Aplikazioak seguruak izan behar dira <br><br>
+        <a href="https://owasp.org/">Open Web Application Security Project-ek (OWASP)</a> ahulezia ohikoenak aztertzen ditu<br><br>
+        Aldizkako txostena: OWASP Top (<del>2017</del>, <a href="https://owasp.org/www-project-top-ten/">2021</a>)
     </section>
 
     <section class="slide">
-        <h2>A1 - Inyección</h2>
-        Datos no confiables son enviados como parte de una consulta a un intérprete<br>
-        Se puede engañar al intérprete y lograr acceso a datos no autorizados<br>
-        El más conocido SQL Injection <br>
+        <h2>A1 - Injekzioa</h2>
+        Fidagarriak ez diren datuak interprete bati bidaltzen zaizkio kontsulta baten parte gisa<br>
+        Interpretea engainatu daiteke eta baimendu gabeko datuetarako sarbidea lortu<br>
+        Ezagunena SQL Injection <br>
         <a href="https://owasp.org/www-project-top-ten/2017/A1_2017-Injection.html">A1:2017-Injection</a> <br>
         <a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection">Testing for SQL injection</a>
 
     </section>
 
-    <section class="slide">
-        <h2>A1 - Caso real</h2>
+        <section class="slide">
+            <h2>A1 - Injekzioa</h2>
+            <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/injection.png" alt="Ejemplo Arquitectura Seguridad" width="70%"></p>
+            <a href="https://securityboulevard.com/2019/06/sql-injection-attacks-so-old-but-still-so-relevant-heres-why-charts/">SQL Injection Attacks: So Old, but Still So Relevant. Here’s Why (Charts)</a>
+    
+        </section>
 
-    </section>
+        <section class="slide">
+            <h2>A1 - Injekzioa</h2>
+        Nola ekidin?
+        <ul>
+            <li>Sarrerak baliozkotzea karaktere "arriskutsuak" saihestuz</li>
+            <li>Administratzaile-pribilegioak dituzten kontuak ez erabiltzea</li>
+            <li>Behar baino informazio gehiago ez ematea (erabiltzaileari akatsen berri ez ematea)</li>
+            <li>SQL sententziak ez eraikitzea zuzenean jasotako balioekin, sententzia parametrizatuak erabiltzea</li>
+        </ul>
+    
+        </section>
+
+        <section class="slide">
+            <h2>A1 - Injekzioa</h2>
+        Nola ekidin? Datuak iragazi
+        <ul>
+            <li>Formularioan username eremua badugu, eta badakigu erabiltzaileak letra eta zenbakiz bakarrik osatuta egon daitezkeela, ez da onartu behar "'" edo "=" bezalako karaktererik</li>
+            <li>E-mail eremua bada, expresio erregularrak erabil ditzakegu baliozkotzeko, hala nola preg_match ('/ ا.+ @ .+\.. {2,3} $/', $_POST ['email'])</li>
+        </ul>
+    
+        </section>
+
+
+        <section class="slide">
+            <h2>A1 - Injekzioa</h2>
+        Nola ekidin? Datuak iragazi
+        <ul>
+            <li>"Escape" funtzioak SQL sententzia batean erabiltzeko: mysql_real_escape_string () barra alderantzikatuak jartzen ditu honako karaktere hauen aurretik:\x00,\n,\r,\, ', "Eta\x1a</li>
+            <li>Addslashes (), (PHP magic_quotes_gpc zuzentaraua lehenetsita aktibatuta dago, eta addslashes () funtzioa GET, POST eta COOKIE datu guztietan exekutatzen du)</li>
+        </ul>
+    
+        </section>
+
+
+        <section class="slide">
+            <h2>A2 - Autentifikazioa galtzea</h2>
+            Erabiltzaile zilegi batek ezarritako saio batez baliatzea <br>
+            Ikusgarriak diren saio-identifikatzaileak erabiltzen badira, a posteriori kopiatu eta erabil daitezke<br>
+            Saioaren identifikatzailea cookie batean gordetzen bada, eskura daiteke
+            <ul>
+                <li>XSS eraso baten bidez</li>
+                <li>Sarean entzute baten bidez</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A2 - Autentifikazioa galtzea</h2>
+            Saioa ixten ez bada, URL berean sar daiteke erabiltzaile legitimoak bere makina utzi duenean<br/>
+        </section>
+
+        <section class="slide">
+            <h2>A2 - Autentifikazioa galtzea</h2>
+            Arrazoi posibleak
+            <ul>
+                <li>Pasahitz erraz eta ezagunak erabiltzea (1234, admin, etab.)</li>
+                <li>Segurtasun-galdera errazak edo konfigurazio gutxikoak erabiltzea</li>
+                <li>Pasahitzak ez dira enkriptatzen algoritmo seguru batekin</li>
+                <li>Pasahitza erakusten da url-ean</li>
+                <li>Saioen kudeaketa okerra</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A2 - Autentifikazioa galtzea</h2>
+            Cookien arazoak
+            <ul>
+                <li>Saioaren datuak modu iraunkorrean gordetzen badituzte, edonork eskura ditzake</li>
+                <li>Script lengoaia erabiliz, fitxategian eta haren balioetan sar daiteke webgunean nabigatzen den bitartean</li>
+                <li>Cookiearen datuak zifratu gabe bidaltzen badira, edonork entzun ditzake sarean</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A2 - Autentifikazioa galtzea</h2>
+            Nola ekidin?
+            <ul>
+                <li>Saioa itxi erabiltzailea deslogeatzen denean</li>
+                <li>Saioa ixtea erabiltzaileak denbora pixka bat pasatzen duenean ezer egin gabe (timeout)</li>
+                <li>Script lengoaien bidez sartzea saihesteko, <b>httponly</b> atributua erabili</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A2 - Autentifikazioa galtzea</h2>
+            <a href="https://haveibeenpwned.com/">';--have i been pwned?</a>
+    
+        </section>
+
+        <section class="slide">
+            <h2>A3 - Datuen esposizioa</h2>
+            <ul>
+                <li>Datuak zifratu gabe biltegiratzea</li>
+                <li>Zifratu gabeko datuen transmisioa</li>
+                <li>Zifratze-algoritmo ahulak erabiltzea</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A3 - Datuen esposizioa</h2>
+            Nola ekidin?
+            <ul>
+                <li>Informazio sentikorra zifratuta biltegiratzen</li>
+                <li>Informazio sentikorra protokolo seguruen bidez bidaltzen dela ziurtatuz</li>
+                <li>Zifratze-algoritmo sendoak erabiliz</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A4 - Kanpoko XML entitateak </h2>
+            Web zerbitzu askok dituzten XML prozesadoreetako ahultasunez baliatzea<br>
+            <ul>
+                <li>Kode txertatua duten XML fitxategiak igotzen</li>
+                <li>XML fitxategien gelak erabiliz</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A4 - Kanpoko XML entitateak </h2>
+            Nola ekidin?
+            <ul>
+                <li>Ez erabili XML formatua (JSON erabili)</li>
+                <li>XML fitxategi oro baliozkotzea, prozesatu aurretik</li>
+                <li>XML prozesadoreak eguneratzea, ahultasun ezagunak saihesteko</li>
+                <li>XML fitxategiak bidaltzeko jatorriak mugatzea</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A5 - Sarbide-kontrola haustea </h2>
+            Autentifikaziorik gabe edo objektuekiko autentifikazio desegokiarekin sartzea<br><br>
+            <b>www.sitio.com/consultar_datos.php?dni=45</b> (NAN = 45 duen erabiltzaileak bakarrik ikusi beharko lituzke bere datuak. Ez da nahikoa jakitea sartu nahi duen erabiltzailea logeatuta dagoen, NANa = 45 den jakin behar da)
+
+        </section>
+
+        <section class="slide">
+            <h2>A5 - Sarbide-kontrola haustea </h2>
+            Nola ekidin?
+            <ul>
+                <li>Cookieak edo saioak erabiliz</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A6 - Segurtasun-konfigurazio okerra </h2>
+            Aplikazioaren konfigurazio ona ez izatea ezjakintasunagatik/despisteagatik/utzikeriagatik
+            <ul>
+                <li>Lehenetsita sortzen diren kontuak/zerbitzuak mantentzen al dira?</li>
+                <li>Gaituta al daude behar ez luketen funtzionalitateak?</li>
+                <li>Administratzaile-baimena duten erabiltzaileekin lan egiten da?</li>
+                <li>Eguneratu gabeko softwarearekin lan egiten da?</li>
+                <li>Zilegi al da pasahitz txarrak erabiltzea?</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A6 - Segurtasun-konfigurazio okerra </h2>
+            Nola ekidin?
+            <ul>
+                <li>Erabiltzen ez diren zerbitzu-kontuak ezabatzea</li>
+                <li>Programa askok berez dakartzaten pasahitzak aldatzea</li>
+                <li>Erabiltzen ez diren portuak/zerbitzuak desgaitzea</li>
+                <li>Aplikazioak eguneratzea</li>
+                <li>Erabiltzaileak pasahitz "seguruak" erabiltzera behartzea</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A6 - Segurtasun-konfigurazio okerra </h2>
+            Nola ekidin?
+            <ul>
+                <li>Aplikazio bakoitzerako erabiltzaile espezifikoak definitzea aplikazio horri dagozkion baimenekin (MySQL aplikazioan, konexioetarako root erabiltzailea ez erabiltzea. Aplikaziorako erabiltzaile bat edo batzuk sortzea, dagozkien taulen gainean dagozkien baimenekin)</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A7 - Komandoen sekuentzia leku gurutzatuetan (XSS) </h2>
+            Exekutatu erabiltzaileak berak sar dezakeen kodea Script lengoaian <br>
+            Metodorik errazena, formulario-eremuen bidez <br>
+            Iraunkorrak izan daitezke scripta datu-base batean biltegiratzen bada:
+            <ul>
+                <li>Biltegiratzen den eremu gisa sartzen da</li>
+                <li>Eremu horren balioa erakusten den bakoitzean exekutatzen da</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A7 - Komandoen sekuentzia leku gurutzatuetan (XSS) </h2>
+            Nola ekidin?
+            <ul>
+                <li>Erabiltzaileak sartzen duen testua garbituz ("Escape"), karaktere arriskutsuak kenduz</li>
+                <li>URLtik lortzen ditugun balioak garbituz, karaktere arriskutsuak ezabatuz</li>
+                <li>Funtzio batzuek "Escape" lana testu garbi bat itzuliz egiten dute</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A8 - Deserializazio ez-segurua </h2>
+            Datuak paketatzeko prozesuaz aprobetxatzea datu faltsuak/maltzurrak sartuz <br><br>
+            Datuak prozesatzen dituzten formatuetan datozenean, horietatik abiatuta objektuak eraikitzeko, nahi ez diren objektuak sortzen dituzten datuak sar daitezke 
+        </section>
+
+        <section class="slide">
+            <h2>A8 - Deserializazio ez-segurua </h2>
+            Nola ekidin?
+            <ul>
+                <li>Datu primitiboetan soilik datuak onartzen dituzten formatuak erabiliz (string, int, etab.), adibidez JSON</li>
+                <li>Sinatuta datozen datuak soilik paketatuz</li>
+                <li>Jatorri fidagarrietatik datozen datuak bakarrik deserializatuz</li>
+                <li>Deserializazio-prozesua aplikazioaren gainerakotik kanpo eta ingurune kontrolatu batean gauzatuz</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A9 - Ahulezia ezagunak dituzten osagaiak erabiltzea </h2>
+            Nola ekidin?
+            <ul>
+                <li>Adi egon kalteberatasunak argitaratzen direnean</li>
+                <li>Atera bezain laster, dagozkien adabakiak aplikatuz</li>
+                <li>Kalteberatasunik ez duten alternatibak bilatzen</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A10 - Logeo eta monitorizazio ez nahikoak </h2>
+            Ez erregistratu sartzeko saiakerak, arrakasta izan edo ez<br>
+            Sartzeko saiakeren informazioa oso baliotsua izan daiteke
+            <ul>
+                <li>Jokabide susmagarriak detektatzeko (langileak sisteman sartzen, behar ez dutenean)</li>
+                <li>Erasoak detektatzeko (erabiltzaile berarekin huts egindako hainbat saiakera)</li>
+                <li>Kasu batzuetan, ezinbestekoa da informazio hori gordetzea, DBLO (LOPD) dela eta</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>A10 - Logeo eta monitorizazio ez nahikoak </h2>
+            Nola ekidin?
+            <ul>
+                <li>Konexio arrakastatsuei eta huts egindakoei buruzko informazioa biltegiratuz</li>
+                <li>Konexioei buruzko informazioa aztertzen</li>
+                <li>Erabiltzailea blokeatu X saiakera huts jarraian baditu</li>
+            </ul>
+        </section>
+
 
     
     <!-- FOOTER -->
