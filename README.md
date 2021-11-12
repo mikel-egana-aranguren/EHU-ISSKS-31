@@ -10,5 +10,6 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak ikasgaiaren eskolak
 6. [Segurtasun fisikoa](InformazioSegurtasunaKudeatzekoSistemak/index.html)
 7. [Segurtasuna sareetan](SareSegurtasuna/index.html)
 8. [Web Segurtasuna](WebSegurtasuna/index.html)
+9. [Informatika forensea](InformatikaForensea/index.html)
 
 [![DOI](https://zenodo.org/badge/405099738.svg)](https://zenodo.org/badge/latestdoi/405099738)
