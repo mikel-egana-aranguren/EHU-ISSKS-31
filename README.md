@@ -11,5 +11,7 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak ikasgaiaren eskolak
 7. [Segurtasuna sareetan](SareSegurtasuna/index.html)
 8. [Web Segurtasuna](WebSegurtasuna/index.html)
 9. [Informatika forensea](InformatikaForensea/index.html)
+10. [Ingenieritza soziala](GizaFaktorea/index.html)
+11. [Deep Web](DeepWeb/index.html)
 
 [![DOI](https://zenodo.org/badge/405099738.svg)](https://zenodo.org/badge/latestdoi/405099738)
