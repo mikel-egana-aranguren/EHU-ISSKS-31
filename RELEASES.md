@@ -7,3 +7,6 @@ SegurtasunFisikoa
 Sare segurtasuna
 Web segurtasuna
 Informatika Forensea
+Ingenieritza soziala
+Deep Web
+Hitzaldiak
