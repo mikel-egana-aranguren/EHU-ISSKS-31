@@ -76,17 +76,6 @@ Eskola magistralak (M) segurtasun informatikoarekin lotutako kontzeptu teorikoak
 
 Ordenagailuekin egindako praktiketan ere, Arazoetan Oinarritutako Irakaskuntza aplikatuko da. Bertan, ikasleek beste ariketa mota batzuk jasoko dituzte, bai banaka edo bai taldeka ebazteko modukoak.
 
-Baimenduta dagoen bitartean, irakasgai honen presentzialtasun maila 100%-a izango da.
-
-ONLINE ESKOLAK (SALBUESPENEKO EGOERAK)
-
-Behar izanez gero, online eskolak ere emango dira. Geletan aforoa mugatuta dagoenez, bi gela prestatuko dira eskolen ordutegi berean, batan presentziala emateko (aforoa bete arte sartuko dira ikasleak) eta bestean (esan bezala ordu berean) streaming bidez bistaratu ahal izateko. Osasun egoerak horrela eskatzen badu, irakaskuntza online modalitatean emango da, UPV/EHUk eskaintzen dituen baliabideak erabiliz (eGela, BlackBoardCollaborate, ...)
-
-Eskola presentzialak emateko aukerarik ez balego, berauek online emango dira. Salbuespeneko egoera den heinean, online eskoletan ikasleen lana kalifikatzeko erabiliko diren irizpideak ere bereziak izango dira eta irakasleek zehaztu beharko dute irakasgai-talde bakoitzean. Irizpideen moldaketa hauek eGelan argitaratuko dira. Eskola egunak ez dira aldatuko, ordutegia eskola presentzialetan erabiltzen dena izaten jarraituko du.
-
-INFORMAZIO ZEHATZAGOA :
-- UPV/EHUko eGelan argitaratuko da, irakasgaiaren webgunean, zehazki "Irakaskuntza eta Ebaluazio ez-presentzialaren plana" izeneko dokumentuan.
-
 ## IRAKASKUNTZA MOTAK 
 
 * M 45 (67,5)
@@ -104,7 +93,7 @@ INFORMAZIO ZEHATZAGOA :
 
 ## OHIKO DEIALDIA: ORIENTAZIOAK ETA UKO EGITEA (EUSKARAZ)  
 
-Ohiko deialdian, besterik adierazi ezean, ikasleek ebaluaketa jarraitua egingo dutela ulertzen da. Ikasle batek ebaluaketa finala egin nahiko balu, emailez jakinarazi beharko du, dagokion datan.
+Ohiko deialdian, besterik adierazi ezean, ikasleek ebaluaketa jarraitua egingo dutela ulertzen da. Ikasle batek ebaluaketa finala egin nahiko balu, emailez jakinarazi beharko du, 9. astea baino lehenago.
 Ebaluaketa jarraituan, ebaluazioa 3 zatitan banatuko da, bakoitzak azterketa teoriko eta praktiko bat izango duelarik. Azterketa horien kalifikazioaren batazbestekoa kalkulatuko da zati horren nota zehazteko. Azterketa bakoitzaren edukia eskoletan landutakoari buruz eta zati horri dagokizon laborategiko edukian oinarrituko da. 
 Horrez gain, lauhilekoan zehar zenbait lan egingo dira, irakasgaiaren azken kalifikazioan eragina izango dutena. 
 Ebaluazketa jarraituari uko egin eta azterketa finala egitera aurkeztu nahi diren ikasleek, bi azterketa izango dituzte: bata teorikoa eta beste bat praktikoa, irakasgaiaren gaitegi osoa kontutan izango dutena. Irakasgaiaren azken nota bi azterketa horien batezbesteko notarekin kalkulatuko da.
@@ -115,7 +104,7 @@ Lan guztiek zuzen eta txukun idatzi behar dira. Beraz, lan batean 3 akats ortogr
 
 KOPIA KASUAK:
 Bi talde ezberdinen artean kopia bat egon dela antzematen bada, bi lan horiek 0 batekin kalifikatuko dira. 
-Azterketa kasuetan, ikasleen ebaluazioari dagokion eta indarrean dagoen arautegiko 46.2 artikulua aplikatuko da.
+Azterketa kasuetan, ikasleen ebaluazioari dagokion eta indarrean dagoen Ikasleen Ebaluaziorako Arautegiko 11.3 artikulua aplikatuko da.
 
 DEIALDIARI UKO EGIN:
 Ebaluaketa jarraituari atxikitako ikasle batek deialdiari uko egin eta “Ez aurkeztua” kalifikazioa lortu nahiko balu, eGelan eskatu beharko du dagokion epean. Ebaluaketa finalari atxikitako ikasleen kasuan, nahikoa izango da azterketa egunean ez aurkeztearekin.
