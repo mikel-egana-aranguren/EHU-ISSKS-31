@@ -1,17 +1,28 @@
 # EHU-ISSKS-31
 
-Informazio Sistemen Segurtasuna Kudeatzeko Sistemak ikasgaiaren eskolak
+Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak, [Kudeaketaren eta Informazio Sistemen Informatikaren Ingeniaritzako Graduko](https://www.ehu.eus/eu/kudeaketaren-eta-informazio-sistemen-informatikaren-ingeniaritzako-gradua-bizkaia) hirugarren maila.
 
-1. [Sarrera](Sarrera/index.html)
-2. [Backup](Backup/index.html)
-3. [Zifraketa](Zifraketa/index.html)
-4. [Bitcoin](Bitcoin/index.html)
-5. [Malwarea](Malware/index.html)
-6. [Segurtasun fisikoa](InformazioSegurtasunaKudeatzekoSistemak/index.html)
-7. [Segurtasuna sareetan](SareSegurtasuna/index.html)
-8. [Web Segurtasuna](WebSegurtasuna/index.html)
-9. [Informatika forensea](InformatikaForensea/index.html)
-10. [Ingenieritza soziala](GizaFaktorea/index.html)
-11. [Deep Web](DeepWeb/index.html)
+* [Sarrera](Sarrera/index.html)
+* I Blokea: Zifraketa
+  * [Zifraketa sarrera eta historia](Zifraketa_intro/index.html)
+  * [Esteganografia](Zifraketa_esteganografia/index.html)
+  * [Laburpen algoritmoak](Zifraketa_laburpen/index.html)
+  * [Zifraketa simetrikoa](Zifraketa_simetrikoa/index.html)
+  * [Zifraketa asimetrikoa](Zifraketa_asimetrikoa/index.html)
+  * Aplikazioak: sinadura, komunikazio seguruak
+  * Aplikazioak: [Zertifikatuak](Zertifikatuak/index.html)
+  * Aplikazioak: [Bitcoin](Bitcoin/index.html)
+* II Blokea: Sistemak
+  * [Segurtasuna kopiak](Backup/index.html)
+  * [Segurtasuna Web Sistemetan](WebSegurtasuna/index.html)
+  * Segurtasuna sareetan
+  * Segurtasun fisikoa
+* III Blokea: Gizartea
+  * Giza faktorea
+  * Malwarea
+  * Informatika forentsea
+  * Deep web, Snowden, ...
+  * Legeak
+  * Hitzaldiak
 
 [![DOI](https://zenodo.org/badge/405099738.svg)](https://zenodo.org/badge/latestdoi/405099738)
