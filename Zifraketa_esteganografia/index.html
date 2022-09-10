@@ -37,9 +37,9 @@
         <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
     </section>
 
-    
     <section class="slide">
         <h2>Esteganografia</h2>
+        <p>"steganos": ezkutua; "graphos": idazkera</p>
         <p>Informazioa ostentzean datza, ikusgarria izateko gakoa dakienarentzat soilik</p>
         <p>Gakoa jakin barik, badirudi ez dagoela informazioa ezkutaturik</p>
         <p>Kriptografiaren aitzindaria</p>   
@@ -56,6 +56,12 @@
                 <li>Helburuan ilea ebaki eta mezua irakurri</li>
             </ul>
         </p>   
+    </section>
+
+    <section class="slide">
+        <h2>Esteganografia</h2>
+        <p>Bigarren Mundu Gerra</p>
+        <p>Alemaniarrek mikro puntuak erabiltzen zituzten testuetan informazioa ezkutatzeko, puntuazio-zeinuen itxura emanez</p>   
     </section>
 
     <section class="slide">
@@ -79,28 +85,53 @@
     </section>
 
     <section class="slide">
-        <h2>Esteganografia</h2>
+        <h2>Gaur eguneko esteganografia</h2>
+        <p>Informazio garrantzitsua <b>fitxategi edukiontzian</b> txertatzea
+            </p>
+        <p>
+            <ul>
+                <li>Bit-ak ordezkatzea</li>
+                <li>Bitak amaieran txertatzea, EOF (End Of File) markaren ondoren</li>
+                <li>Ezkutatu beharreko informaziotik abiatuta beren-beregi fitxategi edukiontzia sortzea</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Bit-ak ordezkatzea</h2>
         <p>Informazioa ezkutatzea multimedia artxibotan (normalean irudiak)</p>
         <p>BMP formatuan pixel bakoitza RGB-n 3 byte dira</p>  
         <p>LSB (Less Significant Bit): byte bakoitzaren azken bit-a aldatzeak ez dauka efekturik</p>   
     </section>
 
     <section class="slide">
-        <h2>Esteganografia</h2>
+        <h2>Bit-ak ordezkatzea</h2>
         <p>Adibidez, textua ezkutatzeko nahi dugun hizkiaren ASCII kodea txertatzen dugu</p>
         <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/LSB.png" alt="Esteganografia" width="40%"></p>
     </section>
 
+
+
     <section class="slide">
-        <h2>Enkriptazio metodoak</h2>
-        <p>Helburuak
-            <ul>
-                <li>Mezua ulertezin bihurtu</li>
-                <li>Zifratutako informazioa berreskuratu</li>
-                <li>Inplementazioa ahalik eta sinpleena</li>
-            </ul>
-        </p>
+        <h2>Gaur eguneko esteganografia</h2>
+        <ul>
+            <li>Normalean pasahitzak erabiltzen dituzten programekin</li>
+            <li>Nola sendotu sistema?</li>
+            <li class="next">Informazioa zifratu txertatu baino lehen (Kriptografia + esteganografia)</li>
+        </ul>
     </section>
+
+    <section class="slide">
+        <h2>Gaur eguneko esteganografia: arazoak</h2>
+        <ul>
+            <li>Fitxategi edukiontzia norbaitek aldatzen badu informazioa gal dezake (adib. JPEG --> BMP --> JPEG)</li>
+            <li>Ez ditu <b>Kautotzea</b> ezta <b>Osotasuna</b> bermatzen (Baina <b>>Konfidentzialtasuna</b> bai)</li>
+        </ul>
+    </section>
+
+
+
+
 
 
 
