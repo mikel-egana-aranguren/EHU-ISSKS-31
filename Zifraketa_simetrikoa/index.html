@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Zifraketa</title>
+    <title>Zifraketa simetrikoa</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../ShowerTemplate/shower/themes/ribbon/styles/styles.css">
@@ -18,12 +18,12 @@
 </head>
 <body class="shower list">
     <header class="caption">
-        <h1>Zifraketa</h1>
+        <h1>Zifraketa simetrikoa</h1>
         <p>Mikel Egaña Aranguren</p>
     </header>
 
     <section class="slide" id="cover">
-        <h2>Zifraketa</h2>
+        <h2>Zifraketa simetrikoa</h2>
         <p>Mikel Egaña Aranguren</p>
         <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p>
         <p><a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a></p>
@@ -31,11 +31,462 @@
     </section>
 
     <section class="slide">
-        <h2>Zifraketa</h2>
+        <h2>Zifraketa simetrikoa</h2>
         <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
         <p><a href="https://github.com/mikel-egana-aranguren/EHU-SGSSI-01">https://github.com/mikel-egana-aranguren/EHU-SGSSI-01</a></p>
         <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
     </section>
+
+    <section class="slide">
+        <h2>Gako pribatuko kriptosistemak</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/clave_privada.png" alt="criptosistema clave privada" width="60%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Gako pribatuko kriptosistemak</h2>
+        <p><b>Fluxu zifraketa:</b> Bit-fluxu jarraia zifratzea</p>
+        <p><b>Bloke zifraketa:</b> Zatitu mezua tamaina bereko blokeetan eta aplikatu algoritmoa bakoitzari</p>  
+    </section>
+
+    <section class="slide">
+        <h2>Gako pribatuko kriptosistemak: Helburuak</h2>
+            <ul>
+                <li>Mezua ulertezin bihurtu</li>
+                <li>Zifratutako informazioa berreskuratu</li>
+                <li>Inplementazioa ahalik eta sinpleena</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Gako pribatuko kriptosistemak</h2>
+        <p>Oinarrizko teknikak kriptografia klasikoan 
+            <ul>
+                <li>Transposizioa (jatorrizko hizkiak lekuz aldatzen dira soilik)</li>
+                <li>Ordezkapena (jatorrizko hizkiak beste hizkiekin aldatzen dira)</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Kriptografiaren historia</h2>
+            <ul>
+                <li>1948 arte, Kriptografia aurre-zientifikoa</li>
+                <li class="next">1948-an, Claude Shannon-ek Informazioaren Teoriaren eta Kriptografia modernoaren oinarrik ezartzen ditu</li>
+                <li class="next">1976-an Diffie & Hellman-ek gako publikoko Kriptografia kontzeptua plazaratzen dute</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Esparta-ko Escitaloren metodoa</h2>
+        <p>Paper tira bat makila batean kiribildu eta mezua idatzi</p>
+        <p>Papera askatu eta mezua bidali</p>
+    </section>
+
+    <section class="slide">
+        <h2>Esparta-ko Escitaloren metodoa</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/escitalo-1.png" alt="Escitalo" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/escitalo-2.png" alt="Escitalo" width="60%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Esparta-ko Escitaloren metodoa</h2>
+        <p>Mezua deszifratzeko makila berdin-berdina beharrezkoa da</p>
+        <p>Paper tira makilaren inguruan kiribildu eta mezua irakurri</p>
+        <p>Sistema honen gakoa makilaren diametroa da</p>
+    </section>
+
+    <section class="slide">
+        <h2>Escitaloren metodoa 2.0</h2>
+        <p>Mezua zutabetan banatu</p>
+        <p>Gakoa: zutabe kopurua eta ordena</p>
+    </section>
+
+    <section class="slide">
+        <h2>Escitaloren metodoa 2.0</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/escitalo-3.png" alt="Escitalo" width="60%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Escitaloren metodoa 2.0</h2>
+        <p>Kriptoanalisia
+            <ul>
+                <li>Konbinatorian oinarritzen da</li>
+                <li>Blokeen tamaina kalkulatu</li>
+                <li>Blokeak orden ezberdinean konbinatu zentzua duen mezua aurkitu arte</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Cesar Metodoa</h2>
+        <p>Zifraketa monoalfabetikoa</p>
+        <p>Julius Caesar-ek erabilia</p>
+        <p>Hikzki bakoitzak alfabetoan duen posizioari 3 gehitzean datza</p>
+    </section>
+
+    <section class="slide">
+        <h2>Cesar Metodoa</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/cesar.png" alt="Atbash" width="60%"></p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Atbash metodoa (Ispilua)</h2>
+        <p>Zifraketa monoalfabetikoa</p>
+        <p>Hebrear alfabetotik datorren teknika</p>
+        <p>Hizki bakoitza bere "aurkakoarekin" aldatu</p>
+    </section>
+
+    <section class="slide">
+        <h2>Atbash metodoa (Ispilua)</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/atbash.png" alt="Atbash" width="60%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Afin metodoa</h2>
+        <p>Zifraketa monoalfabetikoa</p>
+        <p>Cesar Metodoaren orokortzea</p>
+        <p>E(<sub>a;b</sub>)(M) = (aM + b) mod N</p>
+        <p>N alfabetoaren hizki zenbakia da</p>
+        <p>Cesar: afin E(1,3)</p>
+    </section>
+
+    <section class="slide">
+        <h2>Hiztegi metodoa</h2>
+        <p>Zifraketa monoalfabetikoa</p>
+        <p>Korrespondentzien taula "eskuz" sortu</p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/diccionario.png" alt="Diccionario" width="60%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Polybius metodoa</h2>
+        <p>Zifraketa monoalfabetikoa</p>
+        <p>Zenbakiak edo hizkiak</p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/polybius.png" alt="Polybius" width="60%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Ordezkapen metodo monoalfabetikoak</h2>
+        <p>Estatistikan oinarritutako metodoa</p>
+        <p>Al-Kindi-k 9 mendean sortua</p>
+        <p>Jatorrizko hizkia beti ordezkatzen da hizki berdinagatik</p>
+        <p>Hizkuntza bakoitzean badakigu hizki bakoitza zenbat agertzen den</p>
+        <p>Badakizkigu zeintzuk diren gehien agertzen diren 2/3/4 hizkiko hitzak hizkuntza bakoitzean</p>
+    </section>
+
+    <section class="slide">
+        <h2>Ordezkapen metodo monoalfabetikoak</h2>
+        <p>Probak egin, ondorioztatu</p>
+        <p>Zifratutako textua zenbat eta luzeago, hobeto</p>
+        <p>Jatorrizko mezuaren textuaren hizkuntza jakin behar dugu</p>
+    </section>
+
+    <section class="slide">
+        <h2>Ordezkapen metodo monoalfabetikoak</h2>
+        <p>Gaztelerazko hizkien portzentaiak</p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/Fecuencias.png" alt="Frecuencias" width="20%"></p>
+        <p><a href="http://www.epsilones.com/paginas/laboratorio/laboratorio-014-descifradoifrecuencias.html">Adibibea: frekuentzien analisian oinarritutako deszifraketa</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Ordezkapen metodo monoalfabetikoak</h2>
+        <p>Kriptoanalisia zailtzeko metodoak
+            <ul>
+                <li>Hutsuneak kendu</li>
+                <li>Jatorrizko textua aldatu, esanahia mantenduz (Adib. SMS, WhatsApp, ...)</li>
+                <li>Esanahia duten piktogramak erabili (kodeen liburua)</li>
+                <li>1-1 korrespondentzia ekidin, hizki berdina behin baino gehiagotan erabiliz (Sistema Polialfabetikoak)</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Alberti-ren diskoa</h2>
+        <p>Lehenengo sistema polialfabetikoa</p>
+        <p>Bi disko zentrokide, barrukoa mugikorra</p>
+        <p>Zifraketan barrukoa mugitzen doa, X alfabeto (Korrespondentzia) ezberdin erabiltzen dugularik
+</p>
+        <p>Gakoa jatorrizko posizioa da, zenbat hizki pasa ondoren biratzen den diskoa, zenbat biratzen den diskoa, eta zein zentzutan
+</p>
+    </section>
+
+    <section class="slide">
+        <h2>Alberti-ren diskoa</h2>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/GaQVO039M8k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </section>
+
+    <section class="slide">
+        <h2>Enigma makina</h2>
+        <p>Historia osoko elementu kriptografiko ezagunena</p>
+        <p>Jatorrian gizartean erabiltzeko</p>
+        <p>Erabilera militarrerako eraldatua, batez ere Naziek</p>
+    </section>
+
+    <section class="slide">
+        <h2>Enigma makina</h2>
+        <p><iframe width="560" height="315" src="https://www.youtube.com/embed/G2_Q9FoD-oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </section>
+
+    <section class="slide">
+        <h2>Enigma makina</h2>
+        <p>Marian Rejewski matematikari poloniarrak Enigma desenkriptatzeko oinarriak ezarri zituen:
+            <ul>
+                <li>"Bonba" deituriko makina elektromekanikoak</li>
+                <li>Nazi-ek 2 gurpil gehitu zioten Enigmari eta "Bonbak" ez ziren gai</li>
+            </ul>
+        </p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Enigma makina</h2>
+
+        <p><a href="https://en.wikipedia.org/wiki/Alan_Turing">Alan Turing</a>-en taldea informazio horretatik abiatuz "bonba" berriak sortu zituen</p>
+            <p><iframe width="400" height="250" src="https://www.youtube.com/embed/V4V2bpZlqx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    </section>
+
+    <section class="slide">
+        <h2>Ordezkapen metodo polialfabetikoak</h2>
+
+        <p>Kriptoanalisia
+            <ul>
+                <li>Metodo estatistikoak</li>
+                <li>Gakoen tamaina txikitzeko patroiak, zati ezberdinen ordena, etab. bilatzen dira</li>
+                <li>Sistema monoalfabetikotan baino textu zifratu gehiago behar da</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Fluxu zifraketa metodoak</h2>
+
+        <p>Mezu osoa zifratu ordez, bit bakoitza zifratzen dute, banan-bana
+            </p>
+        <p>Denbora errealeko komunikaziotan erabilia (Ezin da itxaron mezu osoa izan arte zifratzeko eta bidaltzeko)</p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Fluxu zifraketa metodoak</h2>
+
+        <p>Gakotik abiatuta, ekoizle sasi-aleatorioa erabiltzen da gako-fluxua sortzeko
+</p>
+        <p>Kriptograma sortzeko XOR eragiketa egiten da zifratu behar den bit-a eta gako-fluxuaren artean
+</p>
+    </section>
+
+    <section class="slide">
+        <h2>Fluxu zifraketa metodoak</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/cifrado-flujo.png" alt="Frecuencias" width="80%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Vernam metodoa</h2>
+        <p><a href="https://es.wikipedia.org/wiki/Cifrado_XOR">XOR zifraketa</a> textua eta luzera berdineko ausazko gako baten artean egiten du </p>
+        <p>Ekoizlea benetan aleatorioa da</p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Vernam metodoa</h2>
+        <p>Gakoa (gako-fluxua) "erabilpen bakarreko libreta" da:
+            <ul>
+                <li>Behin bakarrik erabili ahal da</li>
+                <li>Mezu irakurleari aurretik bidali behar zaio</li>
+                <li>Matematikoki frogatua dago apurtezina dela</li>
+            </ul>
+        </p>
+        <p>Ez da oso erabilgarria</p>
+    </section>
+
+    <section class="slide">
+        <h2>Beste fluxu zifraketa metodoak</h2>
+        <p>Vernam-en metodoan oinarrituak</p>
+        <p>Gako pseudo-aleatorioak erabiltzen dituzte, hazi batetik eta ekoizpen algoritmo batetik sortuak 
+</p>
+            <p>Hazia eta ekoizpen algoritmoa jakinda, gako pseudo-aleatorioa bereraikitzea dago (Hazi posible ezberdinen kopuruaren arabera)
+</p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Beste fluxu zifraketa metodoak</h2>
+        <p>Ez dira matematikoki apurtezinak</p>
+        <p>Adibideak:
+            <ul>
+                <li>RC4 (ARC4): TLS/SSL , WEP eta WPA-an (Apurtua)</li>
+                <li>A5/1: GSM-an (A5/1 eta A5/2 apurtuak)</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Blokeka zifratzeko metodoak</h2>
+        <p>Jatorrizko mezua tamaina berdinetko blokeetan zatitu: 
+            <ul>
+                <li>Blokeen tamaina oso txikia bada, fluxu zifraketa da</li>
+                <li>Mezuaren tamaina ez bada blokeen multiploa, badaude algoritmoak gainerakoa betetzeko</li>    
+            </ul>
+        </p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Blokeka zifratzeko metodoak</h2>
+        <p>Jatorrizko mezua tamaina finkoko blokeetan banatzea: 
+            <ul>
+                <li>Tamaina nahikoa txikia bada, fluxu-zifratutzat har daiteke</li>
+                <li>Mezuaren tamaina blokearen tamainaren multiploa ez denean betetzeko algoritmoak daude</li>    
+            </ul>
+        </p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Blokeka zifratzeko metodoak</h2>
+    <p>Jatorrizko bloke bakoitzak zifratutako bloke bat sortzen du</p>
+        <p>Blokeen arteko iterazioak, permutazioak eta beste operazioak gehitu daitezke</p>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        
+        <section class="slide">
+            <h2>Blokeka zifratzeko metodoak</h2>
+            <p>
+                DES (Data Encryption Standard) - 1975: 
+                <ul>
+                    <li>64 bit-eko blokeak</li>
+                    <li>56 biteko gakoak</li>
+                    <li>16 itzuli</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Blokeka zifratzeko metodoak</h2>
+            <p>Triple DES - 1998: DES hiru aldiz (Zifratu –
+Deszifratu - Zifratu):
+                <ul>
+                    <li>2 gako erabili: ( E k<sub>1</sub> ( D k<sub>2</sub> ( E k<sub>1</sub> )))</li>
+                    <li>3 gako erabili: ( E k<sub>1</sub> ( D k<sub>2</sub> ( E k<sub>3</sub> )))</li>
+                    <li>Kreditu txarteletan oso erabilia</li>
+</ul>
+</p>
+        </section>
+
+        <section class="slide">
+            <h2>Blokeka zifratzeko metodoak</h2>
+            <p>IDEA - 1991:
+                <ul>
+                    <li>64 bit-eko blokeak</li>
+                    <li>128 biteko gakoak</li>
+                    <li>8 itzuli</li>
+                </ul>
+            </p>
+
+        </section>
+
+        <section class="slide">
+            <h2>Blokeka zifratzeko metodoak</h2>
+            <p>KASUMI (A5/3) – 2000:
+                <ul>
+                    <li>64 bit-eko blokeak</li>
+                    <li>128 biteko gakoak</li>
+                    <li>8 itzuli</li>
+                    <li>3G sareetan erabilia</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Blokeka zifratzeko metodoak</h2>
+            <p>AES (Advanced Encryption Standard) - 2001:
+                <ul>
+                    <li>Erabilera oso hedatua</li>
+                    <li>128 bit-eko blokeak</li>
+                    <li>128, 192, 256 biteko gakoak</li>
+                    <li>8 itzuli, 12 itzuli, 14 itzuli</li>
+                </ul>
+            </p>
+
+        </section>
+
+        <section class="slide">
+            <h2>Blokeka zifratzeko metodoak</h2>
+            <p>4G sareak:
+                <ul>
+                    <li>Algoritmo bikoteak (bat apurtzen bada, besteak dirau)</li>
+                    <li>EEA atzizkia Konfidentzialtasuna bermatzen duten algoritmoentzako</li>
+                    <li>EIA atzizkia Osotasuna bermatzen duten algoritmoentzako</li>
+                </ul>
+</p>
+        </section>
+
+        <section class="slide">
+            <h2>Indarrezko erasoak</h2>
+            <p>Beti aurkitzen dute soluzioa</p>
+            <p>Gako posible guztiak probatzean datza</p>
+            <p>Gako espazioa eta zifraketa algoritmoa ezagunak izan behar dira</p>
+            <p>Beti ez dira posible, denbora-kostua medio adibidez</p>
+        </section>
+
+        <section class="slide">
+            <h2>Indarrezko erasoak</h2>
+            <p>Gako espazioa:
+                <ul>
+                    <li>56 bit: 2<sup>56</sup> aukera</li>
+                    <li>128 bit: 2<sup>128</sup> aukera</li>
+                    <li>256 bit: 2<sup>256</sup> aukera</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Indarrezko erasoak</h2>
+            <p>Super-ordenagailu batekin:
+                <ul>
+                    <li>56 bit: 0,04 segundu</li>
+                    <li>128 bit: 7.193.522.047 milurte</li>
+                    <li>256 bit: ...</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Indarrezko erasoak</h2>
+            <p>Erasoa inteligenteagoa egin ahal da:
+                <ul>
+                    <li>Hiztegia bat erabiliz</li>
+                    <li>Gakoaren jabearen datuekin</li>
+                    <li>...</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Gako pribatuko kriptosistemak</h2>
+            <p>Gako ahulak
+                <ul>
+                    <li>Algoritmo bakoitzaren ezaugarrien arabera agertu daitezke</li>
+                    <li>Jokaera desegokia duten gakoak
+                        <ul>
+                            <li>E<sub>K</sub>(M)=M</li>
+                            <li>E<sub>K</sub>(E<sub>K</sub>(M))=M</li>
+                            <li>D<sub>K2</sub>(E<sub>K1</sub>(M))=M</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+            
+        </section>
 
     
 
