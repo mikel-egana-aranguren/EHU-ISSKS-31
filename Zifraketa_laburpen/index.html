@@ -39,7 +39,7 @@
 
     <section class="slide">
         <h2>Laburpen algoritmoak (Digest)</h2>
-        <p>Jatorrizko eduki osoa ordezkatzen duen kriptogramabat ekoizten dute:
+        <p>Jatorrizko eduki osoa ordezkatzen duen kriptograma ekoizten dute:
             <ul>
                 <li><b>Tamaina finkokoa</b>, jatorrizko edukia edozien izanda</li>
                 <li><b>Jatorrizko eduki guztia</b> ordezkatzen du</li>
@@ -53,8 +53,8 @@
         <h2>Laburpen algoritmoak</h2>
         <p>Hash funtzioak:
             <ul>
-                <li>Ez dauka alderantzizko funtziorik (one-way function): ezin da edukia lortu kriptogramatik</li>
-                <li>Ezin da deszifratu, ez duelako zifratzen (laburtu)</li>
+                <li>Ez daukate alderantzizko funtziorik (one-way function): ezin da edukia lortu kriptogramatik</li>
+                <li>Ezin dira deszifratu, ez dutelako zifratzen (laburtu)</li>
             </ul>
         </p>
     </section>
@@ -64,7 +64,7 @@
         <p>Informazioaren Osotasuna ziurtatu</p>
         <p>Pasahitzak gorde</p>
         <p>Datu edo fitxategien identifikatzailea</p>
-        <p>Lan froga -Proof of Work- (<a href="../Bitcoin/index.html">Bitcoin</a>)</p>
+        <p>Lan froga -Proof of Work- (<a href="../Zifraketa_Bitcoin/index.html">Bitcoin</a>)</p>
         <p>Sinadura digitala inplementatu (<a href="../Zifraketa_asimetrikoa/index.html">Zifraketa asimetrikoa: sinadura digitala</a>)</p>
     </section>
 
@@ -75,8 +75,12 @@
         <p>Nola baieztatu osotasuna?</p>
     </section>
 
-    <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/hash-integridad.png" alt="Hash osotasuna" width="60%"></p>
 
+
+    <section class="slide">
+        <h2>Informazioaren Osotasuna ziurtatu</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-integridad.png" alt="Hash osotasuna" width="60%"></p>
+    </section>
 
     <section class="slide">
         <h2>Pasahitzak gorde</h2>
@@ -85,7 +89,7 @@
 
     <section class="slide">
         <h2>Pasahitzak gorde: identifikatu</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-clave-identificacion.png" alt="Pasahitzak gorde: identifikatu" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-clave-identificacion.png" alt="Pasahitzak gorde: identifikatu" width="80%"></p>
     </section>
 
     <section class="slide">
@@ -100,13 +104,13 @@
         <h2>Pasahitzak gorde: arazoak</h2>
 
         <p>Soluzioa: "gatza" (Salt) edo hazia erabiltzea</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-clave-identificacion-sal.png" alt="Pasahitzak gorde: arazoak" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-clave-identificacion-sal.png" alt="Pasahitzak gorde: arazoak" width="80%"></p>
     </section>
 
     <section class="slide">
         <h2>Pasahitzak gorde</h2>
         <p>Identifikazioa gatza gehituta</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-clave-identificacion-sal-intro.png" alt="Pasahitzak gorde: arazoak" width="60%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-clave-identificacion-sal-intro.png" alt="Pasahitzak gorde: arazoak" width="70%"></p>
     </section>
 
     <section class="slide">
@@ -174,22 +178,29 @@
     </section>
 
     <section class="slide">
-        <h2>Laburpen algoritmo ezagunenak: MD5</h2>
+        <h2>Laburpen algoritmo ezagunenak</h2>
+        <p>MD5</p>
+        <p>SHA-3</p>
+        <p>RIPEMD</p>
+    </section>
+
+    <section class="slide">
+        <h2>MD5</h2>
         <p>Kriptografikoki apurtuta baina oraindik erabiltzen da, batez ere osotasuna bermatzeko</p>
         <p>128 bit-eko hash-ak</p>
     </section>
 
     <section class="slide">
-        <h2>Laburpen algoritmo ezagunenak: SHA-3</h2>
+        <h2>SHA-3</h2>
         <p>SHA-0..2 MD5-an oinarrituta zeuden, SHA-3 ez</p>
         <p>224...512 bit</p>
         <p>Open SSL, Ethereum, ...</p>
     </section>
 
     <section class="slide">
-        <h2>Laburpen algoritmo ezagunenak: RIPEMD</h2>
+        <h2>RIPEMD</h2>
         <p>128, 160, 256, 320 bit</p>
-        <p><a href="../Bitcoin/index.html">Bitcoin</a>-ek RIPEMD-160 erabiltzen du</p>
+        <p><a href="../Zifraketa_Bitcoin/index.html">Bitcoin</a>-ek RIPEMD-160 erabiltzen du</p>
     </section>
 
     <section class="slide">
@@ -204,8 +215,8 @@
         <h2>Laburpen algoritmoak: Soluzioak</h2>
 
             <ul>
-                <li>Laburpen luzeagoak sortzen dituzten algoritmoak erabili</li>
-                <li>SHA-224, SHA-256, SHA-384, SHA-512, ...</li>
+                <li>Laburpen luzeagoak sortzen dituzten algoritmo berriak erabili</li>
+                <li>Algoritmo berriak sortu</li>
             </ul>
         
     </section>
