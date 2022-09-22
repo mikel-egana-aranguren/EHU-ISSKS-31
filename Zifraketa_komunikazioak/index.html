@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zifraketa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../ShowerTemplate/shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Zifraketa</h1>
+        <p>Mikel Egaña Aranguren</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Zifraketa</h2>
+        <p>Mikel Egaña Aranguren</p>
+        <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p>
+        <p><a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a></p>
+        <img src="../ShowerTemplate/pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%" border="1px solid #555">
+    </section>
+
+    <section class="slide">
+        <h2>Zifraketa</h2>
+        <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
+        <p><a href="https://github.com/mikel-egana-aranguren/EHU-SGSSI-01">https://github.com/mikel-egana-aranguren/EHU-SGSSI-01</a></p>
+        <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        <p>Kriptografia: informazioa zifratu</p>
+        <p>Segurtasun mekanismo oso zaharra (Aintzinekoa)</p>
+        <p><b>Konfidentzialtasuna</b>, <b>Osotasuna</b>, <b>Kautotzea bermatzen ditu</b>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        <p>Kriptoanalisia: mezu zifratuak deszifratzeko teknikak</p>
+        <p><b>Kriptologia: Kriptografia + Kriptoanalisia</b></p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        <p>Kriptoanalisia:
+            <ul>
+                <li>Gakoa ezagutu gabe</li>
+                <li>Gakoa mezu zifratu(eta)tik lortuz</li>
+                <li>Algoritmoa publikoa da - <a href="https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle">Kerckhoffs-en printzipoa (1883)</a></li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        <p>Kerckhoffs-en printzipoak:
+            <ul>
+                <li>Sistemak apurtezina izan behar du, teorikoki apurtezina izatea posiblea ez bada, gutxienez praktikan</li>
+                <li><b>Sistemaren segurtasunak ez du diseinua isilpean gordetzearen mende egon behar. Etsaiaren eskuetara iritsiko balitz, horrek ez luke kriptosistema arriskuan jarri beharko</b></li>
+                <li>Gako kriptografiko edo pasahitzak erraz gogoratzeko modukoa izan behar du, inon idazteko beharrik ez izateko modukoa eta erraz aldatzeko modukoa</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        <p>Kerckhoffs-en printzipoak:
+            <ul>
+                <li>Kriptogramak telegrafo bidez transmititzeko modukoa izan behar du, karaketere alfanumerikoetan idazteko modukoa</li>
+                <li>Sistemak (tresnak) eramangarria izan behar du, eta pertsona bakar batek erabiltzeko modukoa</li>
+                <li>Sistemak erabilerraza izan behar du; erabiltzaileak jarraitu beharreko agindu-sorta luzerik edota gaitasun intelektual berezirik ez du eskatu behar</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        <p>Kriptosistema: D<sub>K</sub> ( E<sub>K</sub> ( M ) ) = M
+            <ul>
+                <li>M: zifratu gabeko mezuak</li>
+                <li>C: zifratutako mezuak (kriptogramak)</li>
+                <li>K: gako posibleak</li>
+                <li>E: enkriptazio algoritmoa</li>
+                <li>D: desenkriptazio algoritmoa</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera: Kriptosistemak</h2>
+        <b>Simetrikoak edo gako pribatukoak:</b> Gako bakarra enkriptatu eta desenkriptatzeko <br><br>
+        <b>Asimetrikoak edo gako publikokoak:</b> Gako batek enkriptatu eta beste batek desenkriptatu (Batek enkriptatzen duena, besteak enkriptatzen du)
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        <p>Kriptografia: informazioa <b>zifratu</b> </p>
+        <p>Esteganografia: informazioa <b>ezkutatu</b> </p>
+        <p>Hash algoritmoak: informazioa <b>laburtu</b> </p>
+    </section>
+
+
+    <!-- 
+
+        
+        
+
+        
+        <section class="slide">
+            <h2>Sinadura digitala</h2>
+            <p>Mirenek Ikerreri mezua bidaltzen dio, gako publikoko sistema erabiliz</p>
+            <p>Edonork ezin du irakurri Mirenen Ikerrentzako mezua, baina edozeinek bidali ahal du</p>
+            <p>Nola daki Ikerrek Mirenek bidali diola edo inork ez duela mezua aldatu?</p>
+            <p>Soluzioa: Mirenek mezua sinatzen du</p>
+        </section>
+
+        <section class="slide">
+            <h2>Sinadura digitala</h2>
+            <p>Erabiltzaile zilegiak soilik sinatu ahal du bere dokumentua
+</p>
+            <p>Inork ezin du sinadura faltsutu</p>
+            <p>Edozeinek balioztatu ahal du sinadura digitala</p>
+        </section>
+
+        <section class="slide">
+            <h2>Sinadura digitala</h2>
+            <p>Ezin da sinadura bat berrerabili</p>
+            <p>Ezin da sinadura bat aldatu</p>
+            <p>Ezin da dokumentu bat sinatu izana ukatu</p>
+            <p>Ezin da dokumentu bat aldatu sinatu ostean</p>
+            <p>Kautotzea, Osotasuna eta Zapuztezintasuna</p>
+        </section>
+
+        <section class="slide">
+            <h2>Sinadura digitala</h2>
+            <p>Mirenek mezuaren laburpen kriptografikoa lortzen du: RC = hash (m)</p>
+            <p>Mirenek bere klabearekin zifratzen du laburpen kriptografikoa: Sinadura = e ( RC, M<sub>pri</sub> )</p>
+            <p>Mirenek bere mezua (Zifratua edo zifratu gabe) eta bere sinadura bidaltzen ditu</p>
+        </section>
+
+        <section class="slide">
+            <h2>Sinadura digitala</h2>
+            <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FirmaMiren.png" alt="criptosistema clave privada" width="40%"></p>
+        </section>
+
+        <section class="slide">
+            <h2>Sinadura digitala</h2>
+            <p>Ikerrek sinadura deszifratzen du Mirenen gako publikoa erabiliz: RC = ( Sinadura, M<sub>pu</sub>)</p>
+            <p>Ikerrek mezuaren laburpen kriptografikoa lortzen du: RC’ = hash (m)</p>
+            <p>Ikerrek RC’ eta RC alderatzen ditu ezer aldatu ez dela baieztatzeko</p>
+            <p></p>
+        </section>
+
+        <section class="slide">
+            <h2>Sinadura digitala</h2>
+            <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FirmaIker.png" alt="criptosistema clave privada" width="40%"></p>
+        </section>
+
+        <section class="slide">
+            <h2>Sinadura digitala</h2>
+            <p>Sinatzeaz gain, Mirenek mezua zifratzen badu, Ikerrek bakarrik irakurriko du:  Konfidentzialtasuna, Osotasuna, Kautotzea, Zapuztezintasuna</p>
+            <p>Hurrengoak erabiltzea dauka:
+                <ul>
+                    <li>Kriptografia asimetrikoa</li>
+                    <li>Kriptografia hibridoa</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Sinadura digitala</h2>
+            <p>Kriptografia asimetrikoa. Ikerreri bidali:
+                <ul>
+                    <li>Mezu zifratuaren kriptograma (M<sub>pri</sub> eta I<sub>pu</sub>-rekin zifratua)
+                    <li>Bere sinadura digitala (Laburpen kriptografikoa,
+                        M<sub>pri</sub>-rekin zifratua)</li>
+                </ul>
+            </p>
+
+        </section>
+
+        <section class="slide">
+            <h2>Sinadura digitala</h2>
+        <p>Kriptografia hibridoa. Ikerreri bidali:
+            <ul>
+                <li>Saio gakoarekin zifratutako mezuaren kriptograma</li>
+                <li>Saio gako zifratuaren kriptograma, I<sub>pu</sub>-rekin zifratua</li>
+                <li>Bere Sinadura digitala (Laburpen kriptografikoa,
+                    M<sub>pri</sub>-rekin zifratua)</li>
+            </ul>
+        </p>
+    </section>
+
+        <section class="slide">
+            <h2>Gako publikoko algoritmoak</h2>
+            <p>Diffie-Hellman - 1976</p>
+            <p>RSA - 1977</p>
+            <p>ElGamal - 1984</p>
+            <p>DSA - 1991</p>
+            <p>Kurba eliptikoak - 1985</p>
+        </section>
+
+        <section class="slide">
+            <h2>Gako publikoko algoritmoak</h2>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/yDXiDOJgxmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        </section>
+
+        <section class="slide">
+            <h2>Gako publikoko algoritmoak</h2>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/M7kEpw1tn50" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        </section>
+
+        <section class="slide">
+            <h2>Gako publikoko algoritmoak</h2>
+            <p>DNI electronikoa (DNIe 3.0):
+                <ul>
+                    <li>RSA</li>
+                    <li>SHA-1 / SHA-256</li>
+                    <li>TripleDES / AES</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Gako publikoko algoritmoak</h2>
+        <p>PGP:
+            <ul>
+                <li>RSA / DSA</li>
+                <li>IDEA / TripleDES</li>
+            </ul>
+        </p>
+        </section>
+
+        <section class="slide">
+            <h2>Gako publikoko algoritmoak</h2>
+            <p>SSH:
+                <ul>
+                    <li>RSA / DSA</li>
+
+                </ul>
+            </p>
+        <p>SSL / TLS:
+            <ul>
+                <li>RSA / DSA / Diffie-Hellman</li>
+                <li>IDEA / DES / TripleDES /AES</li>
+            </ul>
+        </p>
+        </section>
+
+        <section class="slide">
+            <h2>Sinaduren konfidantza</h2>
+            <p>Sinadura digitalak erabilita ere:
+                <ul>
+                    <li>Nola dakigu sinadura bat esaten duenarena dela?</li>
+                    <li>Nola bermatzen du Zertifikazio Autoritate batek hori horrela dela?</li>
+                    <li>Ezin gara fidatu Zertifikazio Autoritate batek bermatu duen sinadura batetaz?</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Sinaduren konfidantza</h2>
+
+                <ul>
+                    <li>PGP, GnuPG eta horrelakoak erabiltzen dira</li>
+                    <li>Erabiltzaile batek bermatzen du, bere gako pribatuarekin sinatuz, beste erabiltzaile baten gako publikoa fidagarria dela
+</li>
+                    <li>Konfidantza hedatzen doa, gakoak sinatzen dituzten erabiltzaileei ematen diegun konfidantzaren arabera</li>
+                </ul>
+            
+        </section>
+
+        <section class="slide">
+            <h2>Konfidantza mailak</h2>
+
+                <ul>
+                    <li>Ezezaguna: erabiltzaile horrek sinatzen duenaz ez gara fidatzen (ezezaguna delako)
+</li>
+                    <li>Eza: erabiltzaile horrek sinatzen duenaz ez gara fidatzen
+                        (Badakigulako txarto egiten duela)</li>
+                    <li>Marginala: konfidantza marginala duten bi erabiltzailek sinatutako klabeengan konfidantza dugu</li>
+                    <li>Osoa: Erabiltzaile horrek sinatzen duen guztiaz fidatzen gara</li>
+                </ul>
+            
+        </section>
+
+        <section class="slide">
+            <h2>Ziurtagiri digitalak</h2>
+                <ul>
+                    <li>Ziurtagiri digitala: konfidantzazko erakunde batek erabiltzaile baten gako publikoa sinatzea, bere gako pribatuarekin</li>
+                    <li>Erabiltzailea berak esaten duena dela bermatzeko balio du</li>
+                    <li>Bermea ematen duen erakundearenganako konfidantzaren arabera</li>
+                </ul>
+        </section>
+
+        <section class="slide">
+            <h2>Ziurtagiri digitalak</h2>
+                <ul>
+                    <li>X.509 estandarra</li>
+                    <li>Baliozkotasuna != konfidantza
+                        <ul>
+                            <li>Baliozkotasuna: sinadura baten eskakizunak betetzen ditu (iraungipena,
+                                etab.)</li>
+                            <li>Konfidantza: sinadura horretaz fida gaitezke</li>
+                        </ul>
+                    </li>
+                    <li>Sinadura batek baliozkotasuna eduki dezake, baina ez konfidantza</li>
+                    <li>Konfidantza duen baliogabeko sinadura batek ez dauka zentzurik</li>
+                </ul>
+        </section>
+
+        <section class="slide">
+            <h2>Ziurtagiri digitalak</h2>
+            <p>Zertifikazio Autoritate batek sinadura baten baliozkotasuna bermatzen du
+                <ul>
+                    <li>Ziurtapen-zerbitzuen emaileak (PSC): Ley de Firma Electrónica (Ley 59/2003, LFE), Ley de Acceso Electrónico de los Ciudadanos a los Servicios Públicos (Ley 11/2007, LAESCP)</li>
+                    <li>PSC-ak beraien ziurtagirien indarraldia kontsultatzeko metodo bat eman behar dute: erakunde publikoen kasuan musutruk izan behar du
+ </li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Ziurtagiri digitalak</h2>
+            <p>Zertifikazio Hierarkia (RFC 1422)
+            </p>
+            <p>Internet Policy Registration Authority (IPRA) >> Policy Certification Authorities (PCA) >> Certification Authorities (CA): Verisign, Thawte, GeoTrust, RapidSSL, DigiCertSSL</p>
+        </section>
+
+        <section class="slide">
+            <h2>CA (Zertifikazio Autoritate) batek</h2>
+            
+                <ul>
+                    <li>Distinguised Name eta CA subordinatuak gordetzen dituen DB-a
+</li>
+                    <li>Ziurtagirien baliogabetzea:
+                        <ul>
+                            <li>Erabiltzailearen klabe pribatua konprometitua
+                                
+                                </li>
+                            <li>CA ziurtagiri bat okerreko norbaiteri eman dio</li>
+                            <li>Erabiltzaileak CA-z aldatzen du</li>
+                            <li>CA-aren segurtasuna apurtua</li>
+                        </ul>
+                    </li>
+                    <li>CRL, Certification
+                        Revocation List: adibidez <a href="https://www.geotrust.com/resources/repository/crls/">GeoTrust</a></li>
+                </ul>
+            
+        </section>
+
+        <section class="slide">
+            <h2>CA (Zertifikazio Autoritate) batek</h2>
+            
+                <ul>
+                    <li>OCSP (Online Certificate Status Protocol RFC 2560) protokoloak ziurtagiri baten egoera online balioztatzea bermatzen du
+</li>
+                    <li>CRL-ak baino eraginkorragoa da</li>
+                    <li>Abantaila: beti eguneratua</li>
+                    <li>Desabantaila: konprobatzeko konektatu behar</li>
+                </ul>
+            
+        </section>
+
+        <section class="slide">
+            <h2>Ziurtagiri digitalak</h2>
+            <p>Zerbitzua ematen duen CA bakoitzak OCSP zerbitzari bat mantentzen du
+            </p>
+            <p>Eskakizun egokia egiten duten bezeroei erantzuten die</p>
+        </section>
+
+        <section class="slide">
+            <h2>Ziurtagiri digitalak</h2>
+            <p>Gako publikoko ziurtagiri motak:
+                <ul>
+                    <li>Autoritate ziurtagiriak</li>
+                    <li>Zerbitzari ziurtagiriak</li>
+                    <li>Ziurtagiri pertsonalak</li>
+                    <li>Software ziurtagiriak</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Ziurtagiri digitalak</h2>
+            <p>Ziurtagiri baten osagarriak:
+                <ul>
+                    <li>Bertsioa</li>
+                    <li>Serie zenbakia</li>
+                    <li>Sinadura algoritmoaren identifikatzailea</li>
+                    <li>Iraungipena</li>
+                    <li>...</li>
+
+                </ul>
+            </p>
+        </section>
+
+        <section class="slide">
+            <h2>Ziurtagiri digitalak</h2>
+
+                <ul>
+                    <li>Konfidentzialtasuna informazioa enkriptatuz</li>
+                    <li>Informazioaren osotasuna hash eta sinadura bidez</li>
+                    <li>Kautotzea informazioa sinatua datorrelako</li>
+                    <li>Zapuztezintasuna informazioa sinatzean</li>
+                </ul>
+            
+        </section>
+        
+        <section class="slide">
+            <h2>Kriptografia kuantikoa</h2>
+            <p><iframe width="560" height="315" src="https://www.youtube.com/embed/uiiaAJ3c6dM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+        </section> -->
+
+    <!-- FOOTER -->
+
+    <footer class="badge">
+        <a href="https://github.com/mikel-egana-aranguren/EHU-SGSSI-01">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="../ShowerTemplate/shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>

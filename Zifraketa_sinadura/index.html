@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sinadura</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../ShowerTemplate/shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Sinadura</h1>
+        <p>Mikel Egaña Aranguren</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Sinadura</h2>
+        <p>Mikel Egaña Aranguren</p>
+        <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p>
+        <p><a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a></p>
+        <img src="../ShowerTemplate/pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%" border="1px solid #555">
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura</h2>
+        <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
+        <p><a href="https://github.com/mikel-egana-aranguren/EHU-ISSKS-31">https://github.com/mikel-egana-aranguren/EHU-ISSKS-31</a></p>
+        <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Mirenek Ikerreri mezua bidaltzen dio, gako publikoko sistema erabiliz</p>
+        <p>Edonork ezin du irakurri Mirenen Ikerrentzako mezua, baina edozeinek bidali ahal du</p>
+        <p>Nola daki Ikerrek Mirenek bidali diola edo inork ez duela mezua aldatu?</p>
+        <p>Soluzioa: Mirenek mezua sinatzen du</p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Erabiltzaile zilegiak soilik sinatu ahal du bere dokumentua
+</p>
+        <p>Inork ezin du sinadura faltsutu</p>
+        <p>Edozeinek balioztatu ahal du sinadura digitala</p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Ezin da sinadura bat berrerabili</p>
+        <p>Ezin da sinadura bat aldatu</p>
+        <p>Ezin da dokumentu bat sinatu izana ukatu</p>
+        <p>Ezin da dokumentu bat aldatu sinatu ostean</p>
+        <p>Kautotzea, Osotasuna eta Zapuztezintasuna</p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Mirenek mezuaren laburpen kriptografikoa lortzen du: RC = hash (m)</p>
+        <p>Mirenek bere klabearekin zifratzen du laburpen kriptografikoa: Sinadura = e ( RC, M<sub>pri</sub> )</p>
+        <p>Mirenek bere mezua (Zifratua edo zifratu gabe) eta bere sinadura bidaltzen ditu</p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FirmaMiren.png" alt="criptosistema clave privada" width="40%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Ikerrek sinadura deszifratzen du Mirenen gako publikoa erabiliz: RC = ( Sinadura, M<sub>pu</sub>)</p>
+        <p>Ikerrek mezuaren laburpen kriptografikoa lortzen du: RC’ = hash (m)</p>
+        <p>Ikerrek RC’ eta RC alderatzen ditu ezer aldatu ez dela baieztatzeko</p>
+        <p></p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FirmaIker.png" alt="criptosistema clave privada" width="40%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Sinatzeaz gain, Mirenek mezua zifratzen badu, Ikerrek bakarrik irakurriko du:  Konfidentzialtasuna, Osotasuna, Kautotzea, Zapuztezintasuna</p>
+        <p>Hurrengoak erabiltzea dauka:
+            <ul>
+                <li>Kriptografia asimetrikoa</li>
+                <li>Kriptografia hibridoa</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Kriptografia asimetrikoa. Ikerreri bidali:
+            <ul>
+                <li>Mezu zifratuaren kriptograma (M<sub>pri</sub> eta I<sub>pu</sub>-rekin zifratua)
+                <li>Bere sinadura digitala (Laburpen kriptografikoa,
+                    M<sub>pri</sub>-rekin zifratua)</li>
+            </ul>
+        </p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+    <p>Kriptografia hibridoa. Ikerreri bidali:
+        <ul>
+            <li>Saio gakoarekin zifratutako mezuaren kriptograma</li>
+            <li>Saio gako zifratuaren kriptograma, I<sub>pu</sub>-rekin zifratua</li>
+            <li>Bere Sinadura digitala (Laburpen kriptografikoa,
+                M<sub>pri</sub>-rekin zifratua)</li>
+        </ul>
+    </p>
+</section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="badge">
+        <a href="https://github.com/mikel-egana-aranguren/EHU-SGSSI-01">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="../ShowerTemplate/shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
