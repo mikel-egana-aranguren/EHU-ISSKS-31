@@ -2,6 +2,8 @@
 
 ## 2022-2023
 
+* Sarrera, zifraketa sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa
+
 ## 2021-2022 (Adarra izoztua)
 
 * Zifraketa
