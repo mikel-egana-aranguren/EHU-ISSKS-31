@@ -106,9 +106,11 @@
 
     <section class="slide">
         <h2>Sarbide-kontrola apurtzea: ahuleziak</h2>
-        <p><b>Elevación de privilegio:</b> actuar como administrador estando logeado como usuario</p>
-        <p>Replaying o modificación de JSON Web Token (JWT) para elevar privilegios</p>
-        <p>Mala configuración de CORS permite acceso API desde origenes no autorizados</p>
+        <p><b>Pribilegioa igotzea:</b> administratzaile gisa jardutea, erabiltzaile gisa logeatuta egonik
+        </p>
+        <p>Replaying edo JSON Web Token (JWT) aldatzea pribilegioak igotzeko</p>
+        <p>CORSen konfigurazio okerreak baimendu gabeko jatorrietatik APIra sartzeko aukera ematen du
+        </p>
     </section>
 
     <section class="slide">
@@ -122,37 +124,37 @@
     </section>
 
     <section class="slide">
-        <h2>Sarbide-kontrola apurtzea: prevención</h2>
-        <p>Denegación por defecto para todos los recursos, excepto públicos</p>
-        <p>Implementar mecanismos de acceso de control una sola vez y extenderlos a toda la aplicación, minimizando el uso de CORS</p>
-        <p>No permitir listado de directorios y asegurarse de que no hay archivos de metadatos (ej. Git) ni de backups en el nivel root de la aplicación</p>
+        <h2>Sarbide-kontrola apurtzea: prebentzioa</h2>
+        <p>Lehenetsitako ukapena baliabide guztietarako, publikoak izan ezik</p>
+        <p>Kontrolerako sarbide-mekanismoak behin bakarrik ezartzea eta aplikazio osora zabaltzea, CORSen erabilera minimizatuz</p>
+        <p>Direktorioen zerrendaketa ez baimentzea eta aplikazioaren root mailan metadatuen fitxategirik (adibidez, Git) edo backup-ik ez dagoela ziurtatzea</p>
     </section>
 
     <section class="slide">
-        <h2>Sarbide-kontrola apurtzea: prevención</h2>
-        <p>Logear todos los intentos de entrada, alertar a los administradores cuando sea necesario (ej. muchos accesos fallidos)</p>
-        <p>Limitar la tasa de peticiones de API para evitar ataques mediante programas</p>
+        <h2>Sarbide-kontrola apurtzea: prebentzioa</h2>
+        <p>Sartzeko ahalegin guztiak logeatzea, administratzaileak ohartaraztea beharrezkoa denean (adibidez, huts egindako sarbide asko)</p>
+        <p>APIetan eskaeren tasa mugatzea, programen bidezko erasoak saihesteko</p>
     </section>
 
     <section class="slide">
-        <h2>Sarbide-kontrola apurtzea: prevención</h2>
-        <p>Identificadores de sesión:
+        <h2>Sarbide-kontrola apurtzea: prebentzioa</h2>
+        <p>Saioaren identifikatzaileak:
             <ul>
-                <li>De servidor (stateful): invalidar al deslogearse</li>
-                <li>Stateless JWT tokens: muy poca vida</li>
-                <li>Para JWT de tiempo más largo, seguir el protocolo <a href="https://oauth.net/">OAuth</a> de cara a revocar el acceso</li>
+                <li>Zerbitzariarena (stateful): baliogabetzea deslogeatzean</li>
+                <li>Stateless JWT tokens: oso bizitza laburra</li>
+                <li>Denbora luzeagoko JWTrentzat, jarraitu <a href="https://oauth.net/">OAuth</a> protokoloa sarbidea baliogabetzeko</li>
             </ul>
         </p>
     </section>
 
     <section class="slide">
-        <h2>Sarbide-kontrola apurtzea: ejemplo</h2>
-        <p>Llamada a SQL para obtener información de cuenta, con datos sin verificar:</p>
+        <h2>Sarbide-kontrola apurtzea: adibidea</h2>
+        <p>SQL deia kontuko informazioa lortzeko, egiaztatu gabeko datuekin:</p>
         <pre>
             <code>pstmt.setString(1, request.getParameter("acct"));</code>
             <code>ResultSet results = pstmt.executeQuery( );</code>
         </pre>
-        <p>El atacante solo tiene que usar la URL <b>https://example.com/app/accountInfo?acct=notmyacct</b></p>
+        <p>Erasotzaileak URL hau ikusi behar du soilik: <b>https://example.com/app/accountInfo?acct=notmyacct</b></p>
     </section>
 
     <section class="slide">
@@ -162,61 +164,62 @@
 
     <section class="slide">
         <h2>Akats kriptografikoak</h2>
-        <p>Fallos en los métodos criptográficos usados que resultan en exposición de datos</p>
-        <p>Determinar las necesidades de protección de los datos tanto en transmisión como en almacenamiento (At rest): leyes de protecciones de datos</p>
+        <p>Erabilitako metodo kriptografikoen akatsak, ondorioz datuak azaltzen direlarik</p>
+        <p>Datuak babesteko beharrak zehaztea, bai transmisioan, bai biltegiratzean (At rest): datuak babesteko legeak</p>
     </section>
 
     <section class="slide">
         <h2>Akats kriptografikoak</h2>
-        <p>¿Los datos se transmiten como texto plano? Tanto en conexiones externas como internas (ej. servidores de balance de carga): HTTP, SMTP, FTP ...</p>
-        <p>¿Se usan algoritmos o protocolos obsoletos o débiles?</p>
-        <p>¿Se usan claves débiles o claves por defecto?</p>
-        <p>¿Se aplica una Gakoen kudeaketa adecuada?</p>
+        <p>Datuak testu lau gisa transmititzen dira? Kanpoko zein barruko konexioetan (adibidez, karga-balantzearen zerbitzariak): HTTP, SMTP, FTP ...</p>
+        <p>Algoritmo edo protokolo zaharkituak edo ahulak erabiltzen dira?</p>
+        <p>Gako ahulak edo gako lehenetsiak erabiltzen dira?</p>
+        <p>Gakoen kudeaketa egokia erabiltzen da?</p>
     </section>
 
     <section class="slide">
         <h2>Gakoen kudeaketa</h2>
-        Ciclo de vida de una clave:
+        Gako baten bizi-zikloa:
         <ol>
-            <li>Generación</li>
-            <li>Distribución</li>
-            <li>Uso</li>
-            <li>Almacenamiento</li>
-            <li>Rotación, recovación, destrucción</li>
+            <li>Sorkuntza</li>
+            <li>Banaketa</li>
+            <li>Erabilpena</li>
+            <li>Biltegiratzea</li>
+            <li>Errotazioa, ezeztapena, suntsipena</li>
         </ol>
     </section>
 
     <section class="slide">
-        <h2>Gakoen kudeaketa: generación</h2>
-        <p>Evitar algoritmos débiles</p>
-        <p>Usar Key Generators o Random Number Generators de alta entropía </p>
+        <h2>Gakoen kudeaketa: Sorkuntza</h2>
+        <p>Algoritmo ahulak ekidin</p>
+        <p>Key Generator edo entropia altuko Random Number Generator -ak erabili </p>
     </section>
 
     <section class="slide">
-        <h2>Gakoen kudeaketa: distribución</h2>
-        <p>Usar conexiones seguras como SSL/TLS para evitar ataques Man in the middle</p>
+        <h2>Gakoen kudeaketa: Banaketa</h2>
+        <p>Man in the middle erasoak ekiditeko SSL/TLS bezalako konexio seguruak erabili</p>
     </section>
 
     <section class="slide">
-        <h2>Gakoen kudeaketa: uso</h2>
-        <p>Asegurar que solo las personas autorizadas usan la clave</p>
+        <h2>Gakoen kudeaketa: Erabilpena</h2>
+        <p>Baimendutako pertsonek soilik erabiltzen dituztela gakoak bermatu</p>
     </section>
 
     <section class="slide">
-        <h2>Gakoen kudeaketa: almacenamiento</h2>
-        <p>Idealmente usar hardware dedicado: <a href="https://en.wikipedia.org/wiki/Hardware_security_module">Hardware Security Module</a>:
+        <h2>Gakoen kudeaketa: Biltegiratzea</h2>
+        <p>Egokiena hardware dedikatua erabiltzea: <a href="https://en.wikipedia.org/wiki/Hardware_security_module">Hardware Security Module</a>:
             <ul>
-                <li>Dejan de funcionar cuando hay un acceso físico</li>
-                <li>Cumplen estándares rigurosos como <a href="https://csrc.nist.gov/publications/detail/fips/140/3/final">FIPS 140-2</a> (Nivel 4)</li>
+                <li>Funtzionatzeari uzten diote sarbide fisiko bat dagoenean</li>
+                <li>Estandar zorrotzak betetzen dituzte: <a href="https://csrc.nist.gov/publications/detail/fips/140/3/final">FIPS 140-2</a> (4 maila)</li>
             </ul>
         </p>
-        <p>También se pueden usar servicios en la nube: <a href="https://cloud.google.com/security-key-management">Google Cloud Key Management</a></p>
+        <p>Hodeian ere zerbitzuak erabil daitezke: <a href="https://cloud.google.com/security-key-management">Google Cloud Key Management</a></p>
     </section>
 
     <section class="slide">
-        <h2>Gakoen kudeaketa: rotación</h2>
-        <p>Cuando una clave agota su periodo de validez, se retira, descifrando y volviendo a cifrar los datos con una clave nueva</p>
-        <p>Cuanto más tiempo esté una clave en circulación, más probable que sea comprometida</p>
+        <h2>Gakoen kudeaketa: errotazioa</h2>
+        <p>Gako batek bere balio-aldia amaitzen duenean, kendu egiten da, datuak deszifratu eta berriro zifratzen direlarik gako berri batekin
+        </p>
+        <p>Zenbat eta denbora gehiago egon gakoren bat zirkulazioan, orduan eta arriskutsuagoa izango da</p>
     </section>
 
     <section class="slide">
@@ -236,7 +239,7 @@
     <section class="slide">
         <h2>Gakoen kudeaketa: buenas prácticas</h2>
         <p>Automatizar la Gakoen kudeaketa lo más posible</p>
-        <p>Dividir la generación, distribución etc. entre diferentes personas</p>
+        <p>Dividir la Sorkuntza, Banaketa etc. entre diferentes personas</p>
         <p>Dividir las claves en fragmentos</p>
     </section>
 
@@ -248,21 +251,21 @@
     </section>
 
     <section class="slide">
-        <h2>Akats kriptografikoak: prevención</h2>
+        <h2>Akats kriptografikoak: prebentzioa</h2>
         <p>Clasificar los datos transmitidos, procesados y almacenados según su nivel de exigencia de privacidad</p>
-        <p>Almacenar la menor cantidad de datos sensibles posible, incluso usando métodos como <a href="https://www.securitymetrics.com/blog/what-tokenization-and-how-can-i-use-it-pci-dss-compliance">Tokenización</a></p>
+        <p>Almacenar la menor cantidad de datos sensibles posible, inclErabilpena usando métodos como <a href="https://www.securitymetrics.com/blog/what-tokenization-and-how-can-i-use-it-pci-dss-compliance">Tokenización</a></p>
         <p>Cifrar todos los datos almacenados (Encription at rest)</p>
     </section>
 
     <section class="slide">
-        <h2>Akats kriptografikoak: prevención</h2>
+        <h2>Akats kriptografikoak: prebentzioa</h2>
         <p>Usar algoritmos actualizados (No usar MD5, SHA1, ...), claves fuertes, y Gakoen kudeaketa</p>
         <p>Cifrar todos los datos en transito con protocolos como TLS FS (TLS + Forward Secrecy)</p>
-        <p>No permitir el uso de caches en el cliente para datos sensibles</p>
+        <p>No permitir el Erabilpena de caches en el cliente para datos sensibles</p>
     </section>
 
     <section class="slide">
-        <h2>Akats kriptografikoak: prevención</h2>
+        <h2>Akats kriptografikoak: prebentzioa</h2>
         <p>Almacenar contraseñas con hashes + sal</p>
         <p>Usar semillas con la mayor entropia posible</p>
     </section>
@@ -274,7 +277,7 @@
 
     <section class="slide">
         <h2>Akats kriptografikoak: ejemplos</h2>
-        <p>Una web no obliga al uso de TLS. Si un atacante monitoriza el tráfico y "baja" una conexión de HTTPS a HTTP puede interceptar consultas y conseguir la cookie de sesión del usuario. El atacante reenvia la cookie (replay) secuestrando la sesión del usuario y obteniendo acceso a los datos de usuario</p>
+        <p>Una web no obliga al Erabilpena de TLS. Si un atacante monitoriza el tráfico y "baja" una conexión de HTTPS a HTTP puede interceptar consultas y conseguir la cookie de sesión del usuario. El atacante reenvia la cookie (replay) secuestrando la sesión del usuario y obteniendo acceso a los datos de usuario</p>
         <p>La base de datos usa hashes sin sal. Un atacante puede pre-calcular los hashes con <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPUs</a></p>  
     </section>
 
@@ -372,7 +375,7 @@ String name = p.FirstName;
     </section>
 
     <section class="slide">
-        <h2>Injekzioa: prevención</h2>
+        <h2>Injekzioa: prebentzioa</h2>
         <p>Usar APIs seguras que no usen el intérprete. Si no es posible, usar llamadas parametrizadas u ORM</p>
         <p>Validar los inputs</p>
         <p>"Escapar" todos los caracteres especiales posibles</p>
