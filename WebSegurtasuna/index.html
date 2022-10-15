@@ -223,62 +223,62 @@
     </section>
 
     <section class="slide">
-        <h2>Gakoen kudeaketa: revocación o destrucción</h2>
-        <p>Si una clave ha sido comprometida, hay que revocarla, aunque este dentro de su periodo de validez</p>
-        <p>Hay estándares que exigen guardar la clave revocada, por si hiciera falta en el futuro para descifrar datos (ej. en un juicio)</p>
-        <p>La destrucción completa de la clave implica no poder usarla en el futuro</p>
+        <h2>Gakoen kudeaketa: ezeztapena edo suntsiketa</h2>
+        <p>Gako bat konprometitua izan bada, ezeztatu egin behar da, nahiz eta baliozkotasun-epearen barruan egon</p>
+        <p>Ezeztatutako gakoa gordetzea eskatzen duten estandarrak daude, etorkizunean datuak deszifratzeko behar izanez gero (adibidez, epaiketa batean)</p>
+        <p>Gakoa erabat suntsitu: etorkizunean ezin da erabili</p>
     </section>
 
     <section class="slide">
-        <h2>Gakoen kudeaketa: buenas prácticas</h2>
-        <p>No escribir valores de la clave en el código de software, aunque sea seguro</p>
-        <p>Principio del menor privilegio: un usuario debería tener acceso sólo a las claves que realmente necesita</p>
-        <p>Usar HSMs</p>
+        <h2>Gakoen kudeaketa: jardunbide egokiak</h2>
+        <p>Ez idatzi gakoaren balioak software-kodean, nahiz eta segurua izan</p>
+        <p>Pribilegio txikienaren printzipioa: erabiltzaile batek benetan behar dituen gakoetarako sarbidea soilik izan beharko luke</p>
+        <p>HSM-ak erabili</p>
     </section>
 
     <section class="slide">
-        <h2>Gakoen kudeaketa: buenas prácticas</h2>
-        <p>Automatizar la Gakoen kudeaketa lo más posible</p>
-        <p>Dividir la Sorkuntza, Banaketa etc. entre diferentes personas</p>
-        <p>Dividir las claves en fragmentos</p>
+        <h2>Gakoen kudeaketa: jardunbide egokiak</h2>
+        <p>Gakoen kudeaketa ahalik eta gehien automatizatu</p>
+        <p>Sorkuntza, Banaketa etab. pertsona desberdinen artean banatu</p>
+        <p>Gakoak zatietan banatu</p>
     </section>
 
     <section class="slide">
         <h2>Akats kriptografikoak</h2>
-        <p>¿El certificado del servidor es válido y de confianza, garantizado por un AC?</p>
-        <p>¿Se usan las contraseñas de los usuarios directamente como claves, en vez de usar password-based key derivation functions (PBKDFs)?</p>
-        <p>¿Es la semilla de aleatoriedad usada lo suficientemente fuerte?</p>
+        <p>Zerbitzariaren ziurtagiria baliozkoa eta konfiantzazkoa da, eta AC batek bermatzen du?</p>
+        <p>Erabiltzaileen pasahitzak zuzenean gako gisa erabiltzen al dira, Pasword Based Key Derivation Functions (PBKDFs) erabili beharrean?</p>
+        <p>Ausazkotasun-hazia behar bezain indartsua al da?</p>
     </section>
 
     <section class="slide">
         <h2>Akats kriptografikoak: prebentzioa</h2>
-        <p>Clasificar los datos transmitidos, procesados y almacenados según su nivel de exigencia de privacidad</p>
-        <p>Almacenar la menor cantidad de datos sensibles posible, inclErabilpena usando métodos como <a href="https://www.securitymetrics.com/blog/what-tokenization-and-how-can-i-use-it-pci-dss-compliance">Tokenización</a></p>
-        <p>Cifrar todos los datos almacenados (Encription at rest)</p>
+        <p>Transmititutako, prozesatutako eta biltegiratutako datuak pribatutasun-mailaren arabera sailkatu</p>
+        <p>Ahalik eta datu pribatu gutxien biltegiratzea, nahiz eta <a href="https://www.securitymetrics.com/blog/what-tokenization-and-how-can-i-use-it-pci-dss-compliance">Tokenizazioa</a> bezalako metodoak erabili</p>
+        <p>Biltegiratutako datu guztiak zifratu (Encription at rest)</p>
     </section>
 
     <section class="slide">
         <h2>Akats kriptografikoak: prebentzioa</h2>
-        <p>Usar algoritmos actualizados (No usar MD5, SHA1, ...), claves fuertes, y Gakoen kudeaketa</p>
-        <p>Cifrar todos los datos en transito con protocolos como TLS FS (TLS + Forward Secrecy)</p>
-        <p>No permitir el Erabilpena de caches en el cliente para datos sensibles</p>
+        <p>Algoritmo eguneratuak (MD5, SHA1, ... ez), gako indartsuak, eta Gakoen kudeaketa erabili</p>
+        <p>transmititzen diren datua guztiak zifratu TLS FS bidez (TLS + Forward Secrecy)</p>
+        <p>Bezeroan datu berezientzako ez baimendu cache-en erabilpena</p>
     </section>
 
     <section class="slide">
         <h2>Akats kriptografikoak: prebentzioa</h2>
-        <p>Almacenar contraseñas con hashes + sal</p>
-        <p>Usar semillas con la mayor entropia posible</p>
+        <p>Pasahitzak hash eta gatzarekin biltegiratu</p>
+        <p>Entropia posible handiena duten haziak erabili</p>
     </section>
 
     <section class="slide">
-        <h2>Akats kriptografikoak: ejemplos</h2>
+        <h2>Akats kriptografikoak: adibideak</h2>
         <p>Una aplicación usa la función por defecto de la base de datos para encriptar datos. Sin embargo estos datos se desencriptan automáticamente al consultarlos, permitiendo el acceso si por ejemplo hay un ataque de Injekzioa SQL</p> 
     </section>
 
     <section class="slide">
-        <h2>Akats kriptografikoak: ejemplos</h2>
-        <p>Una web no obliga al Erabilpena de TLS. Si un atacante monitoriza el tráfico y "baja" una conexión de HTTPS a HTTP puede interceptar consultas y conseguir la cookie de sesión del usuario. El atacante reenvia la cookie (replay) secuestrando la sesión del usuario y obteniendo acceso a los datos de usuario</p>
-        <p>La base de datos usa hashes sin sal. Un atacante puede pre-calcular los hashes con <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPUs</a></p>  
+        <h2>Akats kriptografikoak: adibideak</h2>
+        <p>Web orrialde batek ez du TLS erabilpena derrigortzen. Erasotzaile batek trafikoa monitorizatzen badu eta konexio bat HTTPStik HTTPera "jaisten" badu, kontsultak eten eta erabiltzailearen saioko cookiea lor dezake. Erasotzaileak cookiea (replay) birbidaltzen du erabiltzailearen saioa bahituz eta erabiltzaile-datuetarako sarbidea lortuz</p>
+        <p>Datu baseak gatz gabeko hash-ak erabiltzen ditu. Erasotzaile batek hash-ak prekalkulatu ditzake <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPU</a>-ak erabiliz</p>  
     </section>
 
     <section class="slide">
