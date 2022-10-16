@@ -44,13 +44,13 @@
 
     <section class="slide">
         <h2>Urrakortasun nagusiak Web Sistemetan</h2>
-        La <a href="https://owasp.org/">Open Web Application Security Project (OWASP)</a> Urrakortasun ohikoenak aztertzen ditu<br><br>
+        <a href="https://owasp.org/">Open Web Application Security Project (OWASP)</a> erakundeak urrakortasun ohikoenak aztertzen ditu<br><br>
         aldizkako txostena: OWASP Top Ten (<del>2017</del>, <a href="https://owasp.org/Top10/">2021</a>)
     </section>
 
     <section class="slide">
     <h2>Urrakortasun nagusiak Web Sistemetan</h2>
-    <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/owasp-top-10.png" alt="OWASP Top 10 2017 2021" width="90%"></p>
+    <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/owasp-top-10.png" alt="OWASP Top 10 2017 2021" width="90%"></p>
     </section>
 
     <section class="slide">
@@ -94,7 +94,7 @@
     <section class="slide">
         <h2>Sarbide-kontrola apurtzea: ahuleziak</h2>
         <p>"Ukatzea lehenetsia" printzipioa urratzea: sarbidea gaitasun, rol edo erabiltzaile jakin batzuei bakarrik bermatu beharko litzaieke, baina edozeinen esku dago</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/GAUR-guias-docentes-rotura-control-acceso.png" alt="En el mantenimiento de las guias docentes de GAUR el primer profesor que acceda a la guia, aunque no tenga permisos, se queda con la guia y la puede modificar si quiere" title="En el mantenimiento de las guias docentes de GAUR el primer profesor que acceda a la guia, aunque no tenga permisos, se queda con la guia y la puede modificar si quiere" width="70%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/GAUR-guias-docentes-rotura-control-acceso.png" alt="En el mantenimiento de las guias docentes de GAUR el primer profesor que acceda a la guia, aunque no tenga permisos, se queda con la guia y la puede modificar si quiere" title="En el mantenimiento de las guias docentes de GAUR el primer profesor que acceda a la guia, aunque no tenga permisos, se queda con la guia y la puede modificar si quiere" width="70%"></p>
     </section>
 
     <section class="slide">
@@ -212,7 +212,7 @@
                 <li>Estandar zorrotzak betetzen dituzte: <a href="https://csrc.nist.gov/publications/detail/fips/140/3/final">FIPS 140-2</a> (4 maila)</li>
             </ul>
         </p>
-        <p>Hodeian ere zerbitzuak erabil daitezke: <a href="https://cloud.google.com/security-key-management">Google Cloud Key Management</a></p>
+        <p>Hodeian ere zerbitzuak erabili daitezke: <a href="https://cloud.google.com/security-key-management">Google Cloud Key Management</a></p>
     </section>
 
     <section class="slide">
@@ -245,7 +245,7 @@
 
     <section class="slide">
         <h2>Akats kriptografikoak</h2>
-        <p>Zerbitzariaren ziurtagiria baliozkoa eta konfiantzazkoa da, eta AC batek bermatzen du?</p>
+        <p>Zerbitzariaren ziurtagiria baliozkoa eta konfiantzazkoa da, eta CA batek bermatzen du?</p>
         <p>Erabiltzaileen pasahitzak zuzenean gako gisa erabiltzen al dira, Pasword Based Key Derivation Functions (PBKDFs) erabili beharrean?</p>
         <p>Ausazkotasun-hazia behar bezain indartsua al da?</p>
     </section>
@@ -267,12 +267,12 @@
     <section class="slide">
         <h2>Akats kriptografikoak: prebentzioa</h2>
         <p>Pasahitzak hash eta gatzarekin biltegiratu</p>
-        <p>Entropia posible handiena duten haziak erabili</p>
+        <p>Entropia handiena duten haziak erabili</p>
     </section>
 
     <section class="slide">
         <h2>Akats kriptografikoak: adibideak</h2>
-        <p>Una aplicación usa la función por defecto de la base de datos para encriptar datos. Sin embargo estos datos se desencriptan automáticamente al consultarlos, permitiendo el acceso si por ejemplo hay un ataque de Injekzioa SQL</p> 
+        <p>Aplikazio batek datuak enkriptatzeko datu-basearen funtzio lehenetsia erabiltzen du. Hala ere, datu horiek automatikoki desenkriptatzen dira kontsultatzean, eta sarbidea ahalbidetzen da, adibidez, SQL injekzio eraso bat badago</p> 
     </section>
 
     <section class="slide">
@@ -298,23 +298,24 @@
 
     <section class="slide">
         <h2>Injekzioa</h2>
-        Una aplicación es vulnerable si:
+        Aplikazio ahula da baldin eta:
         <ul>
-            <li>Los datos que provee el usuario no se validan, filtran, o limpian</li>
-            <li>El intérprete usa directamente consultas dinámicas o llamadas no parametrizadas sin "escaping"</li>
-            <li>Datos hostiles introducidos por el usuario son usados directamente. La sentencia SQL o comando que se use contiene estructuras/datos maliciosos en consultas dinámicas, comandos, o procedimientos almacenados</li>
+            <li>Erabiltzaileak ematen dituen datuak ez dira balioztatzen, iragazten edo garbitzen</li>
+            <li>Interpreteak zuzenean kontsulta dinamikoak edo parametrizatu gabeko deiak erabiltzen ditu, "escaping" ik gabe</li>
+            <li>Erabiltzaileak sartutako datu okerrak zuzenean erabiltzen dira. SQL sententziak edo erabiltzen diren komandoak egitura/datu maltzurrak ditu kontsulta dinamikoetan, komandoetan edo biltegiratutako prozeduretan
+            </li>
         </ul>
 
     </section>
 
     <section class="slide">
-        <h2>Injekzioa SQL</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/boy.png" alt="Bobby tables" width="90%"></p>
+        <h2>SQL injekzioa</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/boy.png" alt="Bobby tables" width="90%"></p>
         <p style="text-align:left;font-size:30%;"><a href="https://xkcd.com/327/">https://xkcd.com/327/</a></p>
     </section>
 
     <section class="slide">
-        <h2>Injekzioa SQL</h2>
+        <h2>SQL injekzioa</h2>
         <pre><code>
 txtUserId = getRequestString("UserId");
 txtSQL = "SELECT * FROM Users 
@@ -323,20 +324,20 @@ WHERE UserId = " + txtUserId;
     </section>
 
     <section class="slide">
-        <h2>Injekzioa SQL</h2>
+        <h2>SQL injekzioa</h2>
         Input web: <code>105 OR 1=1</code>
         <pre><code>SELECT * FROM Users WHERE UserId = 105 OR 1=1;
         </code></pre>
-        OR 1=1 es siempre true, va a devolver todas las lineas de la columna Users 
+        OR 1 = 1 beti da true, Users zutabeko lerro guztiak itzuliko ditu
     </section>
 
     <section class="slide">
-        <h2>Consultas parametrizadas</h2>
-        <p>Parametros: valores que se añaden a la consulta al ejecutarla y son analizadas de forma literal (ej. si la variable hace referencia a nombres de columnas, el interprete se asegura de que los parametros son nombres de columnas antes de añadirlas a la consulta y ejecutarla) </p>   
+        <h2>Parametrizatutako kontsultak</h2>
+        <p>Parametroak: exekutatzean kontsultari gehitzen zaizkion eta hitzez hitz aztertzen diren balioak (adibidez, aldagaiak zutabe-izenak aipatzen baditu, interpreteak ziurtatzen du parametroak zutabe-izenak direla kontsultara gehitu eta exekutatu aurretik) </p>   
     </section>
 
     <section class="slide">
-        <h2>Consultas parametrizadas</h2>
+        <h2>Parametrizatutako kontsultak</h2>
         <pre><code>
 $stmt = $dbh->prepare("INSERT INTO Customers 
 (CustomerName,Address,City) 
@@ -350,8 +351,8 @@ $stmt->execute();
 
     <section class="slide">
         <h2>Object-Relational Mapping (ORM)</h2>
-        <p>Frameworks que traducen el contenido de la base de datos a objetos</p>
-        <p>No hay una conexion directa con la base de datos</p>
+        <p>Datu-basearen edukia objektuetara itzultzen duten framework-ak</p>
+        <p>Ez dago datu-basearekin konexio zuzenik</p>
     </section>
 
     <section class="slide">
@@ -367,19 +368,19 @@ String name = p.FirstName;
     </section>
 
     <section class="slide">
-        <h2>Injekzioa: detección de vulnerabilidad</h2>
-        <p>Revisión del código fuente</p>
-        <p>Testeo automatizado de inputs en forma de parametros, cabeceras HTTP, URLs, cookies, JSON, y XML</p>
-        <p>Application Security Testing en pipelines de <a href="https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/blob/main/.github/workflows/robot.yml">Integración Continua</a>/Despliegue Continuo</p>
+        <h2>Injekzioa: ahuileziaren detekzioa</h2>
+        <p>Iturburu-kodea berrikustea</p>
+        <p>HTTP goiburuen, URL-en, Cookie-en, JSON, XML eta web input-en testatze automatizatua</p>
+        <p>Application Security Testing erabili <a href="https://github.com/mikel-egana-aranguren/Transparent-Relations-Ontology/blob/main/.github/workflows/robot.yml">Continous Integration</a>/Continous Deployment prozesutan</p>
         
     </section>
 
     <section class="slide">
         <h2>Injekzioa: prebentzioa</h2>
-        <p>Usar APIs seguras que no usen el intérprete. Si no es posible, usar llamadas parametrizadas u ORM</p>
-        <p>Validar los inputs</p>
-        <p>"Escapar" todos los caracteres especiales posibles</p>
-        <p>Usar controles como LIMIT en SQL para evitar perdida masiva de datos</p>        
+        <p>Interpretea erabiltzen ez duten API seguruak erabiltzea. Ezin bada, dei parametrizatuak edo ORMak erabili</p>
+        <p>Input-ak balioztatu</p>
+        <p>Ahal diren karaktere berezi guztiak "Escape"-atu</p>
+        <p>SQLn LIMIT bezalako kontrolak erabiltzea, datuen galera masiboa saihesteko</p>        
     </section>
 
     <section class="slide">
