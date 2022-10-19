@@ -446,8 +446,8 @@ String name = p.FirstName;
         Aplikazioa zaurgarria izan liteke baldin eta:
         <ul>
             <li>Sistema eguneratuetarako, azken segurtasun-adabakiak ez daude aktibo eta/edo behar bezala konfiguratuta</li>
-            <li>Frameworketako (Struts, Spring, ASP.net,...), liburutegietako, datu-baseetako, ...segurtasun-aukerak ez daude aktibatuta.</li>
-            <li>Zerbitzariak ez du <a href="https://web.dev/security-headers/">segurtasuna HTTP goiburuekin</a> erantzuten</li>
+            <li>Frameworketako (Struts, Spring, ASP.net,...), liburutegietako, datu-baseetako, ... segurtasun-aukerak ez daude aktibatuta</li>
+            <li>Zerbitzariak ez du <a href="https://web.dev/security-headers/">segurtasun HTTP goiburuekin</a> erantzuten</li>
         </ul>
     </section>
 
@@ -455,7 +455,7 @@ String name = p.FirstName;
         <h2>Segurtasun-konfigurazio eskasa: prebentzioa</h2>
         <ul>
             <li>
-                Garapen automatizatuko sistema, non ingurune seguruagoa hedatzea erraza den. Garapen-, kalitate- eta ekoizpen-inguruneek konfigurazio bera izan beharko lukete, kredentzialek ezik. Prozesu horrek ahalik eta automatizatuena izan beharko luke, ingurune seguru berri bat ahalik eta azkarren sortzeko
+                Garapen automatizatuko sistema, non ingurune seguruagoa hedatzea erraza den. Garapen-, kalitate- eta ekoizpen-inguruneek konfigurazio bera izan beharko lukete, kredentzialek izan ezik. Prozesu horrek ahalik eta automatizatuena izan beharko luke, ingurune seguru berri bat ahalik eta azkarren sortzeko
                 </li>
             <li>Sistema minimalista, osagai eta funtzio gehigarririk gabe</li>
         </ul>
@@ -480,7 +480,7 @@ String name = p.FirstName;
         Aplikazioa zaurgarria izan liteke baldin eta:
         <ul>
             <li>Ez dakizkigu osagaien bertsio zehatzak (Beti darabilgu "latest"), zuzenean erabiltzen ditugun osagaietan eta berauen dependentzietan</li>
-            <li>Si el software no tiene soporte, es vulnerable, u obsoleto. Esto incluye al sistema operativo, servidor web, sistema de gestión de bases de datos, APIs y sus componentes, entornos de ejecución, y librerías</li>
+            <li>Softwareak ez badu soporterik, kaltebera edo zaharkitua da: sistema eragilea, web zerbitzaria, datu-baseak kudeatzeko sistema, API-ak eta horien osagaiak, exekuzio-inguruneak eta liburutegiak</li>
         </ul>
     </section>
 
@@ -494,13 +494,12 @@ String name = p.FirstName;
     </section>
 
     <section class="slide">
-        <h2>Osagai kalteberak eta zaharkituak: prevención</h2>
+        <h2>Osagai kalteberak eta zaharkituak: prebentzioa</h2>
         Adabakiak aplikatzeko prozesu bat egon beharko litzateke:
         <ul>
-            <li>Quitar dependenicas que no se usan, funcionalidades, componentes, archivos, innecesarios, etc</li>
-            <li>Tener un inventario actualizado de componentes en servidor y cliente, incluyendo sus dependencias, de manera automatizada. Visitar regularmente recursos como CVE para encontrar vulnerabilidades en esos componentes</li>
-            <li>Obtener componentes solo de fuentes oficiales y firmados</li>
-
+            <li>Erabiltzen ez diren dependentziak, funtzionalitateak, osagaiak, fitxategiak etab. kendu</li>
+            <li>Zerbitzarian eta bezeroan erabiltzen diren osagaien eta beraien dependentzien zerrenda izan, automatikoki sortua. CVE bezalako baliabideak berrikusi osagaion ahultasunak jakiteko</li>
+            <li>Osagai sinatuak soilik eskuratu, eta iturri ofizialetatik</li>
         </ul>
     </section>
 
@@ -511,55 +510,56 @@ String name = p.FirstName;
 
     <section class="slide">
         <h2>Identifikazio- eta autentifikazio-akatsak</h2>
-        <p>La confirmación de identidad de usuarios, autenticación, y la gestión de sesiones son funciones críticas para proteger al sistema contra ataques basado en autenticación</p>
+        <p>Erabiltzaileen nortasuna berrestea, autentifikatzea eta saioak kudeatzea funtzio kritikoak dira sistema autentifikazioan oinarritutako erasoen aurka babesteko</p>
     </section>
 
     <section class="slide">
         <h2>Identifikazio- eta autentifikazio-akatsak</h2>
-        Puede haber vulnerabilidaes relacionadas con la autenticación si:
+        Aplikazioa zaurgarria izan liteke baldin eta:
         <ul>
-            <li>Permite ataque automatizados como el <a href="https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/">Credential Stuffing</a> en los que un atacante tiene una lista de usuarios y contraseñas válidos</li>
-            <li>Permite ataques de fuerza bruta</li>
-            <li>Permite contraseñas por defecto, débiles o muy conocidas (ej. admin test)</li>
-            <li>Usa mecanismos débiles para la recuperación de contraseñas, como el responder ciertas preguntas</li>
+            <li><a href="https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/">Credential Stuffing</a> bezalako eraso automatizatuak ezin ditu ekidin</li>
+            <li>Pasahitz ahulak edo berez osagaiekin datozenak onartzen ditu (adib. admin test)</li>
+            <li>Pasahitzak berreskuratzeko metodo ahulak erabiltzen ditu, galderei erantzutea bezala</li>
         </ul>
     </section>
 
     <section class="slide">
         <h2>Identifikazio- eta autentifikazio-akatsak</h2>
-        Puede haber vulnerabilidaes relacionadas con la autenticación si:
+        Aplikazioa zaurgarria izan liteke baldin eta:
         <ul>
-            <li>Almacena las contraseñas en texto plano, o con hashes débiles</li>
-            <li>No usa autenticacion multi-factor</li>
-            <li>Expone identificadores de sesión en la URL</li>
-            <li>No invalida sesiones despues de logout o inactividad</li>
+            <li>Pasahitzak testu soilean gordetzen ditu, edo hash ahulekin</li>
+            <li>Ez du autentikazio faktore-anitza erabiltzen</li>
+            <li>URL-an saio identifikatzaileak jartzen ditu</li>
+            <li>Ez ditu saioak baliogabetzen logout baten ondoren, edo aktibitaterik ez badago</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Identifikazio- eta autentifikazio-akatsak: prevención</h2>
+        <h2>Identifikazio- eta autentifikazio-akatsak: prebentzioa</h2>
 
         <ul>
-            <li>Si es posible implementar autenticación multi-factor</li>
-            <li>No hacer despliegues con credenciales por defecto, especialmente para usuarios admin</li>
-            <li>Implementar validaciones "ligeras" de contraseñas, como buscar las contraseñas en la lista de las 10.000 peores contraseñas</li>
-            <li>Tener una buena política de tamaño de contraseñas, complejidad y rotación de contraseñas</li>
+            <li>Ahal den heinean autentikazio multi-faktorea erabili</li>
+            <li>Ez egin hedapenik hobetsitako kredentzialekin, batez ere admin erabiltzailearentzat</li>
+            <li>Pasahitzen balioztatze errazak inplementatu, adibidez 10.000 pasahitz txarrenen zerrendan pasahitza bilatu
+            </li>
+            <li>Pasahitzen tamaina, konplexutasuna, eta balio-epea egoki kudeatu</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Identifikazio- eta autentifikazio-akatsak: prevención</h2>
+        <h2>Identifikazio- eta autentifikazio-akatsak: prebentzioa</h2>
 
         <ul>
-            <li>Limitar o retrasar los intentos fallidos de login, pero sin crear una situación de denegación de servicio. Logear todos los intentos fallidos y alertar a los administradores si hay ataques de credential stuffing</li>
+            <li>Ez dabiltzan login saiakerak mugatu edo atzeratu, Denial of Service (DoS) egoera bat sortu gabe. Es dabiltzan saiakera gutztiak log-ean gorde eta administratzaileei abisatu Credential Stuffing eraso bat gertatzen bada
+            </li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Identifikazio- eta autentifikazio-akatsak: prevención</h2>
+        <h2>Identifikazio- eta autentifikazio-akatsak: prebentzioa</h2>
 
         <ul>
-            <li>Usar un gestor de sesiones en el lado de servidor que sea seguro y esté implementado junto con la aplicación. Debe generar un identificador de sesión aleatorio de gran entropia despues del login. Los identificadores de sesion no deberian estar en la URL, sino almacenados de manera segura. Los identificadores deberían ser invalidados inmediatamente despues del logout o inactividad</li>
+            <li>Zerbitzariaren aldean, segurua den eta aplikazioarekin batera inplementatuta dagoen saio-kudeatzaile bat erabiltzea. Loginaren ondoren entropia handiko ausazko saioaren identifikatzaile bat sortu beharko luke. Saio-identifikatzaileek ez lukete URLan egon behar, modu seguruan biltegiratuta baizik. Identifikatzaileak baliogabetu egin beharko lirateke logout edo jarduera eza gertatu eta berehala</li>
         </ul>
     </section>
 
@@ -580,34 +580,29 @@ String name = p.FirstName;
 
     <section class="slide">
         <h2>Akatsak datuen eta softwarearen osotasunean</h2>
-        <p>Se dan cuando hay código e infraestructura que no protege contra violaciones de su integridad</p>
-        <p>Por ejemplo si una aplicación depende de librerías, plugins o módulos que han sido obtenidos de fuentes sin confianza, repositorios, o <a href="https://en.wikipedia.org/wiki/Content_delivery_network">CDNs (Content Delivery Networks)</a></p>
+        <p>Osotasunaren urraketetatik babesten ez duen kodea eta azpiegitura dagoenean ematen dira</p>
+        <p>Adibidez, aplikazio baten dependentziak konfidantzarik gabeko errepositorio edo <a href="https://en.wikipedia.org/wiki/Content_delivery_network">CDN (Content Delivery Network)</a>etatik jasoak izan badira</p>
     </section>
 
     <section class="slide">
         <h2>Akatsak datuen eta softwarearen osotasunean</h2>
-        <p>Un pipeline de integración continua o despliegue continuo (IC/DC) puede introducir código malicioso</p>
-        <p>Muchas aplicaciones incluyen funciones de auto-actualización sin los debidos tests de integridad</p>
-        <p><a href="https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html">Des-serialización insegura</a></p>
+        <p>Continous Integration (CI) / Continous Deployment (DC) pipeline batek kode maltzurra sartu ahal du aplikazioan</p>
+        <p>Aplikazio askok auto-eguneratze funtzioak dituzte, beharrezkoak diren osotasun testik gabe
+        </p>
+        <p><a href="https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html">Des-serializazio insegurua</a></p>
     </section>
 
     <section class="slide">
-        <h2>Akatsak datuen eta softwarearen osotasunean: prevención</h2>
-        <p>Usar firmas digitales o mecanismos similares para verificar que el software es de la fuente oficial y no ha sido alterado</p>
-        <p>Asegurarse de que las gestores de librerías como <a href="https://www.npmjs.com/">NPM</a> o <a href="https://maven.apache.org/">Apache Maven</a> usan fuentes de fiar. Valorar alojar repositorios propios con mayor seguridad (ej. <a href="https://www.sonatype.com/products/nexus-repository">Nexus</a>)</p>
+        <h2>Akatsak datuen eta softwarearen osotasunean: prebentzioa</h2>
+        <p>Sinadurak edo antzeko mekanismoak erabili softwarea iturri ofizialetik datorrela eta aldatua ez dela izan balioztatzeko
+        </p>
+        <p> <a href="https://www.npmjs.com/">NPM</a> edo <a href="https://maven.apache.org/">Apache Maven</a> bezalako tresnek errepositorio fidagarriak erabiltzen dutela bermatzea. Posible bada segurtasun altuagoko errepositorioak erakunde barruan eduki (Adib. <a href="https://www.sonatype.com/products/nexus-repository">Nexus</a>)</p>
     </section>
 
     <section class="slide">
-        <h2>Akatsak datuen eta softwarearen osotasunean: prevención</h2>
-        <p>Asegurarse de que los pipelines IC/DC tienen una configuración y control de acceso adecuados para asegurar la integridad del codigo en todo el proceso</p>
-        <p>Asegurarse de que no se envia datos serializados sin firmar o cifrar a clientes sin confianza sin algun tipo de validación de integridad para detectar modificación o un replay de los datos des-serializados</p>
-    </section>
-
-    <section class="slide">
-        <h2>Akatsak datuen eta softwarearen osotasunean: ejemplos de escenarios de ataque</h2>
-        <p>Muchos routers para el hogar aplican actualizaciones de firmware sin verificar. Se espera que los ataques a estos  aumenten en los proximos años</p>
-        <p><a href="https://www.cvedetails.com/cve/CVE-2020-10148/">Solar Winds Orion attack</a> (Alcanzó a unas 18.000 organizaciones en todo el mundo)</p>
-        <p></p>
+        <h2>Akatsak datuen eta softwarearen osotasunean: prebentzioa</h2>
+        <p>IC/DC pipelinek prozesu osoan kodearen osotasuna ziurtatzeko konfigurazio eta sarbide-kontrol egokiak dituztela bermatzea</p>
+        <p>Ziurtatu ez dela datu serializaturik bidaltzen sinatu gabe, edo osotasunaren balidazio metodorik gabe, des-serializatutako datuen aldaketa edo replay bat detektatzeko</p>
     </section>
 
     <section class="slide">
@@ -628,38 +623,38 @@ String name = p.FirstName;
     
     <section class="slide">
         <h2>Akatsak segurtasunaren monitorizazioan</h2>
-        No hay una monitorización adecuada si:
+        Ez dago monitorizazio egokirik, baldin eta:
         <ul>
-            <li>Los eventos auditables tales como logins, logins fallidos, o transacciones de alto valor no son almacenados en un log (registro)</li>
-            <li>Los errores y advertencias generan mensajes inadecuados en los logs (O no los generan)</li>
-            <li>Los logs de las APIs y las aplicaciones no se monitorizan para detectar comportamiento sospechoso</li>
-            <li>Los logs solo se almacenan en local</li>
+            <li>Gertaera auditagarriak, hala nola login-ak, huts egindako login-ak, edo balio handiko transakzioak ez dira log (erregistro) batean biltegiratzen</li>
+            <li>Erroreek eta ohartarazpenek mezu desegokiak sortzen dituzte logetan (Edo ez dituzte sortzen)</li>
+            <li>APien eta aplikazioen logak ez dira monitorizatzen portaera susmagarria detektatzeko</li>
+            <li>Logak lokalean soilik gordetzen dira</li>
         </ul>
     </section>
 
     <section class="slide">
         <h2>Akatsak segurtasunaren monitorizazioan</h2>
-        No hay una monitorización adecuada si:
+        Ez dago monitorizazio egokirik, baldin eta:
         <ul>
-            <li>No hay procesos de respuesta automáticos a partir de ciertos umbrales</li>
-            <li>El pen-testing con herramientas como OWASP ZAP no genera alertas</li>
-            <li>La aplicación no es capaz de detectar o alertar sobre ataques en marcha en tiempo real</li>
+            <li>Ez dago erantzun-prozesu automatikorik atalase jakin batzuetatik abiatuta</li>
+            <li>OWASP ZAP bezalako tresnekin egindako pen-testing-ak ez ditu alertak sortzen</li>
+            <li>Aplikazioa ez da gai denbora errealean martxan dauden erasoak detektatzeko edo ohartarazteko</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Akatsak segurtasunaren monitorizazioan: prevención</h2>
+        <h2>Akatsak segurtasunaren monitorizazioan: prebentzioa</h2>
         <ul>
-            <li>Asegurarse de que todos los fallos de login, control de acceso, o validación de inputs son registrados en el log con suficiente contexto de usuario para poder identificar cuentas sospechosas y almacenados con suficiente tiempo para hacer un análisis forense</li>
-            <li>Asegurarse de que los logs son generados de tal manera que las soluciones automatizadas pueden consumirlos facilmente</li>
+            <li>Ziurtatu login-akats guztiak, sarbide-kontrola edo inputak baliozkotzea logean erregistratzen direla erabiltzaile-testuinguru nahikoarekin, kontu susmagarriak identifikatu ahal izateko, eta analisi forentse bat egiteko denbora nahikoarekin biltegiratuta</li>
+            <li>Log-ak soluzio automatizatuek erraz kontsumi ditzaketen moduan sortzen direla ziurtatzea</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Akatsak segurtasunaren monitorizazioan: prevención</h2>
+        <h2>Akatsak segurtasunaren monitorizazioan: prebentzioa</h2>
         <ul>
-            <li>Asegurarse de que las transacciones de gran valor tienen un adecuado registro de procedencia con controles de integridad para prevenir modificaciones </li>
-            <li>Establecer e implementar un plan de respuesta y recuperación, probándolo periodicamente</li>
+            <li>Balio handiko transakzioek jatorri-erregistro egokia dutela ziurtatzea, osotasun-kontrolekin, aldaketak prebenitzeko</li>
+            <li>Erantzuteko eta berreskuratzeko plan bat ezarri eta inplementatzea, aldian behin probatuz</li>
         </ul>
     </section>
 
@@ -672,11 +667,6 @@ String name = p.FirstName;
             <li><a href="https://cwe.mitre.org/data/definitions/778.html">CWE-778: Insufficient Logging</a></li>
         </ul>
     </section>
-
-
-
-
-
     
     <!-- FOOTER -->
 
