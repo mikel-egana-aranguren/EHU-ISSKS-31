@@ -76,7 +76,6 @@
             <li>Identifikazio- eta autentifikazio-akatsak</li>
             <li>Akatsak datuen eta softwarearen osotasunean</li>
             <li>Akatsak segurtasunaren monitorizazioan</li>
-            <li>Server-Side Request Forgery (SSRF)</li>
         </ul>
     </section>
 
@@ -109,7 +108,7 @@
         <p><b>Pribilegioa igotzea:</b> administratzaile gisa jardutea, erabiltzaile gisa logeatuta egonik
         </p>
         <p>Replaying edo JSON Web Token (JWT) aldatzea pribilegioak igotzeko</p>
-        <p>CORSen konfigurazio okerreak baimendu gabeko jatorrietatik APIra sartzeko aukera ematen du
+        <p>CORSen konfigurazio okerrak baimendu gabeko jatorrietatik APIra sartzeko aukera ematen du
         </p>
     </section>
 
@@ -390,6 +389,287 @@ String name = p.FirstName;
             <li><a href="https://cwe.mitre.org/data/definitions/89.html">CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')</a></li>
             <li><a href="https://cwe.mitre.org/data/definitions/73.html">CWE-73: External Control of File Name or Path</a></li>
             <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Diseinu insegurua</h2>
+         <a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">Insecure Design (A04:2021)</a>
+    </section>
+
+    <section class="slide">
+        <h2>Diseinu insegurua</h2>
+        <p>Arkitektura akatsak, kodea inplementatu baino aurrekoak</p>
+    </section>
+
+    <section class="slide">
+        <h2>Software Assurance Maturity Model</h2>
+        <p><a href="https://owaspsamm.org/">https://owaspsamm.org/</a></p>
+        <p><a href="SAMM-v2-PDF.pdf">SAMM-v2-PDF.pdf</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Diseinu insegurua: adibideak</h2>
+        <p>e-commerce kate batek erosleen eskaera asko jaso ditzake boten bidez, produktuak beste leku batzuetan saltzeko. Hori ekidin daiteke, adibidez, arkitekturan botak detektatzen dituzten osagaiak gehituz (Eskaera asko denbora gutxian, produktu bat argitaratzeko segundo gutxiren buruan egindako eskaera, eta abar).
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Diseinu insegurua</h2>
+        <ul>
+            <li><a href="https://cwe.mitre.org/data/definitions/209.html">CWE-209 Generation of Error Message Containing Sensitive Information</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/256.html">CWE-256 Unprotected Storage of Credentials</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/501.html">CWE-501 Trust Boundary Violation</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/522.html">CWE-522 Insufficiently Protected Credentials</a></li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Segurtasun-konfigurazio eskasa</h2>
+         <a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">Security Misconfiguration (A05:2021)</a>
+    </section>
+
+    <section class="slide">
+        <h2>Segurtasun-konfigurazio eskasa</h2>
+        Aplikazioa zaurgarria izan liteke baldin eta:
+        <ul>
+            <li>Hodei zerbitzu batean baimen desegokiak dauzka</li>
+            <li>Beharrezkoak ez diren funtzioak aktibaturik daude (Portuak, zerbitzuak, orrialdeak, kontuak, baimenak)</li>
+            <li>Lehenetsitako kontuek eta pasahitzek aktibo jarraitzen dute</li>
+            <li>Erroreen kudeaketak informazioa azaleratzen du (adib. stack traces Java salbuespenetan) / erroreek informazio gehiegi ematen dute</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Segurtasun-konfigurazio eskasa</h2>
+        Aplikazioa zaurgarria izan liteke baldin eta:
+        <ul>
+            <li>Sistema eguneratuetarako, azken segurtasun-adabakiak ez daude aktibo eta/edo behar bezala konfiguratuta</li>
+            <li>Frameworketako (Struts, Spring, ASP.net,...), liburutegietako, datu-baseetako, ...segurtasun-aukerak ez daude aktibatuta.</li>
+            <li>Zerbitzariak ez du <a href="https://web.dev/security-headers/">segurtasuna HTTP goiburuekin</a> erantzuten</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Segurtasun-konfigurazio eskasa: prebentzioa</h2>
+        <ul>
+            <li>
+                Garapen automatizatuko sistema, non ingurune seguruagoa hedatzea erraza den. Garapen-, kalitate- eta ekoizpen-inguruneek konfigurazio bera izan beharko lukete, kredentzialek ezik. Prozesu horrek ahalik eta automatizatuena izan beharko luke, ingurune seguru berri bat ahalik eta azkarren sortzeko
+                </li>
+            <li>Sistema minimalista, osagai eta funtzio gehigarririk gabe</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Segurtasun-konfigurazio eskasa</h2>
+        <ul>
+            <li><a href="https://cwe.mitre.org/data/definitions/16.html">CWE-16 Configuration</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/611.html">CWE-611 Improper Restriction of XML External Entity Reference</a></li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Osagai kalteberak eta zaharkituak</h2>
+         <a href="https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/">Vulnerable and Outdated Components (A06:2021)</a>
+    </section>
+
+    <section class="slide">
+        <h2>Osagai kalteberak eta zaharkituak</h2>
+        Aplikazioa zaurgarria izan liteke baldin eta:
+        <ul>
+            <li>Ez dakizkigu osagaien bertsio zehatzak (Beti darabilgu "latest"), zuzenean erabiltzen ditugun osagaietan eta berauen dependentzietan</li>
+            <li>Si el software no tiene soporte, es vulnerable, u obsoleto. Esto incluye al sistema operativo, servidor web, sistema de gestión de bases de datos, APIs y sus componentes, entornos de ejecución, y librerías</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Osagai kalteberak eta zaharkituak</h2>
+        Aplikazioa zaurgarria izan liteke baldin eta:
+        <ul>
+            <li>Ez baduzu zure sistema aldizka eskaneatzen urrakortasunak bilatzeko, eta ez bazaude harpidetuta erabiltzen dituzun osagaiei buruzko segurtasun-buletinetara</li>
+            <li>Osagaiak arriskuan oinarritutako maiztasunez eguneratzen ez badituzu. Hori oso ohikoa da hilean behin adabakiak aplikatzeko politikak dituzten erakunde handietan, sistema kaltebera delarik egun batzutan</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Osagai kalteberak eta zaharkituak: prevención</h2>
+        Adabakiak aplikatzeko prozesu bat egon beharko litzateke:
+        <ul>
+            <li>Quitar dependenicas que no se usan, funcionalidades, componentes, archivos, innecesarios, etc</li>
+            <li>Tener un inventario actualizado de componentes en servidor y cliente, incluyendo sus dependencias, de manera automatizada. Visitar regularmente recursos como CVE para encontrar vulnerabilidades en esos componentes</li>
+            <li>Obtener componentes solo de fuentes oficiales y firmados</li>
+
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Identifikazio- eta autentifikazio-akatsak</h2>
+         <a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/">Identification and Authentication Failures (A07:2021)</a>
+    </section>
+
+    <section class="slide">
+        <h2>Identifikazio- eta autentifikazio-akatsak</h2>
+        <p>La confirmación de identidad de usuarios, autenticación, y la gestión de sesiones son funciones críticas para proteger al sistema contra ataques basado en autenticación</p>
+    </section>
+
+    <section class="slide">
+        <h2>Identifikazio- eta autentifikazio-akatsak</h2>
+        Puede haber vulnerabilidaes relacionadas con la autenticación si:
+        <ul>
+            <li>Permite ataque automatizados como el <a href="https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/">Credential Stuffing</a> en los que un atacante tiene una lista de usuarios y contraseñas válidos</li>
+            <li>Permite ataques de fuerza bruta</li>
+            <li>Permite contraseñas por defecto, débiles o muy conocidas (ej. admin test)</li>
+            <li>Usa mecanismos débiles para la recuperación de contraseñas, como el responder ciertas preguntas</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Identifikazio- eta autentifikazio-akatsak</h2>
+        Puede haber vulnerabilidaes relacionadas con la autenticación si:
+        <ul>
+            <li>Almacena las contraseñas en texto plano, o con hashes débiles</li>
+            <li>No usa autenticacion multi-factor</li>
+            <li>Expone identificadores de sesión en la URL</li>
+            <li>No invalida sesiones despues de logout o inactividad</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Identifikazio- eta autentifikazio-akatsak: prevención</h2>
+
+        <ul>
+            <li>Si es posible implementar autenticación multi-factor</li>
+            <li>No hacer despliegues con credenciales por defecto, especialmente para usuarios admin</li>
+            <li>Implementar validaciones "ligeras" de contraseñas, como buscar las contraseñas en la lista de las 10.000 peores contraseñas</li>
+            <li>Tener una buena política de tamaño de contraseñas, complejidad y rotación de contraseñas</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Identifikazio- eta autentifikazio-akatsak: prevención</h2>
+
+        <ul>
+            <li>Limitar o retrasar los intentos fallidos de login, pero sin crear una situación de denegación de servicio. Logear todos los intentos fallidos y alertar a los administradores si hay ataques de credential stuffing</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Identifikazio- eta autentifikazio-akatsak: prevención</h2>
+
+        <ul>
+            <li>Usar un gestor de sesiones en el lado de servidor que sea seguro y esté implementado junto con la aplicación. Debe generar un identificador de sesión aleatorio de gran entropia despues del login. Los identificadores de sesion no deberian estar en la URL, sino almacenados de manera segura. Los identificadores deberían ser invalidados inmediatamente despues del logout o inactividad</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Identifikazio- eta autentifikazio-akatsak</h2>
+        <ul>
+            <li><a href="https://cwe.mitre.org/data/definitions/297.html">CWE-297: Improper Validation of Certificate with Host Mismatch</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/287.html">CWE-287: Improper Authentication</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/384.html">CWE-384: Session Fixation</a></li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak datuen eta softwarearen osotasunean</h2>
+         <a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">Software and Data Integrity Failures (A08:2021)</a>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak datuen eta softwarearen osotasunean</h2>
+        <p>Se dan cuando hay código e infraestructura que no protege contra violaciones de su integridad</p>
+        <p>Por ejemplo si una aplicación depende de librerías, plugins o módulos que han sido obtenidos de fuentes sin confianza, repositorios, o <a href="https://en.wikipedia.org/wiki/Content_delivery_network">CDNs (Content Delivery Networks)</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak datuen eta softwarearen osotasunean</h2>
+        <p>Un pipeline de integración continua o despliegue continuo (IC/DC) puede introducir código malicioso</p>
+        <p>Muchas aplicaciones incluyen funciones de auto-actualización sin los debidos tests de integridad</p>
+        <p><a href="https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html">Des-serialización insegura</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak datuen eta softwarearen osotasunean: prevención</h2>
+        <p>Usar firmas digitales o mecanismos similares para verificar que el software es de la fuente oficial y no ha sido alterado</p>
+        <p>Asegurarse de que las gestores de librerías como <a href="https://www.npmjs.com/">NPM</a> o <a href="https://maven.apache.org/">Apache Maven</a> usan fuentes de fiar. Valorar alojar repositorios propios con mayor seguridad (ej. <a href="https://www.sonatype.com/products/nexus-repository">Nexus</a>)</p>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak datuen eta softwarearen osotasunean: prevención</h2>
+        <p>Asegurarse de que los pipelines IC/DC tienen una configuración y control de acceso adecuados para asegurar la integridad del codigo en todo el proceso</p>
+        <p>Asegurarse de que no se envia datos serializados sin firmar o cifrar a clientes sin confianza sin algun tipo de validación de integridad para detectar modificación o un replay de los datos des-serializados</p>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak datuen eta softwarearen osotasunean: ejemplos de escenarios de ataque</h2>
+        <p>Muchos routers para el hogar aplican actualizaciones de firmware sin verificar. Se espera que los ataques a estos  aumenten en los proximos años</p>
+        <p><a href="https://www.cvedetails.com/cve/CVE-2020-10148/">Solar Winds Orion attack</a> (Alcanzó a unas 18.000 organizaciones en todo el mundo)</p>
+        <p></p>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak datuen eta softwarearen osotasunean</h2>
+        <ul>
+            <li><a href="https://cwe.mitre.org/data/definitions/829.html">
+                CWE-829: Inclusion of Functionality from Untrusted Control Sphere</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/494.html">CWE-494: Download of Code Without Integrity Check</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/502.html">CWE-502: Deserialization of Untrusted Data</a></li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak segurtasunaren monitorizazioan</h2>
+         <a href="https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/">Security Logging and Monitoring Failures (A09:2021)</a>
+    </section>
+    
+    <section class="slide">
+        <h2>Akatsak segurtasunaren monitorizazioan</h2>
+        No hay una monitorización adecuada si:
+        <ul>
+            <li>Los eventos auditables tales como logins, logins fallidos, o transacciones de alto valor no son almacenados en un log (registro)</li>
+            <li>Los errores y advertencias generan mensajes inadecuados en los logs (O no los generan)</li>
+            <li>Los logs de las APIs y las aplicaciones no se monitorizan para detectar comportamiento sospechoso</li>
+            <li>Los logs solo se almacenan en local</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak segurtasunaren monitorizazioan</h2>
+        No hay una monitorización adecuada si:
+        <ul>
+            <li>No hay procesos de respuesta automáticos a partir de ciertos umbrales</li>
+            <li>El pen-testing con herramientas como OWASP ZAP no genera alertas</li>
+            <li>La aplicación no es capaz de detectar o alertar sobre ataques en marcha en tiempo real</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak segurtasunaren monitorizazioan: prevención</h2>
+        <ul>
+            <li>Asegurarse de que todos los fallos de login, control de acceso, o validación de inputs son registrados en el log con suficiente contexto de usuario para poder identificar cuentas sospechosas y almacenados con suficiente tiempo para hacer un análisis forense</li>
+            <li>Asegurarse de que los logs son generados de tal manera que las soluciones automatizadas pueden consumirlos facilmente</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak segurtasunaren monitorizazioan: prevención</h2>
+        <ul>
+            <li>Asegurarse de que las transacciones de gran valor tienen un adecuado registro de procedencia con controles de integridad para prevenir modificaciones </li>
+            <li>Establecer e implementar un plan de respuesta y recuperación, probándolo periodicamente</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Akatsak segurtasunaren monitorizazioan</h2>
+        <ul>
+            <li><a href="https://cwe.mitre.org/data/definitions/117.html">CWE-117: Improper Output Neutralization for Logs</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/223.html">CWE-223: Omission of Security-relevant Information</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/532.html">CWE-532: Insertion of Sensitive Information into Log File</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/778.html">CWE-778: Insufficient Logging</a></li>
         </ul>
     </section>
 
