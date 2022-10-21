@@ -15,9 +15,9 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
   * Aplikazioak: [Bitcoin](Zifraketa_bitcoin/index.html)
 * II Blokea: Sistemak
   * [Segurtasuna Web Sistemetan](WebSegurtasuna/index.html)
+  * [Segurtasun fisikoa](Segurtasun_fisikoa/index.html)
   * [Segurtasuna kopiak](Backup/index.html)
   * Segurtasuna sareetan
-  * Segurtasun fisikoa
 * III Blokea: Gizartea
   * Giza faktorea
   * Malwarea
