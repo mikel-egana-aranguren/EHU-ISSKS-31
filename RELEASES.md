@@ -3,7 +3,8 @@
 ## 2022-2023
 
 * Sarrera, zifraketa sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa
-* Zifraketa asimtrikoa, sinadura, zertifikatuak, komunikazio seghuruak, bitcoin
+* Zifraketa asimetrikoa, sinadura, zertifikatuak, komunikazio seghuruak, bitcoin
+* Web segurtasuna
 
 ## 2021-2022 (Adarra izoztua)
 
