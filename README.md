@@ -16,7 +16,7 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
 * II Blokea: Sistemak
   * [Segurtasuna Web Sistemetan](WebSegurtasuna/index.html)
   * [Segurtasun fisikoa](Segurtasun_fisikoa/index.html)
-  * [Segurtasuna kopiak](Backup/index.html)
+  * [Segurtasuna kopiak](Segurtasun_kopiak/index.html)
   * Segurtasuna sareetan
 * III Blokea: Gizartea
   * Giza faktorea
