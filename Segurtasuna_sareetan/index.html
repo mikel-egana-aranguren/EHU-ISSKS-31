@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sare Segurtasuna</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../ShowerTemplate/shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Sare Segurtasuna</h1>
+        <p>Mikel Egaña Aranguren</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Sare Segurtasuna</h2>
+        <p>Mikel Egaña Aranguren</p>
+        <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p>
+        <p><a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a></p>
+        <img src="../ShowerTemplate/pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%" border="1px solid #555">
+    </section>
+
+    <section class="slide">
+        <h2>Sare Segurtasuna</h2>
+        <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
+        <p><a href="https://github.com/mikel-egana-aranguren/EHU-issks-31">https://github.com/mikel-egana-aranguren/EHU-issks-31</a></p>
+        <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
+    </section>
+
+    <section class="slide">
+        <h2>Aurkibidea</h2>
+        <ul>
+            <li>Definizioak</li>
+            <li>Arriskuak eta babesak</li>
+            <li>Adibideak</li>
+            <li>Eraso ohikoenak</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Definizioak</h2>
+        <p>Sare telematikoa: datuak transmititzeko bitarteko baten bidez konektatutako ekipoen multzoa (kableak, uhinak)
+            </p>
+        <p>Helburua informazioa, baliabideak eta zerbitzuak partekatzea da</p>
+    </section>
+
+    <section class="slide">
+        <h2>Definizioak</h2>
+        <p>Protokolo telematikoa: komunikazioaren sintaxia eta semantika definitzen dituen erregela-multzo zorrotza (HTTP, DNS, TCP/IP,...)</p>
+        <p>Interkonexio-elementuak (routerra, sare-txartela...)
+            </p>
+    </section>
+
+    <section class="slide">
+        <h2>HTTP</h2>
+        <p>Hipertestua transferitzeko protokoloa (Hypertext Transfer Protocol edo HTTP) World Wide Webean informazioa transferitzea ahalbidetzen duen komunikazio-protokoloa da</p>
+        <p>HTTP estaturik gabeko protokoloa da, ez du aurreko konexioei buruzko informaziorik gordetzen</p>
+        <p>Web aplikazioekin bezero-egoera mantentzea: cookieak</p>
+    </section>
+
+    <section class="slide">
+        <h2>DNS</h2>
+        <p>
+            Domeinu-izenen sistema (Domain Name System edo DNS). IP sareetara (Internet edo sare pribatu bat) konektatutako gailuetarako banatutako nomenklatura hierarkikoko sistema bat da
+            </p>
+        <p>Pertsonentzako izen ulergarriak sarera konektatutako ekipoekin lotutako identifikatzaile bitarretan "itzuli" </p>
+        <p>Ekipo horiek mundu osoan aurkitzea eta konexioa bertara zuzentzea</p>
+    </section>
+
+    <section class="slide">
+        <h2>TCP/IP</h2>
+        <p>
+            TCP/IP eredua sareetako komunikazioetarako erabiltzen da
+            </p>
+        <p>
+            Eragiketa-gida orokorren multzo bat deskribatzen du, ekipo bat sare batean komunikatu ahal izateko
+            </p>
+        <p>
+            TCP/IPk muturretik muturrerako konektagarritasuna ematen du, zehaztuz nola formateatu, bideratu, transmititu, bideratu eta jaso datuak
+            </p>
+    </section>
+
+    <section class="slide">
+        <h2>Definizioak</h2>
+        <p>
+            Sareko segurtasuna: ahuleziak minimizatzea ahalbidetzen duten tekniken multzoa: babestutako informazioa lortzearen kostua haren balioa baino handiagoa izatea lortu nahi da
+            </p>
+        <p>Sare seguru bat lortzeko, segurtasun-mekanismoak zehazten dira</p>
+    </section>
+
+    <section class="slide">
+        <h2>Definizioak</h2>
+        <p>Segurtasun-mekanismo horiekin komunikazio-protokolo seguruak zehazten dira</p>
+        <p>Komunikazio-protokolo seguruek segurtasun-zerbitzuak ematea errazten dute</p>
+    </section>
+
+    <section class="slide">
+        <h2>Arriskuak eta sareen babesa</h2>
+Segurtasun-zerbitzu garrantzitsuenak:
+        <ul>
+            <li>
+                Erakundeen autentifikazioa
+                </li>
+            <li>Datuen konfidentzialtasuna</li>
+            <li>Datuen osotasuna</li>
+            <li>Sarbide-kontrola</li>
+            <li>Zapuztezintasuna</li>
+            <li>Prestasuna</li>
+            <li>Anonimotasuna</li>
+        </ul>
+    </section>
+
+
+    <section class="slide">
+        <h2>Arriskuak eta sareen babesa</h2>
+        <p>Entitateen autentifikazioa: erakunde komunikatzaile batek esaten duena dela bermatzen du</p>
+        <p>Datuen konfidentzialtasuna: datuen babesa ematen du, baimenik gabeko erabiltzaile bati ustekabean edo nahita ezagutaraztea saihesteko</p>
+    </section>
+
+    <section class="slide">
+        <h2>Arriskuak eta sareen babesa</h2>
+        <p>Datuen osotasuna: jasotako informazioa igorleak bidalitakoa dela egiaztatzeko eta informazio hori aldatu den jakiteko aukera ematen dio informazioaren hartzaileari</p>
+        <p>Sarbide-kontrola: baimendu gabeko pertsonek zerbitzuak/informazioa erabiltzea saihesten du</p>
+    </section>
+
+    <section class="slide">
+        <h2>Arriskuak eta sareen babesa</h2>
+        Zapuztesintazuna:<br>
+        <ul>
+            <li>
+                Jatorri-proba dutenak: informazioa jasotzen duenak igorgailua nor den froga dezake
+                </li>
+            <li>
+                Bidalketa-probarekin: hartzaileak/igorleak bidalketaren data eta orduaren proba bat dauka
+                </li>
+            <li>
+                Entrega-proba dutenak: igorleak froga dezake hartzaileak jaso duela informazioa
+                </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Zapuztezintasun adibidea</h2>
+        Whatsapp-a zifratzeko sistema <br>
+        Klik bikoitza jasotzean, urdin irakurriz <br>
+        Ezin dugu ukatu bidali izana <br>
+        Ezin dute ukatu jaso dutela <br>
+    </section>
+
+    <section class="slide">
+        <h2>Arriskuak eta sareen babesa</h2>
+        Prestasuna: Beharrezkoa denean informazioa/baliabideak eskuragarri egongo direla ziurtatzen du (eskuratu, kontsultatu/erabili ahal izango dira)<br>
+    </section>
+
+    <section class="slide">
+        <h2>Arriskuak eta sareen babesa</h2>
+        Anonimotasuna: Zerbitzu jakin bat erabiltzen duen pertsonaren nortasuna ezkutatzen du<br><br>
+
+        Ezinbestekoa da zenbait zerbitzutan: inkestak, boto elektronikoa, zenbait transakzio ekonomiko
+
+    </section>
+
+    <section class="slide">
+        <h2>
+            Eraso ohikoenak
+            </h2>
+            Kautotzeari: intertzeptazioa, ordezkapena <br>
+            Informazioari: errebelazioa, berrigortzea, manipulazioa, arbuioa (Zapuztea) <br>
+            Zerbitzuei: ukatzea, jabetzea <br>
+    </section>
+
+
+    <section class="slide">
+        <h2>
+            Nola babestu sareak?
+            </h2>
+        Segurtasun perimetrala:
+        <ul>
+        <li>Sare arkitektura eta elementuak erabili sare baten perimetroari, beste baten aurrean, babesa ematen diona</li>
+        <li>Normalean barne-sarea eta Internet</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>
+            Segurtasun-mekanismo erabilienak
+            </h2>
+        Segurtasun perimetrala:
+        <ul>
+            <li>Suebaki (Firewall)</li>
+            <li>
+                Atzemateko eta Intrusioak Prebenitzeko Zerbitzuak
+                </li>
+            <li>
+                Birusen eta spamen aurkako pasabideak
+                </li>
+            <li>
+                Sare birtual pribatuak (VPN)
+                 </li>       
+            <li>Proxy-ak</li>
+            <li>UTM-ak</li>
+            <li>Honeypot-ak</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>
+Segurtasunik gabeko arkitekturaren adibidea</h2>
+Ez da trafikoa iragazten <br>
+Barne-zerbitzuak argitaratzea (BD) <br>
+Ez da malware edo SPAM egiaztatzen <br>
+Urruneko bezeroa zuzenean sartzen da zerbitzuetara <br>
+    </section>
+
+    <section class="slide">
+        <h2>Segurtasunik gabeko arkitekturaren adibidea</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/arquitectura-sin-seguridad.png" alt="Arquitectura sin seguridad" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall</h2>
+        Sarbide-politika definitzen duen sare-elementua (hardwarea edo softwarea), trafikoa baimenduz edo ukatuz, haren arauak definitu ahala<br>
+        Erabilera:
+        <ul>
+            <li>Politika murriztailea (zerrenda zuria): esplizituki onartzen den guztia ez beste guztia ukatzen da</li>
+            <li>Politika baimentzailea (zerrenda beltza): dena onartzen da, esplizituki ukatzen dena izan ezik</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>
+            Firewall: zeren aurka babesten duzu?
+            </h2>
+
+            Kanpotik autentifikatu gabeko sarbideen aurka <br>
+            Kanpotik baimendu gabeko trafikoaren aurka <br>
+            Barrutik irteera baimendua ahalbidetzen du <br>
+            Puntu bakarra ematen du segurtasun- eta auditoretza-politika ezartzeko <br>
+            
+    </section>
+
+    <section class="slide">
+        <h2>Firewall</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/cortafuegos.png" alt="Arquitectura cortafuegos" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: zeren aurka ez du babesten?</h2>
+        Suebakitik igarotzen ez diren kanpoko sarbideen aurka <br>
+        Barrutik egindako erasoen aurka <br>
+        Birusen aurka, troiarrak, SPAM <br>
+        Informazioa beste bide batetik irtetearen aurka (USBak, posta elektronikoa, etab.)
+    </section>
+
+    <section class="slide">
+        <h2>Firewall motak</h2>
+
+        Pasabide-mailakoak: aplikazio zehatzak iragazten ditu, hala nola FTP edo Telnet <br>
+        Sare-geruzakoa: jatorriko/helmugako IParen eta jatorrizko/helmugako portuaren araberako iragazkia <br>
+        Aplikazio-geruzakoa: komunikazio-protokoloaren araberako iragazkia <br>
+        Pertsonalak: makinan bertan instalatuta, makinaren sarrera- eta irteera-konexioak iragazten ditu <br>
+        
+    </section>
+
+    <section class="slide">
+        <h2>Firewall</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/tabla-firewall.png" alt="Arquitectura cortafuegos" width="70%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>DMZ, DeMilitarized Zone</h2>
+        Zerbitzu publikoak (posta, ftp, etab.) segurtasun-arazoen arrisku handiagoa dutenez intranet eta Internet artean jartzen dira <br>
+        Sareen arteko sarbidea mugatzen duen suebaki bat edo bi erabiliz sortzen da<br>
+        
+Eremu desmilitarizatutik ezin da zuzenean intranetera sartu
+<br>
+
+    </section>
+
+    <section class="slide">
+        <h2>DMZ</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OsaOKS7Q-cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </section>
+
+    <section class="slide">
+        <h2>DMZ</h2>
+
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/dmz.png" alt="DMZ" width="60%"></p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Detektatzeko eta Intrusioak Prebenitzeko Sistemak (IDS/IPS) (IDS/IPS)</h2>
+        Baimendu gabeko sarbideak detektatzen ditu/sarean edo makina batean behar ez bezala erabiltzea<br>
+        
+IDSek administratzaileari abisatzen diote (erreaktiboak)
+<br>
+IPSak blokeatu egiten dituzte eraginik izan ez dezaten (proaktiboak)<br>
+
+    </section>
+
+    <section class="slide">
+        <h2>IDS/IPS motak</h2>
+        HIDPS (Host IDPS): makinan instalatzen da eta aldaketak detektatzen ditu sistema eragilean eta aplikazioetan<br>
+        NIDPS (Network IDPS): sare lokaleko trafikoa monitorizatzen du<br>
+        
+WIDPS (Wi-Fi IDPS): hari gabeko trafikoa monitorizatzen du
+<br>
+NBA (Network Behaviour Analysis): sareko trafikoaren portaera aztertzen du<br>
+    </section>
+
+    <section class="slide">
+        <h2>IDS/IPS baten funtzionamendua</h2>
+        Heuristika: portaera "arraroak" aztertzen ditu, eta detektatzen dituenean, alarma pizten du <br> <br>
+        Sinadurak: eraso eredu ezagunak detektatzen ditu (Arazo eraso berrien aurrean)
+    </section>
+
+    <section class="slide">
+        <h2>IDS/IPS</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/ips-ids.png" alt="IPS DPS" width="70%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Birusen eta spamen aurkako pasabideak</h2>
+        <p>Trafikoa aztertzen dute eta eduki maltzurrak barne-sarera iragazten dituzte</p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/pasarela.png" alt="Pasabidea" width="70%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Sare Birtual Pribatuak (VPN)</h2>
+        Segurua ez den azpiegitura erabiltzen duen sarea (Internet), barne-sare batera modu seguruan sartzeko <br> <br>
+        Barne-sarera urrutitik konektatzeko erabiltzen direnak <br> <br>
+        <a href="https://www.ehu.eus/es/web/ikt-tic/vpn">VPN EHU</a>
+
+    </section>
+
+    <section class="slide">
+        <h2>Sare Birtual Pribatuak (VPN)</h2>
+        Baimentzen du:<br>
+        <ul>
+            <li>
+                Erabiltzaileak, rolak eta baimenak kudeatuz autentifikatzea eta baimentzea
+                </li>
+            <li>Osotasuna hash funtzioekin</li>
+            <li>
+                Konfidentzialtasuna, informazioa enkriptazio-algoritmo baten bidez zifratuta doalako
+                </li>
+            <li>Zapuztezintasuna, datuak sinatuta transmititzen direlako</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Proxy</h2>
+        Bitartekari-lanak egiten dituen programa edo gailua <br>
+        Bezeroak proxyari egiten dizkio eskaerak, eta proxy horrek kudeatzen ditu <br>
+        Proxy bat erabiltzeak segurtasun handiagoa ematen du nabigazioan, zerbitzariak ez baitaki benetan nor konektatu den <br>
+        Bezeroak kanpoko mundutik isolatu <br>
+    </section>
+
+    <section class="slide">
+        <h2>
+            Mehatxuen kudeaketa bateratua (UTM)
+             (UTM)</h2>
+             Komunikazioen segurtasunarekin lotutako hainbat alderdi biltzen dituen gailua:
+        <ul>
+            <li>Firewall</li>
+            <li>IDS / IPS</li>
+            <li>Birusen eta spamen aurkako pasabideak</li>
+            <li>VPN</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Honeypots</h2>
+        Erasoak jasotzeko eta teknika berriak aztertzeko konfiguratutako sistema  <br> <br>
+        Birusen eta spamen laginak jasotzeko ere erabiltzen dira <br> <br>
+        Bereziki kontrolatuta egon behar dute eta edozein barne-saretatik kanpo <br> <br>
+    </section>
+
+    <section class="slide">
+        <h2>Honeypots</h2>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FihkG72z7MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </section>
+
+    <section class="slide">
+        <h2>Arkitektura seguruaren adibidea</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/EjemploArquitecturaSeguridad.png" alt="Ejemplo Arquitectura Seguridad" width="70%"></p>
+
+
+    </section>
+
+    <section class="slide">
+        <h2>Arkitektura seguruaren adibidea</h2>
+        Suebakia instalatzea:
+        <ul>
+            <li>DMZ eta barneko sarea</li>
+            <li>Politika murriztailea</li>
+        </ul>
+        Antispam eta antibirusak instalatzea<br>
+        NIDS-ak instalatzea hiru interfazetan<br>
+    </section>
+
+    <section class="slide">
+        <h2>Arkitektura seguruaren adibidea</h2>
+        Segmentazioa:
+        <ul>
+            <li>Publikoa: Web, antispam/antibirus pasabideak</li>
+            <li>Pribatua: DB, posta zerbitzaria</li>
+        </ul>
+        Urruneko bezeroek VPN erabiltzen dute<br>
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Sniffing: Sarean zehar doan informazioa intertzeptatzea <br><br>
+        Man in the middle: 
+        Informazioa intertzeptatzeaz gain, nahierara txertatu eta alda daiteke
+         
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Hijacking: 
+        Sisteman baimendutako erabiltzaile bati konexioak lapurtzea
+         <br><br>
+        <ul>
+            <li>IP Hijacking</li>
+            <li>Session hijacking</li>
+            <li>DNS Hijacking</li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Spoofing (Ordezpen) <br><br>
+        <ul>
+            <li>IP Spoofing</li>
+            <li>MAC Spoofing</li>
+            <li>DNS Spoofing</li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        "Denegación de Servicio (DoS)": 
+        Hardwarea edo softwarea "saturatzen" da erantzuteari utzi arte
+         <br><br>
+        "Ataque Distribuido de Denegación de Servicio (DDoS)":
+        <ul>
+            <li>
+                Hainbat makinatatik egiten da.
+                </li>
+            <li>Batek master lanak egiten ditu eta besteak koordinatzen ditu</li>
+        </ul>
+        <a href="https://therecord.media/gitlab-servers-are-being-exploited-in-ddos-attacks-in-excess-of-1-tbps/">GitLab servers are being exploited in DDoS attacks in excess of 1 Tbps</a>
+    </section>
+
+
+    
+
+    <!-- FOOTER -->
+
+    <footer class="badge">
+        <a href="https://github.com/mikel-egana-aranguren/EHU-issks-31">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="../ShowerTemplate/shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
