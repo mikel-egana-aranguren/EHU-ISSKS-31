@@ -5,6 +5,7 @@
 * Sarrera, zifraketa sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa
 * Zifraketa asimetrikoa, sinadura, zertifikatuak, komunikazio seghuruak, bitcoin
 * Web segurtasuna
+* Segurtasun fisikoa, kopiak
 
 ## 2021-2022 (Adarra izoztua)
 
