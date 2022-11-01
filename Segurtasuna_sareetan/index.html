@@ -167,22 +167,30 @@
 
     <section class="slide">
         <h2>Firewall motak</h2>
-        <p>A nivel de paquetes de datos: filtrado de paquetes por origen/destino, puertos etc.</p>
-        <p>Dinámicos (Statefull Packet Inspection): además de paquetes de datos, tienen en cuenta la información sobre estados de sesión (Flags)</p>
-        <p>Pasarelas de aplicación: tienen en cuenta las reglas del protocolo y la sesión, no solo los datos de los paquetes individuales</p>
+        <p>
+            Datu-paketeen mailan: paketeak jatorriaren/helmugaren arabera iragaztea, portuak, etab.
+            </p>
+        <p>
+            Dinamikoak (Statefull Packet Inspection): datu-paketeez gain, bilkura-egoerei buruzko informazioa ere kontuan hartzen dute (Flags)
+            </p>
+        <p>
+            Aplikazio-pasabideak: protokoloaren eta saioaren arauak hartzen dituzte kontuan, ez bakarrik pakete indibidualen datuak
+            </p>
     </section>
 
 
     <section class="slide">
         <h2>Firewall</h2>
         <ul>
-            <li><b>Política restrictiva (lista blanca)</b>: se deniega todo menos lo que se acepta explícitamente</li>
-            <li>Política permisiva (lista negra): se acepta todo menos lo que se deniega explícitamente</li>
+            <li><b>Politika murriztailea (zerrenda zuria)</b>: dena ukatzen da, esplizituki onartzen dena izan ezik</li>
+            <li>
+                Politika permisiboa (zerrenda beltza): guztia onartzen da, esplizituki ukatzen dena izan ezik
+                </li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Firewall: reglas filtrado generales</h2>
+        <h2>Firewall: iragazki orokorrak</h2>
         <p>Bloquear paquetes que incluyan dirección de difusión (Broadcast) por ataques DoS</p>
         <p>Bloquear paquetes de entrada con direccion fuente correspondiente a direcciones internas por suplantación de identidad (Spoofing)</p>
         <p>Bloquear todos los paquetes de entrada con direcciones privadas referenciadas en <a href="https://www.rfc-editor.org/rfc/rfc1918">RFC 1918 (Address Allocation for Private Internets)</a></p>
