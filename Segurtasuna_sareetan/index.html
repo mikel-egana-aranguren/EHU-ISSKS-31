@@ -15,6 +15,7 @@
             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
     </script>
 </head>
+
 <body class="shower list">
     <header class="caption">
         <h1>Sare Segurtasuna</h1>
@@ -37,303 +38,256 @@
     </section>
 
     <section class="slide">
-        <h2>Aurkibidea</h2>
-        <ul>
-            <li>Definizioak</li>
-            <li>Arriskuak eta babesak</li>
-            <li>Adibideak</li>
-            <li>Eraso ohikoenak</li>
-        </ul>
+        <h2>Conexión a internet</h2>
+        <p><b>Confidencialidad</b> e <b>integridad</b> de la información mediante protocolos criptográficos</p>
+        <p>Sistema de autenticación para usuarios</p>
+        <p>Control de accesos</p>
+        <p>Supervisión de la utilización de servicios</p>
     </section>
 
     <section class="slide">
-        <h2>Definizioak</h2>
-        <p>Sare telematikoa: datuak transmititzeko bitarteko baten bidez konektatutako ekipoen multzoa (kableak, uhinak)
-            </p>
-        <p>Helburua informazioa, baliabideak eta zerbitzuak partekatzea da</p>
+        <h2>Conexión a internet</h2>
+        <p>Garantizar la <b>disponibilidad</b> de la red y los servicios</p>
+        <p>Controlar los accesos a los equipos</p>
+        <p>Evitar los intentos de intrusión</p>
     </section>
 
     <section class="slide">
-        <h2>Definizioak</h2>
-        <p>Protokolo telematikoa: komunikazioaren sintaxia eta semantika definitzen dituen erregela-multzo zorrotza (HTTP, DNS, TCP/IP,...)</p>
-        <p>Interkonexio-elementuak (routerra, sare-txartela...)
-            </p>
+        <h2>Defensa Perimetral</h2>
+        <p>Crear una barrera entre la red interna y el exterior</p>
+        <p>Canalizar todo el tráfico por un punto monitorizado y protegido</p>
+        <p>Permitir solo algunas conexiones</p>
+        <p>Normas menos restrictivas en la red interna</p>
     </section>
 
     <section class="slide">
-        <h2>HTTP</h2>
-        <p>Hipertestua transferitzeko protokoloa (Hypertext Transfer Protocol edo HTTP) World Wide Webean informazioa transferitzea ahalbidetzen duen komunikazio-protokoloa da</p>
-        <p>HTTP estaturik gabeko protokoloa da, ez du aurreko konexioei buruzko informaziorik gordetzen</p>
-        <p>Web aplikazioekin bezero-egoera mantentzea: cookieak</p>
+        <h2>Proxy</h2>
+        <p>Servidor que actua de intermediario</p>
+        <p>El cliente hace las peticiones al proxy que se encarga de gestionarlas y enviarlas a los servidores remotos</p>
+        <p>Proporciona mayor seguridad durante la navegación porque el servidor desconoce quién se ha conectado realmente</p>
+        <p>Aísla a los clientes del mundo exterior</p>
     </section>
 
     <section class="slide">
-        <h2>DNS</h2>
-        <p>
-            Domeinu-izenen sistema (Domain Name System edo DNS). IP sareetara (Internet edo sare pribatu bat) konektatutako gailuetarako banatutako nomenklatura hierarkikoko sistema bat da
-            </p>
-        <p>Pertsonentzako izen ulergarriak sarera konektatutako ekipoekin lotutako identifikatzaile bitarretan "itzuli" </p>
-        <p>Ekipo horiek mundu osoan aurkitzea eta konexioa bertara zuzentzea</p>
+        <h2>Proxy</h2>
+        <p>El servidor hace una traducción de direcciones mediante el protocolo <a href="https://en.wikipedia.org/wiki/Network_address_translation">NAT (Network Address Translation)</a>, convirtiendo las IPs internas de los equipos en una única IP externa</p>
+        <p>Se decide qué servicios de internet se podrán utilizar y por quién</p>
+        <p>Bloquear acceso a determinadas IPs y dominios de internet</p>
     </section>
 
     <section class="slide">
-        <h2>TCP/IP</h2>
-        <p>
-            TCP/IP eredua sareetako komunikazioetarako erabiltzen da
-            </p>
-        <p>
-            Eragiketa-gida orokorren multzo bat deskribatzen du, ekipo bat sare batean komunikatu ahal izateko
-            </p>
-        <p>
-            TCP/IPk muturretik muturrerako konektagarritasuna ematen du, zehaztuz nola formateatu, bideratu, transmititu, bideratu eta jaso datuak
-            </p>
+        <h2>Proxy</h2>
+        <p>Crear caches para acelerar la navegación</p>
+        <p>Auditoría de uso de servicios y ancho de banda por parte de usuarios</p>
+        <p>Antivirus perimetral</p>
     </section>
 
     <section class="slide">
-        <h2>Definizioak</h2>
-        <p>
-            Sareko segurtasuna: ahuleziak minimizatzea ahalbidetzen duten tekniken multzoa: babestutako informazioa lortzearen kostua haren balioa baino handiagoa izatea lortu nahi da
-            </p>
-        <p>Sare seguru bat lortzeko, segurtasun-mekanismoak zehazten dira</p>
-    </section>
-
-    <section class="slide">
-        <h2>Definizioak</h2>
-        <p>Segurtasun-mekanismo horiekin komunikazio-protokolo seguruak zehazten dira</p>
-        <p>Komunikazio-protokolo seguruek segurtasun-zerbitzuak ematea errazten dute</p>
-    </section>
-
-    <section class="slide">
-        <h2>Arriskuak eta sareen babesa</h2>
-Segurtasun-zerbitzu garrantzitsuenak:
-        <ul>
-            <li>
-                Erakundeen autentifikazioa
-                </li>
-            <li>Datuen konfidentzialtasuna</li>
-            <li>Datuen osotasuna</li>
-            <li>Sarbide-kontrola</li>
-            <li>Zapuztezintasuna</li>
-            <li>Prestasuna</li>
-            <li>Anonimotasuna</li>
-        </ul>
+        <h2>Proxy inverso</h2>
+        <p>Acceso controlado desde el exterior a servidores de la empresa, por ejemplo servidores web</p>
+        <p>Balanceo de carga</p>
     </section>
 
 
     <section class="slide">
-        <h2>Arriskuak eta sareen babesa</h2>
-        <p>Entitateen autentifikazioa: erakunde komunikatzaile batek esaten duena dela bermatzen du</p>
-        <p>Datuen konfidentzialtasuna: datuen babesa ematen du, baimenik gabeko erabiltzaile bati ustekabean edo nahita ezagutaraztea saihesteko</p>
-    </section>
-
-    <section class="slide">
-        <h2>Arriskuak eta sareen babesa</h2>
-        <p>Datuen osotasuna: jasotako informazioa igorleak bidalitakoa dela egiaztatzeko eta informazio hori aldatu den jakiteko aukera ematen dio informazioaren hartzaileari</p>
-        <p>Sarbide-kontrola: baimendu gabeko pertsonek zerbitzuak/informazioa erabiltzea saihesten du</p>
-    </section>
-
-    <section class="slide">
-        <h2>Arriskuak eta sareen babesa</h2>
-        Zapuztesintazuna:<br>
-        <ul>
-            <li>
-                Jatorri-proba dutenak: informazioa jasotzen duenak igorgailua nor den froga dezake
-                </li>
-            <li>
-                Bidalketa-probarekin: hartzaileak/igorleak bidalketaren data eta orduaren proba bat dauka
-                </li>
-            <li>
-                Entrega-proba dutenak: igorleak froga dezake hartzaileak jaso duela informazioa
-                </li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Zapuztezintasun adibidea</h2>
-        Whatsapp-a zifratzeko sistema <br>
-        Klik bikoitza jasotzean, urdin irakurriz <br>
-        Ezin dugu ukatu bidali izana <br>
-        Ezin dute ukatu jaso dutela <br>
-    </section>
-
-    <section class="slide">
-        <h2>Arriskuak eta sareen babesa</h2>
-        Prestasuna: Beharrezkoa denean informazioa/baliabideak eskuragarri egongo direla ziurtatzen du (eskuratu, kontsultatu/erabili ahal izango dira)<br>
-    </section>
-
-    <section class="slide">
-        <h2>Arriskuak eta sareen babesa</h2>
-        Anonimotasuna: Zerbitzu jakin bat erabiltzen duen pertsonaren nortasuna ezkutatzen du<br><br>
-
-        Ezinbestekoa da zenbait zerbitzutan: inkestak, boto elektronikoa, zenbait transakzio ekonomiko
-
-    </section>
-
-    <section class="slide">
-        <h2>
-            Eraso ohikoenak
-            </h2>
-            Kautotzeari: intertzeptazioa, ordezkapena <br>
-            Informazioari: errebelazioa, berrigortzea, manipulazioa, arbuioa (Zapuztea) <br>
-            Zerbitzuei: ukatzea, jabetzea <br>
-    </section>
-
-
-    <section class="slide">
-        <h2>
-            Nola babestu sareak?
-            </h2>
-        Segurtasun perimetrala:
-        <ul>
-        <li>Sare arkitektura eta elementuak erabili sare baten perimetroari, beste baten aurrean, babesa ematen diona</li>
-        <li>Normalean barne-sarea eta Internet</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>
-            Segurtasun-mekanismo erabilienak
-            </h2>
-        Segurtasun perimetrala:
-        <ul>
-            <li>Suebaki (Firewall)</li>
-            <li>
-                Atzemateko eta Intrusioak Prebenitzeko Zerbitzuak
-                </li>
-            <li>
-                Birusen eta spamen aurkako pasabideak
-                </li>
-            <li>
-                Sare birtual pribatuak (VPN)
-                 </li>       
-            <li>Proxy-ak</li>
-            <li>UTM-ak</li>
-            <li>Honeypot-ak</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>
-Segurtasunik gabeko arkitekturaren adibidea</h2>
-Ez da trafikoa iragazten <br>
-Barne-zerbitzuak argitaratzea (BD) <br>
-Ez da malware edo SPAM egiaztatzen <br>
-Urruneko bezeroa zuzenean sartzen da zerbitzuetara <br>
-    </section>
-
-    <section class="slide">
-        <h2>Segurtasunik gabeko arkitekturaren adibidea</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/arquitectura-sin-seguridad.png" alt="Arquitectura sin seguridad" width="50%"></p>
+        <h2>Firewall</h2>
+        <p>Elemento de red (Hardware o software) que filtra paquetes segun una política definida previamente por el administrador, teniendo en cuenta la fuente y el destino</p>
+        <p>A diferencia del Proxy se pueden establecer conexiones directas (autorizadas) con máquinas externas</p>
     </section>
 
     <section class="slide">
         <h2>Firewall</h2>
-        Sarbide-politika definitzen duen sare-elementua (hardwarea edo softwarea), trafikoa baimenduz edo ukatuz, haren arauak definitu ahala<br>
-        Erabilera:
-        <ul>
-            <li>Politika murriztailea (zerrenda zuria): esplizituki onartzen den guztia ez beste guztia ukatzen da</li>
-            <li>Politika baimentzailea (zerrenda beltza): dena onartzen da, esplizituki ukatzen dena izan ezik</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>
-            Firewall: zeren aurka babesten duzu?
-            </h2>
-
-            Kanpotik autentifikatu gabeko sarbideen aurka <br>
-            Kanpotik baimendu gabeko trafikoaren aurka <br>
-            Barrutik irteera baimendua ahalbidetzen du <br>
-            Puntu bakarra ematen du segurtasun- eta auditoretza-politika ezartzeko <br>
-            
+        <p>Bloqueo del tráfico no autorizado: servicios de internet, determinadas direcciones, etc.</p>
+        <p>Ocultación de los equipos internos de la organización ante posibles ataques</p> 
+        <p>Ocultar información sobre la topología de la red interna</p>
+        <p>Registro de todo el tráfico entrante y saliente</p>
+        <p>Redirección del tráfico entrante hacia DMZ (DeMilitarized Zone)</p>
     </section>
 
     <section class="slide">
         <h2>Firewall</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/cortafuegos.png" alt="Arquitectura cortafuegos" width="50%"></p>
-    </section>
-
-    <section class="slide">
-        <h2>Firewall: zeren aurka ez du babesten?</h2>
-        Suebakitik igarotzen ez diren kanpoko sarbideen aurka <br>
-        Barrutik egindako erasoen aurka <br>
-        Birusen aurka, troiarrak, SPAM <br>
-        Informazioa beste bide batetik irtetearen aurka (USBak, posta elektronikoa, etab.)
-    </section>
-
-    <section class="slide">
-        <h2>Firewall motak</h2>
-
-        Pasabide-mailakoak: aplikazio zehatzak iragazten ditu, hala nola FTP edo Telnet <br>
-        Sare-geruzakoa: jatorriko/helmugako IParen eta jatorrizko/helmugako portuaren araberako iragazkia <br>
-        Aplikazio-geruzakoa: komunikazio-protokoloaren araberako iragazkia <br>
-        Pertsonalak: makinan bertan instalatuta, makinaren sarrera- eta irteera-konexioak iragazten ditu <br>
-        
-    </section>
-
-    <section class="slide">
-        <h2>Firewall</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/tabla-firewall.png" alt="Arquitectura cortafuegos" width="70%"></p>
-    </section>
-
-    <section class="slide">
-        <h2>DMZ, DeMilitarized Zone</h2>
-        Zerbitzu publikoak (posta, ftp, etab.) segurtasun-arazoen arrisku handiagoa dutenez intranet eta Internet artean jartzen dira <br>
-        Sareen arteko sarbidea mugatzen duen suebaki bat edo bi erabiliz sortzen da<br>
-        
-Eremu desmilitarizatutik ezin da zuzenean intranetera sartu
-<br>
-
+        <p>Limitación de ancho de banda utilizado por tipo de tráfico o protocolo</p>
+        <p>Estadísticas sobre ancho de banda usado por distintos servicios</p>
+        <p>Monitorización de ataques o intentos de intrusión</p>
     </section>
 
     <section class="slide">
         <h2>DMZ</h2>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/OsaOKS7Q-cE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        <p>Zona entre la intranet e internet donde se ubican los servicios públicos (correo, ftp, etc.) que quedan más expuestos a los problemas de seguridad</p>
+        <p>Se crea mediante el uso de uno o dos cortafuegos que limita el acceso entre las distintas redes</p>
+        <p>Desde DMZ no se puede acceder directamente a la intranet</p>
     </section>
 
     <section class="slide">
         <h2>DMZ</h2>
-
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/dmz.png" alt="DMZ" width="60%"></p>
-
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/FIREWAL-DMZ.png" alt="DMZ" width="90%"></p>
     </section>
 
     <section class="slide">
-        <h2>Detektatzeko eta Intrusioak Prebenitzeko Sistemak (IDS/IPS) (IDS/IPS)</h2>
-        Baimendu gabeko sarbideak detektatzen ditu/sarean edo makina batean behar ez bezala erabiltzea<br>
+        <h2>Access Control List (ACL)</h2>
+        <p>Reglas de filtrado</p>
+        <p>Teniendo en cuenta: IP origen y destino de los paquetes de datos, protocolo, servicio (puerto)</p>
+    </section>
+
+    <section class="slide">
+        <h2>Access Control List</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/tabla-firewall.png" alt="Access Control List" width="90%"></p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Tipos de firewall</h2>
+        <p>A nivel de paquetes de datos: filtrado de paquetes por origen/destino, puertos etc.</p>
+        <p>Dinámicos (Statefull Packet Inspection): además de paquetes de datos, tienen en cuenta la información sobre estados de sesión (Flags)</p>
+        <p>Pasarelas de aplicación: tienen en cuenta las reglas del protocolo y la sesión, no solo los datos de los paquetes individuales</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Firewall</h2>
+        <ul>
+            <li><b>Política restrictiva (lista blanca)</b>: se deniega todo menos lo que se acepta explícitamente</li>
+            <li>Política permisiva (lista negra): se acepta todo menos lo que se deniega explícitamente</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: reglas filtrado generales</h2>
+        <p>Bloquear paquetes que incluyan dirección de difusión (Broadcast) por ataques DoS</p>
+        <p>Bloquear paquetes de entrada con direccion fuente correspondiente a direcciones internas por suplantación de identidad (Spoofing)</p>
+        <p>Bloquear todos los paquetes de entrada con direcciones privadas referenciadas en <a href="https://www.rfc-editor.org/rfc/rfc1918">RFC 1918 (Address Allocation for Private Internets)</a></p>
         
-IDSek administratzaileari abisatzen diote (erreaktiboak)
-<br>
-IPSak blokeatu egiten dituzte eraginik izan ez dezaten (proaktiboak)<br>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: reglas filtrado generales</h2>
+        <p>Bloquear los paquetes de entrada con direcciones fuente 127.0.0.1</p>
+        <p>Bloquear los paquetes del protocolo de control ICMP que en respuestas a peticiones Ping o Traceroute pueden dar información sobre la topología de la red interna</p>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: reglas filtrado generales</h2>
+        <p>Bloquear los paquetes ICMP Redirect que permiten modificar las tabals de enrutamiento de los routers</p>
+        <p>Bloquear todos los paquetes con un tamaño inferior al mínimo permitido o con valores invalidso en la cabecera</p>
+        <p>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: puertos a bloquear</h2>
+        <p>Conexion remota: Telnet (23), SSH (22), FTP (21)</p>
+        <p>Protocolo NetBIOS en windows</p>
+        <p>RPC y servicio NFS en Redes UNIX</p>
+        <p>HTTP,  SSL, SMTP, POP, IMAP, DNS, LDAP en máquinas que no actuan como servidores</p>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: limitaciones</h2>
+        <p>Ataques basados en ingenieria social</p>
+        <p>Ataques físicos: ej. USB</p>
+        <p>Ataques a nivel de protocolo, ej. HTTP</p>
+        <p>Virus introducidos por portátiles que se han infectado en el exterior</p>
+    </section>
+
+    <section class="slide">
+        <h2>Análisis de logs: Common Log Format</h2>
+        <p>
+            <pre>
+                <code>127.0.0.1 user-identifier frank [10/Oct/2000:13:55:36 -0700] 
+                    "GET /apache_pb.gif HTTP/1.0" 200 2326</code>
+            </pre>
+        </p>
+        <ul>
+            <li>IP cliente</li>
+            <li>Identificación cliente</li>
+            <li>Nombre autenticación usuario</li>
+            <li>Fecha/hora conexión</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Análisis de logs: Common Log Format</h2>
+        <p>
+            <pre>
+                <code>127.0.0.1 user-identifier frank [10/Oct/2000:13:55:36 -0700] 
+                    "GET /apache_pb.gif HTTP/1.0" 200 2326</code>
+            </pre>
+        </p>
+        <ul>
+            <li>Petición cliente</li>
+            <li>Estado HTTP devuelto</li>
+            <li>Bytes enviados</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Intrusion Prevention System (IPS)</h2>
+        <p>Sistemas encargados de detectar y reaccionar de forma automatizada ante los incidentes de seguridad en redes</p>
 
     </section>
 
     <section class="slide">
-        <h2>IDS/IPS motak</h2>
-        HIDPS (Host IDPS): makinan instalatzen da eta aldaketak detektatzen ditu sistema eragilean eta aplikazioetan<br>
-        NIDPS (Network IDPS): sare lokaleko trafikoa monitorizatzen du<br>
-        
-WIDPS (Wi-Fi IDPS): hari gabeko trafikoa monitorizatzen du
-<br>
-NBA (Network Behaviour Analysis): sareko trafikoaren portaera aztertzen du<br>
+        <h2>Intrusion Prevention System (IPS)</h2>
+        <p>Fuente de eventos de la red o sistema</p>
+        <p>BBDD de comportamientos normales/anormales</p> 
+        <p>Motor de análisis: analiza la fuente de eventos basándose en la BBDD</p>
+        <p>Módulo de respuesta: alarmas e informes</p>
     </section>
 
     <section class="slide">
-        <h2>IDS/IPS baten funtzionamendua</h2>
-        Heuristika: portaera "arraroak" aztertzen ditu, eta detektatzen dituenean, alarma pizten du <br> <br>
-        Sinadurak: eraso eredu ezagunak detektatzen ditu (Arazo eraso berrien aurrean)
+        <h2>Intrusion Prevention System (IPS)</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/FIREWAL-DMZ-IDS.png" alt="DMZ" width="90%"></p>
     </section>
 
     <section class="slide">
-        <h2>IDS/IPS</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/ips-ids.png" alt="IPS DPS" width="70%"></p>
+        <h2>Intrusion Prevention System (IPS)</h2>
+        <p>Respuestas pasivas: registrar las posibles intrusiones, generar informes</p>
+        <p>Respuestas activas: anular las conexiones TCP inyectando paquetes de reinicio en la conexiones; reconfigurtar cortafuegos para filtrar tráfico anómalo, desconexión automática de servidores, bloqueo de cuentas / privilegios, localización de origen de ataque y notificación a los ISP
+        </p>
     </section>
 
     <section class="slide">
-        <h2>Birusen eta spamen aurkako pasabideak</h2>
-        <p>Trafikoa aztertzen dute eta eduki maltzurrak barne-sarera iragazten dituzte</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/pasarela.png" alt="Pasabidea" width="70%"></p>
+        <h2>HIDS (Host IDS)</h2>
+        <p>Intrusiones en un host, en una máquina concreta</p>
+        <p>Análisis de logs del kernel</p>
+        <p>Verificación de la integridad de los ejecutabels</p>
+        <p>Auditoría periódica de permissos asignados a los recursos</p>
+        <p>Revisión detallada del proceso de instalación de nuevas aplicaciones</p>
+    </section>
+
+    <section class="slide">
+        <h2>Network IDS</h2>
+        <p>Monitorizan el tráfico de red para buscar actividad sospechosa:</p>
+        <p>Enrutamiento anormal de paquetes</p>
+        <p>IP spoofing: usar una IP no válida o en desuso de los tramos internos</p>
+        <p>DNS spoffing: afluencia de paquetes DNS</p>
+    </section>
+
+    <section class="slide">
+        <h2>Network IDS</h2>
+        <p>Monitorizan el tráfico de red para buscar actividad sospechosa:</p>
+        <p>SYN flooding: invasión de paquetes TCP SYN</p>
+        <p>Falsa correspondencia entre las direcciones MAC conocidas y las direcciones IP de los equipos</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Intrusion Prevention System (IPS)</h2>
+        <p><a href="https://www.snort.org/">SNORT</a></p>
+        <p>Permite descargar nuevas reglas de deteccion de intrusos</p>
+    </section>
+
+    <section class="slide">
+        <h2>Honeypots</h2>
+        <p>Sistema "señuelo" para que sea atacado</p>
+        <p>Honeynet: red de honeypots</p>
+        <p>Desviar los ataques</p>
+        <p>Obtener conocimiento de métodos de ataque</p>
+        <p>Obtener muestras de malware</p>
+    </section>
+
+    <section class="slide">
+        <h2>Honeypots</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/FIREWAL-DMZ-IDS-HONEY.png" alt="DMZ" width="90%"></p>
     </section>
 
     <section class="slide">
@@ -359,68 +313,7 @@ NBA (Network Behaviour Analysis): sareko trafikoaren portaera aztertzen du<br>
         </ul>
     </section>
 
-    <section class="slide">
-        <h2>Proxy</h2>
-        Bitartekari-lanak egiten dituen programa edo gailua <br>
-        Bezeroak proxyari egiten dizkio eskaerak, eta proxy horrek kudeatzen ditu <br>
-        Proxy bat erabiltzeak segurtasun handiagoa ematen du nabigazioan, zerbitzariak ez baitaki benetan nor konektatu den <br>
-        Bezeroak kanpoko mundutik isolatu <br>
-    </section>
 
-    <section class="slide">
-        <h2>
-            Mehatxuen kudeaketa bateratua (UTM)
-             (UTM)</h2>
-             Komunikazioen segurtasunarekin lotutako hainbat alderdi biltzen dituen gailua:
-        <ul>
-            <li>Firewall</li>
-            <li>IDS / IPS</li>
-            <li>Birusen eta spamen aurkako pasabideak</li>
-            <li>VPN</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Honeypots</h2>
-        Erasoak jasotzeko eta teknika berriak aztertzeko konfiguratutako sistema  <br> <br>
-        Birusen eta spamen laginak jasotzeko ere erabiltzen dira <br> <br>
-        Bereziki kontrolatuta egon behar dute eta edozein barne-saretatik kanpo <br> <br>
-    </section>
-
-    <section class="slide">
-        <h2>Honeypots</h2>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FihkG72z7MQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    </section>
-
-    <section class="slide">
-        <h2>Arkitektura seguruaren adibidea</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/EjemploArquitecturaSeguridad.png" alt="Ejemplo Arquitectura Seguridad" width="70%"></p>
-
-
-    </section>
-
-    <section class="slide">
-        <h2>Arkitektura seguruaren adibidea</h2>
-        Suebakia instalatzea:
-        <ul>
-            <li>DMZ eta barneko sarea</li>
-            <li>Politika murriztailea</li>
-        </ul>
-        Antispam eta antibirusak instalatzea<br>
-        NIDS-ak instalatzea hiru interfazetan<br>
-    </section>
-
-    <section class="slide">
-        <h2>Arkitektura seguruaren adibidea</h2>
-        Segmentazioa:
-        <ul>
-            <li>Publikoa: Web, antispam/antibirus pasabideak</li>
-            <li>Pribatua: DB, posta zerbitzaria</li>
-        </ul>
-        Urruneko bezeroek VPN erabiltzen dute<br>
-    </section>
 
     <section class="slide">
         <h2>Eraso ohikoenak</h2>
