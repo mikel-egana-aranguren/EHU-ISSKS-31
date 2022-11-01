@@ -38,105 +38,135 @@
     </section>
 
     <section class="slide">
-        <h2>Conexión a internet</h2>
-        <p><b>Confidencialidad</b> e <b>integridad</b> de la información mediante protocolos criptográficos</p>
-        <p>Sistema de autenticación para usuarios</p>
-        <p>Control de accesos</p>
-        <p>Supervisión de la utilización de servicios</p>
+        <h2>Interneterako konexioa</h2>
+        <p>informazioaren <b>Konfidentzialtasuna</b> eta <b>osotasuna</b> protokolo kriptografikoen bidez</p>
+        <p>Erabileentzako autentikazio zerbitzua</p>
+        <p>Sarbideen kontrola</p>
+        <p>Zerbitzuen erabilera gainbegiratzea</p>
     </section>
 
     <section class="slide">
-        <h2>Conexión a internet</h2>
-        <p>Garantizar la <b>disponibilidad</b> de la red y los servicios</p>
-        <p>Controlar los accesos a los equipos</p>
-        <p>Evitar los intentos de intrusión</p>
+        <h2>Interneterako konexioa</h2>
+        <p>Sarearen eta zerbitzuen <b>prestasuna</b> bermatzea</p>
+        <p>Ordenagailuetara sartzeko kontrola</p>
+        <p>Intrusio-saiakerak saihestea</p>
     </section>
 
     <section class="slide">
-        <h2>Defensa Perimetral</h2>
-        <p>Crear una barrera entre la red interna y el exterior</p>
-        <p>Canalizar todo el tráfico por un punto monitorizado y protegido</p>
-        <p>Permitir solo algunas conexiones</p>
-        <p>Normas menos restrictivas en la red interna</p>
-    </section>
-
-    <section class="slide">
-        <h2>Proxy</h2>
-        <p>Servidor que actua de intermediario</p>
-        <p>El cliente hace las peticiones al proxy que se encarga de gestionarlas y enviarlas a los servidores remotos</p>
-        <p>Proporciona mayor seguridad durante la navegación porque el servidor desconoce quién se ha conectado realmente</p>
-        <p>Aísla a los clientes del mundo exterior</p>
+        <h2>Defentsa Perimetrala</h2>
+        <p>Barruko eta kanpoko sarearen artean hesi bat sortzea</p>
+        <p>Trafiko guztia monitorizatutako eta babestutako puntu batetik bideratzea</p>
+        <p>Konexio batzuk bakarrik baimendu</p>
+        <p>Barne-sarean hain murriztaileak ez diren arauak</p>
     </section>
 
     <section class="slide">
         <h2>Proxy</h2>
-        <p>El servidor hace una traducción de direcciones mediante el protocolo <a href="https://en.wikipedia.org/wiki/Network_address_translation">NAT (Network Address Translation)</a>, convirtiendo las IPs internas de los equipos en una única IP externa</p>
-        <p>Se decide qué servicios de internet se podrán utilizar y por quién</p>
-        <p>Bloquear acceso a determinadas IPs y dominios de internet</p>
+        <p>Bitartekari gisa jarduten duen zerbitzaria</p>
+        <p>Bezeroak eskaerak egiten dizkio proxy-ari, eta hark kudeatzen eta urruneko zerbitzariei bidaltzen dizkie</p>
+        <p>Segurtasun handiagoa ematen du nabigazioan, zerbitzariak ez baitaki nor konektatu den benetan</p>
+        <p>Bezeroak kanpoko mundutik isolatzen ditu</p>
     </section>
 
     <section class="slide">
         <h2>Proxy</h2>
-        <p>Crear caches para acelerar la navegación</p>
-        <p>Auditoría de uso de servicios y ancho de banda por parte de usuarios</p>
-        <p>Antivirus perimetral</p>
+        <p>El servidor hace una traducción de direcciones mediante el protocolo <a href="https://en.wikipedia.org/wiki/Network_address_translation">NAT (Network Address Translation)</a> protokoloaren bidez zerbitzariak helbideen itzulpena burutzen du, ordenagailuen barne IP-ak kanpo IP bakarrean bihurtuz</p>
+        <p>Interneteko zer zerbitzu erabili ahal izango diren eta nork</p>
+        <p>IP eta Interneteko domeinu jakin batzuetarako sarbidea blokeatzea</p>
     </section>
 
     <section class="slide">
-        <h2>Proxy inverso</h2>
-        <p>Acceso controlado desde el exterior a servidores de la empresa, por ejemplo servidores web</p>
-        <p>Balanceo de carga</p>
+        <h2>Proxy</h2>
+        <p>Cacheak sortu nabigazioa bizkortzeko</p>
+        <p>Erabiltzaileen zerbitzuen erabileraren eta banda-zabaleraren auditoria</p>
+        <p>Antivirus perimetrala</p>
+    </section>
+
+    <section class="slide">
+        <h2>Alderantzizko Proxy-a
+        </h2>
+        <p>
+            Kanpotik enpresaren zerbitzarietarako sarbide kontrolatua, adibidez web zerbitzarietarako sarbidea
+            </p>
+        <p>Karga banatu (load balancing)</p>
     </section>
 
 
     <section class="slide">
         <h2>Firewall</h2>
-        <p>Elemento de red (Hardware o software) que filtra paquetes segun una política definida previamente por el administrador, teniendo en cuenta la fuente y el destino</p>
-        <p>A diferencia del Proxy se pueden establecer conexiones directas (autorizadas) con máquinas externas</p>
+        <p>
+            Sareko elementua (hardwarea edo softwarea), paketeak iragazten dituena administratzaileak aldez aurretik definitutako politikaren arabera, iturria eta helmuga kontuan hartuta
+            </p>
+        <p>
+            Proxy-arekin ez bezala, konexio zuzenak (baimenduak) egin daitezke kanpoko makinekin.
+            </p>
     </section>
 
     <section class="slide">
         <h2>Firewall</h2>
-        <p>Bloqueo del tráfico no autorizado: servicios de internet, determinadas direcciones, etc.</p>
-        <p>Ocultación de los equipos internos de la organización ante posibles ataques</p> 
-        <p>Ocultar información sobre la topología de la red interna</p>
-        <p>Registro de todo el tráfico entrante y saliente</p>
-        <p>Redirección del tráfico entrante hacia DMZ (DeMilitarized Zone)</p>
+        <p>
+            Baimendu gabeko trafikoa blokeatzea: Interneteko zerbitzuak, helbide jakin batzuk, etab.
+            </p>
+        <p>
+            Erakundeko barne ordenagailuak ezkutatzea, gerta daitezkeen erasoen aurrean
+            </p> 
+        <p>
+            Ezkutatu barne-sarearen topologiari buruzko informazioa
+            </p>
+        <p>
+            Sartzen eta irteten den trafiko guztiaren erregistroa
+            </p>
+        <p>
+            Sarrerako trafikoa DMZrantz birbideratzea (DeMilitarized Zone)
+            </p>
     </section>
 
     <section class="slide">
         <h2>Firewall</h2>
-        <p>Limitación de ancho de banda utilizado por tipo de tráfico o protocolo</p>
-        <p>Estadísticas sobre ancho de banda usado por distintos servicios</p>
-        <p>Monitorización de ataques o intentos de intrusión</p>
+        <p>
+            Erabilitako banda-zabaleraren muga, trafiko edo protokolo motaren arabera
+            </p>
+        <p>
+            Hainbat zerbitzuk erabilitako banda-zabaleraren gaineko estatistikak
+            </p>
+        <p>
+            Erasoak edo intrusio-saiakerak monitorizatzea
+            </p>
     </section>
 
     <section class="slide">
         <h2>DMZ</h2>
-        <p>Zona entre la intranet e internet donde se ubican los servicios públicos (correo, ftp, etc.) que quedan más expuestos a los problemas de seguridad</p>
-        <p>Se crea mediante el uso de uno o dos cortafuegos que limita el acceso entre las distintas redes</p>
-        <p>Desde DMZ no se puede acceder directamente a la intranet</p>
+        <p>
+            Intranetaren eta Interneten artean dagoen zonaldea, segurtasun-arazoen eraginpean dauden zerbitzu publikoak (posta, ftp, etab.) dituena
+        </p>
+        <p>
+            Sare desberdinen arteko sarbidea mugatzen duen firewall bat edo bi erabiliz sortzen da.
+            </p>
+        <p>
+            DMZtik ezin da zuzenean intranetera sartu
+            </p>
     </section>
 
     <section class="slide">
         <h2>DMZ</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/FIREWAL-DMZ.png" alt="DMZ" width="90%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FIREWAL-DMZ.png" alt="DMZ" width="90%"></p>
     </section>
 
     <section class="slide">
         <h2>Access Control List (ACL)</h2>
-        <p>Reglas de filtrado</p>
-        <p>Teniendo en cuenta: IP origen y destino de los paquetes de datos, protocolo, servicio (puerto)</p>
+        <p>Iragazteko arauak</p>
+        <p>Kontuan hartuta: datu-paketeen jatorria eta xedea, protokoloa, zerbitzua (portua)
+            </p>
     </section>
 
     <section class="slide">
         <h2>Access Control List</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/tabla-firewall.png" alt="Access Control List" width="90%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/tabla-firewall.png" alt="Access Control List" width="90%"></p>
     </section>
 
 
     <section class="slide">
-        <h2>Tipos de firewall</h2>
+        <h2>Firewall motak</h2>
         <p>A nivel de paquetes de datos: filtrado de paquetes por origen/destino, puertos etc.</p>
         <p>Dinámicos (Statefull Packet Inspection): además de paquetes de datos, tienen en cuenta la información sobre estados de sesión (Flags)</p>
         <p>Pasarelas de aplicación: tienen en cuenta las reglas del protocolo y la sesión, no solo los datos de los paquetes individuales</p>
@@ -235,7 +265,7 @@
 
     <section class="slide">
         <h2>Intrusion Prevention System (IPS)</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/FIREWAL-DMZ-IDS.png" alt="DMZ" width="90%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FIREWAL-DMZ-IDS.png" alt="DMZ" width="90%"></p>
     </section>
 
     <section class="slide">
@@ -287,7 +317,7 @@
 
     <section class="slide">
         <h2>Honeypots</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-sgssi-01/FIREWAL-DMZ-IDS-HONEY.png" alt="DMZ" width="90%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FIREWAL-DMZ-IDS-HONEY.png" alt="DMZ" width="90%"></p>
     </section>
 
     <section class="slide">
