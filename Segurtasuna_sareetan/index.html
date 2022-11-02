@@ -70,7 +70,7 @@
 
     <section class="slide">
         <h2>Proxy</h2>
-        <p>El servidor hace una traducción de direcciones mediante el protocolo <a href="https://en.wikipedia.org/wiki/Network_address_translation">NAT (Network Address Translation)</a> protokoloaren bidez zerbitzariak helbideen itzulpena burutzen du, ordenagailuen barne IP-ak kanpo IP bakarrean bihurtuz</p>
+        <p><a href="https://en.wikipedia.org/wiki/Network_address_translation">NAT (Network Address Translation)</a> protokoloaren bidez zerbitzariak helbideen itzulpena burutzen du, ordenagailuen barne IP-ak kanpo IP bakarrean bihurtuz</p>
         <p>Interneteko zer zerbitzu erabili ahal izango diren eta nork</p>
         <p>IP eta Interneteko domeinu jakin batzuetarako sarbidea blokeatzea</p>
     </section>
@@ -171,10 +171,10 @@
             Datu-paketeen mailan: paketeak jatorriaren/helmugaren arabera iragaztea, portuak, etab.
             </p>
         <p>
-            Dinamikoak (Statefull Packet Inspection): datu-paketeez gain, bilkura-egoerei buruzko informazioa ere kontuan hartzen dute (Flags)
+            Dinamikoak (Statefull Packet Inspection): datu-paketeez gain, saioei buruzko informazioa ere kontuan hartzen dute (Flags)
             </p>
         <p>
-            Aplikazio-pasabideak: protokoloaren eta saioaren arauak hartzen dituzte kontuan, ez bakarrik pakete indibidualen datuak
+            Aplikazio-pasabideak: protokoloaren eta saioaren arauak hartzen dituzte kontuan, ez bakarrik banako paketeen datuak
             </p>
     </section>
 
@@ -191,43 +191,51 @@
 
     <section class="slide">
         <h2>Firewall: iragazki orokorrak</h2>
-        <p>Bloquear paquetes que incluyan dirección de difusión (Broadcast) por ataques DoS</p>
-        <p>Bloquear paquetes de entrada con direccion fuente correspondiente a direcciones internas por suplantación de identidad (Spoofing)</p>
-        <p>Bloquear todos los paquetes de entrada con direcciones privadas referenciadas en <a href="https://www.rfc-editor.org/rfc/rfc1918">RFC 1918 (Address Allocation for Private Internets)</a></p>
+        <p>Difusio-helbidea (Broadcast) duten paketeak blokeatzea, DoS erasoak ekiditeko</p>
+        <p>
+            Barne-helbideei dagokien jatorrizko helbidea duten sarrera paketeak blokeatu, nortasun-ordezpenaren ekiditeko (Spoofing)
+        </p>
+        <p><a href="https://www.rfc-editor.org/rfc/rfc1918">RFC 1918 (Address Allocation for Private Internets)</a> espezifikazioan dauden helbideak dituzten pakete guztiak blokeatu</p>
         
     </section>
 
     <section class="slide">
-        <h2>Firewall: reglas filtrado generales</h2>
-        <p>Bloquear los paquetes de entrada con direcciones fuente 127.0.0.1</p>
-        <p>Bloquear los paquetes del protocolo de control ICMP que en respuestas a peticiones Ping o Traceroute pueden dar información sobre la topología de la red interna</p>
+        <h2>Firewall: iragazki orokorrak</h2>
+        <p>127.0.0.1 jatorrizko helbidea bezala duten paketeak blokeatu</p>
+        <p>Ping edo Traceroute eskaerei erantzunez barne-sarearen topologiari buruzko informazioa eman dezaketen ICMP kontrol-protokoloko paketeak blokeatzea</p>
     </section>
 
     <section class="slide">
-        <h2>Firewall: reglas filtrado generales</h2>
-        <p>Bloquear los paquetes ICMP Redirect que permiten modificar las tabals de enrutamiento de los routers</p>
-        <p>Bloquear todos los paquetes con un tamaño inferior al mínimo permitido o con valores invalidso en la cabecera</p>
+        <h2>Firewall: iragazki orokorrak</h2>
+        <p>
+            Routerren bideratze-taulak aldatzeko aukera ematen duten ICMP Redirect paketeak blokeatzea
+            </p>
+        <p>
+            Baimendutako gutxienekoa baino tamaina txikiagoa duten edo goiburuan balio desegokiak duten pakete guztiak blokeatzea
+            </p>
         <p>
     </section>
 
     <section class="slide">
-        <h2>Firewall: puertos a bloquear</h2>
-        <p>Conexion remota: Telnet (23), SSH (22), FTP (21)</p>
-        <p>Protocolo NetBIOS en windows</p>
-        <p>RPC y servicio NFS en Redes UNIX</p>
-        <p>HTTP,  SSL, SMTP, POP, IMAP, DNS, LDAP en máquinas que no actuan como servidores</p>
+        <h2>Firewall: blokeatu behar diren portuak</h2>
+        <p>Urruneko konexioak: Telnet (23), SSH (22), FTP (21)</p>
+        <p>NetBIOS protokoloa Windows-en</p>
+        <p>RPC eta NFS zerbitzua UNIX sareetan</p>
+        <p>HTTP,  SSL, SMTP, POP, IMAP, DNS, LDAP zerbitzariak ez diren makinetan</p>
     </section>
 
     <section class="slide">
-        <h2>Firewall: limitaciones</h2>
-        <p>Ataques basados en ingenieria social</p>
-        <p>Ataques físicos: ej. USB</p>
-        <p>Ataques a nivel de protocolo, ej. HTTP</p>
-        <p>Virus introducidos por portátiles que se han infectado en el exterior</p>
+        <h2>Firewall: mugak</h2>
+        <p>Ingenieritza sozialeko erasoak</p>
+        <p>Eraso fisikoak: adib. USB</p>
+        <p>Protokolo mailako erasoak, adib. HTTP</p>
+        <p>
+            Kanpoan infektatu diren eramangarriek sartutako birusak
+            </p>
     </section>
 
     <section class="slide">
-        <h2>Análisis de logs: Common Log Format</h2>
+        <h2>Log-en analisis: Common Log Format</h2>
         <p>
             <pre>
                 <code>127.0.0.1 user-identifier frank [10/Oct/2000:13:55:36 -0700] 
@@ -235,10 +243,10 @@
             </pre>
         </p>
         <ul>
-            <li>IP cliente</li>
-            <li>Identificación cliente</li>
-            <li>Nombre autenticación usuario</li>
-            <li>Fecha/hora conexión</li>
+            <li>Bezero IP-a</li>
+            <li>Bezero izena</li>
+            <li>Erabiltzailearen izena</li>
+            <li>Konexio data</li>
         </ul>
     </section>
 
@@ -251,24 +259,34 @@
             </pre>
         </p>
         <ul>
-            <li>Petición cliente</li>
-            <li>Estado HTTP devuelto</li>
-            <li>Bytes enviados</li>
+            <li>Bezeroaren eskakizuna</li>
+            <li>Itzulitako HTTP egoera</li>
+            <li>Bidalitako Byte-ak</li>
         </ul>
     </section>
 
     <section class="slide">
         <h2>Intrusion Prevention System (IPS)</h2>
-        <p>Sistemas encargados de detectar y reaccionar de forma automatizada ante los incidentes de seguridad en redes</p>
+        <p>
+            Sareetako segurtasun-intzidenteen aurrean modu automatizatuan hautemateaz eta erreakzionatzeaz arduratzen diren sistemak
+            </p>
 
     </section>
 
     <section class="slide">
         <h2>Intrusion Prevention System (IPS)</h2>
-        <p>Fuente de eventos de la red o sistema</p>
-        <p>BBDD de comportamientos normales/anormales</p> 
-        <p>Motor de análisis: analiza la fuente de eventos basándose en la BBDD</p>
-        <p>Módulo de respuesta: alarmas e informes</p>
+        <p>
+            Sareko edo sistemako gertaeren iturria
+            </p>
+        <p>
+            Portaera normalen/ohiz kanpokoen datu-baseak
+            </p> 
+        <p>
+            Analisi-motorra: gertaeren iturria aztertzen du, datu-basean oinarrituta
+            </p>
+        <p>
+            Erantzun-modulua: alarmak eta txostenak
+            </p>
     </section>
 
     <section class="slide">
@@ -278,49 +296,74 @@
 
     <section class="slide">
         <h2>Intrusion Prevention System (IPS)</h2>
-        <p>Respuestas pasivas: registrar las posibles intrusiones, generar informes</p>
-        <p>Respuestas activas: anular las conexiones TCP inyectando paquetes de reinicio en la conexiones; reconfigurtar cortafuegos para filtrar tráfico anómalo, desconexión automática de servidores, bloqueo de cuentas / privilegios, localización de origen de ataque y notificación a los ISP
+        <p>
+            Erantzun pasiboak: balizko intrusioak erregistratzea, txostenak sortzea
+            </p>
+        <p>
+            Erantzun aktiboak: TCP konexioak deuseztatzea konexioetan berriz hasteko paketeak injektatuz; suebakiak berriz konfiguratzea trafiko anomaloa iragazteko, zerbitzarien deskonexio automatikoa, kontuak/pribilegioak blokeatzea, eraso-jatorria aurkitzea eta ISPei jakinaraztea
+            
         </p>
     </section>
 
     <section class="slide">
         <h2>HIDS (Host IDS)</h2>
-        <p>Intrusiones en un host, en una máquina concreta</p>
-        <p>Análisis de logs del kernel</p>
-        <p>Verificación de la integridad de los ejecutabels</p>
-        <p>Auditoría periódica de permissos asignados a los recursos</p>
-        <p>Revisión detallada del proceso de instalación de nuevas aplicaciones</p>
+        <p>
+            Intrusioak host batean, makina jakin batean
+            </p>
+        <p>Kernel-aren log-en analisia</p>
+        <p>Programen osotasuna bermatzea</p>
+        <p>
+            Baliabideei esleitutako baimenen aldizkako auditoretza
+            </p>
+        <p>
+            Aplikazio berriak instalatzeko prozesuaren berrikuspen xehatua
+            </p>
     </section>
 
     <section class="slide">
         <h2>Network IDS</h2>
-        <p>Monitorizan el tráfico de red para buscar actividad sospechosa:</p>
-        <p>Enrutamiento anormal de paquetes</p>
-        <p>IP spoofing: usar una IP no válida o en desuso de los tramos internos</p>
-        <p>DNS spoffing: afluencia de paquetes DNS</p>
+        <p>
+            Sareko trafikoa monitorizatzen dute, jarduera susmagarria bilatzeko:
+            </p>
+        <p>
+            Paketeen bideratze anormala
+            </p>
+        <p>
+            IP spoofing: baliogabea den edo barne-tarteak erabiltzen ez dituen IP bat erabiltzea
+            </p>
+        <p>
+            DNS spoffing: DNS paketeen joan-etorria
+            </p>
     </section>
 
     <section class="slide">
         <h2>Network IDS</h2>
-        <p>Monitorizan el tráfico de red para buscar actividad sospechosa:</p>
-        <p>SYN flooding: invasión de paquetes TCP SYN</p>
-        <p>Falsa correspondencia entre las direcciones MAC conocidas y las direcciones IP de los equipos</p>
+        <p>
+            Sareko trafikoa monitorizatzen dute, jarduera susmagarria bilatzeko:
+            </p>
+        <p>SYN flooding: TCP SYN paketeen inbasioa</p>
+        <p>
+            Ekipoen MAC helbide ezagunen eta IP helbideen arteko korrespondentzia faltsua
+            </p>
     </section>
-
 
     <section class="slide">
         <h2>Intrusion Prevention System (IPS)</h2>
         <p><a href="https://www.snort.org/">SNORT</a></p>
-        <p>Permite descargar nuevas reglas de deteccion de intrusos</p>
+        <p>
+            Arrotzak detektatzeko arau berriak deskargatzeko aukera ematen du
+            </p>
     </section>
 
     <section class="slide">
         <h2>Honeypots</h2>
-        <p>Sistema "señuelo" para que sea atacado</p>
-        <p>Honeynet: red de honeypots</p>
-        <p>Desviar los ataques</p>
-        <p>Obtener conocimiento de métodos de ataque</p>
-        <p>Obtener muestras de malware</p>
+        <p>
+            "Amua" sistema, eraso diezaioten
+            </p>
+        <p>Honeynet: honeypot-en sarea</p>
+        <p>Erasoak desbideratu</p>
+        <p>Erasoei buruzko ezagutza lortzea</p>
+        <p>Malware-aren laginak lortzea</p>
     </section>
 
     <section class="slide">
@@ -387,10 +430,10 @@
 
     <section class="slide">
         <h2>Eraso ohikoenak</h2>
-        "Denegación de Servicio (DoS)": 
+        Denial of Service (DoS): 
         Hardwarea edo softwarea "saturatzen" da erantzuteari utzi arte
          <br><br>
-        "Ataque Distribuido de Denegación de Servicio (DDoS)":
+        Distributed Denial of Service (DDoS):
         <ul>
             <li>
                 Hainbat makinatatik egiten da.
@@ -399,9 +442,6 @@
         </ul>
         <a href="https://therecord.media/gitlab-servers-are-being-exploited-in-ddos-attacks-in-excess-of-1-tbps/">GitLab servers are being exploited in DDoS attacks in excess of 1 Tbps</a>
     </section>
-
-
-    
 
     <!-- FOOTER -->
 
