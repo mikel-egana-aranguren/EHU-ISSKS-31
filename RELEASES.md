@@ -6,6 +6,7 @@
 * Zifraketa asimetrikoa, sinadura, zertifikatuak, komunikazio seghuruak, bitcoin
 * Web segurtasuna
 * Segurtasun fisikoa, kopiak
+* Sare segurtasuna
 
 ## 2021-2022 (Adarra izoztua)
 
