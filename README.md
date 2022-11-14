@@ -19,11 +19,7 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
   * [Segurtasuna kopiak](Segurtasun_kopiak/index.html)
   * [Segurtasuna sareetan](Segurtasuna_sareetan/index.html)
 * III Blokea: Gizartea
-  * Giza faktorea
-  * Malwarea
-  * Informatika forentsea
-  * Deep web, Snowden, ...
-  * Legeak
-  * Hitzaldiak
+  * [Giza faktorea](GizaFaktorea/index.html)
+  * [Malwarea](Malware/index.html)
 
 [![DOI](https://zenodo.org/badge/405099738.svg)](https://zenodo.org/badge/latestdoi/405099738)
