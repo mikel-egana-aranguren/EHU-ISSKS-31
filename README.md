@@ -21,5 +21,8 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
 * III Blokea: Gizartea
   * [Giza faktorea](GizaFaktorea/index.html)
   * [Malwarea](Malware/index.html)
+  * [Informatika forentsea](InformatikaForensea/index.html)
+  * [Deep web](DeepWeb/index.html)
+  * [Legedia](Legedia/index.html)
 
 [![DOI](https://zenodo.org/badge/405099738.svg)](https://zenodo.org/badge/latestdoi/405099738)
