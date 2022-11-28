@@ -7,6 +7,7 @@
 * Web segurtasuna
 * Segurtasun fisikoa, kopiak
 * Sare segurtasuna
+* Giza faktorea, Malwarea, Informatika forentsea, Deep Web
 
 ## 2021-2022 (Adarra izoztua)
 
