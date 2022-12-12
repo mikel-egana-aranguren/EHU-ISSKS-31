@@ -8,6 +8,7 @@
 * Segurtasun fisikoa, kopiak
 * Sare segurtasuna
 * Giza faktorea, Malwarea, Informatika forentsea, Deep Web
+* Legedia
 
 ## 2021-2022 (Adarra izoztua)
 
