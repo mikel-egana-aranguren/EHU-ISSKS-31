@@ -1,6 +1,11 @@
 # Releases
 
-## 2022-2023
+## 2023-2024-1
+
+* Irakaskuntza gida
+* CAF-elhuyar artikulua Bitcoin gaian
+
+## 2022-2023 (Adarra izoztua)
 
 * Sarrera, zifraketa sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa
 * Zifraketa asimetrikoa, sinadura, zertifikatuak, komunikazio seghuruak, bitcoin
