@@ -93,7 +93,7 @@ Ordenagailuekin egindako praktiketan ere, Arazoetan Oinarritutako Irakaskuntza a
 
 ## OHIKO DEIALDIA: ORIENTAZIOAK ETA UKO EGITEA (EUSKARAZ)  
 
-Ohiko deialdian, besterik adierazi ezean, ikasleek ebaluaketa jarraitua egingo dutela ulertzen da. Ikasle batek ebaluaketa finala egin nahiko balu, emailez jakinarazi beharko du, 9. astea baino lehenago.
+Ohiko deialdian, besterik adierazi ezean, ikasleek ebaluaketa jarraitua egingo dutela ulertzen da. Ikasle batek ebaluaketa finala egin nahiko balu, emailez jakinarazi beharko du 3. partziala baino 2 aste lehenago.
 Ebaluaketa jarraituan, ebaluazioa 3 zatitan banatuko da, bakoitzak azterketa teoriko eta praktiko bat izango duelarik. Azterketa horien kalifikazioaren batazbestekoa kalkulatuko da zati horren nota zehazteko. Azterketa bakoitzaren edukia eskoletan landutakoari buruz eta zati horri dagokizon laborategiko edukian oinarrituko da. 
 Horrez gain, lauhilekoan zehar zenbait lan egingo dira, irakasgaiaren azken kalifikazioan eragina izango dutena. 
 Ebaluazketa jarraituari uko egin eta azterketa finala egitera aurkeztu nahi diren ikasleek, bi azterketa izango dituzte: bata teorikoa eta beste bat praktikoa, irakasgaiaren gaitegi osoa kontutan izango dutena. Irakasgaiaren azken nota bi azterketa horien batezbesteko notarekin kalkulatuko da.
@@ -107,8 +107,7 @@ Bi talde ezberdinen artean kopia bat egon dela antzematen bada, bi lan horiek 0 
 Azterketa kasuetan, ikasleen ebaluazioari dagokion eta indarrean dagoen Ikasleen Ebaluaziorako Arautegiko 11.3 artikulua aplikatuko da.
 
 DEIALDIARI UKO EGIN:
-Ebaluaketa jarraituari atxikitako ikasle batek deialdiari uko egin eta “Ez aurkeztua” kalifikazioa lortu nahiko balu, eGelan eskatu beharko du dagokion epean. Ebaluaketa finalari atxikitako ikasleen kasuan, nahikoa izango da azterketa egunean ez aurkeztearekin.
-
+Ebaluaketa jarraituari atxikitako ikasle batek deialdiari uko egin eta “Ez aurkeztua” kalifikazioa lortu nahiko balu, 3.partzialera ez aurkeztea nahiko du. Ebaluaketa finalari atxikitako ikasleen kasuan, nahikoa izango da azterketa egunean ez aurkeztearekin.
 
 ## EZOHIKO DEIALDIA: ORIENTAZIOAK (EUSKARAZ)  
 
