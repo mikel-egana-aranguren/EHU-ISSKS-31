@@ -88,8 +88,10 @@ Ordenagailuekin egindako praktiketan ere, Arazoetan Oinarritutako Irakaskuntza a
 
 ## KALIFIKAZIOKO TRESNAK ETA EHUNEKOAK 
 
-* TEST MOTATAKO PROBA 60
-* PRAKTIKAK EGITEA (ARIKETAK, KASUAK EDO BURUKETAK) 40
+* Garatu beharreko proba idatzia 10
+* Test motatako proba 20
+* Praktikak (ariketak, kasuak edo buruketak) 30
+* Talde lanak (arazoen ebazpenak, proiektuen diseinuak) 40
 
 ## OHIKO DEIALDIA: ORIENTAZIOAK ETA UKO EGITEA (EUSKARAZ)  
 
