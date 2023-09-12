@@ -1,5 +1,9 @@
 # Releases
 
+## 2023-2024-2
+
+* Sarrera
+
 ## 2023-2024-1
 
 * Irakaskuntza gida
