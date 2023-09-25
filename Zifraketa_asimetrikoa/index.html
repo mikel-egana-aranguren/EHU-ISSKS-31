@@ -65,12 +65,12 @@
     <section class="slide">
         <h2>Klabe publikoko kriptografia</h2>
         <ul>
-            <li>Ikerrek bere gako pribatua du, I<sub>pri</sub>, eta mundu guztiak bere gako publikoa du, I<sub>pu</sub></li>
-            <li>Mirenek bere mezua zifratzen du Ikerren gako publikoa erabiliz: c = e ( m , I<sub>pu</sub> )</li>
+            <li>Ikerrek bere gako pribatua du, <b>I<sub>pri</sub></b>, eta mundu guztiak bere gako publikoa du, <b>I<sub>pu</sub></b></li>
+            <li>Mirenek bere mezua zifratzen du Ikerren gako publikoa erabiliz: <b>c=e(m,I<sub>pu</sub>)</b></li>
             <li>Mirenek c kriptograma Ikerreri bidaltzen dio</li>
             <li>Ikerrek c jasotzen du</li>
-            <li>Ikerrek c deszifratzen du bere I gako pribatua erabiliz: m = d ( c , I<sub>pri</sub> )</li>
-            <li><b>Konfidentzialtasuna</b>. Ikerrek soilik deszifratu dezake mezua</li>
+            <li>Ikerrek c deszifratzen du bere I gako pribatua erabiliz: <b>m=d(c,I<sub>pri</sub>)</b></li>
+            <li><b><u>Konfidentzialtasuna</u></b>. Ikerrek soilik deszifratu dezake mezua</li>
         </ul>
     </section>
 
@@ -124,11 +124,11 @@
     <section class="slide">
         <h2>Klabe publikoko kriptografia</h2>
         <ul>
-            <li>Ikerrek bere gako pribatuarekin zifratzen badu edonork deszifratu ahal du (Mundu osoak ezagutzen du I<sub>pu</sub>)</li>
+            <li>Ikerrek bere gako pribatuarekin zifratzen badu edonork deszifratu ahal du (Mundu osoak ezagutzen du <b>I<sub>pu</sub></b>)</li>
             <li>Soluzioa:
                 <ul>
-                    <li>Ikerrek bere gako pribatuarekin zifratzen du mezua: C1 = e ( m, I<sub>pri</sub> )</li>
-                    <li>Gero Mirenen gako publikoarekin berriro zifratzen du: C2 = e ( C1 , M<sub>pu</sub> ) </li>
+                    <li>Ikerrek bere gako pribatuarekin zifratzen du mezua: <b>C1=e(m,I<sub>pri</sub>)</b></li>
+                    <li>Gero Mirenen gako publikoarekin berriro zifratzen du: <b>C2=e(C1,M<sub>pu</sub>)</b> </li>
                 </ul>
             </li>
         </ul>
@@ -139,8 +139,8 @@
         <ul>
             <li>Mirenek bakarrik deszifratu ahal du bere gako pribatuarekin:
                 <ul>
-                    <li><b>Konfidentzialtasuna</b>: Mirenek soilik deszifratu ahal du mezua: C1 = d ( C2 , M<sub>pri</sub> )</li>
-                    <li><b>Kautotzea</b> eta <b>Zapuztezintasuna</b>: Ikerrek soilik bidali ahal izan du mezua: m = d ( C1, I<sub>pu</sub> )</li>
+                    <li><b><u>Konfidentzialtasuna</u></b>: Mirenek soilik deszifratu ahal du mezua: <b>C1=d(C2,M<sub>pri</sub>)</b></li>
+                    <li><b><u>Kautotzea</u></b> eta <b><u>Zapuztezintasuna</u></b>: Ikerrek soilik bidali ahal izan du mezua: <b>m=d(C1,I<sub>pu</sub>)</b></li>
                 </ul>
             </li>
         </ul>
@@ -214,9 +214,9 @@
 
     <section class="slide">
         <h2>Zifratu hibridoa</h2>
-        <p>Mirenek S gako sekretua sortzen du, eta bere mezua zifratzeko erabiltzen du: cm = e1 (m,S)</p>
-        <p>Mirenek S zifratzen du Ikerren gako publikoarekin: cs = e2 ( S , I<sub>pu</sub> )</p>
-        <p>Mirenek [ cm, cs ] bidaltzen dio Ikerreri</p>
+        <p>Mirenek <b>S</b> gako sekretua sortzen du, eta bere mezua zifratzeko erabiltzen du: <b>cm=e1(m,S)</b></p>
+        <p>Mirenek <b>S</b> zifratzen du Ikerren gako publikoarekin: <b>cs=e2(S,I<sub>pu</sub>)</b></p>
+        <p>Mirenek <b>[cm,cs]</b> bidaltzen dio Ikerreri</p>
 
     </section>
 
@@ -227,9 +227,9 @@
 
     <section class="slide">
         <h2>Zifratu hibridoa</h2>
-        <p>Ikerrek [ cm , cs ] jasotzen du</p>
-        <p>Ikerrek S deszifratzen du bere gako pribatua erabiliz, I<sub>pri</sub>: d2 ( cs , I<sub>pri</sub> ) = S</p>
-        <p>Ikerrek S erabiliz m deszifratzen du: d1 ( cm , S ) = m</p>
+        <p>Ikerrek <b>[cm,cs]</b> jasotzen du</p>
+        <p>Ikerrek S deszifratzen du bere gako pribatua erabiliz, I<sub>pri</sub>: <b>d2(cs,I<sub>pri</sub>)=S</b></p>
+        <p>Ikerrek S erabiliz m deszifratzen du: <b>d1(cm,S)=m</b></p>
     </section>
 
     <section class="slide">
