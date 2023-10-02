@@ -1,5 +1,10 @@
 # Releases
 
+## 2023-2024-3
+
+* Zifraketa sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa, zifraketa asimetrikoa, sinadura, agiriak, komunikazio seguruak, bitcoin
+* Sarrera
+
 ## 2023-2024-2
 
 * Sarrera
