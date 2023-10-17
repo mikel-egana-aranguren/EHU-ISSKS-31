@@ -14,15 +14,16 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
   * Aplikazioak: [Komunikazio seguruak](Zifraketa_komunikazioak/index.html)
   * Aplikazioak: [Bitcoin](Zifraketa_bitcoin/index.html)
 * II Blokea: Sistemak
+  * [Segurtasuna kopiak](Segurtasun_kopiak/index.html)
   * [Segurtasuna Web Sistemetan](WebSegurtasuna/index.html)
   * [Segurtasun fisikoa](Segurtasun_fisikoa/index.html)
-  * [Segurtasuna kopiak](Segurtasun_kopiak/index.html)
   * [Segurtasuna sareetan](Segurtasuna_sareetan/index.html)
+  * [Malwarea](Malware/index.html)
 * III Blokea: Gizartea
   * [Giza faktorea](GizaFaktorea/index.html)
-  * [Malwarea](Malware/index.html)
   * [Informatika forentsea](InformatikaForensea/index.html)
   * [Deep web](DeepWeb/index.html)
   * [Legedia](Legedia/index.html)
+  * Hitzaldiak: Ikerlan, Opscura
 
 [![DOI](https://zenodo.org/badge/405099738.svg)](https://zenodo.org/badge/latestdoi/405099738)
