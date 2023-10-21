@@ -259,7 +259,7 @@
     <section class="slide">
         <h2>Akats kriptografikoak: prebentzioa</h2>
         <p>Algoritmo eguneratuak (MD5, SHA1, ... ez), gako indartsuak, eta Gakoen kudeaketa erabili</p>
-        <p>transmititzen diren datua guztiak zifratu TLS FS bidez (TLS + Forward Secrecy)</p>
+        <p>Transmititzen diren datu guztiak zifratu TLS FS bidez (TLS + Forward Secrecy)</p>
         <p>Bezeroan datu berezientzako ez baimendu cache-en erabilpena</p>
     </section>
 
@@ -311,6 +311,11 @@
         <h2>SQL injekzioa</h2>
         <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/boy.png" alt="Bobby tables" width="90%"></p>
         <p style="text-align:left;font-size:30%;"><a href="https://xkcd.com/327/">https://xkcd.com/327/</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>(Injekzioa LLM-tan)</h2>
+        <a href="https://simonwillison.net/2023/Oct/14/multi-modal-prompt-injection/">Multi-modal prompt injection image attacks against GPT-4V</a>
     </section>
 
     <section class="slide">
@@ -410,7 +415,7 @@ String name = p.FirstName;
 
     <section class="slide">
         <h2>Diseinu insegurua: adibideak</h2>
-        <p>e-commerce kate batek erosleen eskaera asko jaso ditzake boten bidez, produktuak beste leku batzuetan saltzeko. Hori ekidin daiteke, adibidez, arkitekturan botak detektatzen dituzten osagaiak gehituz (Eskaera asko denbora gutxian, produktu bat argitaratzeko segundo gutxiren buruan egindako eskaera, eta abar).
+        <p>e-commerce kate batek erosleen eskaera asko jaso ditzake bot-en bidez, produktuak beste leku batzuetan saltzeko. Hori ekidin daiteke, adibidez, arkitekturan bot-ak detektatzen dituzten osagaiak gehituz (Eskaera asko denbora gutxian, produktu bat argitaratzeko segundo gutxiren buruan egindako eskaera, eta abar).
         </p>
     </section>
 
@@ -550,7 +555,7 @@ String name = p.FirstName;
         <h2>Identifikazio- eta autentifikazio-akatsak: prebentzioa</h2>
 
         <ul>
-            <li>Ez dabiltzan login saiakerak mugatu edo atzeratu, Denial of Service (DoS) egoera bat sortu gabe. Es dabiltzan saiakera gutztiak log-ean gorde eta administratzaileei abisatu Credential Stuffing eraso bat gertatzen bada
+            <li>Ez dabiltzan login saiakerak mugatu edo atzeratu, Denial of Service (DoS) egoera bat sortu gabe. Ez dabiltzan saiakera gutztiak log-ean gorde eta administratzaileei abisatu Credential Stuffing eraso bat gertatzen bada
             </li>
         </ul>
     </section>
@@ -645,7 +650,7 @@ String name = p.FirstName;
     <section class="slide">
         <h2>Akatsak segurtasunaren monitorizazioan: prebentzioa</h2>
         <ul>
-            <li>Ziurtatu login-akats guztiak, sarbide-kontrola edo inputak baliozkotzea logean erregistratzen direla erabiltzaile-testuinguru nahikoarekin, kontu susmagarriak identifikatu ahal izateko, eta analisi forentse bat egiteko denbora nahikoarekin biltegiratuta</li>
+            <li>Ziurtatu login-akats guztiak, sarbide-kontrola edo input-ak baliozkotzea log-ean erregistratzen direla erabiltzaile-testuinguru nahikoarekin, kontu susmagarriak identifikatu ahal izateko, eta analisi forentse bat egiteko denbora nahikoarekin biltegiratuta</li>
             <li>Log-ak soluzio automatizatuek erraz kontsumi ditzaketen moduan sortzen direla ziurtatzea</li>
         </ul>
     </section>
