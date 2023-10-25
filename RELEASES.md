@@ -1,5 +1,14 @@
 # Releases
 
+## 2023-2024-5
+
+* Segurtasun fisikoa, segurtasuna sareetan
+* Segurtasun kopiak, web segurtasuna
+* Zifraketa sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa, zifraketa asimetrikoa, sinadura, agiriak, komunikazio seguruak, bitcoin
+* Sarrera
+* Irakaskuntza gida
+* CAF-elhuyar artikulua Bitcoin gaian
+
 ## 2023-2024-4
 
 * Segurtasun kopiak, web segurtasuna
@@ -7,7 +16,6 @@
 * Sarrera
 * Irakaskuntza gida
 * CAF-elhuyar artikulua Bitcoin gaian
-
 
 ## 2023-2024-3
 
