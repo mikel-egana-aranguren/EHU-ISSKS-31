@@ -24,6 +24,8 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
   * [Informatika forentsea](InformatikaForensea/index.html)
   * [Deep web](DeepWeb/index.html)
   * [Legedia](Legedia/index.html)
-  * Hitzaldiak: Ikerlan, Opscura
+  * Hitzaldia: Gorka Abad, Ikerlan, "Security and privacy in Deep Learning"
+  * Hitzaldia: Servio Paguada, Ikerlan, "Ciberseguridad en sistemas físicos: análisis de canal lateral"
+  * Hitzaldia: Carlos Tomás, Opscura, "Seguridad IoT y Quantum Safe"
 
 [![DOI](https://zenodo.org/badge/405099738.svg)](https://zenodo.org/badge/latestdoi/405099738)
