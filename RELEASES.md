@@ -1,5 +1,9 @@
 # Releases
 
+## 2024-2025-?
+
+* README hobetua
+
 ## 2023-2024-9
 
 * Legedia, informatika forentsea
