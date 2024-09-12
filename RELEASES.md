@@ -2,6 +2,7 @@
 
 ## 2024-2025-?
 
+* ISSKS sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa,
 * README hobetua
 
 ## 2023-2024-9
