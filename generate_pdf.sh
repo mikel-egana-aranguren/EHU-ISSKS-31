@@ -1,1 +1,1 @@
-/home/mikel/EHU-LSI/Docencia/2023-2024/SGSSI/EHU-SGSSI-01/generate_pdf.sh
+/home/mikel/EHU-LSI/Docencia/Utils/ShowerTemplate/generate_pdf.sh

@@ -1,31 +1,29 @@
 # EHU-ISSKS-31
 
-Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak, [Kudeaketaren eta Informazio Sistemen Informatikaren Ingeniaritzako Graduko](https://www.ehu.eus/eu/kudeaketaren-eta-informazio-sistemen-informatikaren-ingeniaritzako-gradua-bizkaia) hirugarren maila.
+Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak, [Kudeaketaren eta Informazio Sistemen Informatikaren Ingeniaritzako Graduko](https://www.ehu.eus/eu/web/graduak/kudeaketaren-eta-informazio-sistemen-informatikaren-ingeniaritzako-gradua-bizkaia/kreditu-eta-irakasgaiak?p_redirect=consultaAsignatura&p_cod_proceso=egr&p_anyo_acad=20240&p_ciclo=X&p_curso=3&p_cod_asignatura=26025) hirugarren maila. Karpeta bakoitzeko PDF fitxategia ireki.
 
-* [Sarrera](Sarrera/index.html)
+* [Sarrera](Sarrera/)
 * I Blokea: Zifraketa
-  * [Zifraketa sarrera eta historia](Zifraketa_intro/index.html)
-  * [Esteganografia](Zifraketa_esteganografia/index.html)
-  * [Laburpen algoritmoak](Zifraketa_laburpen/index.html)
-  * [Zifraketa simetrikoa](Zifraketa_simetrikoa/index.html)
-  * [Zifraketa asimetrikoa](Zifraketa_asimetrikoa/index.html)
-  * Aplikazioak: [Sinadura](Zifraketa_sinadura/index.html)
-  * Aplikazioak: [Zertifikatuak](Zifraketa_zertifikatuak/index.html)
-  * Aplikazioak: [Komunikazio seguruak](Zifraketa_komunikazioak/index.html)
-  * Aplikazioak: [Bitcoin](Zifraketa_bitcoin/index.html)
+  * [Zifraketa sarrera eta historia](Zifraketa_intro/)
+  * [Esteganografia](Zifraketa_esteganografia/)
+  * [Laburpen algoritmoak](Zifraketa_laburpen/)
+  * [Zifraketa simetrikoa](Zifraketa_simetrikoa/)
+  * [Zifraketa asimetrikoa](Zifraketa_asimetrikoa/)
+  * Aplikazioak: [Sinadura](Zifraketa_sinadura/)
+  * Aplikazioak: [Zertifikatuak](Zifraketa_zertifikatuak/)
+  * Aplikazioak: [Komunikazio seguruak](Zifraketa_komunikazioak/)
+  * Aplikazioak: [Bitcoin](Zifraketa_bitcoin/)
 * II Blokea: Sistemak
-  * [Segurtasuna kopiak](Segurtasun_kopiak/index.html)
-  * [Segurtasuna Web Sistemetan](WebSegurtasuna/index.html)
-  * [Segurtasun fisikoa](Segurtasun_fisikoa/index.html)
-  * [Segurtasuna sareetan](Segurtasuna_sareetan/index.html)
-  * [Malwarea](Malware/index.html)
+  * [Segurtasuna kopiak](Segurtasun_kopiak/)
+  * [Segurtasuna Web Sistemetan](WebSegurtasuna/)
+  * [Segurtasun fisikoa](Segurtasun_fisikoa/)
+  * [Segurtasuna sareetan](Segurtasuna_sareetan/)
+  * [Malwarea](Malware/)
 * III Blokea: Gizartea
-  * [Giza faktorea](GizaFaktorea/index.html)
-  * [Informatika forentsea](InformatikaForensea/index.html)
-  * [Deep web](DeepWeb/index.html)
-  * [Legedia](Legedia/index.html)
-  * Hitzaldia: Gorka Abad, Ikerlan, "Security and privacy in Deep Learning"
-  * Hitzaldia: Servio Paguada, Ikerlan, "Ciberseguridad en sistemas físicos: análisis de canal lateral"
-  * Hitzaldia: Carlos Tomás, Opscura, "Seguridad IoT y Quantum Safe"
+  * [Giza faktorea](GizaFaktorea/)
+  * [Informatika forentsea](InformatikaForensea/)
+  * [Deep web](DeepWeb/)
+  * [Legedia](Legedia/)
+  * Hitzaldiak .
 
 [![DOI](https://zenodo.org/badge/405099738.svg)](https://zenodo.org/badge/latestdoi/405099738)

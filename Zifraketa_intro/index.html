@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Zifraketa</title>
+    <title>Zifraketa sarrera, esteganografia, laburpen algoritmoak</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../ShowerTemplate/shower/themes/ribbon/styles/styles.css">
@@ -18,12 +18,12 @@
 </head>
 <body class="shower list">
     <header class="caption">
-        <h1>Zifraketa</h1>
+        <h1>Zifraketa sarrera, esteganografia, laburpen algoritmoak</h1>
         <p>Mikel Egaña Aranguren</p>
     </header>
 
     <section class="slide" id="cover">
-        <h2>Zifraketa</h2>
+        <h2>Zifraketa sarrera, esteganografia, laburpen algoritmoak</h2>
         <p>Mikel Egaña Aranguren</p>
         <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p>
         <p><a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a></p>
@@ -31,14 +31,23 @@
     </section>
 
     <section class="slide">
-        <h2>Zifraketa</h2>
+        <h2>Zifraketa sarrera, esteganografia, laburpen algoritmoak</h2>
         <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
         <p><a href="https://github.com/mikel-egana-aranguren/EHU-SGSSI-01">https://github.com/mikel-egana-aranguren/EHU-SGSSI-01</a></p>
         <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
     </section>
 
     <section class="slide">
-        <h2>Sarrera</h2>
+        <h2>Zifraketa sarrera, esteganografia, laburpen algoritmoak</h2>
+        <ul>
+            <li>Zifraketa sarrera</li>
+            <li>Esteganografia</li>
+            <li>Laburpen algoritmoak</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Zifraketa sarrera</h2>
         <p>Kriptografia: informazioa zifratu</p>
         <p>Segurtasun mekanismo oso zaharra (Aintzinekoa)</p>
         <p><b>Konfidentzialtasuna</b>, <b>Osotasuna</b>, <b>Kautotzea bermatzen ditu</b>
@@ -46,14 +55,14 @@
     </section>
 
     <section class="slide">
-        <h2>Sarrera</h2>
+        <h2>Zifraketa sarrera</h2>
         <p>Kriptoanalisia: mezu zifratuak deszifratzeko teknikak</p>
         <p><b>Kriptologia: Kriptografia + Kriptoanalisia</b></p>
     </section>
 
 
     <section class="slide">
-        <h2>Sarrera</h2>
+        <h2>Zifraketa sarrera</h2>
         <p>Kriptoanalisia:
             <ul>
                 <li>Gakoa ezagutu gabe</li>
@@ -64,37 +73,36 @@
     </section>
 
     <section class="slide">
-        <h2>Sarrera</h2>
-        <p>Kerckhoffs-en printzipoak:
+        <h2>Kerckhoffs-en printzipoak</h2>
+        
             <ul>
                 <li>Sistemak apurtezina izan behar du, teorikoki apurtezina izatea posiblea ez bada, gutxienez praktikan</li>
                 <li><b>Sistemaren segurtasunak ez du diseinua isilpean gordetzearen mende egon behar. Etsaiaren eskuetara iritsiko balitz, horrek ez luke kriptosistema arriskuan jarri beharko</b></li>
             </ul>
-        </p>
+        
     </section>
 
     <section class="slide">
-        <h2>Sarrera</h2>
-        <p>Kerckhoffs-en printzipoak:
+        <h2>Kerckhoffs-en printzipoak</h2>
+        
             <ul>
                 <li>Gako kriptografiko edo pasahitzak erraz gogoratzeko modukoa izan behar du, inon idazteko beharrik ez izateko modukoa eta erraz aldatzeko modukoa</li>
                 <li>Kriptogramak telegrafo bidez transmititzeko modukoa izan behar du, karaketere alfanumerikoetan idazteko modukoa</li>
             </ul>
-        </p>
+        
     </section>
 
     <section class="slide">
-        <h2>Sarrera</h2>
-        <p>Kerckhoffs-en printzipoak:
+        <h2>Kerckhoffs-en printzipoak</h2>
+
             <ul>
                 <li>Sistemak (tresnak) eramangarria izan behar du, eta pertsona bakar batek erabiltzeko modukoa</li>
                 <li>Sistemak erabilerraza izan behar du; erabiltzaileak jarraitu beharreko agindu-sorta luzerik edota gaitasun intelektual berezirik ez du eskatu behar</li>
             </ul>
-        </p>
     </section>
 
     <section class="slide">
-        <h2>Sarrera</h2>
+        <h2>Zifraketa sarrera</h2>
         <p>Kriptosistema: D<sub>K</sub> ( E<sub>K</sub> ( M ) ) = M
             <ul>
                 <li>M: zifratu gabeko mezuak</li>
@@ -107,17 +115,323 @@
     </section>
 
     <section class="slide">
-        <h2>Sarrera: Kriptosistemak</h2>
+        <h2>Kriptosistemak</h2>
         <b>Simetrikoak edo gako pribatukoak:</b> Gako bakarra enkriptatu eta desenkriptatzeko <br><br>
         <b>Asimetrikoak edo gako publikokoak:</b> Gako batek enkriptatu eta beste batek desenkriptatu (Batek enkriptatzen duena, besteak enkriptatzen du)
     </section>
 
     <section class="slide">
-        <h2>Sarrera</h2>
+        <h2>Zifraketa sarrera</h2>
         <p>Kriptografia: informazioa <b>zifratu</b> </p>
         <p>Esteganografia: informazioa <b>ezkutatu</b> </p>
         <p>Hash algoritmoak: informazioa <b>laburtu</b> </p>
     </section>
+
+    <section class="slide">
+        <h2>Esteganografia</h2>
+        <p>"steganos": ezkutua; "graphos": idazkera</p>
+        <p>Informazioa ezkutatzean datza, ikusgarria izateko gakoa dakienarentzat soilik</p>
+        <p>Gakoa jakin barik, badirudi ez dagoela informazioa ezkutaturik</p>
+        <p>Kriptografiaren aitzindaria</p>   
+    </section>
+
+    <section class="slide">
+        <h2>Esteganografia</h2>
+        <p>Histaiaeo (Mileto-ko gobernatzailea) Dario I errege persiarraren kontra altxatzeko aliatuen bila zebilen</p>
+        <p>Inork detektatuko ez zituen mezuak bidali behar zituen:
+            <ul>
+                <li>Mezulariei ilea ebaki</li>
+                <li>Buruko azalan mezua idatzi</li>
+                <li>Ilea berriro hazi arte itxaron, eta orduan helburura bidali</li>
+                <li>Helburuan ilea ebaki eta mezua irakurri</li>
+            </ul>
+        </p>   
+    </section>
+
+    <section class="slide">
+        <h2>Esteganografia</h2>
+        <p>Bigarren Mundu Gerra</p>
+        <p>Alemaniarrek mikro puntuak erabiltzen zituzten testuetan informazioa ezkutatzeko, puntuazio-zeinuen itxura emanez</p>   
+    </section>
+
+
+    <section class="slide">
+        <h2>Gaur eguneko esteganografia</h2>
+        <p>Informazio garrantzitsua <b>fitxategi edukiontzian</b> txertatzea
+            </p>
+        <p>
+            <ul>
+                <li>Bit-ak ordezkatzea</li>
+                <li>Bitak amaieran txertatzea, EOF (End Of File) markaren ondoren</li>
+                <li>Ezkutatu beharreko informaziotik abiatuta beren-beregi fitxategi edukiontzia sortzea</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Bit-ak ordezkatzea</h2>
+        <p>Informazioa ezkutatzea multimedia artxibotan (normalean irudiak)</p>
+        <p>BMP formatuan pixel bakoitza RGB-n 3 byte dira</p>  
+        <p>LSB (Less Significant Bit): byte bakoitzaren azken bit-a aldatzeak ez dauka efekturik</p>   
+    </section>
+
+    <section class="slide">
+        <h2>Bit-ak ordezkatzea</h2>
+        <p>Adibidez, textua ezkutatzeko nahi dugun hizkiaren ASCII kodea txertatzen dugu</p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/LSB.png" alt="Esteganografia" width="40%"></p>
+    </section>
+
+
+
+    <section class="slide">
+        <h2>Gaur eguneko esteganografia</h2>
+        <ul>
+            <li>Normalean pasahitzak erabiltzen dituzten programekin</li>
+            <li>Nola sendotu sistema?</li>
+            <li class="next">Informazioa zifratu txertatu baino lehen (Kriptografia + esteganografia)</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Gaur eguneko esteganografia: arazoak</h2>
+        <ul>
+            <li>Fitxategi edukiontzia norbaitek aldatzen badu informazioa gal dezake (adib. JPEG --> BMP --> JPEG)</li>
+            <li>Ez ditu <b>Kautotzea</b> ezta <b>Osotasuna</b> bermatzen (Baina <b>Konfidentzialtasuna</b> bai)</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Laburpen algoritmoak (Digest)</h2>
+        <p>Jatorrizko eduki osoa ordezkatzen duen kriptograma ekoizten dute:
+            <ul>
+                <li><b>Tamaina finkokoa</b>, jatorrizko edukia edozein izanda</li>
+                <li><b>Jatorrizko eduki guztia</b> ordezkatzen du</li>
+                <li>Edukia apur bat aldatzen bada ere <b>guztiz aldatzen da</b></li>
+                <li>Eduki berdinarentzat beti ekoizten du <b>bera</b></li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Hash funtzioak</h2>
+            <ul>
+                <li>Ez daukate alderantzizko funtziorik (one-way function): ezin da edukia lortu kriptogramatik</li>
+                <li>Ezin dira deszifratu, ez dutelako zifratzen (laburtu)</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Laburpen algoritmoak: Erabilpenak</h2>
+        <p>Informazioaren Osotasuna ziurtatu</p>
+        <p>Pasahitzak gorde</p>
+        <p>Datu edo fitxategien identifikatzailea</p>
+        <p>Lan froga -Proof of Work- (<a href="../Zifraketa_Bitcoin/index.html">Bitcoin</a>)</p>
+        <p>Sinadura digitala inplementatu (<a href="../Zifraketa_asimetrikoa/index.html">Zifraketa asimetrikoa: sinadura digitala</a>)</p>
+    </section>
+
+    <section class="slide">
+        <h2>Informazioaren Osotasuna ziurtatu</h2>
+        <p><a href="http://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/2.0/MD5SUMS">http://ftp.mozilla.org/pub/mozilla.org/xulrunner/releases/2.0/MD5SUMS</a></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/md5-mozilla.png" alt="MD5 Mozilla" width="60%"></p>
+        <p>Nola baieztatu osotasuna?</p>
+    </section>
+
+
+
+    <section class="slide">
+        <h2>Informazioaren Osotasuna ziurtatu</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-integridad.png" alt="Hash osotasuna" width="60%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Pasahitzak gorde</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-clave.png" alt="Pasahitzak gorde" width="60%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Pasahitzak gorde: identifikatu</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-clave-identificacion.png" alt="Pasahitzak gorde: identifikatu" width="80%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Pasahitzak gorde: arazoak</h2>
+            <ul>
+                <li>Gako berdinek hash berdina sortuko dute</li>
+                <li>Gako espazioko hash guztiak pre-kalkulatu daitezke</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Pasahitzak gorde: arazoak</h2>
+
+        <p>Soluzioa: "gatza" (Salt) edo hazia erabiltzea</p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-clave-identificacion-sal.png" alt="Pasahitzak gorde: arazoak" width="80%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Pasahitzak gorde</h2>
+        <p>Identifikazioa gatza gehituta</p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/hash-clave-identificacion-sal-intro.png" alt="Pasahitzak gorde: arazoak" width="70%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Pasahitzak gorde</h2>
+        <p>Gatza erabiltzearen abantailak
+            <ul>
+                <li>Gako berberak kodifikazio ezberdina du aldi bakoitzean</li>
+                <li>Indarrezko erasoak zailago egiten ditu</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Pasahitzak gorde</h2>
+        <p>Linux:
+            <ul>
+                <li>Kokapena: /etc/shadow</li>
+                <li>Ikusteko: sudo cat /etc/shadow</li>
+                <li>Formatua: user:$Erabilitakoalgoritmoa$gatza$LaburpenKriptografikoa:A:B:C:D:E:F:</li>
+            </ul>
+
+        </p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Pasahitzak sistema eragileetan</h2>
+        <p>Linux:
+            <ul>
+                <li>Erabilitako algoritmoa: 1: MD5; 2: Blowfish; 3: NT; 5: SHA-256; 6: SHA-512</li>
+                <li>Gatza: ausazko katea</li>
+            </ul> 
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Pasahitzak sistema eragileetan</h2>
+        <p>Linux:
+            <ul>
+                <li>A: zenbat egun pasa diren gakoa aldatu gabe (1970/01/01-tik)</li>
+                <li>B: zenbat egun gakoa aldatu ahal izateko</li>
+                <li>C: zenbat egun egon ahal den gakoa aldatu gabe</li>
+            </ul> 
+        </p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Pasahitzak sistema eragileetan</h2>
+        <p>Linux:
+            <ul>
+            <li>D: zenbat egun aurretik abisatu behar zaio erabiltzaileari pasahitza aldatzeko</li>
+            <li>E: zenbat egun pasahitza iraungitzetik kontua desaktibatu arte</li>
+            <li>F: zenbat egun kontua desaktibatu arte (1970/01/01-tik)</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Datu edo fitxategien identifikatzailea</h2>
+        <p>Git bertsio kontrol sisteman, identifikatzeko:
+            <ul>
+                <li>Commit-ak</li>
+                <li>Blobs (Binary Large Objects)</li>
+                <li>Zuhaitzak: beste direktorio batzuei eta blob-ei erreferentziak dituzten direktorioak</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Datu edo fitxategien identifikatzailea</h2>
+        <p>Git bertsio kontrol sisteman:
+            <ul>
+                <li>Edukia de-duplikatzeko</li>
+                <li>Aldaketen antzematea</li>
+                <li>Aldaketa maltzurren kontrako osotasuna mantentzea</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Datu edo fitxategien identifikatzailea</h2>
+        <p>BitTorrent-en identifikatzeko:
+            <ul>
+                <li>Artxibo zatiak</li>
+                <li>.bittorrent artxiboak</li>
+                <li>Magnet link-ak</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Datu edo fitxategien identifikatzailea</h2>
+        <p>Programazio hizkuntzatan datu egituretan:
+            <ul>
+                <li>Bilaketa azkarra</li>
+                <li>Osotasuna bermatzea</li>
+                <li>Banakotasuna bermatzea</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Datu edo fitxategien identifikatzailea</h2>
+        <p>Programazio hizkuntzatan datu egituretan:
+            <ul>
+                <li>Python: Dicts, Sets</li>
+                <li>Java: HashMap, HashSet</li>
+                <li>JavaScript: Object, Map</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Laburpen algoritmo ezagunenak</h2>
+        <p>MD5</p>
+        <p>SHA-3</p>
+        <p>RIPEMD</p>
+    </section>
+
+    <section class="slide">
+        <h2>MD5</h2>
+        <p>Kriptografikoki apurtuta baina oraindik erabiltzen da, batez ere osotasuna bermatzeko</p>
+        <p>128 bit-eko hash-ak</p>
+    </section>
+
+    <section class="slide">
+        <h2>SHA-3</h2>
+        <p>SHA-3 (Secure Hash Algorithm 3) <a href="https://www.nist.gov/">NIST</a> (National Institute for Standars and Technology) erakundeak garatua</p>
+        <p>SHA-0..2 MD5-an oinarrituta zeuden (Apurtuta), SHA-3-ek egitura ezberdina du</p>
+    </section>
+
+    <section class="slide">
+        <h2>SHA-3</h2>
+        <p>Sinadura digitalak: DSA (Digital Signature Algorithm) eta ECDSA (Elliptic Curve Digital Signature Algorithm)</p>
+        <p>SSL/TLS agiriak: <a href="https://www.openssl.org/">Open SSL</a></p>
+        <p>Kriptomonetak: <a href="https://ethereum.org/">Ethereum</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>RIPEMD</h2>
+        <p>RIPEMD (RACE Integrity Primitives Evaluation Message Digest): alternatiba SHA eta MD5 aurrean</p>
+        <p>Oso segurua</p>
+        <p>SHA-256-rekin erabiltzen da <a href="https://bitcoinwiki.org/wiki/bitcoin-address">Bitcoin helbideak</a> sortzeko gako publikoetatik abiatuta</p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Laburpen algoritmoen aurkako arazoak</h2>
+                <ul>
+                    <li>Talkak: textu ezberdinek laburpen berdina sortzea</li>
+                    <li>Indarrezko erasoak (Adib. urtebetetzearen paradoxa) edo SHA 1-en kontrako <a href="https://shattered.io/">shattered</a> bezalako teknika finagoak</li>
+                    <li>Osotasuna: has berdina duen dokumentu faltsu batekin ordezkatu benetazko dokumentua</li>
+                    <li>TLS/SSL agiriak: zerbitzu bat bezala agertu agiri faltsu batekin</li>
+                </ul>
+            
+    </section>
+
+
+
         
     <!-- FOOTER -->
 
