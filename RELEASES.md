@@ -2,6 +2,7 @@
 
 ## 2024-2025-1
 
+* Zifraketa asimetrikoa, zifraketa aplikazioak
 * ISSKS sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa,
 * README hobetua
 
