@@ -1,0 +1,751 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sinadura</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../ShowerTemplate/shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1>Zifraketa aplikazioak</h1>
+        <p>Mikel Egaña Aranguren</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Zifraketa aplikazioak</h2>
+        <p>Mikel Egaña Aranguren</p>
+        <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p>
+        <p><a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a></p>
+        <img src="../ShowerTemplate/pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%" border="1px solid #555">
+    </section>
+
+    <section class="slide">
+        <h2>Zifraketa aplikazioak</h2>
+        <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
+        <p><a href="https://github.com/mikel-egana-aranguren/EHU-ISSKS-31">https://github.com/mikel-egana-aranguren/EHU-ISSKS-31</a></p>
+        <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
+    </section>
+
+    <section class="slide">
+        <h2>Zifraketa aplikazioak</h2>
+        <ul>
+            <li>Sinadura</li>
+            <li>Zertifikatuak</li>
+            <li>TLS</li>
+            <li>SSH</li>
+            <li>Bitcoin</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Mirenek Ikerreri mezua bidaltzen dio, gako publikoko sistema erabiliz</p>
+        <p>Edonork ezin du irakurri Mirenen Ikerrentzako mezua, baina edozeinek bidali ahal du</p>
+        <p>Nola daki Ikerrek Mirenek bidali diola edo inork ez duela mezua aldatu?</p>
+        <p>Soluzioa: Mirenek mezua sinatzen du</p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Erabiltzaile zilegiak soilik sinatu ahal du bere dokumentua</p>
+        <p>Ezin du inork sinadura faltsutu</p>
+        <p>Edozeinek balioztatu ahal du sinadura digitala</p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Ezin da sinadura bat berrerabili</p>
+        <p>Ezin da sinadura bat aldatu</p>
+        <p>Ezin da dokumentu bat sinatu izana ukatu</p>
+        <p>Ezin da dokumentu bat aldatu sinatu ostean</p>
+        <p><b><u>Kautotzea</u></b>, <b><u>Osotasuna</u></b> eta <b><u>Zapuztezintasuna</u></b></p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Mirenek mezuaren laburpen kriptografikoa lortzen du: <b>RC=hash(m)</b></p>
+        <p>Mirenek bere klabearekin zifratzen du laburpen kriptografikoa: <b>Sinadura=e(RC,M<sub>pri</sub>)</b></p>
+        <p>Mirenek bere mezua (Zifratua edo zifratu gabe) eta bere sinadura bidaltzen ditu</p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FirmaMiren.png" alt="Miren sinadura" width="40%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Ikerrek sinadura deszifratzen du Mirenen gako publikoa erabiliz: <b>RC=(Sinadura,M<sub>pu</sub>)</b></p>
+        <p>Ikerrek mezuaren laburpen kriptografikoa lortzen du: <b>RC'=hash(m)</b></p>
+        <p>Ikerrek RC' eta RC alderatzen ditu ezer aldatu ez dela baieztatzeko</p>
+        <p></p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FirmaIker.png" alt="Iker sinadura" width="40%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Sinatzeaz gain, Mirenek mezua zifratzen badu, Ikerrek bakarrik irakurriko du: <b><u>Konfidentzialtasuna</u></b>, <b><u>Osotasuna</u></b>, <b><u>Kautotzea</u></b>, <b><u>Zapuztezintasuna</u></b></p>
+        <p>Hurrengoak erabiltzea dauka:
+            <ul>
+                <li>Kriptografia asimetrikoa</li>
+                <li>Kriptografia hibridoa</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+        <p>Kriptografia asimetrikoa. Ikerreri bidali:
+            <ul>
+                <li>Mezu zifratuaren kriptograma (M<sub>pri</sub> eta I<sub>pu</sub>-rekin zifratua)
+                <li>Bere sinadura digitala (Laburpen kriptografikoa,
+                    M<sub>pri</sub>-rekin zifratua)</li>
+            </ul>
+        </p>
+
+    </section>
+
+    <section class="slide">
+        <h2>Sinadura digitala</h2>
+    <p>Kriptografia hibridoa. Ikerreri bidali:
+        <ul>
+            <li>Saio gakoarekin zifratutako mezuaren kriptograma</li>
+            <li>Saio gako zifratuaren kriptograma, I<sub>pu</sub>-rekin zifratua</li>
+            <li>Bere Sinadura digitala (Laburpen kriptografikoa,
+                M<sub>pri</sub>-rekin zifratua)</li>
+        </ul>
+    </p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinaduren konfidantza</h2>
+        <p>Sinadura digitalak erabilita ere:
+            <ul>
+                <li>Nola dakigu sinadura bat esaten duenarena dela?</li>
+                <li>Nola bermatzen du Zertifikazio Autoritate batek hori horrela dela?</li>
+                <li>Ezin gara fidatu Zertifikazio Autoritate batek bermatu duen sinadura batetaz?</li>
+            </ul>
+        </p>
+    </section>
+
+    <section class="slide">
+        <h2>Sinaduren konfidantza (Web of trust)</h2>
+
+            <ul>
+                <li>PGP, GnuPG eta horrelakoak erabiltzen dira</li>
+                <li>Erabiltzaile batek bermatzen du, bere gako pribatuarekin sinatuz, beste erabiltzaile baten gako publikoa fidagarria dela
+</li>
+                <li>Konfidantza hedatzen doa, gakoak sinatzen dituzten erabiltzaileei ematen diegun konfidantzaren arabera</li>
+            </ul>
+        
+    </section>
+
+    <section class="slide">
+        <h2>Web of trust</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/Web_of_Trust-en.svg" alt="Web of trust" width="80%"></p>
+        <p style="text-align:left;font-size:30%;"><a href="https://commons.wikimedia.org/wiki/File:Web_of_Trust-en.svg">https://commons.wikimedia.org/wiki/File:Web_of_Trust-en.svg</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Konfidantza mailak</h2>
+
+            <ul>
+                <li>Ezezaguna: erabiltzaile horrek sinatzen duenaz ez gara fidatzen (ezezaguna delako)
+</li>
+                <li>Eza: erabiltzaile horrek sinatzen duenaz ez gara fidatzen
+                    (Badakigulako txarto egiten duela)</li>
+                <li>Marginala: konfidantza marginala duten bi erabiltzailek sinatutako klabeengan konfidantza dugu</li>
+                <li>Osoa: Erabiltzaile horrek sinatzen duen guztiaz fidatzen gara</li>
+            </ul>
+        
+    </section>
+
+    <section class="slide">
+        <h2>Public Key Infraestructure (PKI)</h2>
+        Erakundeak/pertsonak beren gako publikoekin lotzeko aukera ematen duen azpiegitura
+            <ul>
+                <li>Web of Trust: PKI autoritate zentralik gabeko PKI-a, edonork ziurta dezake beste baten gako publikoa</li>
+                <li>Ziurtagiriak: aginte zentrala duen PKI-a, 
+                    CA-ek (Certification Authority) soilik eman dezakete bermea
+                </li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Ziurtagiri digitalak</h2>
+            <ul>
+                <li>Erakunde batek (AC) erabiltzailea/erakundea (bere gako publikoa) benetan esaten duena dela bermatzen du (AC-rekiko daukagun konfidantzaren araberakoa)</li>
+                <li>Gako publiko guztiak guk gorde beharrean, AC-ak gordetzen ditu</li>
+            </ul>
+    </section>
+
+
+    <section class="slide">
+        <h2>Ziurtagiri digitalak</h2>
+            <ul>
+                <li>CA-ak ziurtagiri digitala argitaratzen du</li>
+                <li>Ziurtagiri digitalean CA-ak bere gako pribatuarekin erabiltzaile/entitatearen gako publikoa sinatzen du</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Erregistro Agentzia</h2>
+            <ul>
+                <li>CA-rekiko independientea</li>
+                <li>Erabiltzaile/erakundearen identitatea bermatu ziurtagiria sortu baino lehen</li>
+                <li>Aldundiak, Gizarte Segurantza, Zuzenean,...</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Ziurtagiri digitalak: X.509</h2>
+            <ul>
+                <li>International Telecommunication Union (ITU): <a href="https://www.itu.int/rec/T-REC-X.509">X.509</a> </li>
+                <li>Nortasun bat (pertsona, erakundea...) eta gako publiko bat dauzka
+                </li>
+                <li>AC batek sinatua - ziurtagiria duen pertsona/erakundeak:
+                    <ul>
+                        <li>Bere gako pribatuarekin sinatu ahal du (Sinadura hori bermatua -AC-ak sinatua- dagoen gako publikoarekin konprobatu ahal da)</li>
+                        <li>Komunikazio seguruak ezarri (SSL, ...)</li>
+                    </ul>
+                </li>
+                <li>AC-ak bere datu basean gorde behar du: Distinguished Name zerrenda bat, eta azpiko CA-en zerrenda bat</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Ziurtagiri digitalak: X.509</h2>
+        <ul>
+            <li>Konfidantza katea (Certification path validation algorithm)</li>
+            <li>Certificate Revocation List (CRL)</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Konfidantza katea</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/Chain_Of_Trust.svg" alt="Konfidantza katea" width="60%"></p>
+        <p style="text-align:left;font-size:30%;"><a href="https://upload.wikimedia.org/wikipedia/commons/0/02/Chain_Of_Trust.svg">https://upload.wikimedia.org/wikipedia/commons/0/02/Chain_Of_Trust.svg</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Certificate Revocation List (CRL)</h2>
+        <p>Ezeztatutako ziurtagirien zerrenda publiko bat, CA-k mantentzen duena</p>
+        <p>Ezeztatzea: AC-ak adierazten du ziurtagiri hori ez dela fidagarria</p>
+    </section>
+
+    <section class="slide">
+        <h2>Certificate Revocation List (CRL)</h2>
+        <p><a href="https://www.rfc-editor.org/rfc/rfc5280#section-5.3.1">RFC 5280</a>-an definitua</p>
+        <p><a href="https://www.rfc-editor.org/rfc/rfc5280#section-5.3.1">ezeztatzeko arrazoi posibleak</a>: unspecified, keyCompromise, cACompromise, affiliationChanged, superseded, cessationOfOperation, certificateHold, removeFromCRL, privilegeWithdrawn, aACompromise</p>
+    </section>
+
+    <section class="slide">
+        <h2>OCSP (Online Certificate Status Protocol)</h2>
+            <ul>
+                <li><a href="https://www.rfc-editor.org/rfc/rfc2560">RFC 2560</a></li>
+                <li>Ziurtagiri digital baten egoera online baliozkotzea</li>
+                <li>CRLs bidezko egiaztapena baino eraginkorragoa: CRL-ak gero eta gutxiago erabiliak</li>
+                <li>Abantaila: etengabe eguneratzea</li>
+                <li>Desabantaila: konexioaren beharra egiaztapenerako</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>OCSP (Online Certificate Status Protocol)</h2>
+        <ul>
+            <li>Zerbitzua ematen duen AC bakoitzak OCSP zerbitzari bat mantentzen du</li>
+            <li>Zerbitzu honek eskaera estandarizatu bat igortzen duten eta erantzuna interpretatzen dakiten bezero-aplikazioei erantzuten die</li>
+        </ul>
+    </section>
+
+    <!-- <section class="slide">
+        <h2>OCSP: Replay attack</h2>
+        <ul>
+            <li>Erasotzaileak baliozko ziurtagiri bat atxikitzen du ezeztatu arte, eta, orduan, bezeroari bidaltzen dio</li>
+            <li>Soluzioa: <b>nonce</b> zenbakia erabili</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>OCSP: nonce zenbakia</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/Nonce-cnonce-uml.svg" alt="Nonce" width="30%"></p>
+        <p style="text-align:left;font-size:30%;"><a href="https://commons.wikimedia.org/wiki/File:Nonce-cnonce-uml.svg">https://commons.wikimedia.org/wiki/File:Nonce-cnonce-uml.svg</a></p>
+    </section> -->
+
+    <section class="slide">
+        <h2>Ziurtagiri egitura</h2>
+        <pre><code>Certificate
+            Version Number
+            Serial Number
+            Signature Algorithm ID
+            Issuer Name
+            Validity period
+            Subject name
+        </code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>Ziurtagiri egitura</h2>
+        <pre><code>
+            Subject Public Key Info
+                Public Key Algorithm
+                Subject Public Key
+            ...
+            Certificate Signature Algorithm
+            Certificate Signature
+        </code></pre>
+    </section>
+
+    <section class="slide">
+        <h2>Ziurtagiri egitura</h2>
+        <p>Distinguished Name</p>
+        <ul>
+            <li>C: country</li>
+            <li>SP: state or province</li>
+            <li>Locality: L</li> 
+            <li>Organization: O</li> 
+            <li>Organizational Unit: OU</li> 
+            <li>Common Name: CN</li> 
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Ziurtagiri egitura</h2>
+        <p><a href="https://www.izenpe.com/">IZENPE</a></p>
+        <p><a href="https://www.euskadi.eus/web01-sede/es/contenidos/informacion/cas_izenpe/es_cas/index.shtml">Izenpe ziurtagiriak deskargatzea</a></p>
+        <p><a href="https://www.izenpe.com/certification-practice-statement/webize01-cndocjuridica/es/">Ziurtapen-politika: certification practice statement</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Ziurtagiri egitura</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/izenpe.png" alt="Izenpe ziurtagiria" width="40%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Erro-ziurtagiria</h2>
+        <p>Subject Name == Issuer Name</p>
+        <p>Bere burua sinatzen du: konfidantzaren jatorria da (Entitate horrekiko zuzeneko konfidantza dugu, ez dago kanpoko gako pribaturik bere gako publikoa sinatzen duena)</p>
+    </section>
+
+    <section class="slide">
+        <h2>Ziurtagiria</h2>
+            <ul>
+                <li>Azken erabiltzailearen ziurtagiria (pertsona juridikoa) </li>
+                <li>Software-sinaketaren ziurtagiria</li>
+                <li>SSL zerbitzariaren ziurtagiria</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Inplementazioa</h2>
+            <ul>
+                <li>Sistema eragileek eta nabigatzaileek erro-ziurtagiriak dituzte, berezko konfidantza hartuz</li>
+                <li>Firefox OCSP query responder, Izenpe</li>
+
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Inplementazioa</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/firefox.png" alt="Firefox" width="60%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Let's encrypt</h2>
+        <p>Ziurtagiriak doan ematen dituena CA-a, HTTP konexio guztiak zifratuak izan daitezen</p>
+        <p><a href="https://letsencrypt.org/">https://letsencrypt.org/</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Komunikazio seguruak</h2>
+         TLS/SSL - X.509 (<a href="https://www.rfc-editor.org/rfc/rfc5280">RFC 5280</a>) protokoloan oinarritutakoak:  
+            <ul>
+                <li>HTTPS: web</li>
+                <li>S/MIME, SMTP, POP, IMAP: email</li>
+                <li>EAP-TLS: wifi</li>
+                <li>LDAP: kautotzea</li>
+                <li>VPN (OpenVPN): sare seguruak</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Transport Layer Security (TLS)</h2>
+        <ul>
+            <li><a href="https://www.ietf.org/">Internet Engineering Task Force (IETF)</a>-k proposaturiko estandarra</li>
+            <li>Oraingo bertsioa 1.3 (<a href="https://datatracker.ietf.org/doc/html/rfc8446">RFC 8446</a>)</li>
+            <li>SSL (Secure Sockets Layer) ordezkatzeko</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Transport Layer Security (TLS)</h2>
+        <ol>
+            <li>TLS hasiera</li>
+            <li>TLS hand-shake</li>
+            <li>TLS konexioa</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>TLS hasiera</h2>
+        <ul>
+            <li>Bezeroak zerbitzariari TLS erabiltzeko eskatzen dio
+                <li>HTTP: 80 portutik 443 portura aldatu</li>
+                <li>Email: <code>STARTTLS</code> komandoa </li>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>TLS hand-shake</h2>
+        <ul>
+            <li>Bezeroak zerbitzariari balio zaizkion algoritmoen zerrenda bat aurkezten dio: simetrikoak, asimetrikoak, laburpen</li>
+            <li>Zerbitzariak zerrenda horretatik balio zaizkionak hautatzen ditu</li>
+            <li>Zerbitzariak bezeroari ziurtagiria aurkezten dio, bezeroak CA-ri esker baliozkotzen duena</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>TLS hand-shake</h2>
+        <ul>
+            <li>Bezeroak saio gako bat sortzen du (Zifraketa simetrikoa):
+                <ul>
+                    <li>Bezeroak ausazko zenbakia ekoizten du, zerbitzariaren gako publikoarekin zifratzen du eta zerbitzariari bidaltzen dio. Bai bezeroak bai zerbitzariak gakoa sortzen dute zenbaki horretatik abiatuta</li>
+                    <li>Diffie-Hellman algoritmoa erabiliz gako amankomun bat sortzen dute bezeroak eta zerbitzariak</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>TLS konexioa</h2>
+        <ul>
+            <li>hand-shake ondo atera bada soilik</li>
+            <li>Datuak sesio gakoarekin zifratzen dira eta osotasuna adostutako laburpen algoritmoekin bermatzen da</li>
+            <li>Egoera mantentzen duen konexioa da (<a href="https://www.interviewbit.com/blog/stateful-vs-stateless/">stateful</a>)</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>SSH (Secure Shell)</h2>
+        <ul>
+            <li>Urruneko zerbitzarietara konektatzeko erabiltzen den protokolo kriptografikoa</li>
+            <li>Trust On First Use (TOFU): konexioa ezartzeko gure klabe publikoa urruneko zerbitzarian jartzea nahiko dugu</li>
+            <li>Hortik aurrera, TLS moduan, saio gako bat erabiltzen da datuak transmitizeko</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>SSH: erabilpenak</h2>
+        <ul>
+            <li>Urruneko makina batean sartu eta komandoak exekutatu</li>
+            <li>SFTP bidezko artxiboen transferentzia</li>
+            <li>SCP bidez datuak kopiatu</li>
+            <li>Tunelak</li>
+            <li>Port fowarding</li>
+            <li>X11 (Grafikoak)</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Zergatik Bitcoin ISSKS-n?</h2>
+        <p>Kriptodiru erabiliena da, eta bere ideia nagusiak beste hainbat kriptodirutan aurki daitezke</p>
+        <p>Eskola hauek ...</p>
+        <p><b>... ez dira Bitcoin-en goraipatzea</b></p>
+        <p><b>... ez dira finantza-kontseiluak</b></p>
+    </section>
+
+    <section class="slide">
+        <h2>Zergatik Bitcoin ISSKS-n?</h2>
+        Hauen aplikazio oso arrakastatsua da:
+            <ul>
+                <li>Zifraketa asimetrikoa</li>
+                <li>Laburpen algoritmoak</li>
+            </ul>        
+    </section>
+
+    <section class="slide">
+        <h2>Zergatik Bitcoin ISSKS-n?</h2>
+        Bermatzen ditu:
+            <ul>
+                <li>Zapuztesintasuna: ezin da* transakzio bat desegin</li>
+                <li>Osotasuna: ezin da* blockchain-aren historia aldatu</li>
+                <li>Kautotzea</li>
+                <li>Pseudo-anonimatua</li>
+                <li>...</li>
+            </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        <p><a href="SatoshiNakamoto-bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System (Satoshi Nakamoto)</a></p>
+        <p><a href="CAF_Elhuyar_2022_BitCoin_Austriar_Eskola.pdf">Bitcoin eta Troika: ideologia non-nahi</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        Bitcoin-en bi aldeak:
+        <ul>
+            <li>(Teknikoki) Kontabilitate-liburua deszentralizatua eta gardena</li>
+            <li>(Politikoki) Moneta-sistema:
+                <ul>
+                    <li><a href="https://eu.wikipedia.org/wiki/Austriar_eskola">Austriar eskolaren arabera</a>, "diru onean" (Sound Money) oinarritua</li>
+                    <li>Moneta berria jaulkitzeko energia elektriko asko kontsumitzen du</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        Kontu politiko eta teknikoen arteko muga ez da argia (Kontu teknikoak politikoenak dira)<br><br>
+        Interes handiagoa daukagu kontu teknikoetan, baina ezin dugu alde politikoa guztiz baztertu
+    </section>
+
+    <section class="slide">
+        <h2>Sarrera</h2>
+        Bitcoin, edozein ondasun urri bezala, inbertitzeko (eta espekulatzeko) erabiltzen da<br>
+        Horregatik berrietan beti hitzegiten da bere balioaren gorabeherei buruz, baina hori ez da Bitcoin-en alor garrantzitsuena<br>
+        Garrantzitsuena: diru transakzioak egiteko barne-funtzionamendua, ez inbertsio-balio moduan<br>
+    </section>
+
+    <section class="slide">
+        <h2>Zer da Bitcoin?</h2>
+
+        <div class="columns two">
+            <p>   Grokking bitcoin (Kalle Rosenbaum, 2019):<br>
+                <a href="https://github.com/kallerosenbaum/grokkingbitcoin">GitHub</a><br>
+                <a href="https://ehu.on.worldcat.org/search/detail/1294348662?queryString=grokking%20bitcoin&stickyFacetsChecked=on&clusterResults=false&groupVariantRecords=true">EHU liburutegia</a><br>
+                    <a href="https://www.manning.com/books/grokking-bitcoin">Manning</a><br>
+            </p>
+            <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/cover.png" alt="Grokking Bitcoin cover" width="50%"></p>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Zer da Bitcoin?</h2>
+        <p>Diru digital sistema</p>
+        <p>Sare batean oinarritua. Sare horretara edozeinek bere burua gehitu ahal du, nodo baten bitartez, eta sare hori ez dago banku ez gobernuengatik kontrolatua</p>
+        <p>Protokoloa: Bitcoin (B)</p>
+        <p>Moneta: bitcoin (b). Sinboloa: BTC edo XTC. Satoshi: 0,00000001 BTC</p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin sarea</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/01-01.svg" alt="Red Bitcoin" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin sarea</h2>
+        <p>Ordainketak prozesatu</p>
+        <p>Partekatutako kontabilitate-liburua aldatzen ez dela ziurtatzea</p>
+        <p>Zirkulazioan bitcoin berriak jarri, aurretik ezarritako abiaduran</p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin sarea</h2>
+        <p>Kontabilitate-liburu elkarbanatua (Nodo guztiek kopia bat dute)</p>
+        <p>Kontabilitate-liburuak egin diren transakzio guztiak ditu</p>
+    </section>
+
+    <section class="slide">
+        <h2>Ordainketa</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/01-02.svg" alt="Pago" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>(1) Transakzioak</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/01-03.svg" alt="Transacciones" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>(2) Sarea</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/01-04.svg" alt="Red" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>(3) Blockchain</h2>
+        <div class="columns two">
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/01-05.svg" alt="Blockchain" width="100%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/01-06.svg" alt="Blockchain" width="100%"></p>
+    </div>
+    </section>
+
+    <section class="slide">
+        <h2>(4) Diru-zorroa</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/01-07.svg" alt="Carteras" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Nola ekoizten dira Bitcoin-ak</h2>
+        <ul>
+            <li>Meatzaritza deituriko prozesuan, Proof of Work (PoW)-ean oinarritzen dena</li>
+            <li>PoW: eragiketa kriptografikoa indarraren bidez ebatzi</li>
+            <li>Ez dago erakunderik ez banakorik diru-bolumen oso kontrolatu ahal duena, ekoizpena ("dirua inprimatzea") ezin baita kontrolatu</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Meatzaritza</h2>
+        <ul>
+            <li>Bi funtzio:
+                <ul>
+                    <li>Eskaintza monetarioa: meatzariek moneta berria ekoizten dute (Modu matematikoki kontrolatuan)</li>
+                    <li>Segurtasuna: bloke katearen osotasuna mantentzen dute, transakzioak barne</li>
+            </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Meatzaritza</h2>
+        <ul>
+            <li>Meatzariek saria jasotzen dute (Bitcoin moduan) eta horrela Bitcoin-ak jaulkitzen dira
+            </li>
+            <li>Transakzioen komisio txikiak meatzariek ere jasotzen dituzte</li>
+        </ul>
+    </section>
+    
+    <section class="slide">
+        <h2>Bitcoin sarea</h2>
+        Laburpen zifraketa (Hash):
+        <ul>
+            <li><b>btc-ak sortzeko, meatzariek hash bat lortu behar dute</b></li>
+            <li>Gako publikoak laburtu</li>
+            <li>Transakzioak laburtu</li>
+            <li>Etab.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin sarea (Blockchain)</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/blockchain.png" alt="Blockchain" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin sarea (Blockchain)</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/bloques.png" alt="Blockchain" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin sarea (Proof of work)</h2>
+        <p>Blokeak balioztatu --> bitcoin-ak sortu</p>
+        <p>Balioztatu: gastu bikoitza ekidin, timestamp egokia, etab. --> hash bat sortu</p>
+        <p>Hash horrek aurreko hash guztiak dauzka</p>
+        <p>Baina hash hori <b>target</b> zenbakia baino txikiagoa izan behar du</p>
+        <p>Target aldatzen doa, zailtasuna aldatzeko</p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin sarea (Proof of work)</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/pow-1.png" alt="POW" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin sarea (Proof of work)</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/pow-2.png" alt="POW" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin-ek ebazten dituen arazoak</h2>
+        <ul>
+            <li>Banku-kontu lortzea ezinezkoa</li>
+            <li>Pribatutasun falta</li>
+            <li>Herrialdeen arteko transferentziak</li>
+            <li>Hiper-inflazioa (*)</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>(*) Keynes fallacy of composition</h2>
+        <p><a href ="https://www.yanisvaroufakis.eu/2022/04/23/discussing-crypto-the-left-technofeudalism-with-evgeny-morozov-crypto-syllabus-long-interview/">Discussing Crypto, the Left & Technofeudalism with Evgeny Morozov - CRYPTO SYLLABUS long interview</a></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/Varoufakis-bitcoin.png" alt="Varoufakis-bitcoin" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin finantza-erakunde tradizionalen aurrean</h2>
+        <ul>
+            <li>Deszentralizatua</li>
+            <li>Hornidura mugatua: 21 milioi bitcoin</li>
+            <li>Muga gabekoa</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin hornidura</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/01-10.svg" alt="Suministro" width="50%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoinen egungo erabilerak</h2>
+        <ul>
+            <li>Aurrezkia</li>
+            <li>Nazioarteko transferentziak</li>
+            <li>Erosketak</li>
+            <li>Finantza-espekulazioa</li>
+            <li>Jabetza-ziurtagiria</li>
+            <li>Esistentziaren ziurtagiria</li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Nola ez erabili Bitcoin</h2>
+        <ul>
+            <li>Ordainketa txikiak (Lightning Network?)</li>
+            <li>Berehalako ordainketak (Lightning Network?)</li>
+            <li>Gure aurrezki guztien inbertsioa (Edozein finantza-jarduerari aplika dakioke)</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin Core</h2>
+        <p><a href="https://bitcoincore.org/en/about/">https://bitcoincore.org/en/about/</a></p>
+        <p><a href="https://github.com/bitcoin/bitcoin/">https://github.com/bitcoin/bitcoin/</a></p>
+
+    </section>
+
+    <section class="slide">
+        <h2>BIPs</h2>
+        <p>BitCoin Improvement Proposal</p>
+        <p><a href="https://github.com/bitcoin/bips">https://github.com/bitcoin/bips</a></p>
+        <p><a href="https://en.bitcoin.it/wiki/Economic_majority">Economic majority</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>Bitcoin-en etorkizuna</h2>
+        <li>Transakzio-sistema bizkorragoak babesten dituen balio-erreserbatzea (Kreditu txarteletan bezala)</li>
+        <li><a href="https://lightning.engineering/">Lightning</a> proiektuan adibidez aldiberean emango diren transakzio asko batzen dira multzo bakar baten, prozesua azkartzeko</li>
+        <p>
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="badge">
+        <a href="https://github.com/mikel-egana-aranguren/EHU-SGSSI-01">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="../ShowerTemplate/shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
