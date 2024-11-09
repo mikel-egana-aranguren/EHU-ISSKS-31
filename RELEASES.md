@@ -1,9 +1,16 @@
 # Releases
 
+## 2024-2025-3
+
+* Segurtasun kopiak, web segurtasuna, segurtasuna sareetan, segurtasun fisikoa
+* Zifraketa asimetrikoa, zifraketa aplikazioak
+* ISSKS sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa
+* README hobetua
+
 ## 2024-2025-1
 
 * Zifraketa asimetrikoa, zifraketa aplikazioak
-* ISSKS sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa,
+* ISSKS sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa
 * README hobetua
 
 ## 2023-2024-9
