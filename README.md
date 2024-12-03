@@ -18,12 +18,10 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
   * [Segurtasuna Web Sistemetan](WebSegurtasuna/)
   * [Segurtasun fisikoa](Segurtasun_fisikoa/)
   * [Segurtasuna sareetan](Segurtasuna_sareetan/)
-  * [Malwarea](Malware/)
 * III Blokea: Gizartea
-  * [Giza faktorea](GizaFaktorea/)
-  * [Informatika forentsea](InformatikaForensea/)
   * [Deep web](DeepWeb/)
-  * [Legedia](Legedia/)
-  * Hitzaldiak .
+  * [Malwarea](Malware/)
+  * [Legedia, Informatika forentsea](Legedia/)
+  * Hitzaldiak.
 
 [![DOI](https://zenodo.org/badge/405099738.svg)](https://zenodo.org/badge/latestdoi/405099738)
