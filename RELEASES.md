@@ -1,5 +1,13 @@
 # Releases
 
+## 2024-2025-4
+
+* Malware, deep web, legedia
+* Segurtasun kopiak, web segurtasuna, segurtasuna sareetan, segurtasun fisikoa
+* Zifraketa asimetrikoa, zifraketa aplikazioak
+* ISSKS sarrera, esteganografia, laburpen algoritmoak, zifraketa simetrikoa
+* README hobetua
+
 ## 2024-2025-3
 
 * Segurtasun kopiak, web segurtasuna, segurtasuna sareetan, segurtasun fisikoa
