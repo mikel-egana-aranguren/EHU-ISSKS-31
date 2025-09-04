@@ -9,16 +9,13 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
   * [Laburpen algoritmoak](Zifraketa_laburpen/)
   * [Zifraketa simetrikoa](Zifraketa_simetrikoa/)
   * [Zifraketa asimetrikoa](Zifraketa_asimetrikoa/)
-  * Aplikazioak: [Sinadura](Zifraketa_sinadura/)
-  * Aplikazioak: [Zertifikatuak](Zifraketa_zertifikatuak/)
-  * Aplikazioak: [Komunikazio seguruak](Zifraketa_komunikazioak/)
-  * Aplikazioak: [Bitcoin](Zifraketa_bitcoin/)
+  * [Zifraketa aplikazioak: Sinadura, Agiriak, Komunikazio seguruak, Bitcoin](Zifraketa_aplikazioak/)
+* Pen-testing proiektua taldean.
 * II Blokea: Sistemak
   * [Segurtasuna kopiak](Segurtasun_kopiak/)
   * [Segurtasuna Web Sistemetan](WebSegurtasuna/)
   * [Segurtasun fisikoa](Segurtasun_fisikoa/)
   * [Segurtasuna sareetan](Segurtasuna_sareetan/)
-* III Blokea: Gizartea
   * [Deep web](DeepWeb/)
   * [Malwarea](Malware/)
   * [Legedia, Informatika forentsea](Legedia/)

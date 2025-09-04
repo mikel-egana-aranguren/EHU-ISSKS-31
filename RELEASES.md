@@ -1,5 +1,9 @@
 # Releases
 
+## ???
+
+* README hobetua: 2 partzial + proiektua.
+
 ## 2024-2025-4
 
 * Malware, deep web, legedia
