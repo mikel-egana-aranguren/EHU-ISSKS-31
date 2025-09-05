@@ -1,6 +1,6 @@
 # Releases
 
-## ???
+## 2025-2026-1
 
 * README hobetua: 2 partzial + proiektua.
 
