@@ -2,6 +2,7 @@
 
 ## 2025-2026-1
 
+* ISSKS sarrera, zifraketa sarrera, esteganografia, laburpen algoritmoak
 * README hobetua: 2 partzial + proiektua.
 
 ## 2024-2025-4
