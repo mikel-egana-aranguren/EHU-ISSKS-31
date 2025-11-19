@@ -1,6 +1,6 @@
 # Releases
 
-## ???
+## 2025-2026-2
 
 * Kopiak, sare segurtasuna, segurtasun fisikoa, Deep Web, legedia
 * README hobetua: ordena.
