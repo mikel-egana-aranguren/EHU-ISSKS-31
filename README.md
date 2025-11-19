@@ -11,14 +11,12 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
   * [Zifraketa asimetrikoa](Zifraketa_asimetrikoa/)
   * [Zifraketa aplikazioak: Sinadura, Agiriak, Komunikazio seguruak, Bitcoin](Zifraketa_aplikazioak/)
 * Pen-testing proiektua taldean.
+  * [Segurtasuna Web Sistemetan](WebSegurtasuna/)
 * II Blokea: Sistemak
   * [Segurtasuna kopiak](Segurtasun_kopiak/)
-  * [Segurtasuna Web Sistemetan](WebSegurtasuna/)
-  * [Segurtasun fisikoa](Segurtasun_fisikoa/)
   * [Segurtasuna sareetan](Segurtasuna_sareetan/)
+  * [Segurtasun fisikoa](Segurtasun_fisikoa/)
   * [Deep web](DeepWeb/)
-  * [Malwarea](Malware/)
   * [Legedia, Informatika forentsea](Legedia/)
-  * Hitzaldiak.
 
 [![DOI](https://zenodo.org/badge/405099738.svg)](https://zenodo.org/badge/latestdoi/405099738)
