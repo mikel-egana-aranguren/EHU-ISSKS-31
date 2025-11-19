@@ -1,5 +1,12 @@
 # Releases
 
+## 2025-2026-2
+
+* Kopiak, sare segurtasuna, segurtasun fisikoa, Deep Web, legedia
+* README hobetua: ordena.
+* ISSKS sarrera, zifraketa sarrera, esteganografia, laburpen algoritmoak
+* README hobetua: 2 partzial + proiektua.
+
 ## 2025-2026-1
 
 * ISSKS sarrera, zifraketa sarrera, esteganografia, laburpen algoritmoak
