@@ -1,5 +1,10 @@
 # Releases
 
+## 2026-2027-1
+
+* Oinarrizko laborategiak
+* REAME hobetua
+
 ## 2025-2026-2
 
 * Kopiak, sare segurtasuna, segurtasun fisikoa, Deep Web, legedia
