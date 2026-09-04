@@ -2,6 +2,7 @@
 
 ## 2026-2027-1
 
+* Sarrera, Zifraketa sarrera (+labo)
 * Oinarrizko laborategiak
 * REAME hobetua
 
