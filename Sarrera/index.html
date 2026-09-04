@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eu">
 <head>
-    <title>ISSKS Sarrera</title>
+    <title>Segurtasun informatikoa sarrera</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../ShowerTemplate/shower/themes/ribbon/styles/styles.css">
@@ -10,19 +10,15 @@
             --slide-ratio: calc(16 / 9);
         }
     </style>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
 </head>
 <body class="shower list">
     <header class="caption">
-        <h1>ISSKS Sarrera</h1>
+        <h1>Segurtasun informatikoa sarrera</h1>
         <p>Mikel Egaña Aranguren</p>
     </header>
 
     <section class="slide" id="cover">
-        <h2>ISSKS Sarrera</h2>
+        <h2>Segurtasun informatikoa sarrera</h2>
         <p>Mikel Egaña Aranguren</p>
         <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p>
         <p><a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a></p>
@@ -30,148 +26,155 @@
     </section>
 
     <section class="slide">
-        <h2>ISSKS Sarrera</h2>
-        <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
-        <p><a href="https://github.com/mikel-egana-aranguren/EHU-ISSKS-31">https://github.com/mikel-egana-aranguren/EHU-ISSKS-31</a></p>
+        <h2>Segurtasun informatikoa sarrera</h2>
+        <p><a href="https://zenodo.org/badge/latestdoi/368886477"><img src="https://zenodo.org/badge/368886477.svg" alt="DOI"></a></p>
+        <p><a href="https://github.com/mikel-egana-aranguren/EHU-SGSSI-01">https://github.com/mikel-egana-aranguren/EHU-SGSSI-01</a></p>
         <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
     </section>
 
     <section class="slide">
         <h2>Segurtasun informatikoa sarrera</h2>
         <ul>
-            <li>Zer da segurtasuna informatikoa?</li>
+            <li>Zer da segurtasun informatikoa?</li>
             <li>Arriskuen analisia</li>
             <li>Arduradunak</li>
-            <li>Segurtasun printzipioak</li>
+            <li>Segurtasunaren printzipioak</li>
             <li>Adibideak</li>
         </ul>
     </section>
 
     <section class="slide">
         <h2>Zer da segurtasuna informatikoa?</h2>
-        <p>Ondasunak (Zerbitzuak): babestu nahi duguna (Datuak, softwarea, hardwarea, azpiegitura, langileak, informazioa, ...)</p>
-        <p>Arriskua: Kalteak jasan edo desagertzeko posibilitatea (Lapurketak, ondatzea, aldatzea, ordezkatzea, ...)</p>
+        <p>Ondasunak / aktiboak: babestu nahi duguna (Datuak, softwarea, hardwarea, azpiegitura, langileak, informazioa, etab.)</p>
+        <p>Arriskuak / mehatxuak: ondasun horiek kalteak jasan edo desagertzeko aukera (Lapurreta, aldatzea, ordezkatzea, esku hartzea, etab.)</p>
     </section>
 
     <section class="slide">
         <h2>Zer da segurtasuna informatikoa?</h2>
-        <p>Hauek bermatzeko egiten direnak:
+        <p>Hau bermatzeko egiten diren ekintza guztiak:
             <ul>
-                <li>Ondasunak behar bezala erabiltzen dira</li>
-                <li>Ondasunek sarbidea behar denari bakarrik ematen diete</li>
-                <li>Ondasunek legeak eta araudiak betetzen dituzte</li>
+                <li>Ondasunak / zerbitzuak behar bezala erabiltzen dira</li>
+                <li>Ondasunak / zerbitzuak baimena duenari bakarrik ematen diote sarbidea</li>
+                <li>Ondasunak / zerbitzuak indarrean dagoen legedia betetzen dute</li>
             </ul>
         </p>
     </section>
 
     <section class="slide">
         <h2>Zer da segurtasuna informatikoa?</h2>
-        <p>Xedeak:
+        <p>Ezinezkoa da %100eko segurtasuna lortzea: segurtasuna prozesua da, ez egoera
+        </p>
+        <p><img src="pictures-issks-31/sgssi-proceso.png" alt="segurtasuna prozesu bat da" width="60%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Arriskuen analisia</h2>
+        <p>Babestu nahi diren ondasunak identifikatzea</p>
+        <p>Ondasun horien balioa (V) kalkulatzea</p>
+        <p>Ondasun horiek jasaten dituzten mehatxuak identifikatzea</p>
+        <p>Mehatxu horiek benetan gertatzeko probabilitatea (P) kalkulatzea</p>
+    </section>
+
+    <section class="slide">
+        <h2>Arriskuen analisia</h2>
+        <p>Mehatxu horiek ezabatzeko beharrezko neurriak aztertzea</p>
+        <p>Neurri horiek ezartzearen kostua (C) kalkulatzea</p>
+        <p>C &#60; P * V (Kostua balioaren probabilitatez biderkaturikoa baino txikiagoa denean, neurriak aplikatu)</p>
+    </section>
+
+    <section class="slide">
+        <h2>Arduradunak</h2>
+        <p>
             <ul>
-                <li>Arriskuak eta mehatxuak detektatzea, halakorik gerta ez dadin edo haien eragina txikiena izan dadin</li>
-                <li>Ondasunen erabilera egokia bermatzea</li>
-                <li>Izan daitezkeen galerak mugatzea eta sistema lehenbailehen berreskuratuko dela ziurtatzea</li>
-                <li>Dagokion legedia betetzea</li>
+                <li>Segurtasun administrazioa</li>
+                <li>Zuzendaritza</li>
+                <li>Erabiltzaileak</li>
             </ul>
         </p>
     </section>
 
-
     <section class="slide">
-        <h2>Zer da segurtasuna informatikoa?</h2>
-        <p>Ezinezkoa 100% segurtasuna lortzea: segurtasuna prozesua da, ez egoera
-        </p>
-        <p><img src="pictures-issks-31/sgssi-proceso.png" alt="segurtasuna prozesu bat da" width="30%"></p>
-    </section>
-
-    <section class="slide">
-        <h2>Nori dagokio segurtasun informatikoa?</h2>
-        <p>Segurtasun-administratzailea:
+        <h2>Arduradunak</h2>
+        <p>Segurtasun administrazioa:
             <ul>
-                <li>Segurtasun informatikoaren ardura eta erabakiak hartzen dituena</li>
-                <li>Segurtasuna planifikatu eta inplementatu</li>
+                <li>Babestu beharreko ondasunak eta arriskuak identifikatzeaz arduratzen da</li>
+                <li>Segurtasun plana egiten du eta inplementatzen du</li>
             </ul>
         </p>
     </section>
 
     <section class="slide">
-        <h2>Nori dagokio segurtasun informatikoa?</h2>
+        <h2>Arduradunak</h2>
         <p>Zuzendaritza:
             <ul>
-                <li>Segurtasuna enpresaren helburu estrategikoa izan behar da
-                </li>
-                <li>Dirua inbertitu behar du</li>
-                <li>Segurtasun informatikoko saila antolatu</li>
+                <li>Segurtasuna helburu estrategikoa izan behar da</li>
+                <li>Dirua inbertitu behar da</li>
+                <li>Segurtasun saila antolatu behar da</li>
             </ul>
         </p>
     </section>
 
     <section class="slide">
-        <h2>Nori dagokio segurtasun informatikoa?</h2>
+        <h2>Arduradunak</h2>
         <p>Erabiltzaileak:
             <ul>
-                <li>Prestakuntza</li>
-                <li>Segurtasun-politika ezagutu behar dute</li>
-                <li>Legedia ere ezagutu behar dute</li>
+                <li>Prestakuntza jaso behar dute</li>
+                <li>Enpresaren segurtasun politika ezagutu behar dute</li>
+                <li>Segurtasunean inplikatu behar dira</li>
+                <li>Legedia ezagutu behar dute</li>
             </ul>
         </p>
-    </section>
-
-    <section class="slide">
-        <h2>Arriskuen analisia</h2>
-        <p>Babestu nahi diren ondasunen identifikazioa</p>
-        <p>Ondasun horien balioaren (B) estimazioa</p>
-        <p>Aipatutako ondasunek jasaten dituzten mehatxuen identifikazioa</p>
-        <p>Mehatxu horiek egi bihurtzeko probabilitatearen (P) estimazioa</p>
-    </section>
-
-    <section class="slide">
-        <h2>Arriskuen analisia</h2>
-        <p>Mehatxu horietako bakoitzaren arriskuak gutxitzeko neurrien azterketa</p>
-        <p>Neurri horien kostuaren (K) azterketa</p>
-        <p>K &#60; P * B</p>
     </section>
 
     <section class="slide">
         <h2>Segurtasunaren printzipioak</h2>
         <ul>
-            <li>Konfidentzialtasuna</li>
-            <li>Osotasuna</li>
-            <li>Prestasuna</li>
-            <li>Kautotzea</li>
-            <li>Zapuztezintasuna</li>
+            <li><b>K</b>onfidentzialtasuna</li>
+            <li><b>O</b>sotasuna</li>
+            <li><b>P</b>restasuna</li>
+            <li><b>K</b>autotzea</li>
+            <li><b>Z</b>apuztezintasuna</li>
         </ul>
     </section>
 
     <section class="slide">
         <h2>Konfidentzialtasuna</h2>
-        <p>Bildutako edota transmititutako informazioa soilik baimendutako alderdiek atzi dezaketela ziurtatzen du</p>
+        <p>Ziurtatzen du biltegiratutako edo transmititutako informazioa legezko hartzaileak bakarrik irakur dezakeela</p>
+        <p>Informazio hori hirugarren pertsonen esku erortzen bada, ezin dute jatorrizko edukira sartu</p>
     </section>
 
     <section class="slide">
         <h2>Osotasuna</h2>
-        <p>Bildutako edota transmititutako informazioa soilik baimendutako alderdiek alda dezaketela ziurtatzen du. Alegia, informazioa ez dela aldatu bermatzen du</p>
+        <p>Ziurtatzen du informazioa ez dela aldatu sortu zenetik edo transmititu den bitartean</p>
+        <p>Biltegiratutako, prozesatutako edo transmititutako informazioaren zati bat gehitu, aldatu edo ezabatu den antzematea ahalbidetzen du</p>
+        <p style="text-align:right;font-size:50%;"><a href="https://github.com/mikel-egana-aranguren/EHU-ISSKS-31/blob/main/Sarrera/index.html.md5sum">EHU-ISSKS-31/Sarrera</a></p>
     </section>
 
     <section class="slide">
         <h2>Prestasuna</h2>
-        <p>Bildutako edota transmititutako informazioa oztopo edo degradaziorik gabe baimendutako alderdiek erabil dezaketela ziurtatzen du</p>
+        <p>Informazioa bere legezko erabiltzaile eta jabeentzat eskuragarri egon behar da</p>
+        <p>Sistema informatikoaren funtzionamendu egokia bermatzen da, erasoen eta interferentzien aurrean nahikoa sendoa den diseinu baten bidez</p>
+        <p style="text-align:right;font-size:50%;">(EHU NMap Mac Spoofing)</p>
     </section>
 
     <section class="slide">
         <h2>Kautotzea</h2>
-        <p>Transmititutako informazioaren jatorria modu fidagarrian identifikatzen dela ziurtatzen du</p>
+        <p>Informazioa sortzen edo eskuratzen duen erabiltzailearen identitatea egiaztatu daiteke</p>
+        <p>Era berean, sare batera konektatzen den edo zerbitzu batera sartzen saiatzen den ekipo baten kautotzeaz ere hitz egiten da</p>
     </section>
 
     <section class="slide">
         <h2>Zapuztezintasuna</h2>
-        <p>Transmititutako informazioaren igorleak edo jasotzaileak transmisioa ukatzerik ez daukatela ziurtatzen du</p>
+        <p>Informazioaren egiletza frogatzen da, hura sortu eta bidali duen erabiltzaileak inguruabar hori ukatu ez dezan ahalbidetzen duen froga-mekanismo baten bidez</p>
+        <p>Informazioaren hartzaileari ere egoera bera aplikatzen zaio</p>
+        <p>Bereziki garrantzitsua merkataritza-transakzioetan</p>
     </section>
 
     <section class="slide">
         <h2>Adibideak</h2>
-        <p><img style="border: 1px solid #555;" src="pictures-issks-31/wannacry-1.png" alt="Wannacry" width="60%"></p>
-        <p style="text-align:left;font-size:30%;"><a href="https://www.elrincondelombok.com/internet/el-ciberataque-de-wanna-cry-que-ha-afectado-a-casi-todo-el-mundo/">https://www.elrincondelombok.com/internet/el-ciberataque-de-wanna-cry-que-ha-afectado-a-casi-todo-el-mundo/</a></p>
+        <p><img style="border: 1px solid #555;" src="pictures-issks-31/wannacry-1.png" alt="Wannacry" width="30%"></p>
+        <p style="text-align:left;font-size:30%;"><a href="https://teknoplof.com/2026/06/02/iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea-com-cuando-un-dominio-de-10-dolares-freno-una-pandemia-digital/">https://teknoplof.com/2026/06/02/iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea-com-cuando-un-dominio-de-10-dolares-freno-una-pandemia-digital/</a></p>
+        <p>iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com</p>
         <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/eurohelp.png" alt="eurohelp" width="30%"></p>
     </section>
 
@@ -208,18 +211,6 @@
 
     <section class="slide">
         <h2>Adibideak</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/linkedin.png" alt="linkedin" width="80%"></p>
-        <p style="text-align:left;font-size:30%;"><a href="https://www.abc.es/tecnologia/redes/abci-linkedin-hackeada-recomienda-usuarios-cambiar-contrasena-201605191319_noticia.html">https://www.abc.es/tecnologia/redes/abci-linkedin-hackeada-recomienda-usuarios-cambiar-contrasena-201605191319_noticia.html</a></p>
-    </section>
-
-    <section class="slide">
-        <h2>Adibideak</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/ex-empleado.png" alt="ex-empleado" width="40%"></p>
-        <p style="text-align:left;font-size:30%;"><a href="https://www.elmundo.es/madrid/2019/05/22/5ce5280afdddff7b688b46a2.html">https://www.elmundo.es/madrid/2019/05/22/5ce5280afdddff7b688b46a2.html</a></p>
-    </section>
-
-    <section class="slide">
-        <h2>Adibideak</h2>
         <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/merkel.png" alt="merkel" width="60%"></p>
         <p style="text-align:left;font-size:30%;"><a href="https://www.abc.es/internacional/20150614/abci-ordenador-merkel-ciberataque-201506141013.html">https://www.abc.es/internacional/20150614/abci-ordenador-merkel-ciberataque-201506141013.html</a></p>
     </section>
@@ -229,19 +220,11 @@
         <h2>Adibideak</h2>
         <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/nsa.png" alt="nsa" width="50%"></p>
         <p style="text-align:left;font-size:30%;"><a href="https://www.eldiario.es/turing/vigilancia_y_privacidad/nsa-programas-vigilancia-desvelados-snowden_1_4974573.html">https://www.eldiario.es/turing/vigilancia_y_privacidad/nsa-programas-vigilancia-desvelados-snowden_1_4974573.html</a></p>
+
+                <p style="text-align:right;font-size:50%;">Vigilancia permanente. Edward Snowden. Grupo Planeta, 2019</p>
+        <p style="text-align:right;font-size:50%;">"Quien renuncia a su libertad por seguridad, no merece ni libertad ni seguridad" B. Franklin</p>
     </section>
 
-    <section class="slide">
-        <h2>Espioitza eta informazio konfidentzialaren lapurketa</h2>
-        <p>"Bere askatasunari segurtasunagatik uko egiten dionak ez du merezi ez bata ez bestea" B. Franklin</p>
-        <p>Vigilancia permanente. Edward snowden. Grupo Planeta, 2019</p>
-    </section>
-
-    <section class="slide">
-        <h2>Adibideak</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/ashley.png" alt="ashley" width="50%"></p>
-        <p style="text-align:left;font-size:30%;"><a href="https://www.elcorreo.com/bizkaia/tecnologia/internet/201508/23/para-infieles-hackeada-disponia-20150821190325.html">https://www.elcorreo.com/bizkaia/tecnologia/internet/201508/23/para-infieles-hackeada-disponia-20150821190325.html</a></p>
-    </section>
 
     <section class="slide">
         <h2>Adibideak</h2>
@@ -259,12 +242,6 @@
         <h2>Adibideak</h2>
         <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/avalmadrid.png" alt="anonymous" width="40%"></p>
         <p style="text-align:left;font-size:30%;"><a href="https://la9deanon.tumblr.com/post/625357883903754240/half-track-en-avalmadrid">https://la9deanon.tumblr.com/post/625357883903754240/half-track-en-avalmadrid</a></p>
-    </section>
-
-    <section class="slide">
-        <h2>Adibideak</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/theregister.png" alt="thetregister" width="60%"></p>
-        <p style="text-align:left;font-size:30%;"><a href="https://www.theregister.com/2020/08/06/intel_nda_source_code_leak/">https://www.theregister.com/2020/08/06/intel_nda_source_code_leak/</a></p>
     </section>
 
     <section class="slide">
@@ -308,18 +285,6 @@
 
     <section class="slide">
         <h2>Adibideak</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/clinic.png" alt="hospital clinic" width="60%"></p>
-        <p style="text-align:left;font-size:30%;"><a href="https://www.eldiario.es/catalunya/hospital-clinic-barcelona-desprograma-3-000-consultas-150-cirugias-culpa-ciberataque_1_10007094.html">https://www.eldiario.es/catalunya/hospital-clinic-barcelona-desprograma-3-000-consultas-150-cirugias-culpa-ciberataque_1_10007094.html</a></p>
-    </section>
-
-    <section class="slide">
-        <h2>Adibideak</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/bizkaia.png" alt="hospital clinic" width="60%"></p>
-        <p style="text-align:left;font-size:30%;"><a href="https://www.deia.eus/bizkaia/2023/01/31/diputacion-deshabilita-servicio-sede-electronica-6385840.html">https://www.deia.eus/bizkaia/2023/01/31/diputacion-deshabilita-servicio-sede-electronica-6385840.html</a></p>
-    </section>
-
-    <section class="slide">
-        <h2>Adibideak</h2>
         <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/llamada_microsoft.png" alt="llamada microsoft" width="60%"></p>
         <p style="text-align:left;font-size:30%;"><a href="https://www.eldiario.es/consumoclaro/consumo-digital/vuelve-timo-llamada-microsoft_1_1558088.html">https://www.eldiario.es/consumoclaro/consumo-digital/vuelve-timo-llamada-microsoft_1_1558088.html</a></p>
     </section>
@@ -338,8 +303,9 @@
 
     <section class="slide">
         <h2>Adibideak</h2>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/Mac-T2.png" alt="Mac T2" width="60%"></p>
-        <p style="text-align:left;font-size:30%;"><a href="https://www.genbeta.com/seguridad/descubren-que-al-chip-t2-mac-se-le-puede-instalar-malware-apple-no-puede-parchearlo">https://www.genbeta.com/seguridad/descubren-que-al-chip-t2-mac-se-le-puede-instalar-malware-apple-no-puede-parchearlo</a></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/polyfill.png" alt="Polyfill" width="60%"></p>
+        <p style="text-align:left;font-size:30%;"><a href="https://sansec.io/research/polyfill-supply-chain-attack">https://sansec.io/research/polyfill-supply-chain-attack</a></p>
+        <p style="text-align:left;font-size:30%;"><a href="https://github.com/mikel-egana-aranguren/EHU-SGSSI-01/blob/8cc276c9ef19b9e3b6b207e8e316041dac9111db/Introduccion/index.html#L13">https://github.com/mikel-egana-aranguren/EHU-SGSSI-01/blob/8cc276c9ef19b9e3b6b207e8e316041dac9111db/Introduccion/index.html#L13</a> PULL REQUEST</p>
     </section>
 
 
@@ -349,7 +315,7 @@
     <!-- FOOTER -->
 
     <footer class="badge">
-        <a href="https://github.com/mikel-egana-aranguren/EHU-SGSSI-01">Fork me on GitHub</a>
+        <a href="https://github.com/mikel-egana-aranguren/EHU-ISSKS-31">Fork me on GitHub</a>
     </footer>
 
     <div class="progress"></div>
