@@ -1,10 +1,15 @@
 # Releases
 
-## 2026-2027-1
+## 2026-2027-2
 
 * Sarrera, Zifraketa sarrera (+labo)
 * Oinarrizko laborategiak
-* REAME hobetua
+* README hobetua
+
+## 2026-2027-1
+
+* Oinarrizko laborategiak
+* README hobetua
 
 ## 2025-2026-2
 
