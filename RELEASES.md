@@ -1,10 +1,22 @@
 # Releases
 
-## 2026-2027-1
+## 2026-2027-3
+
+* Zifraketa simetrikoa (+labo)
+* Sarrera, Zifraketa sarrera (+labo)
+* Oinarrizko laborategiak
+* README hobetua
+
+## 2026-2027-2
 
 * Sarrera, Zifraketa sarrera (+labo)
 * Oinarrizko laborategiak
-* REAME hobetua
+* README hobetua
+
+## 2026-2027-1
+
+* Oinarrizko laborategiak
+* README hobetua
 
 ## 2025-2026-2
 
