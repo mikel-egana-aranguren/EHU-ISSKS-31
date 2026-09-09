@@ -1,5 +1,13 @@
 # Releases
 
+## 2026-2027-4
+
+* Zifraketa asimetrikoa (+labo)
+* Zifraketa simetrikoa (+labo)
+* Sarrera, Zifraketa sarrera (+labo)
+* Oinarrizko laborategiak
+* README hobetua
+
 ## 2026-2027-3
 
 * Zifraketa simetrikoa (+labo)
