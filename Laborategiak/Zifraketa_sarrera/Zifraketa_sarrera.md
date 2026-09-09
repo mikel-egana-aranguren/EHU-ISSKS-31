@@ -5,6 +5,7 @@
 - GNU/Linux makina: eramangarria, makina birtuala edo laborategiko PCa (LDAP kredentzialekin sartu).
 - Kode-editorea. Visual Studio Code-n, `ctrl+shift+v` sakatuta fitxategi hau modu erosoan ikusten da (batez ere irudietarako).
 - Beharrezko tresnak: `openssl`, `sha512sum`, `git`, `steghide`, `docker`, `docker compose`.
+- Irakasgaiaren GitHub biltegia: laborategian garatutako programak igo ditzakezu.
 
 ## Esteganografia praktikoa
 
