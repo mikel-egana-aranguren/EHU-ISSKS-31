@@ -1,5 +1,14 @@
 # Releases
 
+## 2026-2027-6
+
+* Sare segurtasuna, Wireshark labo, Google VPC labo
+* Zifraketa asimetrikoa (+labo)
+* Zifraketa simetrikoa (+labo)
+* Sarrera, Zifraketa sarrera (+labo)
+* Oinarrizko laborategiak
+* README hobetua
+
 ## 2026-2027-5
 
 * Zifraketa aplikazioak (+labo)
