@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sare Segurtasuna</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../ShowerTemplate/shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+    </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body class="shower list">
+    <header class="caption">
+        <h1>Sare Segurtasuna</h1>
+        <p>Mikel Egaña Aranguren</p>
+    </header>
+
+    <section class="slide" id="cover">
+        <h2>Sare Segurtasuna</h2>
+        <p>Mikel Egaña Aranguren</p>
+        <p><a href="https://mikel-egana-aranguren.github.io/">mikel-egana-aranguren.github.io</a></p>
+        <p><a href="mailto:mikel.egana@ehu.eus">mikel.egana@ehu.eus</a></p>
+        <img src="../ShowerTemplate/pictures/ehu.png" alt="UPV/EHU ingenieros San Mames" height="25%" border="1px solid #555">
+    </section>
+
+    <section class="slide">
+        <h2>Sare Segurtasuna</h2>
+        <p><a href="https://doi.org/10.5281/zenodo.4302267">https://doi.org/10.5281/zenodo.4302267</a></p>
+        <p><a href="https://github.com/mikel-egana-aranguren/EHU-issks-31">https://github.com/mikel-egana-aranguren/EHU-issks-31</a></p>
+        <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
+    </section>
+
+        <section class="slide">
+        <h2>OSI (Open Systems Interconnection)</h2>
+        <p><img src="pictures-issks-31/OSI.png" alt="OSI" width="90%"></p>
+        <p style="text-align:left;font-size:30%;"><a href="https://en.wikipedia.org/wiki/OSI_model">https://en.wikipedia.org/wiki/OSI_model</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>TCP/IP</h2>
+        <p><img src="pictures-issks-31/tcp-ip.png" alt="TCP/IP" width="75%"></p>
+        <p style="text-align:left;font-size:30%;"><a href="https://www.cdebyte.com/news/889">https://www.cdebyte.com/news/889</a></p>
+    </section>
+
+    <section class="slide">
+        <h2>CIDR (Classless Inter-Domain Routing)</h2>
+        <p>IP helbideak esleitu eta bideratzea sareetan</p>
+        <p>Adibidea: 192.168.1.0/24</p>
+        <p>sarea: 192.168.1.0 - 192.168.1.255 / host edo azpisarea 192.168.1.1 - 192.168.1.254</p>
+        <p>Sare-maskara (router-ak sare batetik bestera): 255.255.255.0</p>
+    </section>
+
+    <section class="slide">
+        <h2>Sare trafikoa lortzea</h2>
+        <a href="../Laborategiak/Sare_segurtasuna/Wireshark.md">Wireshark laborategia</a>
+    </section>
+
+    <section class="slide">
+        <h2>Sarearen segmentazioa</h2>
+        <p>Segmentazio fisikoa</p>
+        <p>Segmentazio logikoa VLAN bidez (OSI 2. geruza): gailuak funtzionalitatearen arabera taldekatu</p>
+        <p>Segmentazio logikoa azpisareen bidez (OSI 3. geruza): sarea azpisare txikiagoetan banatzea (IP helbideen barrutia)</p>
+    </section>
+
+    <section class="slide">
+        <h2>VPC (Virtual Private Cloud)</h2>
+        <ul>
+            <li>Isolamendua: sarea logikoki beste bezero edo erabiltzaile batzuetatik bereizita dago</li>
+            <li>IP kontrola: IP helbide-barrutiak, azpisareak eta bide-taulak hautatzea</li>
+            <li>Gateways: Interneteko gateway-ak eta NAT-ek sarrerako eta irteerako trafikoa kontrolatzen dute</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>VPC Google Cloud</h2>
+        <p>Firewall arauen helburuak tag-en bidez definitzen dira (adib. http-server, https-server) CIDR blokeen ordez</p>
+    </section>
+
+    <section class="slide">
+        <h2>VPC Google Cloud</h2>
+        <img src="pictures-issks-31/VPC-GC.svg" alt="VPC Google Cloud" width="90%">
+    </section>
+
+        <section class="slide">
+        <h2>VPC Google Cloud</h2>
+        <a href="../Laborategiak/Sare_segurtasuna/vpc-google-cloud/VPC_google_cloud.md
+        ">VPC Google Cloud Laborategia</a>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="badge">
+        <a href="https://github.com/mikel-egana-aranguren/EHU-issks-31">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="../ShowerTemplate/shower/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
