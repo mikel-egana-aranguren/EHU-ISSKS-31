@@ -94,6 +94,279 @@
         ">VPC Google Cloud Laborategia</a>
     </section>
 
+    <section class="slide">
+        <h2>Firewall</h2>
+        <p>Aurrez definitutako arauen arabera sarearen sarrerako eta irteerako trafikoa kontrolatzen duen gailua/softwarea</p>
+        <p>Arauak segurtasun-irizpide desberdinetan oinarritzen dira</p>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: funtzioak</h2>
+        <p>Paketeen iragazketa: pakete bakoitza aztertu eta arauekin konparatzen du</p>
+        <p>Sarbide-kontrola: zerbitzu edo protokoloetarako sarbidea baimentzen edo ukatzen du</p>
+        <p>Erregistroa eta auditoretza</p>
+        <p>NAT (Network Address Translation): hainbat gailuk IP helbide publiko bakarra partekatzen dute</p>
+        <p>VPN (Virtual Private Network)*</p>
+        <p>IDS/IPS</p>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: motak</h2>
+        <p>Packet Filtering Firewalls: Sareko paketeen goiburuak bakarrik aztertzen dituzte eta
+trafikoa baimentzen edo blokeatzen dute: jatorriko eta helmugako IPa, erabilitako portuak eta protokoloak</p>
+        <p>Stateful Inspection Firewalls: Paketeen goiburuak aztertzeaz gain, sareko
+konexioen egoeraren jarraipena egiten dute. Paketeen edukia azter dezakete eta
+konexioaren egoeran oinarritutako erabakiak hartu</p>
+        <p>         
+<p>Application Firewalls (Proxy Firewalls): Trafikoa aztertzen dute, aplikazio-protokolo
+zehatzak barne, hala nola HTTP, FTP edo SMTP. Mezuen edukia aztertzen dute eta segurtasun-arau
+aurreratuagoak aplikatzen dituzte aplikazioen mehatxu zehatzak detektatu eta blokeatzeko</p>
+
+    </section>
+
+
+    <section class="slide">
+        <h2>Firewall: iragazki orokorreko arauak</h2>
+        <p>Difusio-helbidea (Broadcast) duten paketeak blokeatu, DoS erasoak saihesteko</p>
+        <p>Barne-helbideei dagozkien jatorrizko helbideak dituzten sarrerako paketeak blokeatu, nortasun-ordezkapena (Spoofing) saihesteko</p>
+        <p>Blokeatu <a href="https://www.rfc-editor.org/rfc/rfc1918">RFC 1918 (Address Allocation for Private Internets)</a> dokumentuan aipatutako helbide pribatuak dituzten sarrerako pakete guztiak</p>
+        
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: iragazki orokorreko arauak</h2>
+        <p>127.0.0.1 jatorrizko helbide gisa duten sarrerako paketeak blokeatu</p>
+        <p>Ping edo Traceroute eskaerei erantzunez barne-sarearen topologiari buruzko informazioa eman dezaketen ICMP kontrol-protokoloko paketeak blokeatu</p>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: iragazki orokorreko arauak</h2>
+        <p>Routerren bideratze-taulak aldatzeko aukera ematen duten ICMP Redirect paketeak blokeatu</p>
+        <p>Baimendutako gutxienekoa baino tamaina txikiagoa duten edo goiburuan balio baliogabeak dituzten pakete guztiak blokeatu</p>
+        <p>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall: blokeatu beharreko portuak</h2>
+        <p>Urruneko konexioa: Telnet (23), SSH (22), FTP (21)</p>
+        <p>RPC (Remote Procedure Call) eta NFS (Network File System) zerbitzua UNIX sareetan</p>
+        <p>HTTP, SSL, SMTP, POP, IMAP, DNS, LDAP zerbitzari gisa aritzen ez diren makinetan</p>
+    </section>
+
+    <section class="slide">
+        <h2>DMZ (Zona Desmilitarizatua)</h2>
+        <p>Intranetaren eta Interneten arteko azpisarea, segurtasun-arazoen eraginpean gehien dauden zerbitzu publikoak (posta, ftp, etab.) kokatzen diren lekua</p>
+        <p>Firewall bat edo bi erabiliz sortzen da</p>
+        <p>DMZtik ezin da zuzenean intranetera sartu</p>
+    </section>
+
+    <section class="slide">
+        <h2>DMZ</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FIREWAL-DMZ.png" alt="DMZ" width="90%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Firewall</h2>
+        <a href="../Laboratorios/Seguridad_red/firewall/firewall.md">Firewall laborategia</a>
+    </section>
+
+    <section class="slide">
+        <h2>Karga-banatzailea</h2>
+        <p>Sareko trafikoa zerbitzari batzuen artean banatzea zerbitzuen errendimendua eta erabilgarritasuna hobetzeko</p>
+        <p>Bezeroen eta zerbitzarien arteko bitartekaria</p>
+        <p>Aplikazio-maila (HTTP) edo garraio-maila (TCP/UDP)</p>
+    </section>
+
+    <section class="slide">
+        <h2>Karga-banatzailea</h2>
+        <p>Karga-banaketa</p>
+        <p>Akatsekiko tolerantzia</p>
+        <p>Eskalagarritasuna</p>
+        <p>Saioen kontrola</p>
+        <p>Errendimenduaren optimizazioa</p>
+    </section>
+
+    <section class="slide">
+        <h2>Karga-banatzailea</h2>
+        <a href="../Laboratorios/Seguridad_red/load-balancer/load-balancer.md">Karga-banatzailea laborategia</a>
+    </section>
+
+    <section class="slide">
+        <h2>Proxy</h2>
+        <p>Bitartekari gisa jarduten duen aplikazioa</p>
+        <p>Bezeroak proxy-ari egiten dizkio eskaerak, eta honek kudeatu eta urruneko zerbitzariei bidaltzen dizkie</p>
+        <p>Segurtasun handiagoa ematen du nabigazioan, zerbitzariak ez baitaki nor konektatu den benetan</p>
+        <p>Zerbitzariaren erantzunak cache-an gordetzea</p>
+        <p>Sareko trafikoa iragaztea nahi ez den edukia saihesteko</p>
+    </section>
+
+    <section class="slide">
+        <h2>Proxy HTTP(S)</h2>
+        <p>Webguneetarako sarbidea</p>
+        <p>Edukiaren iragazketa</p>
+        <p>Cache-an gordetzea</p>
+    </section>
+
+    <section class="slide">
+        <h2>Proxy SOCKS</h2>
+        <p>Garraio-mailako proxy-a</p>
+        <p><a href="https://en.wikipedia.org/wiki/SOCKS">SOCKS</a> protokoloaren bidezko konexioa ahalbidetzen du</p>
+        <p>Sareko trafikoaren bideratzea</p>
+        <p>Anonimotasuna</p>
+    </section>
+
+    <section class="slide">
+        <h2>Alderantzizko proxy-a</h2>
+        <p>Zerbitzari aldea</p>
+        <p>Karga-banaketa</p>
+        <p>Azpiegituraren babesa</p>
+    </section>
+
+    <section class="slide">
+        <h2>Alderantzizko proxy-a</h2>
+        <a href="../Laboratorios/Seguridad_red/reverse-proxy/reverse-proxy.md">Alderantzizko proxy-a laborategia (Squid)</a>
+    </section>
+
+
+    <section class="slide">
+        <h2>IDS/IPS</h2>
+        <p>IDS (Intrusion Detection System): intrusioak detektatzeko sistema</p>
+        <p>IPS (Intrusion Prevention System): intrusioak prebenitzeko sistema</p>
+        <p>Host (HIPS, HIDS) edo Network (NIPS, NIDS)</p>
+
+    </section>
+
+    <section class="slide">
+        <h2>IDS/IPS</h2>
+        <p>Heuristika (Arauak): ezagutzen diren erasoak bakarrik. Positibo faltsu batzuk.</p>
+        <p>Anomaliak: portaera-profila. Eraso berriak. Positibo faltsu gehiago.</p>
+
+    </section>
+        <section class="slide">
+        <h2>IDS/IPS</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FIREWAL-DMZ-IDS.png" alt="DMZ" width="90%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>IDS/IPS</h2>
+        <p><a href="https://www.snort.org/">SNORT</a></p>
+        <p><a href="https://suricata.io">Suricata</a></p>
+    </section>
+
+
+    <section class="slide">
+        <h2>Honeypots</h2>
+        <p>"Amua" sistema, eraso diezaioten</p>
+        <p>Honeynet: honeypot-en sarea</p>
+        <p>Erasoak desbideratu</p>
+        <p>Erasoei buruzko ezagutza lortzea</p>
+        <p>Malware-aren laginak lortzea</p>
+    </section>
+
+    <section class="slide">
+        <h2>Honeypots</h2>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/FIREWAL-DMZ-IDS-HONEY.png" alt="DMZ" width="90%"></p>
+    </section>
+
+    <section class="slide">
+        <h2>Sare Birtual Pribatuak (VPN)</h2>
+        Segurua ez den azpiegitura (Internet) erabiltzen duen sarea, barne-sare batera modu seguruan sartzeko<br><br>
+        Barne-sarera urrutitik konektatzeko erabiltzen dira<br><br>
+        <a href="https://www.ehu.eus/es/web/ikt-tic/vpn">VPN EHU</a>
+
+    </section>
+
+    <section class="slide">
+        <h2>Sare Birtual Pribatuak (VPN)</h2>
+        Honakoa ahalbidetzen du:<br>
+        <ul>
+            <li>Erabiltzaileak, rolak eta baimenak kudeatuz autentifikatzea eta baimentzea</li>
+            <li>Osotasuna, hash funtzioen erabilerarekin</li>
+            <li>Konfidentzialtasuna, informazioa enkriptazio-algoritmo baten bidez zifratuta doalako</li>
+            <li>Zapuztezintasuna, datuak sinatuta transmititzen direlako</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Log-en analisia: Common Log Format</h2>
+        <p>
+            <pre>
+                <code>127.0.0.1 user-identifier frank [10/Oct/2000:13:55:36 -0700] 
+                    "GET /apache_pb.gif HTTP/1.0" 200 2326</code>
+            </pre>
+        </p>
+        <ul>
+            <li>Bezeroaren IPa</li>
+            <li>Bezeroaren identifikazioa</li>
+            <li>Erabiltzailearen autentikazio-izena</li>
+            <li>Konexioaren data/ordua</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Log-en analisia: Common Log Format</h2>
+        <p>
+            <pre>
+                <code>127.0.0.1 user-identifier frank [10/Oct/2000:13:55:36 -0700] 
+                    "GET /apache_pb.gif HTTP/1.0" 200 2326</code>
+            </pre>
+        </p>
+        <ul>
+            <li>Bezeroaren eskaera</li>
+            <li>Itzulitako HTTP egoera</li>
+            <li>Bidalitako byte-ak</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Sniffing: Sarean zehar doan informazioa atzematea <br><br>
+        Man in the middle: Informazioa atzemateaz gain, nahieran txertatu eta alda daiteke 
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Hijacking: Sisteman autentifikatutako erabiltzaile bati konexioak lapurtzea <br><br>
+        <ul>
+            <li>IP Hijacking</li>
+            <li>Session hijacking</li>
+            <li>DNS Hijacking</li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Spoofing (Nortasun-ordezkapena) <br><br>
+        <ul>
+            <li>IP Spoofing</li>
+            <li>MAC Spoofing</li>
+            <li>DNS Spoofing</li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Zerbitzuaren Ukapena (DoS): Hardwarea edo softwarea "saturatu" egiten da erantzuteari utzi arte <br><br>
+        Zerbitzuaren Ukapen Banatua (DDoS):
+        <ul>
+            <li>Hainbat makinatatik egiten da</li>
+            <li>Horietako batek master lanak egiten ditu eta gainerakoak koordinatzen ditu</li>
+        </ul>
+    </section> 
+
+    <section class="slide">
+        <h2>Eraso ohikoenak</h2>
+        Zerbitzuaren Ukapen Banatua (DDoS): <br><br>
+        <a href="https://therecord.media/gitlab-servers-are-being-exploited-in-ddos-attacks-in-excess-of-1-tbps/">GitLab servers are being exploited in DDoS attacks in excess of 1 Tbps</a> <br><br>
+        <a href="https://cloud.google.com/blog/products/identity-security/google-cloud-mitigated-largest-ddos-attack-peaking-above-398-million-rps/">Google mitigated the largest DDoS attack to date, peaking above 398 million rps</a>
+    </section> 
+
+
+
+
+
     <!-- FOOTER -->
 
     <footer class="badge">
