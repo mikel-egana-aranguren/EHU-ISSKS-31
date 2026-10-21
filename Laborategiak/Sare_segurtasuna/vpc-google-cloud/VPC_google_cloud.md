@@ -2,8 +2,10 @@
 
 ## Aurreko baldintzak
 
-- Google Cloud proiektua kreditu aktiboekin.
-- SSH gako publikoa eta pribatua sortuta.
+- GNU/Linux makina: eramangarria, makina birtuala edo laborategiko PCa (LDAP kredentzialarekin sartu; beharrezkoa bada, `lsi` erabiltzailea soilik, `su - lsi` komandoaren bidez).
+- Kode-editorea. Visual Studio Code-n, ctrl+maius+v sakatuz fitxategi hau testu erraz batean bistaratzen da (batez ere irudietarako).
+- Ikasgaiaren GitHub biltegia: laborategian garatutako programak igo ahal dituzu.
+- Google Cloud kontua.
 
 ## Sarrera
 

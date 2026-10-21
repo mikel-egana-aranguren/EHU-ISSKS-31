@@ -11,17 +11,8 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
   * [Zifraketa sarrera, esteganografia, laburpen algoritmoak](Zifraketa_intro/index.pdf)
   * [Zifraketa simetrikoa](Zifraketa_simetrikoa/index.pdf)
   * [Zifraketa asimetrikoa](Zifraketa_asimetrikoa/index.pdf)
-* Komunikazio seguruak
-* Sareetako segurtasuna
-* Web segurtasuna
-* Web iluna
-* Babeskopiak
-* Segurtasun fisikoa
-* DevSecOps
-* Legedia
-* Informatika forentsea
-* Giza faktorea
-* Malware
+  * [Zifraketa aplikazioak](Zifraketa_aplikazioak/index.pdf)
+* [Sare segurtasuna](Sare_segurtasuna/index.pdf)
 
 # Laborategiak
 
@@ -40,6 +31,12 @@ Informazio Sistemen Segurtasuna Kudeatzeko Sistemak (ISSKS) ikasgaiaren eskolak,
 (Azterketan sartzen dira)
 
 * [Zifraketaren sarrera, esteganografia, laburpen algoritmoak](Laborategiak/Zifraketa_sarrera/Zifraketa_sarrera.md)
+* [Zifraketa simetrikoa](Laborategiak/Zifraketa_simetrikoa/Zifraketa_simetrikoa.md)
+* [Zifraketa asimetrikoa](Laborategiak/Zifraketa_asimetrikoa/Zifraketa_asimetrikoa.md)
+* [Zifraketa aplikazioak](Laborategiak/Zifraketa_aplikazioak/Zifraketa_aplikazioak.md)
+* [TOR](Laborategiak/TOR-ONION/TOR-ONION.md)
+* [Wireshark](Laborategiak/TOR-ONION/TOR-ONION.md)
+* [VPC Google Cloud](Laborategiak/Sare_segurtasuna/vpc-google-cloud/VPC_google_cloud.md)
 
 
 
