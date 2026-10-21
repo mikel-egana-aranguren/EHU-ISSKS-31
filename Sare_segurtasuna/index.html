@@ -59,7 +59,7 @@
 
     <section class="slide">
         <h2>Sare trafikoa lortzea</h2>
-        <a href="../Laborategiak/Sare_segurtasuna/Wireshark.md">Wireshark laborategia</a>
+        <a href="../Laborategiak/Sare_segurtasuna/wireshark/wireshark.md">Wireshark laborategia</a>
     </section>
 
     <section class="slide">
@@ -117,7 +117,10 @@ trafikoa baimentzen edo blokeatzen dute: jatorriko eta helmugako IPa, erabilitak
         <p>Stateful Inspection Firewalls: Paketeen goiburuak aztertzeaz gain, sareko
 konexioen egoeraren jarraipena egiten dute. Paketeen edukia azter dezakete eta
 konexioaren egoeran oinarritutako erabakiak hartu</p>
-        <p>         
+    </section>
+
+        <section class="slide">
+        <h2>Firewall: motak</h2>        
 <p>Application Firewalls (Proxy Firewalls): Trafikoa aztertzen dute, aplikazio-protokolo
 zehatzak barne, hala nola HTTP, FTP edo SMTP. Mezuen edukia aztertzen dute eta segurtasun-arau
 aurreratuagoak aplikatzen dituzte aplikazioen mehatxu zehatzak detektatu eta blokeatzeko</p>
@@ -126,7 +129,7 @@ aurreratuagoak aplikatzen dituzte aplikazioen mehatxu zehatzak detektatu eta blo
 
 
     <section class="slide">
-        <h2>Firewall: iragazki orokorreko arauak</h2>
+        <h2>Firewall: arau orokorrak</h2>
         <p>Difusio-helbidea (Broadcast) duten paketeak blokeatu, DoS erasoak saihesteko</p>
         <p>Barne-helbideei dagozkien jatorrizko helbideak dituzten sarrerako paketeak blokeatu, nortasun-ordezkapena (Spoofing) saihesteko</p>
         <p>Blokeatu <a href="https://www.rfc-editor.org/rfc/rfc1918">RFC 1918 (Address Allocation for Private Internets)</a> dokumentuan aipatutako helbide pribatuak dituzten sarrerako pakete guztiak</p>
@@ -134,13 +137,13 @@ aurreratuagoak aplikatzen dituzte aplikazioen mehatxu zehatzak detektatu eta blo
     </section>
 
     <section class="slide">
-        <h2>Firewall: iragazki orokorreko arauak</h2>
+        <h2>Firewall: arau orokorrak</h2>
         <p>127.0.0.1 jatorrizko helbide gisa duten sarrerako paketeak blokeatu</p>
         <p>Ping edo Traceroute eskaerei erantzunez barne-sarearen topologiari buruzko informazioa eman dezaketen ICMP kontrol-protokoloko paketeak blokeatu</p>
     </section>
 
     <section class="slide">
-        <h2>Firewall: iragazki orokorreko arauak</h2>
+        <h2>Firewall: arau orokorrak</h2>
         <p>Routerren bideratze-taulak aldatzeko aukera ematen duten ICMP Redirect paketeak blokeatu</p>
         <p>Baimendutako gutxienekoa baino tamaina txikiagoa duten edo goiburuan balio baliogabeak dituzten pakete guztiak blokeatu</p>
         <p>
@@ -167,18 +170,18 @@ aurreratuagoak aplikatzen dituzte aplikazioen mehatxu zehatzak detektatu eta blo
 
     <section class="slide">
         <h2>Firewall</h2>
-        <a href="../Laboratorios/Seguridad_red/firewall/firewall.md">Firewall laborategia</a>
+        <a href="../Laborategiak/Sare_segurtasuna/firewall/firewall.md">Firewall laborategia</a>
     </section>
 
     <section class="slide">
-        <h2>Karga-banatzailea</h2>
+        <h2>Load balancer</h2>
         <p>Sareko trafikoa zerbitzari batzuen artean banatzea zerbitzuen errendimendua eta erabilgarritasuna hobetzeko</p>
         <p>Bezeroen eta zerbitzarien arteko bitartekaria</p>
         <p>Aplikazio-maila (HTTP) edo garraio-maila (TCP/UDP)</p>
     </section>
 
     <section class="slide">
-        <h2>Karga-banatzailea</h2>
+        <h2>Load balancer</h2>
         <p>Karga-banaketa</p>
         <p>Akatsekiko tolerantzia</p>
         <p>Eskalagarritasuna</p>
@@ -187,8 +190,8 @@ aurreratuagoak aplikatzen dituzte aplikazioen mehatxu zehatzak detektatu eta blo
     </section>
 
     <section class="slide">
-        <h2>Karga-banatzailea</h2>
-        <a href="../Laboratorios/Seguridad_red/load-balancer/load-balancer.md">Karga-banatzailea laborategia</a>
+        <h2>Load balancer</h2>
+        <a href="../Laborategiak/Sare_segurtasuna/load-balancer/load-balancer.md">Load balancer laborategia</a>
     </section>
 
     <section class="slide">
@@ -216,15 +219,15 @@ aurreratuagoak aplikatzen dituzte aplikazioen mehatxu zehatzak detektatu eta blo
     </section>
 
     <section class="slide">
-        <h2>Alderantzizko proxy-a</h2>
+        <h2>Reverse proxy</h2>
         <p>Zerbitzari aldea</p>
         <p>Karga-banaketa</p>
         <p>Azpiegituraren babesa</p>
     </section>
 
     <section class="slide">
-        <h2>Alderantzizko proxy-a</h2>
-        <a href="../Laboratorios/Seguridad_red/reverse-proxy/reverse-proxy.md">Alderantzizko proxy-a laborategia (Squid)</a>
+        <h2>Reverse proxy</h2>
+        <a href="../Laborategiak/Sare_segurtasuna/reverse-proxy/reverse-proxy.md">Reverse proxy laborategia (Squid)</a>
     </section>
 
 
@@ -251,6 +254,7 @@ aurreratuagoak aplikatzen dituzte aplikazioen mehatxu zehatzak detektatu eta blo
         <h2>IDS/IPS</h2>
         <p><a href="https://www.snort.org/">SNORT</a></p>
         <p><a href="https://suricata.io">Suricata</a></p>
+        <p><a href="../Laborategiak/Sare_segurtasuna/suricata/suricata.md">Suricata laborategia</a></p>
     </section>
 
 
