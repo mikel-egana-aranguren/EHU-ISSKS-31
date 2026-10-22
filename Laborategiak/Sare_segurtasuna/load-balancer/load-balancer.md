@@ -73,7 +73,7 @@ Sakatu `Create`.
 
 ## Kudeatutako instantzia-taldea sortu
 
-`instance templates` zerrendan, sakatu `Actions` `lb-template`-n eta `Create instance group`:
+`instance templates` zerrendan, sakatu `Actions` `lb-template`-n eta `Create instance group` (`New managed instance group (stateless)`):
 
 - Izena: `lb-mig`.
 - Instantzia-txantiloia: `lb-template`.
