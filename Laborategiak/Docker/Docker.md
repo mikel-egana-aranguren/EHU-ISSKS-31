@@ -45,6 +45,38 @@ docker run hello-world
 
 ![Docker terminala](docker_terminal.png)
 
+Zure erabiltzailean docker compose instalatzeko:
+
+- `$HOME` karpetan docker compose deskargatu:
+
+```bash
+DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+mkdir -p $DOCKER_CONFIG/cli-plugins
+curl -SL https://github.com/docker/compose/releases/download/v5.5.0/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+```
+
+Sisteam osoan instalatzeko `~/.docker/cli-plugin` aldatu eta ipini `/usr/local/lib/docker/cli-plugins`.
+
+Beste arkitektura batentzako, `x86_64` aldatu.
+
+- Exekuzio baimenak eman
+
+```bash
+chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+```
+
+Sistema osorako instalatu baduzu:
+
+```bash
+sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+```
+
+- Ondo instalatu dela ikusi
+
+```bash
+docker compose version
+```
+
 
 ## 3. Irudiak kudeatu
 
