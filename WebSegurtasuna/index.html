@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eu">
 <head>
     <title>Web Segurtasuna</title>
     <meta charset="utf-8">
@@ -10,10 +10,6 @@
             --slide-ratio: calc(16 / 9);
         }
     </style>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async
-            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-    </script>
 </head>
 <body class="shower list">
     <header class="caption">
@@ -35,28 +31,29 @@
         <p><a href="https://github.com/mikel-egana-aranguren/EHU-SGSSI-01">https://github.com/mikel-egana-aranguren/EHU-SGSSI-01</a></p>
         <img src="../ShowerTemplate/pictures/by.png" alt="Creative Commons BY" height="10%">
     </section>
-
+<!-- 
     <section class="slide">
-        <h2>Segurtasuna Web Sistemetan</h2>
+        <h2>Web Segurtasuna</h2>
         <ul>
             <li>Segurtasunari buruzko informazio iturriak</li>
-            <li>Sarbide-kontrola apurtzea</li>
-            <li>Akats kriptografikoak</li>
-            <li>Injekzioa</li>
-            <li>Diseinu insegurua</li>
-            <li>Segurtasun-konfigurazio eskasa</li>
-            <li>Osagai kalteberak eta zaharkituak</li>
+            <li>A01:2025 - Broken Access Control</li>
+            <li>A02:2025 - Security Misconfiguration</li>
+            <li>A03:2025 - Software Supply Chain Failures</li>
+            <li>A04:2025 - Cryptographic Failures</li>
+            <li>A05:2025 - Injection</li>
+            <li>A06:2025 - Insecure Design</li>
         </ul>
     </section>
 
     <section class="slide">
-        <h2>Segurtasuna Web Sistemetan</h2>
+        <h2>Web Segurtasuna</h2>
         <ul>
-            <li>Identifikazio- eta autentifikazio-akatsak</li>
-            <li>Akatsak datuen eta softwarearen osotasunean</li>
-            <li>Akatsak segurtasunaren monitorizazioan</li>
+            <li>A07:2025 - Authentication Failures</li>
+            <li>A08:2025 - Software or Data Integrity Failures</li>
+            <li>A09:2025 - Security Logging and Alerting Failures</li>
+            <li>A10:2025 - Mishandling of Exceptional Conditions</li>
         </ul>
-    </section>
+    </section> -->
 
     <section class="slide">
         <h2>Segurtasunari buruzko informazio iturriak</h2>
@@ -65,13 +62,20 @@
     </section>
 
     <section class="slide">
+        <h2>PHP2Shell</h2>
+        <p>Web zerbitzari batean urruneko komando-exekuzioa ahalbidetzen du PHP script maltzur baten bidez</p>
+        <p><a href="https://nvd.nist.gov/vuln/detail/cve-2026-109618">CVE-2026-109618</a></p>
+        <p><a href="https://nvd.nist.gov/vuln/detail/cve-2026-109619">CVE-2026-109619</a></p>
+    </section>
+
+    <section class="slide">
         <h2>Segurtasunari buruzko informazio iturriak</h2>
-        <p>OWASP Top Ten (<a href="https://owasp.org/Top10/">2021</a>), <a href="https://owasp.org/">Open Web Application Security Project</a>: ranking batean azaltzen ditu web urrakortasun ohikoenak, CWE-ekin eta CVE-ekin estekatuta</p>
+        <p>OWASP Top Ten (<a href="https://top10.owasp.org/2025/">2025</a>), <a href="https://owasp.org/">Open Web Application Security Project</a>: ranking batean azaltzen ditu web urrakortasun ohikoenak, CWE-ekin eta CVE-ekin estekatuta</p>
     </section>
 
     <section class="slide">
         <h2>Sarbide-kontrola apurtzea</h2>
-         <a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">Broken access control (A01:2021)</a>
+         <a href="https://top10.owasp.org/2025/A01_2025-Broken_Access_Control/">Broken access control (A01:2025)</a>
     </section>
 
     <section class="slide">
@@ -83,7 +87,7 @@
     <section class="slide">
         <h2>Sarbide-kontrola apurtzea: ahuleziak</h2>
         <p>"Ukatzea lehenetsia" printzipioa urratzea: sarbidea gaitasun, rol edo erabiltzaile jakin batzuei bakarrik bermatu beharko litzaieke, baina edozeinen esku dago</p>
-        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/GAUR-guias-docentes-rotura-control-acceso.png" alt="En el mantenimiento de las guias docentes de GAUR el primer profesor que acceda a la guia, aunque no tenga permisos, se queda con la guia y la puede modificar si quiere" title="En el mantenimiento de las guias docentes de GAUR el primer profesor que acceda a la guia, aunque no tenga permisos, se queda con la guia y la puede modificar si quiere" width="70%"></p>
+        <p><img  style="border: 1px solid #555;"  src="pictures-issks-31/GAUR-guias-docentes-rotura-control-acceso.png" alt="GAUR irakasgai-gidaliburuen mantentzean, gidaliburura sartzen den lehen irakasleak, baimenik ez badu ere, gidaliburua geratzen du eta nahi badu alda dezake" title="GAUR irakasgai-gidaliburuen mantentzean, gidaliburura sartzen den lehen irakasleak, baimenik ez badu ere, gidaliburua geratzen du eta nahi badu alda dezake" width="70%"></p>
     </section>
 
     <section class="slide">
@@ -136,7 +140,7 @@
         </p>
     </section>
 
-    <section class="slide">
+    <!-- <section class="slide">
         <h2>Sarbide-kontrola apurtzea: adibidea</h2>
         <p>SQL deia kontuko informazioa lortzeko, egiaztatu gabeko datuekin:</p>
         <pre>
@@ -144,11 +148,91 @@
             <code>ResultSet results = pstmt.executeQuery( );</code>
         </pre>
         <p>Erasotzaileak URL hau ikusi behar du soilik: <b>https://example.com/app/accountInfo?acct=notmyacct</b></p>
+    </section> -->
+
+
+
+    <section class="slide">
+        <h2>Segurtasun-konfigurazio eskasa</h2>
+         <a href="https://top10.owasp.org/2025/A02_2025-Security_Misconfiguration/">Security Misconfiguration (A02:2025)</a>
+    </section>
+
+    <section class="slide">
+        <h2>Segurtasun-konfigurazio eskasa</h2>
+        Aplikazioa zaurgarria izan liteke baldin eta:
+        <ul>
+            <li>Hodei zerbitzu batean baimen desegokiak dauzka</li>
+            <li>Beharrezkoak ez diren funtzioak aktibaturik daude (Portuak, zerbitzuak, orrialdeak, kontuak, baimenak)</li>
+            <li>Lehenetsitako kontuek eta pasahitzek aktibo jarraitzen dute</li>
+            <li>Erroreen kudeaketak informazioa azaleratzen du (adib. stack traces Java salbuespenetan) / erroreek informazio gehiegi ematen dute</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Segurtasun-konfigurazio eskasa</h2>
+        Aplikazioa zaurgarria izan liteke baldin eta:
+        <ul>
+            <li>Sistema eguneratuetarako, azken segurtasun-adabakiak ez daude aktibo eta/edo behar bezala konfiguratuta</li>
+            <li>Frameworketako (Struts, Spring, ASP.net,...), liburutegietako, datu-baseetako, ... segurtasun-aukerak ez daude aktibatuta</li>
+            <li>Zerbitzariak ez du <a href="https://web.dev/security-headers/">segurtasun HTTP goiburuekin</a> erantzuten</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Segurtasun-konfigurazio eskasa: prebentzioa</h2>
+        <ul>
+            <li>
+                Garapen automatizatuko sistema, non ingurune seguruagoa hedatzea erraza den. Garapen-, kalitate- eta ekoizpen-inguruneek konfigurazio bera izan beharko lukete, kredentzialek izan ezik. Prozesu horrek ahalik eta automatizatuena izan beharko luke, ingurune seguru berri bat ahalik eta azkarren sortzeko
+                </li>
+            <li>Sistema minimalista, osagai eta funtzio gehigarririk gabe</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Segurtasun-konfigurazio eskasa</h2>
+        <ul>
+            <li><a href="https://cwe.mitre.org/data/definitions/16.html">CWE-16 Configuration</a></li>
+            <li><a href="https://cwe.mitre.org/data/definitions/611.html">CWE-611 Improper Restriction of XML External Entity Reference</a></li>
+            <li>...</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Software-hornikuntza-katearen akatsak</h2>
+         <a href="https://top10.owasp.org/2025/A03_2025-Software_Supply_Chain_Failures/">A03:2025 Software Supply Chain Failures</a>
+    </section>
+
+    <section class="slide">
+        <h2>Software-hornikuntza-katearen akatsak</h2>
+        Aplikazioa zaurgarria izan liteke baldin eta:
+        <ul>
+            <li>Ez dakizkigu osagaien bertsio zehatzak (Beti darabilgu "latest"). Honek zuzenean erabiltzen diren osagaiak eta dependentzia zeharkakoak ere barne hartzen ditu</li>
+            <li>Softwareak ez badu soporterik, kaltebera edo zaharkitua da: sistema eragilea, web zerbitzaria, datu-baseak kudeatzeko sistema, API-ak eta horien osagaiak, exekuzio-inguruneak eta liburutegiak</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Software-hornikuntza-katearen akatsak</h2>
+        Aplikazioa zaurgarria izan liteke baldin eta:
+        <ul>
+            <li>Ez baduzu zure sistema aldizka eskaneatzen urrakortasunak bilatzeko, eta ez bazaude harpidetuta erabiltzen dituzun osagaiei buruzko segurtasun-buletinetara</li>
+            <li>Osagaiak arriskuan oinarritutako maiztasunez eguneratzen ez badituzu. Hori oso ohikoa da hilean behin adabakiak aplikatzeko politikak dituzten erakunde handietan, sistema kaltebera delarik egun batzutan</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Software-hornikuntza-katearen akatsak: prebentzioa</h2>
+        Adabakiak aplikatzeko prozesu bat egon beharko litzateke:
+        <ul>
+            <li>Erabiltzen ez diren dependentziak, funtzionalitateak, osagaiak, fitxategiak etab. kendu</li>
+            <li>Zerbitzarian eta bezeroan erabiltzen diren osagaien eta beraien dependentzien zerrenda izan, automatikoki sortua. CVE bezalako baliabideak berrikusi osagaion ahultasunak jakiteko</li>
+            <li>Osagai sinatuak soilik eskuratu, eta iturri ofizialetatik</li>
+        </ul>
     </section>
 
     <section class="slide">
         <h2>Akats kriptografikoak</h2>
-        <a href="https://owasp.org/Top10/A02_2021-Cryptographic_Failures/">Cryptographic Failures (A02:2021)</a>
+        <a href="https://top10.owasp.org/2025/A04_2025-Cryptographic_Failures/">Cryptographic Failures (A04:2025)</a>
     </section>
 
     <section class="slide">
@@ -259,7 +343,7 @@
         <p>Entropia handiena duten haziak erabili</p>
     </section>
 
-    <section class="slide">
+    <!-- <section class="slide">
         <h2>Akats kriptografikoak: adibideak</h2>
         <p>Aplikazio batek datuak enkriptatzeko datu-basearen funtzio lehenetsia erabiltzen du. Hala ere, datu horiek automatikoki desenkriptatzen dira kontsultatzean, eta sarbidea ahalbidetzen da, adibidez, SQL injekzio eraso bat badago</p> 
     </section>
@@ -268,7 +352,7 @@
         <h2>Akats kriptografikoak: adibideak</h2>
         <p>Web orrialde batek ez du TLS erabilpena derrigortzen. Erasotzaile batek trafikoa monitorizatzen badu eta konexio bat HTTPStik HTTPera "jaisten" badu, kontsultak eten eta erabiltzailearen saioko cookiea lor dezake. Erasotzaileak cookiea (replay) birbidaltzen du erabiltzailearen saioa bahituz eta erabiltzaile-datuetarako sarbidea lortuz</p>
         <p>Datu baseak gatz gabeko hash-ak erabiltzen ditu. Erasotzaile batek hash-ak prekalkulatu ditzake <a href="https://en.wikipedia.org/wiki/Graphics_processing_unit">GPU</a>-ak erabiliz</p>  
-    </section>
+    </section> -->
 
     <section class="slide">
         <h2>Akats kriptografikoak: ahuleziak</h2>
@@ -282,7 +366,7 @@
 
     <section class="slide">
         <h2>Injekzioa</h2>
-         <a href="https://owasp.org/Top10/A03_2021-Injection/">Injection (A03:2021)</a>
+         <a href="https://top10.owasp.org/2025/A05_2025-Injection/">Injection (A05:2025 Injection)</a>
     </section>
 
     <section class="slide">
@@ -389,7 +473,7 @@ String name = p.FirstName;
 
     <section class="slide">
         <h2>Diseinu insegurua</h2>
-         <a href="https://owasp.org/Top10/A04_2021-Insecure_Design/">Insecure Design (A04:2021)</a>
+         <a href="https://top10.owasp.org/2025/A06_2025-Insecure_Design/">Insecure Design (A06:2025)</a>
     </section>
 
     <section class="slide">
@@ -397,11 +481,11 @@ String name = p.FirstName;
         <p>Arkitektura akatsak, kodea inplementatu baino aurrekoak</p>
     </section>
 
-    <section class="slide">
+    <!-- <section class="slide">
         <h2>Software Assurance Maturity Model</h2>
         <p><a href="https://owaspsamm.org/">https://owaspsamm.org/</a></p>
         <p><a href="SAMM-v2-PDF.pdf">SAMM-v2-PDF.pdf</a></p>
-    </section>
+    </section> -->
 
     <section class="slide">
         <h2>Diseinu insegurua: adibideak</h2>
@@ -421,86 +505,8 @@ String name = p.FirstName;
     </section>
 
     <section class="slide">
-        <h2>Segurtasun-konfigurazio eskasa</h2>
-         <a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">Security Misconfiguration (A05:2021)</a>
-    </section>
-
-    <section class="slide">
-        <h2>Segurtasun-konfigurazio eskasa</h2>
-        Aplikazioa zaurgarria izan liteke baldin eta:
-        <ul>
-            <li>Hodei zerbitzu batean baimen desegokiak dauzka</li>
-            <li>Beharrezkoak ez diren funtzioak aktibaturik daude (Portuak, zerbitzuak, orrialdeak, kontuak, baimenak)</li>
-            <li>Lehenetsitako kontuek eta pasahitzek aktibo jarraitzen dute</li>
-            <li>Erroreen kudeaketak informazioa azaleratzen du (adib. stack traces Java salbuespenetan) / erroreek informazio gehiegi ematen dute</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Segurtasun-konfigurazio eskasa</h2>
-        Aplikazioa zaurgarria izan liteke baldin eta:
-        <ul>
-            <li>Sistema eguneratuetarako, azken segurtasun-adabakiak ez daude aktibo eta/edo behar bezala konfiguratuta</li>
-            <li>Frameworketako (Struts, Spring, ASP.net,...), liburutegietako, datu-baseetako, ... segurtasun-aukerak ez daude aktibatuta</li>
-            <li>Zerbitzariak ez du <a href="https://web.dev/security-headers/">segurtasun HTTP goiburuekin</a> erantzuten</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Segurtasun-konfigurazio eskasa: prebentzioa</h2>
-        <ul>
-            <li>
-                Garapen automatizatuko sistema, non ingurune seguruagoa hedatzea erraza den. Garapen-, kalitate- eta ekoizpen-inguruneek konfigurazio bera izan beharko lukete, kredentzialek izan ezik. Prozesu horrek ahalik eta automatizatuena izan beharko luke, ingurune seguru berri bat ahalik eta azkarren sortzeko
-                </li>
-            <li>Sistema minimalista, osagai eta funtzio gehigarririk gabe</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Segurtasun-konfigurazio eskasa</h2>
-        <ul>
-            <li><a href="https://cwe.mitre.org/data/definitions/16.html">CWE-16 Configuration</a></li>
-            <li><a href="https://cwe.mitre.org/data/definitions/611.html">CWE-611 Improper Restriction of XML External Entity Reference</a></li>
-            <li>...</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Osagai kalteberak eta zaharkituak</h2>
-         <a href="https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/">Vulnerable and Outdated Components (A06:2021)</a>
-    </section>
-
-    <section class="slide">
-        <h2>Osagai kalteberak eta zaharkituak</h2>
-        Aplikazioa zaurgarria izan liteke baldin eta:
-        <ul>
-            <li>Ez dakizkigu osagaien bertsio zehatzak (Beti darabilgu "latest"), zuzenean erabiltzen ditugun osagaietan eta berauen dependentzietan</li>
-            <li>Softwareak ez badu soporterik, kaltebera edo zaharkitua da: sistema eragilea, web zerbitzaria, datu-baseak kudeatzeko sistema, API-ak eta horien osagaiak, exekuzio-inguruneak eta liburutegiak</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Osagai kalteberak eta zaharkituak</h2>
-        Aplikazioa zaurgarria izan liteke baldin eta:
-        <ul>
-            <li>Ez baduzu zure sistema aldizka eskaneatzen urrakortasunak bilatzeko, eta ez bazaude harpidetuta erabiltzen dituzun osagaiei buruzko segurtasun-buletinetara</li>
-            <li>Osagaiak arriskuan oinarritutako maiztasunez eguneratzen ez badituzu. Hori oso ohikoa da hilean behin adabakiak aplikatzeko politikak dituzten erakunde handietan, sistema kaltebera delarik egun batzutan</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Osagai kalteberak eta zaharkituak: prebentzioa</h2>
-        Adabakiak aplikatzeko prozesu bat egon beharko litzateke:
-        <ul>
-            <li>Erabiltzen ez diren dependentziak, funtzionalitateak, osagaiak, fitxategiak etab. kendu</li>
-            <li>Zerbitzarian eta bezeroan erabiltzen diren osagaien eta beraien dependentzien zerrenda izan, automatikoki sortua. CVE bezalako baliabideak berrikusi osagaion ahultasunak jakiteko</li>
-            <li>Osagai sinatuak soilik eskuratu, eta iturri ofizialetatik</li>
-        </ul>
-    </section>
-
-    <section class="slide">
-        <h2>Identifikazio- eta autentifikazio-akatsak</h2>
-         <a href="https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/">Identification and Authentication Failures (A07:2021)</a>
+        <h2>Autentifikazio-akatsak</h2>
+         <a href="https://top10.owasp.org/2025/A07_2025-Authentication_Failures/">Authentication Failures (A07:2025)</a>
     </section>
 
     <section class="slide">
@@ -510,22 +516,23 @@ String name = p.FirstName;
 
     <section class="slide">
         <h2>Identifikazio- eta autentifikazio-akatsak</h2>
-        Aplikazioa zaurgarria izan liteke baldin eta:
+        Autentifikazioarekin lotutako ahuleziak egon daitezke baldin eta:
         <ul>
-            <li><a href="https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/">Credential Stuffing</a> bezalako eraso automatizatuak ezin ditu ekidin</li>
-            <li>Pasahitz ahulak edo berez osagaiekin datozenak onartzen ditu (adib. admin test)</li>
-            <li>Pasahitzak berreskuratzeko metodo ahulak erabiltzen ditu, galderei erantzutea bezala</li>
+            <li><a href="https://www.cloudflare.com/learning/bots/what-is-credential-stuffing/">Credential Stuffing</a> bezalako eraso automatizatuak baimentzen baditu, erasotzaileak erabiltzaile eta pasahitz baliozkoen zerrenda bat badu</li>
+            <li>Indarraz (brute force) erasoak baimentzen baditu</li>
+            <li>Lehenetsitako pasahitzak, ahulak edo oso ezagunak onartzen baditu (adib. admin test)</li>
+            <li>Pasahitzak berreskuratzeko mekanismo ahulak erabiltzen baditu, galderei erantzutea bezala</li>
         </ul>
     </section>
 
     <section class="slide">
         <h2>Identifikazio- eta autentifikazio-akatsak</h2>
-        Aplikazioa zaurgarria izan liteke baldin eta:
+        Autentifikazioarekin lotutako ahuleziak egon daitezke baldin eta:
         <ul>
-            <li>Pasahitzak testu soilean gordetzen ditu, edo hash ahulekin</li>
-            <li>Ez du autentikazio faktore-anitza erabiltzen</li>
-            <li>URL-an saio identifikatzaileak jartzen ditu</li>
-            <li>Ez ditu saioak baliogabetzen logout baten ondoren, edo aktibitaterik ez badago</li>
+            <li>Pasahitzak testu lau gisa gordetzen baditu, edo hash ahulekin</li>
+            <li>Autentifikazio-faktore anitzik erabiltzen ez badu</li>
+            <li>Saioaren identifikatzaileak URLn azaltzen baditu</li>
+            <li>Saioak ez baditu baliogabetzen logout edo jarduerarik ezaren ondoren</li>
         </ul>
     </section>
 
@@ -554,7 +561,7 @@ String name = p.FirstName;
         <h2>Identifikazio- eta autentifikazio-akatsak: prebentzioa</h2>
 
         <ul>
-            <li>Zerbitzariaren aldean, segurua den eta aplikazioarekin batera inplementatuta dagoen saio-kudeatzaile bat erabiltzea. Loginaren ondoren entropia handiko ausazko saioaren identifikatzaile bat sortu beharko luke. Saio-identifikatzaileek ez lukete URLan egon behar, modu seguruan biltegiratuta baizik. Identifikatzaileak baliogabetu egin beharko lirateke logout edo jarduera eza gertatu eta berehala</li>
+            <li>Zerbitzariaren aldean, segurua den eta aplikazioarekin batera inplementatuta dagoen saio-kudeatzaile bat erabiltzea. Loginaren ondoren entropia handiko ausazko saioaren identifikatzaile bat sortu behar du. Saioaren identifikatzaileak ez lirateke URLn egon behar, modu seguruan biltegiratuta baizik. Identifikatzaileak berehala baliogabetu behar lirateke logout edo jarduerarik ezaren ondoren</li>
         </ul>
     </section>
 
@@ -570,7 +577,7 @@ String name = p.FirstName;
 
     <section class="slide">
         <h2>Akatsak datuen eta softwarearen osotasunean</h2>
-         <a href="https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/">Software and Data Integrity Failures (A08:2021)</a>
+         <a href="https://top10.owasp.org/2025/A08_2025-Software_or_Data_Integrity_Failures/">Software and Data Integrity Failures (A08:2025)</a>
     </section>
 
     <section class="slide">
@@ -601,6 +608,13 @@ String name = p.FirstName;
     </section>
 
     <section class="slide">
+        <h2>Akatsak datuen eta softwarearen osotasunean: eraso-eszenatokien adibideak</h2>
+        <p>Etxerako bideratzaile askok firmware-eguneraketak egiaztatu gabe aplikatzen dituzte. Horien aurkako erasoak etorkizuneko urteetan gehitzea espero da</p>
+        <p><a href="https://www.cvedetails.com/cve/CVE-2020-10148/">Solar Winds Orion attack</a> (Munduko 18.000 erakunde inguru eragin zituen)</p>
+        <p></p>
+    </section>
+
+    <section class="slide">
         <h2>Akatsak datuen eta softwarearen osotasunean</h2>
         <ul>
             <li><a href="https://cwe.mitre.org/data/definitions/829.html">
@@ -613,7 +627,7 @@ String name = p.FirstName;
 
     <section class="slide">
         <h2>Akatsak segurtasunaren monitorizazioan</h2>
-         <a href="https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/">Security Logging and Monitoring Failures (A09:2021)</a>
+         <a href="https://top10.owasp.org/2025/A09_2025-Security_Logging_and_Alerting_Failures/">Security Logging and Monitoring Failures (A09:2025)</a>
     </section>
     
     <section class="slide">
@@ -632,7 +646,6 @@ String name = p.FirstName;
         Ez dago monitorizazio egokirik, baldin eta:
         <ul>
             <li>Ez dago erantzun-prozesu automatikorik atalase jakin batzuetatik abiatuta</li>
-            <li>OWASP ZAP bezalako tresnekin egindako pen-testing-ak ez ditu alertak sortzen</li>
             <li>Aplikazioa ez da gai denbora errealean martxan dauden erasoak detektatzeko edo ohartarazteko</li>
         </ul>
     </section>
@@ -662,7 +675,31 @@ String name = p.FirstName;
             <li><a href="https://cwe.mitre.org/data/definitions/778.html">CWE-778: Insufficient Logging</a></li>
         </ul>
     </section>
-    
+
+    <section class="slide">
+        <h2>Salbuespenen kudeaketa okerra</h2>
+         <a href="https://top10.owasp.org/2025/A10_2025-Mishandling_of_Exceptional_Conditions/">Salbuespenen kudeaketa okerra (A10:2025)</a>
+    </section>
+
+    <section class="slide">
+        <h2>Salbuespenen kudeaketa okerra</h2>
+        <p>Aplikazioak ez du ekiditen ohiz kanpoko egoera bat gerta dadin</p>
+        <p>Ez du egoera detektatzen gertatzen ari den bitartean</p>
+        <p>Modu desegokian erantzuten du, edo ez du gero erantzuten</p>
+    </section>
+
+    <section class="slide">
+        <h2>Salbuespenen kudeaketa okerra</h2>
+        <p><a href="https://cwe.mitre.org/data/definitions/209.html">CWE-209 Generation of Error Message Containing Sensitive Information</a></p>
+        <p><a href="https://cwe.mitre.org/data/definitions/215.html">CWE-215 Insertion of Sensitive Information Into Debugging Code</a></p>
+        <p><a href="https://cwe.mitre.org/data/definitions/234.html">CWE-234 Failure to Handle Missing Parameter</a></p>
+    </section>
+
+
+
+
+
+
     <!-- FOOTER -->
 
     <footer class="badge">
@@ -673,6 +710,5 @@ String name = p.FirstName;
 
     <script src="../ShowerTemplate/shower/shower.js"></script>
     <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
-
 </body>
 </html>
