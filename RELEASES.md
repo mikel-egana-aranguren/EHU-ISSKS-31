@@ -1,5 +1,19 @@
 # Releases
 
+## 2026-2027-11
+
+* Kopiak (+labo), bitcoin (+labo), legeak, Google Colab
+* Segurtasun fisikoa, path traversal
+* DevSecOps
+* Web segurtasuna, ZAP, SQL injection, Web Shell
+* Sare segurtasuna, firewall, load-balancer, nmap, reverse-proxy, suricata
+* Sare segurtasuna, Wireshark labo, Google VPC labo
+* Zifraketa asimetrikoa (+labo)
+* Zifraketa simetrikoa (+labo)
+* Sarrera, Zifraketa sarrera (+labo)
+* Oinarrizko laborategiak
+* README hobetua
+
 ## 2026-2027-10
 
 * Segurtasun fisikoa, path traversal
